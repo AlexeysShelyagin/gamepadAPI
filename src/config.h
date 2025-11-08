@@ -102,7 +102,7 @@ enum buttons_id{
 
 #define BATTERY_CRITICAL_V 3.55     // At this voltage device would turn off
 #define BATTERY_FULL_V 4.15
-#define BATTERY_CHARGING_V 4.2      // value above that would mean that device is connected to the charger
+#define BATTERY_CHARGING_V 4.3      // value above that would mean that device is connected to the charger
 #define BATTERY_ONLY_CHARGING_V 4.5 // voltage above that would mean that devices is connected to charger and powered off
 
 #define BATTERY_LEVELS 4

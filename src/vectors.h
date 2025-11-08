@@ -19,7 +19,9 @@ public:
     vec2 operator-= (vec2 vec);
 
     float mod();
+    float fast_mod();
     vec2 norm();
+    vec2 fast_norm();
 
     float dot(vec2 vec);
     float cross_2d(vec2 vec);
@@ -42,7 +44,9 @@ public:
     vec3 operator-= (vec3 vec);
 
     float mod();
+    float fast_mod();
     vec3 norm();
+    vec3 fast_norm();
 
     float dot(vec3 vec);
     vec3 cross(vec3 vec);
