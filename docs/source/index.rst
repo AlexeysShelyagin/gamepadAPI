@@ -18,5 +18,5 @@ Section
    :maxdepth: 2
    :caption: Contents:
 
-   section/document.rst
+   section/index
 
