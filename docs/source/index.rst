@@ -11,7 +11,12 @@ Add your content using ``reStructuredText`` syntax. See the
 documentation for details.
 
 
+Section
+===========
+
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
+
+   section/document.rst
 
