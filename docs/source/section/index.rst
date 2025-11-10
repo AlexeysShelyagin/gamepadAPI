@@ -3,5 +3,7 @@ Section
 
 This section is about something
 
-.. contents::
-   :local:
+.. toctree::
+   :maxdepth: 2
+
+   document
