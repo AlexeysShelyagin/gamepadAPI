@@ -22,6 +22,13 @@ exclude_patterns = []
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
+html_theme = "sphinx_rtd_theme"
 
-html_theme = 'alabaster'
+# Optional: set theme options for nicer defaults
+html_theme_options = {
+    "navigation_depth": 4,
+    "collapse_navigation": False,
+    "style_external_links": True,
+}
+
 html_static_path = ['_static']
