@@ -1,6 +1,6 @@
 #include "ui.h"
 
-#include "gamepadAPI.h"
+#include "DevelDeckAPI.h"
 
 String file_mngr_trim(String filename, uint16_t max_len){
     if(filename.length() <= max_len)
@@ -30,10 +30,10 @@ uint8_t Gamepad_UI::main_menu(bool game_active, bool game_select_active, uint8_t
     bool update_disp = true;
     bool quit = false;
 
-    uint8_t cursor = init_cursor % 3;
+    Gamepad_canvas_t::graphics_params_t init_graphics = gamepad.canvas -> graphicsParams();
+    gamepad.canvas -> setDefaultGraphicsParams();
 
-    uint8_t text_size = gamepad.canvas -> textsize;
-    uint32_t text_color = gamepad.canvas -> textcolor;
+    uint8_t cursor = init_cursor % 3;
 
     uint16_t dims[][4] = {
         {120, 100, 80, 40},
@@ -53,12 +53,12 @@ uint8_t Gamepad_UI::main_menu(bool game_active, bool game_select_active, uint8_t
         while(gamepad.buttons.event_available()){
             uint8_t* event = gamepad.buttons.get_button_event();
 
-            if(event[L_LEFT_BUT_ID] == BUT_PRESSED)
+            if(event[LEFT_BUT_ID] == BUT_PRESSED)
                 cursor = buttons[cursor].left_id;
-            if(event[L_RIGHT_BUT_ID] == BUT_PRESSED)
+            if(event[RIGHT_BUT_ID] == BUT_PRESSED)
                 cursor = buttons[cursor].right_id;
 
-            if(event[R_UP_BUT_ID] == BUT_PRESSED)
+            if(event[A_BUT_ID] == BUT_PRESSED)
                 quit = true;
             if(event[MENU_BUT_ID] == BUT_PRESSED){
                 cursor = 0;
@@ -91,8 +91,7 @@ uint8_t Gamepad_UI::main_menu(bool game_active, bool game_select_active, uint8_t
         gamepad.give_access_to_subprocess();
     }
 
-    gamepad.canvas -> setTextSize(text_size);
-    gamepad.canvas -> setTextColor(text_color);
+    gamepad.canvas -> setGraphicsParams(init_graphics);
 
     return cursor;
 }
@@ -103,13 +102,13 @@ file_mngr_t Gamepad_UI::file_manager(bool selecting_game, String root){
     bool is_game_folder = false;
     bool quit = false;
 
-    uint8_t initial_text_size = gamepad.canvas -> textsize;
-    uint32_t initial_color = gamepad.canvas -> textcolor;
-    uint8_t initial_font = gamepad.canvas -> getFontID();
+    Gamepad_canvas_t::graphics_params_t init_graphics = gamepad.canvas -> graphicsParams();
+    gamepad.canvas -> setDefaultGraphicsParams();
     gamepad.canvas -> setFont(0);
     gamepad.canvas -> setTextWrap(false);
     gamepad.canvas -> setTextSize(1);
     gamepad.canvas -> setTextColor(TFT_WHITE);
+
     uint16_t orig_x = (gamepad.canvas -> width() - FILE_MANAGER_W) / 2;
     uint16_t orig_y = (gamepad.canvas -> height() - FILE_MANAGER_H) / 2;
     gamepad.canvas -> setOrigin(orig_x, orig_y);
@@ -127,7 +126,7 @@ file_mngr_t Gamepad_UI::file_manager(bool selecting_game, String root){
     Gamepad_SD_card file_manager;
     file_manager.init(root);
 
-    game_config_t *game_config = new game_config_t();
+    Game_config_t *game_config = new Game_config_t();
 
     file_mngr_t res = {"", "", nullptr};
     
@@ -136,7 +135,7 @@ file_mngr_t Gamepad_UI::file_manager(bool selecting_game, String root){
             uint8_t* buttons = gamepad.buttons.get_button_event();
             
             if(items_n != 0){
-                if(buttons[L_DOWN_BUT_ID] == BUT_PRESSED){
+                if(buttons[DOWN_BUT_ID] == BUT_PRESSED){
                     cursor.top() = (cursor.top() + items_n + 1) % items_n;
 
                     if(cursor.top() >= scroll.top() + max_items)
@@ -145,7 +144,7 @@ file_mngr_t Gamepad_UI::file_manager(bool selecting_game, String root){
                         scroll.top() = 0;
                 }
 
-                if(buttons[L_UP_BUT_ID] == BUT_PRESSED){
+                if(buttons[UP_BUT_ID] == BUT_PRESSED){
                     cursor.top() = (cursor.top() + items_n - 1) % items_n;
 
                     if(cursor.top() < scroll.top())
@@ -154,7 +153,7 @@ file_mngr_t Gamepad_UI::file_manager(bool selecting_game, String root){
                         scroll.top() = max((int) items_n - max_items, 0);
                 }
 
-                if(buttons[L_RIGHT_BUT_ID] == BUT_PRESSED || buttons[R_UP_BUT_ID] == BUT_PRESSED){
+                if(buttons[RIGHT_BUT_ID] == BUT_PRESSED || buttons[A_BUT_ID] == BUT_PRESSED){
                     if(is_game_folder){
                         res = {file_manager.current_dir(), GAME_CONFIG_FILE_NAME, game_config};
                         quit = true;
@@ -174,7 +173,7 @@ file_mngr_t Gamepad_UI::file_manager(bool selecting_game, String root){
                 }
             }
 
-            if(buttons[L_LEFT_BUT_ID] == BUT_PRESSED || buttons[R_DOWN_BUT_ID] == BUT_PRESSED){
+            if(buttons[LEFT_BUT_ID] == BUT_PRESSED || buttons[B_BUT_ID] == BUT_PRESSED){
                 if(file_manager.open_root_dir()){
                     update_dir = true;
                     cursor.pop();
@@ -189,7 +188,7 @@ file_mngr_t Gamepad_UI::file_manager(bool selecting_game, String root){
                     res = {file_manager.current_dir(), dir[cursor.top()].name, nullptr};
                 quit = true;
             }
-            if(buttons[R_UP_BUT_ID] == BUT_PRESSED && !selecting_game && dir[cursor.top()].type == IS_FOLDER){
+            if(buttons[A_BUT_ID] == BUT_PRESSED && !selecting_game && dir[cursor.top()].type == IS_FOLDER){
                 res = {file_manager.current_dir(), dir[cursor.top()].name, nullptr};
                 quit = true;
             }
@@ -250,7 +249,7 @@ file_mngr_t Gamepad_UI::file_manager(bool selecting_game, String root){
                     gamepad.canvas -> setTextSize(1);
                     gamepad.canvas -> setCursor(4, FILE_MANAGER_H - gamepad.canvas -> fontHeight() - 8);
                     gamepad.canvas -> setTextColor(TFT_RED);
-                    gamepad.canvas -> print("Unsupported on your device");
+                    gamepad.canvas -> print(TXT_USUPPORTED_ON_DEVICE);
                     gamepad.canvas -> setTextColor(TFT_WHITE);
                 }
 
@@ -292,10 +291,7 @@ file_mngr_t Gamepad_UI::file_manager(bool selecting_game, String root){
     if(!is_game_folder)
         delete game_config;
     
-    gamepad.canvas -> setFont(initial_font);
-    gamepad.canvas -> setTextSize(initial_text_size);
-    gamepad.canvas -> setTextColor(initial_color);
-    gamepad.canvas -> setOrigin(0, 0);
+    gamepad.canvas -> setGraphicsParams(init_graphics);
 
     return res;
 }
@@ -315,7 +311,7 @@ void render_setting_param(String value, uint16_t x, uint16_t y, bool active){
     gamepad.canvas -> setTextColor(TFT_WHITE);
 }
 
-bool Gamepad_UI::settings(system_data_t &data){
+uint8_t Gamepad_UI::settings(System_data_t &data){
     bool update_disp = true;
     bool quit = false;
     bool changes = false;
@@ -324,12 +320,12 @@ bool Gamepad_UI::settings(system_data_t &data){
     uint8_t scroll = 0;
     uint8_t selected;
 
-    uint8_t initial_text_size = gamepad.canvas -> textsize;
-    uint32_t initial_text_color = gamepad.canvas -> textcolor;
+    Gamepad_canvas_t::graphics_params_t init_graphics = gamepad.canvas -> graphicsParams();
+    gamepad.canvas -> setDefaultGraphicsParams();
     gamepad.canvas -> setTextSize(2);
     gamepad.canvas -> setTextColor(TFT_WHITE);
 
-    String setting_names[] = {"Buzz. vol: ", "Brightness: ", "Vibro: ", "Factory reset"};
+    String setting_names[] = {TXT_BUZZ_VOL, TXT_BRIGHTNESS, TXT_VIBRO, TXT_BATT_CALIBR, TXT_BATT_LIFETIME, TXT_FACTORY_RESET};
     uint8_t settings_n = sizeof(setting_names) / sizeof(String);
     selected = settings_n;
     uint8_t line_h = round(gamepad.canvas -> fontHeight() * 1.5);
@@ -340,7 +336,7 @@ bool Gamepad_UI::settings(system_data_t &data){
         while(gamepad.buttons.event_available()){
             uint8_t* buttons = gamepad.buttons.get_button_event();
 
-            if(buttons[L_DOWN_BUT_ID] == BUT_PRESSED){
+            if(buttons[DOWN_BUT_ID] == BUT_PRESSED){
                 if(selected == settings_n){
                     cursor = (cursor + settings_n + 1) % settings_n;
 
@@ -351,7 +347,7 @@ bool Gamepad_UI::settings(system_data_t &data){
                 }
             }
 
-            if(buttons[L_UP_BUT_ID] == BUT_PRESSED){
+            if(buttons[UP_BUT_ID] == BUT_PRESSED){
                 if(selected == settings_n){
                     cursor = (cursor + settings_n - 1) % settings_n;
 
@@ -362,21 +358,21 @@ bool Gamepad_UI::settings(system_data_t &data){
                 }
             }
 
-            if(buttons[L_LEFT_BUT_ID] == BUT_PRESSED){
+            if(buttons[LEFT_BUT_ID] == BUT_PRESSED){
                 if(selected != settings_n)
                     change -= 1;
             }
 
-            if(buttons[L_RIGHT_BUT_ID] == BUT_PRESSED){
+            if(buttons[RIGHT_BUT_ID] == BUT_PRESSED){
                 if(selected != settings_n)
                     change += 1;
             }
 
-            if(buttons[R_DOWN_BUT_ID] == BUT_PRESSED || buttons[MENU_BUT_ID] == BUT_PRESSED){
+            if(buttons[B_BUT_ID] == BUT_PRESSED || buttons[MENU_BUT_ID] == BUT_PRESSED){
                 if(selected == settings_n){
                     if(changes){
                         std::vector < String > optns = {"Save", "Discard"};
-                        changes = !message_box("\nSave changes?", optns);
+                        changes = !message_box(TXT_SAVE_MSG, optns);
                     }
                     quit = true;
                 }
@@ -384,7 +380,7 @@ bool Gamepad_UI::settings(system_data_t &data){
                     selected = settings_n;
             }
 
-            if(buttons[R_UP_BUT_ID] == BUT_PRESSED){
+            if(buttons[A_BUT_ID] == BUT_PRESSED){
                 if(selected == settings_n)
                     selected = cursor;
             }
@@ -394,20 +390,29 @@ bool Gamepad_UI::settings(system_data_t &data){
 
         if(quit)
             break;
-        
+        else;
+
         if(selected == 3){
+            gamepad.clear_canvas();
+            gamepad.canvas -> setCursor(0, 0);
+            gamepad.canvas -> setTextSize(2);
+            gamepad.canvas -> setTextWrap(1);
+            gamepad.canvas -> print(BATTERY_CALIBRATION_ALERT);
+            gamepad.update_display();
+
+            std::vector < String > optns = {"Cancel", "Calibrate"};
+            if(message_box("", optns, 140, 30, 0, 100))
+                return 3;
+            selected = settings_n;
+        }
+        else if(selected == 5){
             std::vector < String > optns = {"No", "Yes"};
-            if(message_box(FACTORY_RESET_MSG, optns)){
-                Gamepad_SD_card fs;
-                if(fs.init("/") == Gamepad_SD_card::SD_OK){
-                    fs.remove_file(GAMEPAD_DATA_FILE_NAME, true);
-                    ESP.restart();
-                }
-            }
+            if(message_box(FACTORY_RESET_MSG, optns))
+                return 2;
             selected = settings_n;
         }
         
-        if(change != 0){
+        else if(change != 0){
             changes = true;
             switch (selected){
             case 0:
@@ -441,11 +446,22 @@ bool Gamepad_UI::settings(system_data_t &data){
                     render_setting_param((data.buzzer_volume == 0) ? "OFF" : String(data.buzzer_volume), param_x, param_y, (i == selected));
                     break;
                 case 1:
-                    render_setting_param(String(data.brightness), SETTINGS_W - 10, (i - scroll) * line_h, (i == selected));
+                    render_setting_param(String(data.brightness), param_x, param_y, (i == selected));
                     break;
                 case 2:
                     render_setting_param((data.vibro_strength == 0) ? "OFF" : String(data.vibro_strength), param_x, param_y, (i == selected));
                     break;
+                case 4:
+                    String tmp;
+                    if(data.battery_lifetime == 0)
+                        tmp = "undef";
+                    else{
+                        uint8_t h = data.battery_lifetime / 60;
+                        uint8_t m = data.battery_lifetime % 60;
+                        tmp = String(h) + "h" + String(m) + "m";
+                    }
+                    gamepad.canvas -> setCursor(param_x - gamepad.canvas -> textWidth(tmp), param_y);
+                    gamepad.canvas -> print(tmp);
                 }
 
                 gamepad.canvas -> println();
@@ -469,6 +485,8 @@ bool Gamepad_UI::settings(system_data_t &data){
         gamepad.give_access_to_subprocess();
     }
 
+    gamepad.canvas -> setGraphicsParams(init_graphics);
+
     return changes;
 }
 
@@ -489,14 +507,16 @@ void render_msgbox_button(Gamepad_UI_button *button, uint8_t skin, void* paramet
     params -> canvas -> drawCentreString(params -> text, button -> x + button -> w / 2, button -> y + 3, 1);
 }
 
-uint8_t Gamepad_UI::message_box(String msg, std::vector < String > actions){
+uint8_t Gamepad_UI::message_box(String msg, std::vector < String > actions, uint16_t w, uint16_t h, int16_t dx, int16_t dy){
     bool quit = false;
     bool update_disp = true;
     uint8_t cursor = 0;
     
-    Gamepad::layer_id_t layer_id = gamepad.create_layer(200, 100, 60, 70, 1);
+    if(w == 0) w = 200;
+    if(h == 0) h = 100;
+    Gamepad::layer_id_t layer_id = gamepad.create_layer(w, h, dx + (DISP_WIDTH - w) / 2, dy + (DISP_HEIGHT - h) / 2, 1);
     if(!gamepad.layer_exists(layer_id)){
-        Serial.println("ERROR: unable to create message box");
+        Serial.println(TEXT_UNABLE_CREATE_MSGBOX);
         return 0;
     }
 
@@ -513,13 +533,13 @@ uint8_t Gamepad_UI::message_box(String msg, std::vector < String > actions){
         actions.push_back(MSG_BOX_DEFAULT_ACTION);
     
     uint8_t buttons_n = actions.size();
-    uint16_t indent = round(200.0 / buttons_n);
+    uint16_t indent = round((float) w / buttons_n);
     uint16_t buttons_h = gamepad.layer(layer_id) -> fontHeight() + 4;
 
     Gamepad_UI_button buttons[buttons_n];
     for(uint8_t i = 0; i < buttons_n; i++){
         uint16_t text_w = gamepad.layer(layer_id) -> textWidth(actions[i]);
-        buttons[i] = Gamepad_UI_button(i, indent * (0.5 + i) - (text_w / 2 + 3), 78, text_w + 6, buttons_h);
+        buttons[i] = Gamepad_UI_button(i, indent * (0.5 + i) - (text_w / 2 + 3), h - buttons_h - 8, text_w + 6, buttons_h);
         buttons[i].set_neighbours(-1, -1, (i + buttons_n - 1) % buttons_n, (i + buttons_n + 1) % buttons_n);
         buttons[i].assign_render_function(render_msgbox_button);
     }
@@ -532,16 +552,16 @@ uint8_t Gamepad_UI::message_box(String msg, std::vector < String > actions){
         while(gamepad.buttons.event_available()){
             uint8_t* event = gamepad.buttons.get_button_event();
             
-            if(event[L_LEFT_BUT_ID] == BUT_PRESSED){
+            if(event[LEFT_BUT_ID] == BUT_PRESSED){
                 cursor = buttons[cursor].left_id;
                 update_disp = true;
             }
-            if(event[L_RIGHT_BUT_ID] == BUT_PRESSED){
+            if(event[RIGHT_BUT_ID] == BUT_PRESSED){
                 cursor = buttons[cursor].right_id;
                 update_disp = true;
             }
 
-            if(event[R_UP_BUT_ID] == BUT_PRESSED)
+            if(event[A_BUT_ID] == BUT_PRESSED)
                 quit = true;
             
         }
@@ -552,12 +572,12 @@ uint8_t Gamepad_UI::message_box(String msg, std::vector < String > actions){
         if(update_disp){
             gamepad.clear_layer(layer_id);
 
-            gamepad.layer(layer_id) -> drawRect(0, 0, 200, 100, TFT_WHITE);
+            gamepad.layer(layer_id) -> drawRect(0, 0, w, h, TFT_WHITE);
 
             gamepad.layer(layer_id) -> setTextSize(2);
             gamepad.layer(layer_id) -> setTextColor(TFT_WHITE);
             for(uint8_t i = 0; i < msg_lines.size(); i++)
-                gamepad.layer(layer_id) -> drawCentreString(msg_lines[i], 100, 5 + i * font_h, 1);
+                gamepad.layer(layer_id) -> drawCentreString(msg_lines[i], w / 2, 5 + i * font_h, 1);
             
             for(uint8_t i = 0; i < buttons_n; i++){
                 msgbox_buttons_params_t but_params = {gamepad.layer(layer_id), actions[i]};
@@ -594,16 +614,16 @@ void notification_destructor(void* params){
     vTaskDelete(NULL);
 }
 
-void Gamepad_UI::notification(String msg){
+bool Gamepad_UI::notification(String msg){
     if(notification_handler != NULL && eTaskGetState(notification_handler) == eBlocked){
-        Serial.println("ERROR: unable to create notification");
-        return;
+        Serial.println(TEXT_UNABLE_CREATE_NOTIFF);
+        return 0;
     }
 
     Gamepad::layer_id_t layer_id = gamepad.create_layer(200, 100, 60, 70, 1);
     if(!gamepad.layer_exists(layer_id)){
-        Serial.println("ERROR: unable to create message box");
-        return;
+        Serial.println(TEXT_UNABLE_CREATE_MSGBOX);
+        return 0;
     }
 
     std::vector < String > msg_lines(1, "");
@@ -638,13 +658,15 @@ void Gamepad_UI::notification(String msg){
         &notification_handler,
         xPortGetCoreID()
     );
+
+    return 1;
 }
 
-void Gamepad_UI::init_game_downloading_screen(game_config_t game_data, String dir){
+void Gamepad_UI::init_game_downloading_screen(Game_config_t game_data, String dir){
     gamepad.clear_canvas();
 
+    gamepad.canvas -> setDefaultGraphicsParams();
     gamepad.canvas -> setTextSize(2);
-    gamepad.canvas -> setTextColor(TFT_WHITE);
 
     uint16_t cursor_x = (gamepad.canvas -> width() - gamepad.canvas -> textWidth(game_data.name)) / 2;
     uint16_t y0 = 20;
@@ -691,8 +713,8 @@ void Gamepad_UI::game_downloading_screen(uint8_t percentage){
 }
 
 void Gamepad_UI::on_charge_screen(bool invert){
-    uint8_t initial_font_size = gamepad.canvas -> textsize;
-    uint32_t initial_text_color = gamepad.canvas -> textcolor;
+    Gamepad_canvas_t::graphics_params_t init_graphics = gamepad.canvas -> graphicsParams();
+    gamepad.canvas -> setDefaultGraphicsParams();
 
     gamepad.canvas -> fillSprite((invert) ? TFT_WHITE : TFT_BLACK);
 
@@ -703,9 +725,10 @@ void Gamepad_UI::on_charge_screen(bool invert){
     
     gamepad.update_display();
 
-    gamepad.canvas -> setTextSize(initial_font_size);
-    gamepad.canvas -> setTextColor(initial_text_color);
+    gamepad.canvas -> setGraphicsParams(init_graphics);
 }
+
+
 
 
 
