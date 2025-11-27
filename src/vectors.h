@@ -20,6 +20,7 @@ public:
 
     float mod();
     vec2 norm();
+    vec2 fast_norm();
 
     float dot(vec2 vec);
     float cross_2d(vec2 vec);
@@ -43,6 +44,7 @@ public:
 
     float mod();
     vec3 norm();
+    vec3 fast_norm();
 
     float dot(vec3 vec);
     vec3 cross(vec3 vec);
