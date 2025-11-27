@@ -255,24 +255,45 @@ enum buttons_id{
 
 
 
-#define GAMEPAD_DATA_FILE_NAME "/gamepad.dat"
-#define GAME_CONFIG_FILE_NAME "game.ini"
+const char GAMEPAD_DATA_FILE_NAME[] PROGMEM = "/gamepad.dat";
+const char GAME_CONFIG_FILE_NAME[] PROGMEM = "game.ini";
 
 
 
-#define API_VERSION "0.0.1"
+const char API_VERSION[] PROGMEM = "0.0.1";
 
 
 
 // ================= Dialogue boxes =======================
 
-#define GAME_FILES_NOT_FOUND_MSG "Game files\nnot found.\nLocate them?"
-#define NOT_GAME_FOLDER_MSG "Not a game\n folder selected"
-#define NO_SD_CARD_MSG "SD card is not\ninserted"
-#define FACTORY_RESET_MSG "Perform factory\nreset?\n(Console will\n restart)"
-#define BATTERY_CALIBRATION_MSG "Battery is\ncalibrating"
-#define BATTERY_CALIBRATION_ALERT "To calibrate battery:\n 1. Make sure battery is fully charged\n 2. Do not power off gamepad until battery fully discharges\n 3. Do not connect the charger\n\n (You can use the gamepad during the calibration)"
+const char GAME_FILES_NOT_FOUND_MSG[] PROGMEM = "Game files\nnot found.\nLocate them?";
+const char NOT_GAME_FOLDER_MSG[] PROGMEM = "Not a game\n folder selected";
+const char NO_SD_CARD_MSG[] PROGMEM = "SD card is not\ninserted";
+const char FACTORY_RESET_MSG[] PROGMEM = "Perform factory\nreset?\n(Console will\n restart)";
+const char BATTERY_CALIBRATION_MSG[] PROGMEM = "Battery is\ncalibrating";
+const char BATTERY_CALIBRATION_ALERT[] PROGMEM = "To calibrate battery:\n 1. Make sure battery is fully charged\n 2. Do not power off gamepad until battery fully discharges\n 3. Do not connect the charger\n\n (You can use the gamepad during the calibration)";
 
+
+// ================= UI text =======================
+
+const char TXT_FAILED_CALIBR[] PROGMEM = "Failed to\ncalibrate battery";
+const char TXT_UNABLE_LOAD_SYS_SETTINGS[] PROGMEM = "Unable to load\nsystem settings";
+const char TXT_DISPAY_FAILED[] PROGMEM = "ERROR: unable to initialize display";
+const char TXT_SD_FAILED[] PROGMEM = "ERROR: failed to init SD card";
+const char TXT_SD_DISCONNECT[] PROGMEM = "ERROR: SD is disconnected";
+const char TXT_SETTINGS_SAVE_WARINING[] PROGMEM = "Settings won't\nbe saved\nafter reset";
+const char TXT_UNSUPPORTED_DEVICE[] PROGMEM = "Unsupported on\nyour device\n";
+
+const char TXT_USUPPORTED_ON_DEVICE[] PROGMEM = "Unsupported on your device";
+const char TXT_BUZZ_VOL[] PROGMEM = "Buzz. vol:";
+const char TXT_BRIGHTNESS[] PROGMEM = "Brightness: ";
+const char TXT_VIBRO[] PROGMEM = "Vibro: ";
+const char TXT_BATT_CALIBR[] PROGMEM = "Battery calibration";
+const char TXT_BATT_LIFETIME[] PROGMEM = "Battery lifetime: ";
+const char TXT_FACTORY_RESET[] PROGMEM = "Factory reset";
+const char TXT_SAVE_MSG[] PROGMEM = "\nSave changes?";
+const char TEXT_UNABLE_CREATE_MSGBOX[] PROGMEM = "ERROR: unable to create message box";
+const char TEXT_UNABLE_CREATE_NOTIFF[] PROGMEM = "ERROR: unable to create notification";
 
 
 // ##################################################################################

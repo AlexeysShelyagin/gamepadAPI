@@ -249,7 +249,7 @@ file_mngr_t Gamepad_UI::file_manager(bool selecting_game, String root){
                     gamepad.canvas -> setTextSize(1);
                     gamepad.canvas -> setCursor(4, FILE_MANAGER_H - gamepad.canvas -> fontHeight() - 8);
                     gamepad.canvas -> setTextColor(TFT_RED);
-                    gamepad.canvas -> print("Unsupported on your device");
+                    gamepad.canvas -> print(TXT_USUPPORTED_ON_DEVICE);
                     gamepad.canvas -> setTextColor(TFT_WHITE);
                 }
 
@@ -325,7 +325,7 @@ uint8_t Gamepad_UI::settings(System_data_t &data){
     gamepad.canvas -> setTextSize(2);
     gamepad.canvas -> setTextColor(TFT_WHITE);
 
-    String setting_names[] = {"Buzz. vol: ", "Brightness: ", "Vibro: ", "Battery calibration", "Battery lifetime: ", "Factory reset"};
+    String setting_names[] = {TXT_BUZZ_VOL, TXT_BRIGHTNESS, TXT_VIBRO, TXT_BATT_CALIBR, TXT_BATT_LIFETIME, TXT_FACTORY_RESET};
     uint8_t settings_n = sizeof(setting_names) / sizeof(String);
     selected = settings_n;
     uint8_t line_h = round(gamepad.canvas -> fontHeight() * 1.5);
@@ -372,7 +372,7 @@ uint8_t Gamepad_UI::settings(System_data_t &data){
                 if(selected == settings_n){
                     if(changes){
                         std::vector < String > optns = {"Save", "Discard"};
-                        changes = !message_box("\nSave changes?", optns);
+                        changes = !message_box(TXT_SAVE_MSG, optns);
                     }
                     quit = true;
                 }
@@ -516,7 +516,7 @@ uint8_t Gamepad_UI::message_box(String msg, std::vector < String > actions, uint
     if(h == 0) h = 100;
     Gamepad::layer_id_t layer_id = gamepad.create_layer(w, h, dx + (DISP_WIDTH - w) / 2, dy + (DISP_HEIGHT - h) / 2, 1);
     if(!gamepad.layer_exists(layer_id)){
-        Serial.println("ERROR: unable to create message box");
+        Serial.println(TEXT_UNABLE_CREATE_MSGBOX);
         return 0;
     }
 
@@ -616,13 +616,13 @@ void notification_destructor(void* params){
 
 bool Gamepad_UI::notification(String msg){
     if(notification_handler != NULL && eTaskGetState(notification_handler) == eBlocked){
-        Serial.println("ERROR: unable to create notification");
+        Serial.println(TEXT_UNABLE_CREATE_NOTIFF);
         return 0;
     }
 
     Gamepad::layer_id_t layer_id = gamepad.create_layer(200, 100, 60, 70, 1);
     if(!gamepad.layer_exists(layer_id)){
-        Serial.println("ERROR: unable to create message box");
+        Serial.println(TEXT_UNABLE_CREATE_MSGBOX);
         return 0;
     }
 

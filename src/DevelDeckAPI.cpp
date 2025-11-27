@@ -41,7 +41,7 @@ void battery_listener(void *params){
                                 float *levels = batt -> finish_calibration();
 
                                 if(levels == nullptr){
-                                    ui.notification("Failed to\ncalibrate battery");
+                                    ui.notification(TXT_FAILED_CALIBR);
                                     vTaskDelay(pdMS_TO_TICKS(2000));
                                 }
                                 else{
@@ -76,7 +76,7 @@ void battery_listener(void *params){
 
             if(batt -> is_calibrating()){
                 if(batt -> calibration_failed()){
-                    if(ui.notification("Battery\ncalibration\nfailed"))
+                    if(ui.notification(TXT_FAILED_CALIBR))
                         batt -> finish_calibration();
                 }
             }
@@ -201,7 +201,7 @@ void Gamepad::init(void (*game_func_)()){
 
     init_system_settings();
     if(sys_param(SYSTEM_SETTINGS_TO_DEFAULT) || !sys_param(SD_ENABLED)){
-        ui.notification("Unable to load\nsystem settings");
+        ui.notification(TXT_UNABLE_LOAD_SYS_SETTINGS);
         save_system_settings();
     }
     else
@@ -233,7 +233,7 @@ void Gamepad::init_display(){
 
     canvas = disp -> get_canvas_reference();
     if(!(disp -> init())){
-        Serial.println("ERROR: unable to initialize display");
+        Serial.println(TXT_DISPAY_FAILED);
         return;
     }
 
@@ -307,11 +307,11 @@ bool Gamepad::init_SD(){
     uint8_t resp = sd_card.init();
 
     if(resp == Gamepad_SD_card::SD_FAILED){
-        Serial.println("ERROR: failed to init SD card");
+        Serial.println(TXT_SD_FAILED);
         return 0;
     }
     if(resp == Gamepad_SD_card::SD_DISCONNECT){
-        Serial.println("ERROR: SD is disconnected");
+        Serial.println(TXT_SD_DISCONNECT);
         return 0;
     }
 
@@ -495,7 +495,7 @@ void Gamepad::main_menu(){
                 save_system_settings();
 
                 if(!sys_param(SD_ENABLED))
-                    ui.notification("Settings won't\nbe saved\nafter reset");
+                    ui.notification(TXT_SETTINGS_SAVE_WARINING);
             }
             if(resp == 1 || resp == 0)
                 apply_system_settings();
@@ -532,7 +532,7 @@ void Gamepad::select_game_menu(){
         return;
 
     if(file.game_config -> minimum_flash * 1024 * 1024 > ESP.getFlashChipSize()){
-        ui.notification("Unsupported on\nyour device\n" + String(file.game_config -> minimum_flash) + "MB required");
+        ui.notification(TXT_UNSUPPORTED_DEVICE + String(file.game_config -> minimum_flash) + "MB required");
         return;
     }
 
@@ -669,7 +669,6 @@ void Gamepad::save_system_settings(){
     }
     else{
         system_data -> battery_levels_n = 0;
-        Serial.println("battery_not_callibrated");
     }
     system_data -> battery_lifetime = batt.lifetime;
 
