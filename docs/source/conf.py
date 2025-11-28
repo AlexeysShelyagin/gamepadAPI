@@ -5,6 +5,7 @@
 
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
+import sphinx_rtd_theme
 
 project = 'gamepadAPI'
 copyright = '2025, DevelTeam'
@@ -23,6 +24,7 @@ exclude_patterns = []
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 html_theme = "sphinx_rtd_theme"
+html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 
 # Optional: set theme options for nicer defaults
 html_theme_options = {
