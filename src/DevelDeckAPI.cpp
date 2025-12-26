@@ -1,5 +1,7 @@
 #include "DevelDeckAPI.h"
 
+#include "SPIFFS.h"
+
 
 // ================================== GLOBAL GAMEPAD VARIABLE ====================================
 
@@ -198,10 +200,12 @@ void Gamepad::init(void (*game_func_)()){
     init_battery();
     
     init_SD();
+    init_SPIFFS();
+    //SPIFFS.remove(GAMEPAD_DATA_FILE_NAME);
 
     init_system_settings();
-    if(sys_param(SYSTEM_SETTINGS_TO_DEFAULT) || !sys_param(SD_ENABLED)){
-        ui.notification(TXT_UNABLE_LOAD_SYS_SETTINGS);
+    if(sys_param(SYSTEM_SETTINGS_TO_DEFAULT)){
+        Serial.println("select your board menu");           // TODO: make here menu with board selection
         save_system_settings();
     }
     else
@@ -316,6 +320,16 @@ bool Gamepad::init_SD(){
     }
 
     sys_param(SD_ENABLED, 1);
+    return 1;
+}
+
+bool Gamepad::init_SPIFFS(){
+    if(!SPIFFS.begin(true)){
+        Serial.println(TXT_SPIFFS_FAILED);
+        return 0;
+    }
+    
+    sys_param(SPIFFS_ENABLED, 1);
     return 1;
 }
 
@@ -500,7 +514,7 @@ void Gamepad::main_menu(){
             if(resp == 1 || resp == 0)
                 apply_system_settings();
             if(resp == 2){
-                sd_card.remove_file(GAMEPAD_DATA_FILE_NAME, true);
+                SPIFFS.remove(GAMEPAD_DATA_FILE_NAME);
                 ESP.restart();
             }
             if(resp == 3){
@@ -592,33 +606,32 @@ void Gamepad::sys_param(sys_param_t id, bool val){
 
 
 void Gamepad::init_system_settings(){
-    if(!sys_param(SD_ENABLED)){
-        system_data = new System_data_t;
+    system_data = new System_data_t;
+
+    if(!sys_param(SPIFFS_ENABLED))
         return;
-    }
 
-    if(!sd_card.exists(GAMEPAD_DATA_FILE_NAME, true)){
-        sd_card.create_file(GAMEPAD_DATA_FILE_NAME, true);
-    }
-
-    sd_card.open_file(GAMEPAD_DATA_FILE_NAME, true);
-    system_data = sd_card.file_read_variable < System_data_t > ();
-    if(system_data == nullptr){
+    File sys_data = SPIFFS.open(GAMEPAD_DATA_FILE_NAME);
+    
+    if(sys_data.size() < sizeof(System_data_t)){
         delete system_data;
 
-        sd_card.close_file();
-        sd_card.open_file(GAMEPAD_DATA_FILE_NAME, "w", true);
+        sys_data.close();
+        sys_data = SPIFFS.open(GAMEPAD_DATA_FILE_NAME, "w");
 
         System_data_t *empty_data = new System_data_t;
-        sd_card.file_write(empty_data, sizeof(System_data_t));
+        sys_data.write((uint8_t *) empty_data, sizeof(System_data_t));
         system_data = empty_data;
 
         sys_param(SYSTEM_SETTINGS_TO_DEFAULT, 1);
     }
+    else
+        sys_data.read((uint8_t *) system_data, sizeof(System_data_t));
 
-    sd_card.close_file();
+    sys_data.close();
 
-    if(sys_param(GAME_FILES_REQ)){
+    
+    if(sys_param(GAME_FILES_REQ) && sys_param(SD_ENABLED)){
         game_path = "";
         for (uint8_t i = 0; i < system_data -> game_path_size; i++)
             game_path += system_data -> game_path[i];
@@ -674,10 +687,10 @@ void Gamepad::save_system_settings(){
 
     if(!sys_param(SD_ENABLED))
         return;
-    
-    sd_card.open_file(GAMEPAD_DATA_FILE_NAME, "w", true);
-    sd_card.file_write(system_data, sizeof(System_data_t));
-    sd_card.close_file();
+
+    File sys_data = SPIFFS.open(GAMEPAD_DATA_FILE_NAME, "w");
+    sys_data.write((uint8_t *) system_data, sizeof(System_data_t));
+    sys_data.close();
 }
 
 

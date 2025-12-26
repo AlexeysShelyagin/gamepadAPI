@@ -35,6 +35,7 @@ struct System_data_t{
     uint8_t buzzer_volume;
     uint8_t brightness;
     uint8_t vibro_strength;
+
     uint8_t battery_levels_n;
     float battery_levels[BATTERY_LEVELS];
     uint16_t battery_lifetime;
@@ -49,6 +50,7 @@ class Gamepad{
         BUZZER_ENABLED,
         VIBRO_ENABLED,
         SD_ENABLED,
+        SPIFFS_ENABLED,
         ACCEL_ENABLED,
         GAME_FILES_LOCATED,
         SYSTEM_SETTINGS_TO_DEFAULT,
@@ -85,6 +87,7 @@ class Gamepad{
     bool init_buzzer();
     bool init_vibro();
     void init_battery();
+    bool init_SPIFFS();
 
     bool sys_param(sys_param_t id);
     void sys_param(sys_param_t id, bool val);
