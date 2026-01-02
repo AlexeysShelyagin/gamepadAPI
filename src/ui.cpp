@@ -14,6 +14,58 @@ String file_mngr_trim(String filename, uint16_t max_len){
     return res;
 }
 
+
+
+uint8_t Gamepad_UI::board_selection_menu(){
+    bool update_disp = true;
+    bool quit = false;
+    int8_t cursor = 0;
+    const uint8_t optns_n = 2;
+
+    Gamepad_canvas_t::graphics_params_t init_graphics = gamepad.canvas -> graphicsParams();
+    gamepad.canvas -> setDefaultGraphicsParams();
+
+    while(!quit){
+        while(gamepad.buttons.event_available()){
+            uint8_t* event = gamepad.buttons.get_button_event();
+
+            if(event[LEFT_BUT_ID] == BUT_PRESSED)
+                cursor = (cursor + optns_n - 1) % optns_n;
+            if(event[RIGHT_BUT_ID] == BUT_PRESSED)
+                cursor = (cursor + optns_n + 1) % optns_n;
+
+            if(event[A_BUT_ID] == BUT_PRESSED)
+                quit = true;
+            
+            update_disp = true;
+        }
+
+        if(quit)
+            break;
+
+        if(update_disp){
+            gamepad.clear_canvas();
+
+            gamepad.canvas -> setTextSize(2);
+
+            gamepad.canvas -> drawRect(50, 70, 100, 100, (cursor == 0) ? TFT_GREEN : TFT_WHITE);
+            gamepad.canvas -> drawRect(170, 70, 100, 100, (cursor == 1) ? TFT_GREEN : TFT_WHITE);
+            gamepad.canvas -> drawCentreString("TYPE 1", 100, 120, 1);
+            gamepad.canvas -> drawCentreString("TYPE 2", 220, 120, 1);
+            
+            
+            gamepad.update_display();
+            update_disp = false;
+        }
+
+        gamepad.give_access_to_subprocess();
+    }
+
+    gamepad.canvas -> setGraphicsParams(init_graphics);
+
+    return cursor;
+}
+
 void render_menu_button(Gamepad_UI_button *button, uint8_t skin, void* params){
     String *text = (String *) params;
 

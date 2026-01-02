@@ -23,6 +23,8 @@ class Gamepad_UI{
 public:
     Gamepad_UI() = default;
 
+    uint8_t board_selection_menu();
+
     uint8_t main_menu(bool game_active = true, bool game_select_active = true, uint8_t init_cursor = 0);
 
     file_mngr_t file_manager(bool selecting_game = false, String root = "/");

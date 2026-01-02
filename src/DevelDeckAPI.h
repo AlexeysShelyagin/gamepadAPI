@@ -36,6 +36,13 @@ struct System_data_t{
     uint8_t brightness;
     uint8_t vibro_strength;
 
+    uint8_t hardware_config_id;
+
+    float battery_critical_v;
+    float battery_charging_v;
+    float battery_only_charging_v;
+    float battery_full_v;
+    
     uint8_t battery_levels_n;
     float battery_levels[BATTERY_LEVELS];
     uint16_t battery_lifetime;
@@ -92,9 +99,10 @@ class Gamepad{
     bool sys_param(sys_param_t id);
     void sys_param(sys_param_t id, bool val);
 
-    void init_system_settings();
+    void locate_game();
+    void init_system_data();
     void apply_system_settings();
-    void locate_game_folder();
+    void user_locate_game_folder();
 
     void on_charge_screen();
 
@@ -142,6 +150,7 @@ public:
     void delete_layer(layer_id_t id);
 
 
+    void board_selection_menu();
     void main_menu();
     void select_game_menu();
     String file_manager();
