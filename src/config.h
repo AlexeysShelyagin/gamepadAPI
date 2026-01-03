@@ -85,9 +85,9 @@ enum buttons_id{
 #define ACCEL_SCL_PIN 27
 #define ACCEL_I2C_ADDRESS 0x68
 
-#define ACCEL_INVERT_X_AXIS true
-#define ACCEL_INVERT_Y_AXIS true
-#define ACCEL_INVERT_Z_AXIS false
+#define ACCEL_INVERT_X_AXIS false
+#define ACCEL_INVERT_Y_AXIS false
+#define ACCEL_INVERT_Z_AXIS true
 
 
 
@@ -196,7 +196,7 @@ enum buttons_id{
 
 // Battery voltage is calculated from analog value and converted to RAW voltage
 // However, adjustment function is needed, due to internal resistanse, nonlinearity of ADC etc.
-#define BATTERY_VADJ_FUNC_0(v) v    // best experimental fit
+#define BATTERY_VADJ_FUNC_0(v) v
 
 
 
@@ -229,6 +229,7 @@ enum buttons_id{
 
 // Sensitivity for ±2g in LSB/g
 #define ACCEL_SENSITIVITY 16384.0       // (float) 2^14
+#define ACCEL_CALIBRATION_MEASURE_N 10
 
 
 
