@@ -188,15 +188,15 @@ enum buttons_id{
 
 // =============== HARDWARE ID: 0 =================
 
-#define BATTERY_CRITICAL_V_0 3.55                         // At this voltage device would turn off
+#define BATTERY_CRITICAL_V_0 3.25                         // At this voltage device would turn off
 #define BATTERY_FULL_V_0 4.15                             // Voltage considered as fully charged battery, for proportional charge level calculations
-#define BATTERY_CHARGING_V_0 4.3                          // value above that would mean that device is connected to the charger
-#define BATTERY_ONLY_CHARGING_V_0 4.5                     // voltage above that would mean that devices is connected to charger and powered off (VCC pulled to 5v)
+#define BATTERY_CHARGING_V_0 4.4                          // value above that would mean that device is connected to the charger
+#define BATTERY_ONLY_CHARGING_V_0 4.8                     // voltage above that would mean that devices is connected to charger and powered off (VCC pulled to 5v)
 
 
 // Battery voltage is calculated from analog value and converted to RAW voltage
 // However, adjustment function is needed, due to internal resistanse, nonlinearity of ADC etc.
-#define BATTERY_VADJ_FUNC_0(v) v
+#define BATTERY_VADJ_FUNC_0(v) 1.0824*v + 0.4005
 
 
 

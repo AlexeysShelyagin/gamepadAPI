@@ -86,9 +86,10 @@ vec3 Gamepad_accel::get_accel(){
 }
 
 vec2 Gamepad_accel::get_angles(vec3 &accel){
-    vec2 ang;
-    ang.x = acos(accel.fast_norm().dot(basis_x)) - HALF_PI;
-    ang.y = acos(accel.fast_norm().dot(basis_y)) - HALF_PI;
+    vec2 ang = vec2(
+        acos(accel.fast_norm().dot(basis_x)) - HALF_PI,
+        acos(accel.fast_norm().dot(basis_y)) - HALF_PI
+    );
 
     return ang * RAD_TO_DEG;
 }

@@ -76,7 +76,7 @@ class Gamepad{
     TaskHandle_t display_updater_handler = NULL;
 
     Gamepad_display *disp;
-    Gamepad_battery batt;
+    
     Gamepad_SD_card sd_card;
 
     struct layer_t{
@@ -117,6 +117,8 @@ public:
     Gamepad_vibro vibro;
     Gamepad_accel accel;
     Gamepad_SD_card game_files;
+
+    Gamepad_battery batt; // TODO: move
 
     Gamepad() = default;
 

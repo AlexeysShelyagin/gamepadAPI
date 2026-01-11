@@ -231,7 +231,6 @@ void Gamepad::init(void (*game_func_)()){
     else
         apply_system_settings();
 
-    
     if(buttons.read_state(MENU_BUT_ID))
         main_menu();
     
@@ -258,6 +257,10 @@ void Gamepad::init(void (*game_func_)()){
 void Gamepad::init_display(){
     disp = new Gamepad_display();
 
+    if(system_data -> brightness == 0){
+        system_data -> brightness = BRIGHTNESS_LEVELS;
+        brightness = BRIGHTNESS_LEVELS;
+    }
     set_display_brightness(brightness);
 
     canvas = disp -> get_canvas_reference();
@@ -320,7 +323,7 @@ void Gamepad::init_battery(){
         system_data -> battery_charging_v,
         system_data -> battery_only_charging_v
     );
-    
+
     switch (system_data -> hardware_config_id){
         case 0: batt.set_voltage_adjustment(batt_v_adj_0); break;
         case 1: batt.set_voltage_adjustment(batt_v_adj_1); break;
@@ -546,7 +549,7 @@ void Gamepad::main_menu(){
 
         if(cursor == 0){
             if(sys_param(READY_TO_PLAY))
-                break;
+                break;  
             else{
                 std::vector < String > buttons = {"Ok", "Cancel"};
                 uint8_t response = ui.message_box(GAME_FILES_NOT_FOUND_MSG, buttons);
@@ -562,7 +565,7 @@ void Gamepad::main_menu(){
         if(cursor == 1){
             System_data_t updated_data = *system_data;
             uint8_t resp = ui.settings(updated_data);
-            Serial.println(resp);
+
             if(resp == 1){
                 *system_data = updated_data;
                 save_system_settings();
@@ -746,9 +749,6 @@ void Gamepad::save_system_settings(){
         system_data -> battery_levels_n = 0;
     }
     system_data -> battery_lifetime = batt.lifetime;
-
-    if(!sys_param(SD_ENABLED))
-        return;
 
     File sys_data = SPIFFS.open(GAMEPAD_DATA_FILE_NAME, "w");
     sys_data.write((uint8_t *) system_data, sizeof(System_data_t));
