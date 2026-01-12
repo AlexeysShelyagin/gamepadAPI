@@ -4,9 +4,9 @@
    contain the root `toctree` directive.
 
 
-##########################
+##################################################
 gamepadAPI documentation
-##########################
+##################################################
 
 Add your content using ``reStructuredText`` syntax. See the
 `reStructuredText <https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html>`_
@@ -18,6 +18,14 @@ Sections
 .. toctree::
    :maxdepth: 2
 
-   introduction.rst
-   section/index.rst
+   overview.rst
+   user_guide/index.rst
+   getting_started/index.rst
+   buttons/index.rst
+   display/index.rst
+   UI/index.rst
+   buzzer/index.rst
+   vibro/index.rst
+   accelerometer/index.rst
+   SD_card/index.rst
 

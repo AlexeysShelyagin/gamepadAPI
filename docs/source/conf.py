@@ -31,6 +31,9 @@ html_theme_options = {
     "navigation_depth": 4,
     "collapse_navigation": False,
     "style_external_links": True,
+    'titles_only': False
 }
+
+master_doc = "index"
 
 html_static_path = ['_static']
