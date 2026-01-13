@@ -2,7 +2,7 @@
 Vibro
 #####################
 
-This section is about something
+``gamepad.vibro``
 
 .. toctree::
    :maxdepth: 2

@@ -1,8 +1,8 @@
-#####################
+############################
 Buttons
-#####################
+############################
 
-This section is about something
+``gamepad.buttons``
 
 .. toctree::
    :maxdepth: 2

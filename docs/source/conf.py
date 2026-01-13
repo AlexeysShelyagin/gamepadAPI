@@ -14,7 +14,15 @@ author = 'DevelTeam'
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-extensions = []
+extensions = [
+    "breathe",
+]
+
+breathe_projects = {
+    "DevelDeck-docs": "../doxygen/xml",
+}
+
+breathe_default_project = "DevelDeck-docs"
 
 templates_path = ['_templates']
 exclude_patterns = []

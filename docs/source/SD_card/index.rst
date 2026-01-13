@@ -2,7 +2,7 @@
 SD card
 #####################
 
-This section is about something
+``gamepad.game_files``
 
 .. toctree::
    :maxdepth: 2

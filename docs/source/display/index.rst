@@ -2,7 +2,7 @@
 Display
 #####################
 
-This section is about something
+``gamepad.canvas``
 
 .. toctree::
    :maxdepth: 2

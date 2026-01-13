@@ -12,14 +12,24 @@ Add your content using ``reStructuredText`` syntax. See the
 `reStructuredText <https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html>`_
 documentation for details.
 
-Sections
-===========
+General overview
+==================
 
 .. toctree::
    :maxdepth: 2
 
    overview.rst
    user_guide/index.rst
+
+
+
+API documentation
+===================
+
+.. toctree::
+   :maxdepth: 2
+
+   
    getting_started/index.rst
    buttons/index.rst
    display/index.rst

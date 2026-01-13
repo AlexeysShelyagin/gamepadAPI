@@ -2,7 +2,7 @@
 Buzzer
 #####################
 
-This section is about something
+``gamepad.buzzer``
 
 .. toctree::
    :maxdepth: 2

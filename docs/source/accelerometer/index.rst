@@ -2,7 +2,7 @@
 Accelerometer
 #####################
 
-This section is about something
+``gamepad.accel``
 
 .. toctree::
    :maxdepth: 2
