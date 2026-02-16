@@ -153,10 +153,6 @@ void display_update_thread(void *params){
 
 // ===================================== MAIN LOOP ===============================================
 
-/**
- * @brief Main loop infinetely calls `game_func()` specified in initialization before while maintaining all gamepad system processes.
- * 
- */
 void Gamepad::main_loop(){
     while(true){
         game_func();
@@ -164,10 +160,7 @@ void Gamepad::main_loop(){
         give_access_to_subprocess();
     }
 }
-/**
- * @brief Some system level subprocesses are blocked during `game_func()` handling. Call this function to avoid long-term system delay.
- * 
- */
+
 void Gamepad::give_access_to_subprocess(){
     xSemaphoreGive(semaphore);
     delay(1);
@@ -183,11 +176,6 @@ void Gamepad::give_access_to_subprocess(){
 // ================================ TINITIALIZATION ROUTINE ======================================
 
 
-/**
- * @brief API initialization function. Takes control under the device, managing hardware and system.
- * 
- * @param game_func_ game infitite loop, executes during `Gamepad::main_loop()`
- */
 void Gamepad::init(void (*game_func_)()){
     Serial.begin(115200);
 
@@ -332,10 +320,7 @@ bool Gamepad::init_SD(){
 }
 
 
-/**
- * @brief Call is necessary to initialize SD card. Game won't be launched withoud SD inserted. Otherwise gamepad ignore SD completely.
- * 
- */
+
 void Gamepad::game_files_required(){
     sys_param(GAME_FILES_REQ, 1);
 }
@@ -349,11 +334,6 @@ void Gamepad::game_files_required(){
 
 // ------------------------- Wrappers ----------------------------
 
-/**
- * @brief Battery charge check
- * 
- * @return battery level in range from 0 to `BATTERY_LEVELS`
- */
 uint8_t Gamepad::get_battery_charge(){
     return batt.get_battery_charge();
 }
@@ -365,20 +345,10 @@ uint8_t Gamepad::get_battery_charge(){
 
 // ------------------------- Display -----------------------------
 
-/**
- * @brief Clears image buffer to black
- * 
- */
 void Gamepad::clear_canvas(){
     disp -> clear();
 }
 
-/**
- * @brief Transfers image buffer to display
- * 
- * @note Function takes a while (~37ms at max ESP32 SPI frequency)
- * 
- */
 void Gamepad::update_display(){
     if(!sys_param(DISPLAY_ENABLED))
 		return;
@@ -388,13 +358,6 @@ void Gamepad::update_display(){
         disp -> display_sprite(layers[i] -> canvas, layers[i] -> x, layers[i] -> y);
 }
 
-
-/**
- * @brief Transfers image buffer to display on different core
- * 
- * @note May be unstable if core2 is busy
- * 
- */
 void Gamepad::update_display_threaded(float maintain_fps){
     // abusing RTOS a bit ;)    (meet v-sync issues)
     if(!sys_param(DISPLAY_ENABLED))
@@ -420,23 +383,12 @@ void Gamepad::update_display_threaded(float maintain_fps){
     xSemaphoreGive(semaphore);
 }
 
-/**
- * @brief Checks if it is possible to perform `Gamepad::update_display_threaded()`
- * 
- * @return true: means previous update has finished
- * @return false: if previous update is in progress
- */
 bool Gamepad::update_display_threaded_available(){
     return (xTaskGetHandle("disp") == NULL);
 }
 
 
 
-/**
- * @brief Changes the display backlight brightness
- * 
- * @param brightness_  value in range from 0 to `BRIGHTNESS_LEVELS`
- */
 void Gamepad::set_display_brightness(uint8_t brightness_){
     brightness = brightness_;
 
@@ -448,11 +400,6 @@ void Gamepad::set_display_brightness(uint8_t brightness_){
         disp -> set_brightness(254.0 / (BRIGHTNESS_LEVELS - 1) * (brightness - 1) + 1);
 }
 
-/**
- * @brief returns current display brigtness
- * 
- * @return uint8_t
- */
 uint8_t Gamepad::get_display_brightness(){
     return brightness;
 }
@@ -464,25 +411,6 @@ uint8_t Gamepad::get_display_brightness(){
 
 // --------------------- Display layers --------------------------
 
-/**
- * @brief Creates a layer which will be rendered above the main canvas
- * 
- * @note Creation of the layer creates new image buffer with a size of `W * H * color_depth / 8` bytes. 
- * If there is not enough memory layer won't be created
- * 
- * @note Layers arranged by their creation order
- * 
- * @note Layers are rendered directly from memory separately, which can cause flickering for frequent updates
- * 
- * @param width 
- * @param height 
- * @param x 
- * @param y 
- * @param color_depth  1 | 4 | 8 | 16 bits
- * 
- * @return Gamepad::layer_id_t: pointer to the layer
- * @return nullptr: if layer creation failed
- */
 Gamepad::layer_id_t Gamepad::create_layer(uint16_t width, uint16_t height, uint16_t x, uint16_t y, uint8_t color_depth){
     Gamepad_canvas_t *layer_canvas = disp -> create_sprite(width, height, color_depth);
     if(layer_canvas == nullptr)
@@ -497,34 +425,14 @@ Gamepad::layer_id_t Gamepad::create_layer(uint16_t width, uint16_t height, uint1
     return layer;
 }
 
-/**
- * @brief Checks if layer exists
- * 
- * @param id layer pointer
- * 
- * @return true 
- * @return false 
- */
 bool Gamepad::layer_exists(layer_id_t id){
     return (id != nullptr);
 }
 
-/**
- * @brief Access layer canvas
- * 
- * @param id layer pointer
- * 
- * @return Gamepad_canvas_t*: pointer to the canvas
- */
 Gamepad_canvas_t* Gamepad::layer(layer_id_t id){
     return id -> canvas;
 }
 
-/**
- * @brief Deletes layer with its canvas
- * 
- * @param id layer pointer
- */
 void Gamepad::delete_layer(layer_id_t id){
     disp -> delete_sprite(id -> canvas);
     for(uint8_t i = 0; i < layers.size(); i++){
@@ -537,23 +445,10 @@ void Gamepad::delete_layer(layer_id_t id){
 }
 
 
-/**
- * @brief Fills layer black
- * 
- * @param id layer pointer
- */
 void Gamepad::clear_layer(layer_id_t id){
     disp -> clear_sprite(id ->canvas);
 }
 
-
-/**
- * @brief Changes layer position on display
- * 
- * @param id layer pointer
- * @param new_x 
- * @param new_y 
- */
 void Gamepad::move_layer(layer_id_t id, uint16_t new_x, uint16_t new_y){
     id -> x = new_x;
     id -> y = new_y;
