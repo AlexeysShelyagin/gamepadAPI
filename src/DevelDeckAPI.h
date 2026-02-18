@@ -177,7 +177,8 @@ public:
      * @brief Transfers image buffer to display on different core
      * 
      * @note May be unstable if core2 is busy
-     * 
+     *
+     * @param maintain_fps update will try to maintain stable fps (if render speed is enough)
      */
     void update_display_threaded(float maintain_fps = 0);
 
@@ -270,7 +271,10 @@ public:
     void move_layer(layer_id_t id, uint16_t new_x, uint16_t new_y);
 
 
-
+    /**
+     * @brief Enter gamepad hardware config setup menu
+     * 
+     */
     void board_selection_menu();
 
     /**

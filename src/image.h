@@ -23,7 +23,23 @@ public:
     Image_raw16_t& operator=(const Image_raw16_t&) = delete;
     Image_raw16_t& operator=(Image_raw16_t&& other) noexcept;
 
+
+
+    /**
+     * @brief Reserve memory for the image
+     * 
+     * @param w_ 
+     * @param h_
+     * @param alpha_ set true to store alpha layer
+     * @return true: created successfully
+     * @return false: unable to create, not enough space in heap
+     */
     bool create(uint16_t w_, uint16_t h_, bool alpha_ = false);
+
+    /**
+     * @brief Delete all image data and free the memory
+     * 
+     */
     void clear();
 };
 
@@ -32,6 +48,15 @@ class Image_raw8_t : public Image_raw16_t{
 public:
     Image_raw8_t(Image_raw16_t img);
 
+    /**
+     * @brief Reserve memory for the image
+     * 
+     * @param w_ 
+     * @param h_
+     * @param alpha_ set true to store alpha layer
+     * @return true: created successfully
+     * @return false: unable to create, not enough space in heap
+     */
     bool create(uint16_t w_, uint16_t h_, bool alpha_ = false);
 };
 
