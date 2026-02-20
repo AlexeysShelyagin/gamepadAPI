@@ -2,11 +2,22 @@
 Buzzer
 #####################
 
-``gamepad.buzzer``
+.. contents::
+    :local:
+    :depth: 2
 
-.. toctree::
-   :maxdepth: 2
 
-   tone.rst
-   volume.rst
-   sequence.rst
+Overview
+-----------------
+
+
+Playing tone
+-----------------
+
+
+
+Playing note sequence
+-----------------------
+
+Buzzer vlume
+-----------------

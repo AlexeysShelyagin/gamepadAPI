@@ -2,9 +2,40 @@
 File system (``game_files`` instance)
 #########################################
 
-.. toctree::
-   :maxdepth: 2
 
-   dirs_files.rst
-   read_file.rst
-   write_file.rst
+.. contents::
+    :local:
+    :depth: 2
+
+
+Overview
+-----------------
+
+
+Managing files and dirs
+-------------------------
+
+
+Open directory
+^^^^^^^^^^^^^^^^^^^
+
+
+Open / close file
+^^^^^^^^^^^^^^^^^^^
+
+
+Create directory or file
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Rename
+^^^^^^^^^
+
+Checks
+^^^^^^^^^
+
+
+Reading files
+-----------------
+
+Writing files
+-----------------

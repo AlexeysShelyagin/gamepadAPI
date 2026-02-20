@@ -2,15 +2,36 @@
 Display
 #####################
 
-``gamepad.canvas``
+.. contents::
+    :local:
+    :depth: 2
 
+
+Canvas
+-----------------
+
+
+Display Update
+-----------------
+
+
+Threaded pdate
+-----------------
+
+Brightness
+-----------------
+
+
+Graphics
+-----------------
 .. toctree::
    :maxdepth: 2
 
-   canvas.rst
-   update.rst
-   threaded.rst
-   brightness.rst
    graphics/index.rst
-   layers.rst
-   flickering.rst
+
+
+Layers
+-----------------
+
+Flickering
+-----------------

@@ -62,7 +62,7 @@ public:
     uint8_t* get_button_event();
 
     /**
-     * @brief Checs are there any unhandled buttons events
+     * @brief Checks are there any unhandled buttons events
      * 
      * @return true: unhandled events are present
      * @return false: no new events

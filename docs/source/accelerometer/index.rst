@@ -2,11 +2,22 @@
 Accelerometer
 #####################
 
-``gamepad.accel``
+.. contents::
+    :local:
+    :depth: 2
 
-.. toctree::
-   :maxdepth: 2
 
-   callibration.rst
-   read_incline.rst
-   read_accel.rst
+Overview
+-----------------
+
+
+Operation modes
+-----------------
+
+
+
+Read tilt angles
+-----------------------
+
+Read acceleration
+-----------------

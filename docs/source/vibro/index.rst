@@ -2,10 +2,19 @@
 Vibro
 #####################
 
-``gamepad.vibro``
+.. contents::
+    :local:
+    :depth: 2
 
-.. toctree::
-   :maxdepth: 2
 
-   vibro.rst
-   periodic.rst
+Overview
+-----------------
+
+
+Vibration
+-----------------
+
+
+
+Periodic Vibration
+-----------------------
