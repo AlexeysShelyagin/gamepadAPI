@@ -10,6 +10,7 @@ build:
     - doxygen
   commands:
     - cd docs/Doxygen
+    - ls
     - doxygen Doxyfile
     - cd ../..
 
