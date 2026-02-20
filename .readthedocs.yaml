@@ -10,7 +10,7 @@ build:
     - doxygen
   commands:
     - doxygen docs/Doxygen/Doxyfile
-    - ls -R docs
+    - ls -R ./
 
 # Build documentation in the "docs/" directory with Sphinx
 sphinx:
