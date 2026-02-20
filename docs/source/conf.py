@@ -6,6 +6,10 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 import sphinx_rtd_theme
+import os
+import sys
+
+sys.path.insert(0, os.path.abspath('../doxygen/xml'))
 
 project = 'gamepadAPI'
 copyright = '2025, DevelTeam'
