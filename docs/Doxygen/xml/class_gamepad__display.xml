@@ -1,0 +1,392 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="class_gamepad__display" kind="class" language="C++" prot="public">
+    <compoundname>Gamepad_display</compoundname>
+    <includes refid="display_8h" local="no">display.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_gamepad__display_1a1b75fafc0f88372f24068592d28762b1" prot="private" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t Gamepad_display::w</definition>
+        <argsstring></argsstring>
+        <name>w</name>
+        <qualifiedname>Gamepad_display::w</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/display.h" line="169" column="13" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/display.h" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gamepad__display_1adf4bdf40d7039d2896c39ec8ae78a423" prot="private" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t Gamepad_display::h</definition>
+        <argsstring></argsstring>
+        <name>h</name>
+        <qualifiedname>Gamepad_display::h</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/display.h" line="169" column="15" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/display.h" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gamepad__display_1adc0f5fb8e8352c8cd515c2518fa80c09" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t Gamepad_display::channel</definition>
+        <argsstring></argsstring>
+        <name>channel</name>
+        <qualifiedname>Gamepad_display::channel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/display.h" line="170" column="13" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/display.h" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gamepad__display_1ac68570d7a8ee5c9a180575014d9980a0" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t Gamepad_display::brightness</definition>
+        <argsstring></argsstring>
+        <name>brightness</name>
+        <qualifiedname>Gamepad_display::brightness</qualifiedname>
+        <initializer>= 255</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/display.h" line="171" column="13" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/display.h" bodystart="171" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gamepad__display_1ac3b142e916c56656b4e3a3598cd204c5" prot="private" static="no" mutable="no">
+        <type>TFT_eSPI</type>
+        <definition>TFT_eSPI Gamepad_display::disp</definition>
+        <argsstring></argsstring>
+        <name>disp</name>
+        <qualifiedname>Gamepad_display::disp</qualifiedname>
+        <initializer>= TFT_eSPI()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/display.h" line="173" column="14" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/display.h" bodystart="173" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gamepad__display_1a93ab4e1d963544a2dbda6a33b39dc6d7" prot="private" static="no" mutable="no">
+        <type><ref refid="class_gamepad__canvas__t" kindref="compound">Gamepad_canvas_t</ref></type>
+        <definition>Gamepad_canvas_t Gamepad_display::canvas</definition>
+        <argsstring></argsstring>
+        <name>canvas</name>
+        <qualifiedname>Gamepad_display::canvas</qualifiedname>
+        <initializer>= <ref refid="class_gamepad__canvas__t" kindref="compound">Gamepad_canvas_t</ref>(&amp;disp)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/display.h" line="174" column="22" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/display.h" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gamepad__display_1a435bbb6fa2c509374269d7885c5aae96" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Gamepad_display::initialized</definition>
+        <argsstring></argsstring>
+        <name>initialized</name>
+        <qualifiedname>Gamepad_display::initialized</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/display.h" line="176" column="10" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/display.h" bodystart="176" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gamepad__display_1a2fc82987670ef1480f012e62cbf91da6" prot="private" static="no" mutable="no">
+        <type>uint8_t *</type>
+        <definition>uint8_t* Gamepad_display::sprite_buffer_ptr</definition>
+        <argsstring></argsstring>
+        <name>sprite_buffer_ptr</name>
+        <qualifiedname>Gamepad_display::sprite_buffer_ptr</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/display.h" line="177" column="13" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/display.h" bodystart="177" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_gamepad__display_1a793464313fd1814724eb8d314baaa74f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gamepad_display::Gamepad_display</definition>
+        <argsstring>()=default</argsstring>
+        <name>Gamepad_display</name>
+        <qualifiedname>Gamepad_display::Gamepad_display</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/display.h" line="179" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gamepad__display_1aa086234a1d3417fecccdeeeb381f184e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gamepad_display::init</definition>
+        <argsstring>(uint16_t width=DISP_WIDTH, uint16_t height=DISP_HEIGHT, uint8_t backlight_channel=DISP_BACKLIGHT_LEDC_CHANNEL)</argsstring>
+        <name>init</name>
+        <qualifiedname>Gamepad_display::init</qualifiedname>
+        <param>
+          <type>uint16_t</type>
+          <declname>width</declname>
+          <defval><ref refid="config_8h_1aa178c3409ca0030215244c7f5ab05d4f" kindref="member">DISP_WIDTH</ref></defval>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>height</declname>
+          <defval><ref refid="config_8h_1a14033ba98194beb2c6e319c7c08b0ac7" kindref="member">DISP_HEIGHT</ref></defval>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>backlight_channel</declname>
+          <defval><ref refid="config_8h_1aa11dcb094e71a5ac007c4258041af6b9" kindref="member">DISP_BACKLIGHT_LEDC_CHANNEL</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/display.h" line="181" column="10" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/display.cpp" bodystart="287" bodyend="312"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gamepad__display_1a19ebccfc7a8898fedd0c6475e53b00c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>TFT_eSPI *</type>
+        <definition>TFT_eSPI * Gamepad_display::get_display_reference</definition>
+        <argsstring>()</argsstring>
+        <name>get_display_reference</name>
+        <qualifiedname>Gamepad_display::get_display_reference</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/display.h" line="183" column="14" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/display.cpp" bodystart="314" bodyend="316"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gamepad__display_1a47637fa50e4458518c111190ffe4bd98" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_gamepad__canvas__t" kindref="compound">Gamepad_canvas_t</ref> *</type>
+        <definition>Gamepad_canvas_t * Gamepad_display::get_canvas_reference</definition>
+        <argsstring>()</argsstring>
+        <name>get_canvas_reference</name>
+        <qualifiedname>Gamepad_display::get_canvas_reference</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/display.h" line="184" column="22" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/display.cpp" bodystart="318" bodyend="320"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gamepad__display_1a1264fa2aa663e911c2165b76d6f60884" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gamepad_display::update</definition>
+        <argsstring>()</argsstring>
+        <name>update</name>
+        <qualifiedname>Gamepad_display::update</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/display.h" line="186" column="10" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/display.cpp" bodystart="322" bodyend="326"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gamepad__display_1a72550027765e3e85bb80b2b55590d359" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gamepad_display::flip</definition>
+        <argsstring>()</argsstring>
+        <name>flip</name>
+        <qualifiedname>Gamepad_display::flip</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/display.h" line="187" column="10" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/display.cpp" bodystart="328" bodyend="330"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gamepad__display_1a5ae2adeb6b6e670335701ce4b1d0a3df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gamepad_display::clear</definition>
+        <argsstring>()</argsstring>
+        <name>clear</name>
+        <qualifiedname>Gamepad_display::clear</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/display.h" line="188" column="10" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/display.cpp" bodystart="332" bodyend="334"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gamepad__display_1a755a0e50281960d3c31facb972c89d65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gamepad_display::set_brightness</definition>
+        <argsstring>(uint8_t brightness_)</argsstring>
+        <name>set_brightness</name>
+        <qualifiedname>Gamepad_display::set_brightness</qualifiedname>
+        <param>
+          <type>uint8_t</type>
+          <declname>brightness_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/display.h" line="190" column="10" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/display.cpp" bodystart="336" bodyend="339"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gamepad__display_1acb92a5ca47ebb0c9dd10dece927584b7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t Gamepad_display::get_brightness</definition>
+        <argsstring>()</argsstring>
+        <name>get_brightness</name>
+        <qualifiedname>Gamepad_display::get_brightness</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/display.h" line="191" column="13" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/display.cpp" bodystart="341" bodyend="343"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gamepad__display_1afcf27d7c79867d0d8e5c6848df92736c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_gamepad__canvas__t" kindref="compound">Gamepad_canvas_t</ref> *</type>
+        <definition>Gamepad_canvas_t * Gamepad_display::create_sprite</definition>
+        <argsstring>(uint16_t width, uint16_t height, uint8_t color_depth=8)</argsstring>
+        <name>create_sprite</name>
+        <qualifiedname>Gamepad_display::create_sprite</qualifiedname>
+        <param>
+          <type>uint16_t</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>color_depth</declname>
+          <defval>8</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/display.h" line="193" column="22" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/display.cpp" bodystart="345" bodyend="358"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gamepad__display_1a1fe6587c5fc1ef37754f5dab44db1ec5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gamepad_display::display_sprite</definition>
+        <argsstring>(Gamepad_canvas_t *sprite, uint16_t x=0, uint16_t y=0)</argsstring>
+        <name>display_sprite</name>
+        <qualifiedname>Gamepad_display::display_sprite</qualifiedname>
+        <param>
+          <type><ref refid="class_gamepad__canvas__t" kindref="compound">Gamepad_canvas_t</ref> *</type>
+          <declname>sprite</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>x</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>y</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/display.h" line="194" column="10" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/display.cpp" bodystart="360" bodyend="364"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gamepad__display_1ac8f502702e43e6b50f9574b8afffceff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gamepad_display::clear_sprite</definition>
+        <argsstring>(Gamepad_canvas_t *sprite)</argsstring>
+        <name>clear_sprite</name>
+        <qualifiedname>Gamepad_display::clear_sprite</qualifiedname>
+        <param>
+          <type><ref refid="class_gamepad__canvas__t" kindref="compound">Gamepad_canvas_t</ref> *</type>
+          <declname>sprite</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/display.h" line="195" column="10" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/display.cpp" bodystart="366" bodyend="368"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gamepad__display_1a7190a9ad96761f1c44d7446ccb6b291c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gamepad_display::delete_sprite</definition>
+        <argsstring>(Gamepad_canvas_t *sprite)</argsstring>
+        <name>delete_sprite</name>
+        <qualifiedname>Gamepad_display::delete_sprite</qualifiedname>
+        <param>
+          <type><ref refid="class_gamepad__canvas__t" kindref="compound">Gamepad_canvas_t</ref> *</type>
+          <declname>sprite</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/display.h" line="196" column="10" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/display.cpp" bodystart="370" bodyend="373"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/display.h" line="168" column="1" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/display.h" bodystart="168" bodyend="197"/>
+    <listofallmembers>
+      <member refid="class_gamepad__display_1ac68570d7a8ee5c9a180575014d9980a0" prot="private" virt="non-virtual"><scope>Gamepad_display</scope><name>brightness</name></member>
+      <member refid="class_gamepad__display_1a93ab4e1d963544a2dbda6a33b39dc6d7" prot="private" virt="non-virtual"><scope>Gamepad_display</scope><name>canvas</name></member>
+      <member refid="class_gamepad__display_1adc0f5fb8e8352c8cd515c2518fa80c09" prot="private" virt="non-virtual"><scope>Gamepad_display</scope><name>channel</name></member>
+      <member refid="class_gamepad__display_1a5ae2adeb6b6e670335701ce4b1d0a3df" prot="public" virt="non-virtual"><scope>Gamepad_display</scope><name>clear</name></member>
+      <member refid="class_gamepad__display_1ac8f502702e43e6b50f9574b8afffceff" prot="public" virt="non-virtual"><scope>Gamepad_display</scope><name>clear_sprite</name></member>
+      <member refid="class_gamepad__display_1afcf27d7c79867d0d8e5c6848df92736c" prot="public" virt="non-virtual"><scope>Gamepad_display</scope><name>create_sprite</name></member>
+      <member refid="class_gamepad__display_1a7190a9ad96761f1c44d7446ccb6b291c" prot="public" virt="non-virtual"><scope>Gamepad_display</scope><name>delete_sprite</name></member>
+      <member refid="class_gamepad__display_1ac3b142e916c56656b4e3a3598cd204c5" prot="private" virt="non-virtual"><scope>Gamepad_display</scope><name>disp</name></member>
+      <member refid="class_gamepad__display_1a1fe6587c5fc1ef37754f5dab44db1ec5" prot="public" virt="non-virtual"><scope>Gamepad_display</scope><name>display_sprite</name></member>
+      <member refid="class_gamepad__display_1a72550027765e3e85bb80b2b55590d359" prot="public" virt="non-virtual"><scope>Gamepad_display</scope><name>flip</name></member>
+      <member refid="class_gamepad__display_1a793464313fd1814724eb8d314baaa74f" prot="public" virt="non-virtual"><scope>Gamepad_display</scope><name>Gamepad_display</name></member>
+      <member refid="class_gamepad__display_1acb92a5ca47ebb0c9dd10dece927584b7" prot="public" virt="non-virtual"><scope>Gamepad_display</scope><name>get_brightness</name></member>
+      <member refid="class_gamepad__display_1a47637fa50e4458518c111190ffe4bd98" prot="public" virt="non-virtual"><scope>Gamepad_display</scope><name>get_canvas_reference</name></member>
+      <member refid="class_gamepad__display_1a19ebccfc7a8898fedd0c6475e53b00c7" prot="public" virt="non-virtual"><scope>Gamepad_display</scope><name>get_display_reference</name></member>
+      <member refid="class_gamepad__display_1adf4bdf40d7039d2896c39ec8ae78a423" prot="private" virt="non-virtual"><scope>Gamepad_display</scope><name>h</name></member>
+      <member refid="class_gamepad__display_1aa086234a1d3417fecccdeeeb381f184e" prot="public" virt="non-virtual"><scope>Gamepad_display</scope><name>init</name></member>
+      <member refid="class_gamepad__display_1a435bbb6fa2c509374269d7885c5aae96" prot="private" virt="non-virtual"><scope>Gamepad_display</scope><name>initialized</name></member>
+      <member refid="class_gamepad__display_1a755a0e50281960d3c31facb972c89d65" prot="public" virt="non-virtual"><scope>Gamepad_display</scope><name>set_brightness</name></member>
+      <member refid="class_gamepad__display_1a2fc82987670ef1480f012e62cbf91da6" prot="private" virt="non-virtual"><scope>Gamepad_display</scope><name>sprite_buffer_ptr</name></member>
+      <member refid="class_gamepad__display_1a1264fa2aa663e911c2165b76d6f60884" prot="public" virt="non-virtual"><scope>Gamepad_display</scope><name>update</name></member>
+      <member refid="class_gamepad__display_1a1b75fafc0f88372f24068592d28762b1" prot="private" virt="non-virtual"><scope>Gamepad_display</scope><name>w</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

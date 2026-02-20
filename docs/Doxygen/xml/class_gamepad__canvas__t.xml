@@ -1,0 +1,667 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="class_gamepad__canvas__t" kind="class" language="C++" prot="public">
+    <compoundname>Gamepad_canvas_t</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">TFT_eSprite</basecompoundref>
+    <includes refid="display_8h" local="no">display.h</includes>
+    <innerclass refid="struct_gamepad__canvas__t_1_1graphics__params__t" prot="public">Gamepad_canvas_t::graphics_params_t</innerclass>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_gamepad__canvas__t_1ac1aa290715c4a9a63ea1d88e26690263" prot="private" static="no" mutable="no">
+        <type>uint8_t *</type>
+        <definition>uint8_t* Gamepad_canvas_t::fonts[FONTS_MAX_N]</definition>
+        <argsstring>[FONTS_MAX_N]</argsstring>
+        <name>fonts</name>
+        <qualifiedname>Gamepad_canvas_t::fonts</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/display.h" line="20" column="13" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/display.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gamepad__canvas__t_1ab191df7f1ff4574b7aa660cc6025a67d" prot="private" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t Gamepad_canvas_t::font_h</definition>
+        <argsstring></argsstring>
+        <name>font_h</name>
+        <qualifiedname>Gamepad_canvas_t::font_h</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/display.h" line="21" column="14" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/display.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gamepad__canvas__t_1a3be57b6bc61122cac4eb754ec0bb86b4" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t Gamepad_canvas_t::dynamic_mem_font</definition>
+        <argsstring></argsstring>
+        <name>dynamic_mem_font</name>
+        <qualifiedname>Gamepad_canvas_t::dynamic_mem_font</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/display.h" line="22" column="13" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/display.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gamepad__canvas__t_1acdb014dcd62b74555dcafed71e843f3c" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t Gamepad_canvas_t::font_id</definition>
+        <argsstring></argsstring>
+        <name>font_id</name>
+        <qualifiedname>Gamepad_canvas_t::font_id</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/display.h" line="23" column="13" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/display.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_gamepad__canvas__t_1ad204245272073ffd69c311836180eb8f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gamepad_canvas_t::pushMaskedImage</definition>
+        <argsstring>(int32_t x, int32_t y, int32_t w, int32_t h, uint16_t *img, uint8_t *mask, uint8_t sbpp=16)</argsstring>
+        <name>pushMaskedImage</name>
+        <qualifiedname>Gamepad_canvas_t::pushMaskedImage</qualifiedname>
+        <param>
+          <type>int32_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>w</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>uint16_t *</type>
+          <declname>img</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>mask</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>sbpp</declname>
+          <defval>16</defval>
+        </param>
+        <briefdescription>
+<para>Wrapper around <computeroutput>TFT_eSPI::pushMaskedImage()</computeroutput> for writing image to canvas instead display. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>w</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>h</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>img</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mask</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>sbpp</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/display.h" line="45" column="10" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/display.cpp" bodystart="12" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gamepad__canvas__t_1a8e314352a89da1ba66cf50b63eb888d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gamepad_canvas_t::pushImage</definition>
+        <argsstring>(int32_t x, int32_t y, Image_raw16_t &amp;image)</argsstring>
+        <name>pushImage</name>
+        <qualifiedname>Gamepad_canvas_t::pushImage</qualifiedname>
+        <param>
+          <type>int32_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type><ref refid="class_image__raw16__t" kindref="compound">Image_raw16_t</ref> &amp;</type>
+          <declname>image</declname>
+        </param>
+        <briefdescription>
+<para>Draw image to canvas from <computeroutput><ref refid="class_image__raw16__t" kindref="compound">Image_raw16_t</ref></computeroutput> variable. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>image</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/display.h" line="57" column="10" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/display.cpp" bodystart="97" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gamepad__canvas__t_1a8930ad5c0b53c428bcaf57c1913fd99c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gamepad_canvas_t::pushImage</definition>
+        <argsstring>(int32_t x, int32_t y, Image_raw8_t &amp;image)</argsstring>
+        <name>pushImage</name>
+        <qualifiedname>Gamepad_canvas_t::pushImage</qualifiedname>
+        <param>
+          <type>int32_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type><ref refid="class_image__raw8__t" kindref="compound">Image_raw8_t</ref> &amp;</type>
+          <declname>image</declname>
+        </param>
+        <briefdescription>
+<para>Draw image to canvas from <computeroutput><ref refid="class_image__raw8__t" kindref="compound">Image_raw8_t</ref></computeroutput> variable. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>image</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/display.h" line="66" column="10" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/display.cpp" bodystart="104" bodyend="109"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gamepad__canvas__t_1a9a499fd25bd65b7a969afc3fe31a7f16" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gamepad_canvas_t::drawPNGFromFile</definition>
+        <argsstring>(File *file, int32_t x, int32_t y, bool alpha_channel=false)</argsstring>
+        <name>drawPNGFromFile</name>
+        <qualifiedname>Gamepad_canvas_t::drawPNGFromFile</qualifiedname>
+        <param>
+          <type>File *</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>alpha_channel</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Draw contentes of PNG file directly to display. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Usage of <computeroutput>Gamepad::game_files.get_file_reference()</computeroutput> is recommended for <computeroutput>*file</computeroutput> param</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to PNG file </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alpha_channel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>PNG alpha would be ingnored on false </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/display.h" line="79" column="10" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/display.cpp" bodystart="158" bodyend="179"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gamepad__canvas__t_1a422a9d563fee39102c6d370d02868661" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gamepad_canvas_t::loadFont</definition>
+        <argsstring>(File *file, uint8_t id=1)</argsstring>
+        <name>loadFont</name>
+        <qualifiedname>Gamepad_canvas_t::loadFont</qualifiedname>
+        <param>
+          <type>File *</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>id</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+<para>Load font from the <computeroutput>.vlw</computeroutput> file and assign <computeroutput>id</computeroutput> to it. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Usage of <computeroutput>Gamepad::game_files.get_file_reference()</computeroutput> is recommended for <computeroutput>*file</computeroutput> param</para>
+</simplesect>
+<simplesect kind="note"><para>id = 0 is default system font. It is impossible to overwrite it</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to VLW file </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>unique id of the font</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>If specific id was already used, font with this id would be overwritten </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/display.h" line="95" column="10" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/display.cpp" bodystart="186" bodyend="202"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gamepad__canvas__t_1a9c75dcb9988bba59fa56d27f7052d68c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gamepad_canvas_t::loadFont</definition>
+        <argsstring>(const uint8_t array[], uint8_t id=1)</argsstring>
+        <name>loadFont</name>
+        <qualifiedname>Gamepad_canvas_t::loadFont</qualifiedname>
+        <param>
+          <type>const uint8_t</type>
+          <declname>array</declname>
+          <array>[]</array>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>id</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+<para>Load font from the <computeroutput>.vlw</computeroutput> data array and assign <computeroutput>id</computeroutput> to it. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>id = 0 is default system font. It is impossible to overwrite it</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to VLW file </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>unique id of the font</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>If specific id was already used, font with this id would be overwritten </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/display.h" line="107" column="10" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/display.cpp" bodystart="204" bodyend="213"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gamepad__canvas__t_1a36f11a5e4456bf5ae7beb354b800101e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gamepad_canvas_t::unloadFont</definition>
+        <argsstring>(uint8_t id=1)</argsstring>
+        <name>unloadFont</name>
+        <qualifiedname>Gamepad_canvas_t::unloadFont</qualifiedname>
+        <param>
+          <type>uint8_t</type>
+          <declname>id</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+<para>Remove all data of the font by its id. Its id now can be used for loading another font. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>font id </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/display.h" line="114" column="10" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/display.cpp" bodystart="215" bodyend="230"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gamepad__canvas__t_1a1b5bac29caa210fc0b3e803b40aa9594" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gamepad_canvas_t::setFont</definition>
+        <argsstring>(uint8_t id=0)</argsstring>
+        <name>setFont</name>
+        <qualifiedname>Gamepad_canvas_t::setFont</qualifiedname>
+        <param>
+          <type>uint8_t</type>
+          <declname>id</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Select current canvas font by id. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>id</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>font id </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/display.h" line="121" column="10" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/display.cpp" bodystart="232" bodyend="244"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gamepad__canvas__t_1a608d5ab0c9a9f69a731ed889e42e42b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t Gamepad_canvas_t::getFontID</definition>
+        <argsstring>()</argsstring>
+        <name>getFontID</name>
+        <qualifiedname>Gamepad_canvas_t::getFontID</qualifiedname>
+        <briefdescription>
+<para>Get the id of currently used font. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>uint8_t: id </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/display.h" line="128" column="13" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/display.cpp" bodystart="246" bodyend="248"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gamepad__canvas__t_1a6211ad72bd77110f2905da0a33273982" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gamepad_canvas_t::setLineSpacing</definition>
+        <argsstring>(float multiplier)</argsstring>
+        <name>setLineSpacing</name>
+        <qualifiedname>Gamepad_canvas_t::setLineSpacing</qualifiedname>
+        <param>
+          <type>float</type>
+          <declname>multiplier</declname>
+        </param>
+        <briefdescription>
+<para>Set spacing between multiline text lines. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>multiplier</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>line spacing in respect to font height </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/display.h" line="136" column="10" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/display.cpp" bodystart="250" bodyend="252"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gamepad__canvas__t_1a520a8f8bfb64e752a6751cee1750359e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gamepad_canvas_t::setDefaultGraphicsParams</definition>
+        <argsstring>()</argsstring>
+        <name>setDefaultGraphicsParams</name>
+        <qualifiedname>Gamepad_canvas_t::setDefaultGraphicsParams</qualifiedname>
+        <briefdescription>
+<para>Set canvas formating to defaults. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>This function affects:<itemizedlist>
+<listitem><para>set default font (id = 0)</para>
+</listitem><listitem><para>text size to 1</para>
+</listitem><listitem><para>text color to White</para>
+</listitem><listitem><para>default text wrap mode</para>
+</listitem><listitem><para>canvas origin to (0, 0) </para>
+</listitem></itemizedlist>
+</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/display.h" line="150" column="10" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/display.cpp" bodystart="254" bodyend="261"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gamepad__canvas__t_1aa9c52293f56e185c2d23aa1be785d9fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gamepad_canvas_t::setGraphicsParams</definition>
+        <argsstring>(graphics_params_t params)</argsstring>
+        <name>setGraphicsParams</name>
+        <qualifiedname>Gamepad_canvas_t::setGraphicsParams</qualifiedname>
+        <param>
+          <type><ref refid="struct_gamepad__canvas__t_1_1graphics__params__t" kindref="compound">graphics_params_t</ref></type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+<para>Set graphics parameters from variable. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>params</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><computeroutput><ref refid="struct_gamepad__canvas__t_1_1graphics__params__t" kindref="compound">Gamepad_canvas_t::graphics_params_t</ref></computeroutput> variable with saved parameters </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/display.h" line="157" column="10" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/display.cpp" bodystart="263" bodyend="270"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gamepad__canvas__t_1ad4a70fed1a10c139415e195186d961ef" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_gamepad__canvas__t_1_1graphics__params__t" kindref="compound">graphics_params_t</ref></type>
+        <definition>Gamepad_canvas_t::graphics_params_t Gamepad_canvas_t::graphicsParams</definition>
+        <argsstring>()</argsstring>
+        <name>graphicsParams</name>
+        <qualifiedname>Gamepad_canvas_t::graphicsParams</qualifiedname>
+        <briefdescription>
+<para>Get current graphics parameters. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para><ref refid="struct_gamepad__canvas__t_1_1graphics__params__t" kindref="compound">Gamepad_canvas_t::graphics_params_t</ref> parameters container variable </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/display.h" line="164" column="23" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/display.cpp" bodystart="272" bodyend="283"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Gamepad_canvas_t</label>
+        <link refid="class_gamepad__canvas__t"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>TFT_eSprite</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Gamepad_canvas_t</label>
+        <link refid="class_gamepad__canvas__t"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>TFT_eSprite</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/display.h" line="17" column="1" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/display.h" bodystart="17" bodyend="165"/>
+    <listofallmembers>
+      <member refid="class_gamepad__canvas__t_1a9a499fd25bd65b7a969afc3fe31a7f16" prot="public" virt="non-virtual"><scope>Gamepad_canvas_t</scope><name>drawPNGFromFile</name></member>
+      <member refid="class_gamepad__canvas__t_1a3be57b6bc61122cac4eb754ec0bb86b4" prot="private" virt="non-virtual"><scope>Gamepad_canvas_t</scope><name>dynamic_mem_font</name></member>
+      <member refid="class_gamepad__canvas__t_1ab191df7f1ff4574b7aa660cc6025a67d" prot="private" virt="non-virtual"><scope>Gamepad_canvas_t</scope><name>font_h</name></member>
+      <member refid="class_gamepad__canvas__t_1acdb014dcd62b74555dcafed71e843f3c" prot="private" virt="non-virtual"><scope>Gamepad_canvas_t</scope><name>font_id</name></member>
+      <member refid="class_gamepad__canvas__t_1ac1aa290715c4a9a63ea1d88e26690263" prot="private" virt="non-virtual"><scope>Gamepad_canvas_t</scope><name>fonts</name></member>
+      <member refid="class_gamepad__canvas__t_1a608d5ab0c9a9f69a731ed889e42e42b8" prot="public" virt="non-virtual"><scope>Gamepad_canvas_t</scope><name>getFontID</name></member>
+      <member refid="class_gamepad__canvas__t_1ad4a70fed1a10c139415e195186d961ef" prot="public" virt="non-virtual"><scope>Gamepad_canvas_t</scope><name>graphicsParams</name></member>
+      <member refid="class_gamepad__canvas__t_1a422a9d563fee39102c6d370d02868661" prot="public" virt="non-virtual"><scope>Gamepad_canvas_t</scope><name>loadFont</name></member>
+      <member refid="class_gamepad__canvas__t_1a9c75dcb9988bba59fa56d27f7052d68c" prot="public" virt="non-virtual"><scope>Gamepad_canvas_t</scope><name>loadFont</name></member>
+      <member refid="class_gamepad__canvas__t_1a8e314352a89da1ba66cf50b63eb888d7" prot="public" virt="non-virtual"><scope>Gamepad_canvas_t</scope><name>pushImage</name></member>
+      <member refid="class_gamepad__canvas__t_1a8930ad5c0b53c428bcaf57c1913fd99c" prot="public" virt="non-virtual"><scope>Gamepad_canvas_t</scope><name>pushImage</name></member>
+      <member refid="class_gamepad__canvas__t_1ad204245272073ffd69c311836180eb8f" prot="public" virt="non-virtual"><scope>Gamepad_canvas_t</scope><name>pushMaskedImage</name></member>
+      <member refid="class_gamepad__canvas__t_1a520a8f8bfb64e752a6751cee1750359e" prot="public" virt="non-virtual"><scope>Gamepad_canvas_t</scope><name>setDefaultGraphicsParams</name></member>
+      <member refid="class_gamepad__canvas__t_1a1b5bac29caa210fc0b3e803b40aa9594" prot="public" virt="non-virtual"><scope>Gamepad_canvas_t</scope><name>setFont</name></member>
+      <member refid="class_gamepad__canvas__t_1aa9c52293f56e185c2d23aa1be785d9fc" prot="public" virt="non-virtual"><scope>Gamepad_canvas_t</scope><name>setGraphicsParams</name></member>
+      <member refid="class_gamepad__canvas__t_1a6211ad72bd77110f2905da0a33273982" prot="public" virt="non-virtual"><scope>Gamepad_canvas_t</scope><name>setLineSpacing</name></member>
+      <member refid="class_gamepad__canvas__t_1a36f11a5e4456bf5ae7beb354b800101e" prot="public" virt="non-virtual"><scope>Gamepad_canvas_t</scope><name>unloadFont</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

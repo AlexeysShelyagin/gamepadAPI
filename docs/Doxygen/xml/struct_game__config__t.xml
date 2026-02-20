@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="struct_game__config__t" kind="struct" language="C++" prot="public">
+    <compoundname>Game_config_t</compoundname>
+    <includes refid="_devel_deck_a_p_i_8h" local="no">DevelDeckAPI.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_game__config__t_1a9aeeb07da8186fc778045416d45f3a4a" prot="public" static="no" mutable="no">
+        <type>String</type>
+        <definition>String Game_config_t::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <qualifiedname>Game_config_t::name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/DevelDeckAPI.h" line="25" column="12" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/DevelDeckAPI.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_game__config__t_1a3eecb1ede7e6e61c4527205b4368b2e1" prot="public" static="no" mutable="no">
+        <type>String</type>
+        <definition>String Game_config_t::description</definition>
+        <argsstring></argsstring>
+        <name>description</name>
+        <qualifiedname>Game_config_t::description</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/DevelDeckAPI.h" line="26" column="12" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/DevelDeckAPI.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_game__config__t_1a39d4e9f50b90016ff2559b10e5b25fb4" prot="public" static="no" mutable="no">
+        <type>String</type>
+        <definition>String Game_config_t::game_path</definition>
+        <argsstring></argsstring>
+        <name>game_path</name>
+        <qualifiedname>Game_config_t::game_path</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/DevelDeckAPI.h" line="27" column="12" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/DevelDeckAPI.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_game__config__t_1a49aade9fe18b5b604caedb1414391cc6" prot="public" static="no" mutable="no">
+        <type>String</type>
+        <definition>String Game_config_t::icon_path</definition>
+        <argsstring></argsstring>
+        <name>icon_path</name>
+        <qualifiedname>Game_config_t::icon_path</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/DevelDeckAPI.h" line="28" column="12" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/DevelDeckAPI.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_game__config__t_1aa3c22c87381e3f28e8a800fda7384ef0" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t Game_config_t::minimum_flash</definition>
+        <argsstring></argsstring>
+        <name>minimum_flash</name>
+        <qualifiedname>Game_config_t::minimum_flash</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/DevelDeckAPI.h" line="29" column="13" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/DevelDeckAPI.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/DevelDeckAPI.h" line="24" column="1" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/DevelDeckAPI.h" bodystart="24" bodyend="30"/>
+    <listofallmembers>
+      <member refid="struct_game__config__t_1a3eecb1ede7e6e61c4527205b4368b2e1" prot="public" virt="non-virtual"><scope>Game_config_t</scope><name>description</name></member>
+      <member refid="struct_game__config__t_1a39d4e9f50b90016ff2559b10e5b25fb4" prot="public" virt="non-virtual"><scope>Game_config_t</scope><name>game_path</name></member>
+      <member refid="struct_game__config__t_1a49aade9fe18b5b604caedb1414391cc6" prot="public" virt="non-virtual"><scope>Game_config_t</scope><name>icon_path</name></member>
+      <member refid="struct_game__config__t_1aa3c22c87381e3f28e8a800fda7384ef0" prot="public" virt="non-virtual"><scope>Game_config_t</scope><name>minimum_flash</name></member>
+      <member refid="struct_game__config__t_1a9aeeb07da8186fc778045416d45f3a4a" prot="public" virt="non-virtual"><scope>Game_config_t</scope><name>name</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

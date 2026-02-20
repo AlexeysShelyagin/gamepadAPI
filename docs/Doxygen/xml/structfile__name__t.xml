@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="structfile__name__t" kind="struct" language="C++" prot="public">
+    <compoundname>file_name_t</compoundname>
+    <includes refid="sd__card_8h" local="no">sd_card.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structfile__name__t_1a90d93e787ea30f372a909556c075a62e" prot="public" static="no" mutable="no">
+        <type>String</type>
+        <definition>String file_name_t::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <qualifiedname>file_name_t::name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/sd_card.h" line="22" column="12" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/sd_card.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structfile__name__t_1ada116dd5b052f615167d479c8f164e66" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool file_name_t::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <qualifiedname>file_name_t::type</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/sd_card.h" line="23" column="10" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/sd_card.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structfile__name__t_1a3a05be56dfa892c8e880ae228987f55a" prot="public" static="no" mutable="no">
+        <type>String</type>
+        <definition>String file_name_t::path</definition>
+        <argsstring></argsstring>
+        <name>path</name>
+        <qualifiedname>file_name_t::path</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/sd_card.h" line="24" column="12" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/sd_card.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/sd_card.h" line="21" column="1" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/sd_card.h" bodystart="21" bodyend="25"/>
+    <listofallmembers>
+      <member refid="structfile__name__t_1a90d93e787ea30f372a909556c075a62e" prot="public" virt="non-virtual"><scope>file_name_t</scope><name>name</name></member>
+      <member refid="structfile__name__t_1a3a05be56dfa892c8e880ae228987f55a" prot="public" virt="non-virtual"><scope>file_name_t</scope><name>path</name></member>
+      <member refid="structfile__name__t_1ada116dd5b052f615167d479c8f164e66" prot="public" virt="non-virtual"><scope>file_name_t</scope><name>type</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

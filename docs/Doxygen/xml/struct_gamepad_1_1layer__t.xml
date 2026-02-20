@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="struct_gamepad_1_1layer__t" kind="struct" language="C++" prot="private">
+    <compoundname>Gamepad::layer_t</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_gamepad_1_1layer__t_1acb9b0fe1308f85183ede53fb7456fa55" prot="public" static="no" mutable="no">
+        <type><ref refid="class_gamepad__canvas__t" kindref="compound">Gamepad_canvas_t</ref> *</type>
+        <definition>Gamepad_canvas_t* Gamepad::layer_t::canvas</definition>
+        <argsstring></argsstring>
+        <name>canvas</name>
+        <qualifiedname>Gamepad::layer_t::canvas</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/DevelDeckAPI.h" line="83" column="26" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/DevelDeckAPI.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_gamepad_1_1layer__t_1a620e5adc20f1ae499b3fc56decf0b6c5" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t Gamepad::layer_t::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <qualifiedname>Gamepad::layer_t::x</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/DevelDeckAPI.h" line="84" column="18" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/DevelDeckAPI.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_gamepad_1_1layer__t_1a16d81c232c396b78d2e460de2780bfde" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t Gamepad::layer_t::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <qualifiedname>Gamepad::layer_t::y</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/DevelDeckAPI.h" line="84" column="20" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/DevelDeckAPI.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Gamepad::layer_t</label>
+        <childnode refid="2" relation="usage">
+          <edgelabel>canvas</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Gamepad_canvas_t</label>
+        <link refid="class_gamepad__canvas__t"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>TFT_eSprite</label>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/DevelDeckAPI.h" line="82" column="5" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/DevelDeckAPI.h" bodystart="82" bodyend="85"/>
+    <listofallmembers>
+      <member refid="struct_gamepad_1_1layer__t_1acb9b0fe1308f85183ede53fb7456fa55" prot="public" virt="non-virtual"><scope>Gamepad::layer_t</scope><name>canvas</name></member>
+      <member refid="struct_gamepad_1_1layer__t_1a620e5adc20f1ae499b3fc56decf0b6c5" prot="public" virt="non-virtual"><scope>Gamepad::layer_t</scope><name>x</name></member>
+      <member refid="struct_gamepad_1_1layer__t_1a16d81c232c396b78d2e460de2780bfde" prot="public" virt="non-virtual"><scope>Gamepad::layer_t</scope><name>y</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

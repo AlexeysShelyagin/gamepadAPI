@@ -1,0 +1,322 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="class_gamepad___u_i__button" kind="class" language="C++" prot="public">
+    <compoundname>Gamepad_UI_button</compoundname>
+    <includes refid="ui_8h" local="no">ui.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_gamepad___u_i__button_1a46fd1b9e6fa9ea6cee5eeb7da878cbd8" prot="private" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* Gamepad_UI_button::render_func) (Gamepad_UI_button *, uint8_t, void *)</definition>
+        <argsstring>)(Gamepad_UI_button *, uint8_t, void *)</argsstring>
+        <name>render_func</name>
+        <qualifiedname>Gamepad_UI_button::render_func</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/ui.h" line="47" column="5" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/ui.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_gamepad___u_i__button_1a3dfb978c92950dc2f0b7503f6850c16f" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t Gamepad_UI_button::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <qualifiedname>Gamepad_UI_button::x</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/ui.h" line="49" column="14" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/ui.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gamepad___u_i__button_1ac3ce0a4468c3e2e71999ebaa444b6eb0" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t Gamepad_UI_button::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <qualifiedname>Gamepad_UI_button::y</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/ui.h" line="49" column="16" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/ui.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gamepad___u_i__button_1a146bf863e6bf4026cf140175108272f3" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t Gamepad_UI_button::w</definition>
+        <argsstring></argsstring>
+        <name>w</name>
+        <qualifiedname>Gamepad_UI_button::w</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/ui.h" line="49" column="18" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/ui.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gamepad___u_i__button_1ad2de86877cbc3fc3b8b9dd805e571b83" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t Gamepad_UI_button::h</definition>
+        <argsstring></argsstring>
+        <name>h</name>
+        <qualifiedname>Gamepad_UI_button::h</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/ui.h" line="49" column="20" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/ui.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gamepad___u_i__button_1a6ab3109f9258306ae16f45125a63b133" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t Gamepad_UI_button::id</definition>
+        <argsstring></argsstring>
+        <name>id</name>
+        <qualifiedname>Gamepad_UI_button::id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/ui.h" line="50" column="14" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/ui.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gamepad___u_i__button_1a5ff782e893b534826b9cae992542d3e3" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t Gamepad_UI_button::up_id</definition>
+        <argsstring></argsstring>
+        <name>up_id</name>
+        <qualifiedname>Gamepad_UI_button::up_id</qualifiedname>
+        <initializer>= -1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/ui.h" line="51" column="13" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/ui.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gamepad___u_i__button_1a7ba998fca7820bae620d16120baac5cf" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t Gamepad_UI_button::down_id</definition>
+        <argsstring></argsstring>
+        <name>down_id</name>
+        <qualifiedname>Gamepad_UI_button::down_id</qualifiedname>
+        <initializer>= -1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/ui.h" line="51" column="20" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/ui.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gamepad___u_i__button_1ab82217c3cad1f7e87951ee62ec332042" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t Gamepad_UI_button::left_id</definition>
+        <argsstring></argsstring>
+        <name>left_id</name>
+        <qualifiedname>Gamepad_UI_button::left_id</qualifiedname>
+        <initializer>= -1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/ui.h" line="51" column="29" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/ui.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gamepad___u_i__button_1aa35365f943953ccd630469087992f1ed" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t Gamepad_UI_button::right_id</definition>
+        <argsstring></argsstring>
+        <name>right_id</name>
+        <qualifiedname>Gamepad_UI_button::right_id</qualifiedname>
+        <initializer>= -1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/ui.h" line="51" column="38" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/ui.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_gamepad___u_i__button_1a250791b790369bc4fcd47729b0059661" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gamepad_UI_button::Gamepad_UI_button</definition>
+        <argsstring>(uint16_t id_=0, uint16_t x_=0, uint16_t y_=0, uint16_t w_=0, uint16_t h_=0)</argsstring>
+        <name>Gamepad_UI_button</name>
+        <qualifiedname>Gamepad_UI_button::Gamepad_UI_button</qualifiedname>
+        <param>
+          <type>uint16_t</type>
+          <declname>id_</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>x_</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>y_</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>w_</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>h_</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/ui.h" line="53" column="5" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/ui.cpp" bodystart="789" bodyend="797"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gamepad___u_i__button_1a169c2892cb714ae0f629cd5d741e0ecb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gamepad_UI_button::set_neighbours</definition>
+        <argsstring>(int16_t up_id_=-1, int16_t down_id_=-1, int16_t left_id_=-1, int16_t right_id_=-1)</argsstring>
+        <name>set_neighbours</name>
+        <qualifiedname>Gamepad_UI_button::set_neighbours</qualifiedname>
+        <param>
+          <type>int16_t</type>
+          <declname>up_id_</declname>
+          <defval>-1</defval>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>down_id_</declname>
+          <defval>-1</defval>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>left_id_</declname>
+          <defval>-1</defval>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>right_id_</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/ui.h" line="55" column="10" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/ui.cpp" bodystart="799" bodyend="804"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gamepad___u_i__button_1ada386d739ece7c8e849c127cb744eba5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gamepad_UI_button::assign_render_function</definition>
+        <argsstring>(void(*render_func_)(Gamepad_UI_button *, uint8_t, void *))</argsstring>
+        <name>assign_render_function</name>
+        <qualifiedname>Gamepad_UI_button::assign_render_function</qualifiedname>
+        <param>
+          <type>void(*)(<ref refid="class_gamepad___u_i__button" kindref="compound">Gamepad_UI_button</ref> *, uint8_t, void *)</type>
+          <declname>render_func_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/ui.h" line="57" column="10" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/ui.cpp" bodystart="806" bodyend="808"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gamepad___u_i__button_1aa88c413a42072824b485f1d991ef94dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gamepad_UI_button::render</definition>
+        <argsstring>(void *params=nullptr, uint8_t skin=0, bool clear=false)</argsstring>
+        <name>render</name>
+        <qualifiedname>Gamepad_UI_button::render</qualifiedname>
+        <param>
+          <type>void *</type>
+          <declname>params</declname>
+          <defval>nullptr</defval>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>skin</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>clear</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/ui.h" line="58" column="10" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/ui.cpp" bodystart="810" bodyend="815"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gamepad___u_i__button_1a5db6508b73b3646fd5f6b537973b816b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gamepad_UI_button::render</definition>
+        <argsstring>(uint8_t skin, bool clear=false)</argsstring>
+        <name>render</name>
+        <qualifiedname>Gamepad_UI_button::render</qualifiedname>
+        <param>
+          <type>uint8_t</type>
+          <declname>skin</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>clear</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/ui.h" line="59" column="10" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/ui.cpp" bodystart="817" bodyend="819"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/ui.h" line="46" column="1" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/ui.h" bodystart="46" bodyend="60"/>
+    <listofallmembers>
+      <member refid="class_gamepad___u_i__button_1ada386d739ece7c8e849c127cb744eba5" prot="public" virt="non-virtual"><scope>Gamepad_UI_button</scope><name>assign_render_function</name></member>
+      <member refid="class_gamepad___u_i__button_1a7ba998fca7820bae620d16120baac5cf" prot="public" virt="non-virtual"><scope>Gamepad_UI_button</scope><name>down_id</name></member>
+      <member refid="class_gamepad___u_i__button_1a250791b790369bc4fcd47729b0059661" prot="public" virt="non-virtual"><scope>Gamepad_UI_button</scope><name>Gamepad_UI_button</name></member>
+      <member refid="class_gamepad___u_i__button_1ad2de86877cbc3fc3b8b9dd805e571b83" prot="public" virt="non-virtual"><scope>Gamepad_UI_button</scope><name>h</name></member>
+      <member refid="class_gamepad___u_i__button_1a6ab3109f9258306ae16f45125a63b133" prot="public" virt="non-virtual"><scope>Gamepad_UI_button</scope><name>id</name></member>
+      <member refid="class_gamepad___u_i__button_1ab82217c3cad1f7e87951ee62ec332042" prot="public" virt="non-virtual"><scope>Gamepad_UI_button</scope><name>left_id</name></member>
+      <member refid="class_gamepad___u_i__button_1aa88c413a42072824b485f1d991ef94dc" prot="public" virt="non-virtual"><scope>Gamepad_UI_button</scope><name>render</name></member>
+      <member refid="class_gamepad___u_i__button_1a5db6508b73b3646fd5f6b537973b816b" prot="public" virt="non-virtual"><scope>Gamepad_UI_button</scope><name>render</name></member>
+      <member refid="class_gamepad___u_i__button_1a46fd1b9e6fa9ea6cee5eeb7da878cbd8" prot="private" virt="non-virtual"><scope>Gamepad_UI_button</scope><name>render_func</name></member>
+      <member refid="class_gamepad___u_i__button_1aa35365f943953ccd630469087992f1ed" prot="public" virt="non-virtual"><scope>Gamepad_UI_button</scope><name>right_id</name></member>
+      <member refid="class_gamepad___u_i__button_1a169c2892cb714ae0f629cd5d741e0ecb" prot="public" virt="non-virtual"><scope>Gamepad_UI_button</scope><name>set_neighbours</name></member>
+      <member refid="class_gamepad___u_i__button_1a5ff782e893b534826b9cae992542d3e3" prot="public" virt="non-virtual"><scope>Gamepad_UI_button</scope><name>up_id</name></member>
+      <member refid="class_gamepad___u_i__button_1a146bf863e6bf4026cf140175108272f3" prot="public" virt="non-virtual"><scope>Gamepad_UI_button</scope><name>w</name></member>
+      <member refid="class_gamepad___u_i__button_1a3dfb978c92950dc2f0b7503f6850c16f" prot="public" virt="non-virtual"><scope>Gamepad_UI_button</scope><name>x</name></member>
+      <member refid="class_gamepad___u_i__button_1ac3ce0a4468c3e2e71999ebaa444b6eb0" prot="public" virt="non-virtual"><scope>Gamepad_UI_button</scope><name>y</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

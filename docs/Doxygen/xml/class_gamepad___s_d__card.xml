@@ -1,0 +1,1241 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="class_gamepad___s_d__card" kind="class" language="C++" prot="public">
+    <compoundname>Gamepad_SD_card</compoundname>
+    <includes refid="sd__card_8h" local="no">sd_card.h</includes>
+    <sectiondef kind="public-type">
+      <memberdef kind="enum" id="class_gamepad___s_d__card_1ac189c7821ff5ae2bc9b7a365d6fd8ca5" prot="public" static="no" strong="no">
+        <type></type>
+        <name>SD_status</name>
+        <qualifiedname>Gamepad_SD_card::SD_status</qualifiedname>
+        <enumvalue id="class_gamepad___s_d__card_1ac189c7821ff5ae2bc9b7a365d6fd8ca5a72280119268beb8b776858c71ac8cecd" prot="public">
+          <name>SD_OK</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_gamepad___s_d__card_1ac189c7821ff5ae2bc9b7a365d6fd8ca5acd158df7c201d3f491fe02419ace05c1" prot="public">
+          <name>SD_FAILED</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_gamepad___s_d__card_1ac189c7821ff5ae2bc9b7a365d6fd8ca5aceeda2f4684cf8173650475598f582e9" prot="public">
+          <name>SD_DISCONNECT</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/sd_card.h" line="36" column="5" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/sd_card.h" bodystart="36" bodyend="40"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_gamepad___s_d__card_1a7b7a63de8cc1e57b2c4a190ce3ddfa7a" prot="private" static="no" mutable="no">
+        <type>File</type>
+        <definition>File Gamepad_SD_card::dir</definition>
+        <argsstring></argsstring>
+        <name>dir</name>
+        <qualifiedname>Gamepad_SD_card::dir</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/sd_card.h" line="28" column="10" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/sd_card.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gamepad___s_d__card_1af06a7ac913c962c4e5035a40920043b0" prot="private" static="no" mutable="no">
+        <type>File</type>
+        <definition>File Gamepad_SD_card::file</definition>
+        <argsstring></argsstring>
+        <name>file</name>
+        <qualifiedname>Gamepad_SD_card::file</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/sd_card.h" line="29" column="10" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/sd_card.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gamepad___s_d__card_1ab142508594784bd60d84c8efe4b09336" prot="private" static="no" mutable="no">
+        <type>String</type>
+        <definition>String Gamepad_SD_card::root</definition>
+        <argsstring></argsstring>
+        <name>root</name>
+        <qualifiedname>Gamepad_SD_card::root</qualifiedname>
+        <initializer>= &quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/sd_card.h" line="30" column="12" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/sd_card.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gamepad___s_d__card_1a431f9b39368bae48176a4cb253d4431b" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Gamepad_SD_card::initialized</definition>
+        <argsstring></argsstring>
+        <name>initialized</name>
+        <qualifiedname>Gamepad_SD_card::initialized</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/sd_card.h" line="31" column="10" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/sd_card.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_gamepad___s_d__card_1a1be2bf673929bf1ca085ba170b2300f0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gamepad_SD_card::check_root_level</definition>
+        <argsstring>(String path)</argsstring>
+        <name>check_root_level</name>
+        <qualifiedname>Gamepad_SD_card::check_root_level</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/sd_card.h" line="33" column="10" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/sd_card.cpp" bodystart="8" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gamepad___s_d__card_1a817e6cb030f18f84421ea8bbb954094d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gamepad_SD_card::process_path</definition>
+        <argsstring>(String &amp;path, bool absolute)</argsstring>
+        <name>process_path</name>
+        <qualifiedname>Gamepad_SD_card::process_path</qualifiedname>
+        <param>
+          <type>String &amp;</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>absolute</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/sd_card.h" line="34" column="10" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/sd_card.cpp" bodystart="15" bodyend="26"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_gamepad___s_d__card_1a88c21f71f10cba0bf9ccb343d7985f28" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gamepad_SD_card::Gamepad_SD_card</definition>
+        <argsstring>()=default</argsstring>
+        <name>Gamepad_SD_card</name>
+        <qualifiedname>Gamepad_SD_card::Gamepad_SD_card</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/sd_card.h" line="42" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gamepad___s_d__card_1ab58a39e79fcf5a7eb0d3af4ad9a854b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gamepad_SD_card::~Gamepad_SD_card</definition>
+        <argsstring>()</argsstring>
+        <name>~Gamepad_SD_card</name>
+        <qualifiedname>Gamepad_SD_card::~Gamepad_SD_card</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/sd_card.h" line="43" column="5" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/sd_card.cpp" bodystart="3" bodyend="6"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gamepad___s_d__card_1a5aa282ca221a12be8e19fad3bb24cc61" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t Gamepad_SD_card::init</definition>
+        <argsstring>(String root_limit=&quot;/&quot;)</argsstring>
+        <name>init</name>
+        <qualifiedname>Gamepad_SD_card::init</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>root_limit</declname>
+          <defval>&quot;/&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/sd_card.h" line="45" column="13" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/sd_card.cpp" bodystart="28" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gamepad___s_d__card_1afb2a2b173a49aebae11becb4715da7df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gamepad_SD_card::open_dir</definition>
+        <argsstring>(String path, bool absolute=false)</argsstring>
+        <name>open_dir</name>
+        <qualifiedname>Gamepad_SD_card::open_dir</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>absolute</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Open directory. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>string with path to the dir </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>absolute</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>set true if path is absolute </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true: success </para>
+</simplesect>
+<simplesect kind="return"><para>false: failed </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/sd_card.h" line="57" column="10" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/sd_card.cpp" bodystart="49" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gamepad___s_d__card_1a7195f67a7bf9b6035744637317177378" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gamepad_SD_card::open_root_dir</definition>
+        <argsstring>()</argsstring>
+        <name>open_root_dir</name>
+        <qualifiedname>Gamepad_SD_card::open_root_dir</qualifiedname>
+        <briefdescription>
+<para>Open root dir. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true: success </para>
+</simplesect>
+<simplesect kind="return"><para>false: failed </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/sd_card.h" line="65" column="10" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/sd_card.cpp" bodystart="63" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gamepad___s_d__card_1a5866f73875b5f31d04d9b5c1564d3bf2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; <ref refid="structfile__name__t" kindref="compound">file_name_t</ref> &gt;</type>
+        <definition>std::vector&lt; file_name_t &gt; Gamepad_SD_card::list_dir</definition>
+        <argsstring>()</argsstring>
+        <name>list_dir</name>
+        <qualifiedname>Gamepad_SD_card::list_dir</qualifiedname>
+        <briefdescription>
+<para>Get list of all files and dirs in the current dir. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>std::vector &lt; <ref refid="structfile__name__t" kindref="compound">file_name_t</ref> &gt;: <computeroutput>std::vector</computeroutput> filled with <computeroutput><ref refid="structfile__name__t" kindref="compound">file_name_t</ref></computeroutput> data of each element </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/sd_card.h" line="72" column="18" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/sd_card.cpp" bodystart="83" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gamepad___s_d__card_1a5d69b6153d67c25257b572168e11cca9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>String</type>
+        <definition>String Gamepad_SD_card::current_dir</definition>
+        <argsstring>()</argsstring>
+        <name>current_dir</name>
+        <qualifiedname>Gamepad_SD_card::current_dir</qualifiedname>
+        <briefdescription>
+<para>Get absolute path to currently opened dir. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>String: path string </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/sd_card.h" line="79" column="12" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/sd_card.cpp" bodystart="100" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gamepad___s_d__card_1a282d55fe80502daadfdc7b69b82ecba6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gamepad_SD_card::make_dir</definition>
+        <argsstring>(String path, bool absolute=false)</argsstring>
+        <name>make_dir</name>
+        <qualifiedname>Gamepad_SD_card::make_dir</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>absolute</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Create directory. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>path to new directory </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>absolute</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>set true if path is absolute </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true: success </para>
+</simplesect>
+<simplesect kind="return"><para>false: failed </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/sd_card.h" line="89" column="10" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/sd_card.cpp" bodystart="104" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gamepad___s_d__card_1ad75b1357590afcbcb1ed69df2c7fb41f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gamepad_SD_card::remove_dir</definition>
+        <argsstring>(String path, bool absolute=false)</argsstring>
+        <name>remove_dir</name>
+        <qualifiedname>Gamepad_SD_card::remove_dir</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>absolute</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Delete directory. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>path to directory </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>absolute</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>set true if path is absolute </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true: success </para>
+</simplesect>
+<simplesect kind="return"><para>false: failed </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/sd_card.h" line="99" column="10" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/sd_card.cpp" bodystart="114" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gamepad___s_d__card_1a70eeec299907579cd480b5deee0ec240" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gamepad_SD_card::exists</definition>
+        <argsstring>(String path, bool absolute=false)</argsstring>
+        <name>exists</name>
+        <qualifiedname>Gamepad_SD_card::exists</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>absolute</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Check if dir/file exists. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>path to directory </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>absolute</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>set true if path is absolute </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true: exsits </para>
+</simplesect>
+<simplesect kind="return"><para>false: does not exist </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/sd_card.h" line="111" column="10" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/sd_card.cpp" bodystart="124" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gamepad___s_d__card_1ab6f6ebfeb9a4835f5ad8415f175c6582" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gamepad_SD_card::is_dir</definition>
+        <argsstring>(String path, bool absolute=false)</argsstring>
+        <name>is_dir</name>
+        <qualifiedname>Gamepad_SD_card::is_dir</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>absolute</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Checks if element is dir or file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>path to the element </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>absolute</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>set true if path is absolute </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true: element is dir </para>
+</simplesect>
+<simplesect kind="return"><para>false: element is file </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/sd_card.h" line="121" column="10" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/sd_card.cpp" bodystart="130" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gamepad___s_d__card_1a60a248a8eb14f819ecf782d01e62ebf5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gamepad_SD_card::open_file</definition>
+        <argsstring>(String path, const char *mode=&quot;r&quot;, bool absolute=false)</argsstring>
+        <name>open_file</name>
+        <qualifiedname>Gamepad_SD_card::open_file</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>mode</declname>
+          <defval>&quot;r&quot;</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>absolute</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Open file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>If file does not exist it would be created</para>
+</simplesect>
+<simplesect kind="note"><para><computeroutput>FS::file</computeroutput> opened file reference is stored inside <computeroutput><ref refid="class_gamepad_1a53f0027e24c9cca7294759c8baae356b" kindref="member">Gamepad::game_files</ref></computeroutput></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>path to the file </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>&quot;r&quot; | &quot;w&quot; | &quot;a&quot; - read, write or append modes. Read is default </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>absolute</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>set true if path is absolute </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true: success </para>
+</simplesect>
+<simplesect kind="return"><para>false: failed </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/sd_card.h" line="138" column="10" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/sd_card.cpp" bodystart="143" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gamepad___s_d__card_1a4639fbaf04189f0153dbbdc88105d176" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gamepad_SD_card::open_file</definition>
+        <argsstring>(String path, bool absolute)</argsstring>
+        <name>open_file</name>
+        <qualifiedname>Gamepad_SD_card::open_file</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>absolute</declname>
+        </param>
+        <briefdescription>
+<para>Open file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>If file does not exist it would be created</para>
+</simplesect>
+<simplesect kind="note"><para><computeroutput>FS::file</computeroutput> opened file reference is stored inside <computeroutput><ref refid="class_gamepad_1a53f0027e24c9cca7294759c8baae356b" kindref="member">Gamepad::game_files</ref></computeroutput></para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>path to the file </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>absolute</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>set true if path is absolute </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true: success </para>
+</simplesect>
+<simplesect kind="return"><para>false: failed </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/sd_card.h" line="152" column="10" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/sd_card.cpp" bodystart="155" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gamepad___s_d__card_1a4b5206f006afed853f364f8d7477c666" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gamepad_SD_card::close_file</definition>
+        <argsstring>()</argsstring>
+        <name>close_file</name>
+        <qualifiedname>Gamepad_SD_card::close_file</qualifiedname>
+        <briefdescription>
+<para>Close opened file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>File saved automatically on close </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/sd_card.h" line="159" column="10" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/sd_card.cpp" bodystart="159" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gamepad___s_d__card_1abc764888e0deee081c3a5cfe863fffd8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>File *</type>
+        <definition>File * Gamepad_SD_card::get_file_reference</definition>
+        <argsstring>()</argsstring>
+        <name>get_file_reference</name>
+        <qualifiedname>Gamepad_SD_card::get_file_reference</qualifiedname>
+        <briefdescription>
+<para>Get direct access to <computeroutput>FS::file</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>File*: pointer to the opened file </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/sd_card.h" line="166" column="10" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/sd_card.cpp" bodystart="163" bodyend="165"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gamepad___s_d__card_1a3d681571013903f3b63205c5789c5504" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gamepad_SD_card::file_available</definition>
+        <argsstring>()</argsstring>
+        <name>file_available</name>
+        <qualifiedname>Gamepad_SD_card::file_available</qualifiedname>
+        <briefdescription>
+<para>Check if there is data to read in file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true </para>
+</simplesect>
+<simplesect kind="return"><para>false </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/sd_card.h" line="176" column="10" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/sd_card.cpp" bodystart="167" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gamepad___s_d__card_1a3bb57d7e4c7a8c27fc1f80929f295ebf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t *</type>
+        <definition>uint8_t * Gamepad_SD_card::file_read</definition>
+        <argsstring>(int start_pos=0, int chunk_size=0)</argsstring>
+        <name>file_read</name>
+        <qualifiedname>Gamepad_SD_card::file_read</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>start_pos</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>chunk_size</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Read data from file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>start_pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>starting position (in bytes) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>chunk_size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>reading size (in bytes) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>uint8_t*: pointer to an array with file data and size equal to <computeroutput>chunk_size</computeroutput> </para>
+</simplesect>
+<simplesect kind="return"><para>nullptr if failed </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/sd_card.h" line="186" column="13" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/sd_card.cpp" bodystart="171" bodyend="189"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gamepad___s_d__card_1ab9664005f2a87f3cd66f9cf8477ece16" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>String</type>
+        <definition>String Gamepad_SD_card::file_read_string</definition>
+        <argsstring>()</argsstring>
+        <name>file_read_string</name>
+        <qualifiedname>Gamepad_SD_card::file_read_string</qualifiedname>
+        <briefdescription>
+<para>Read all file as text. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>String: text of file </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/sd_card.h" line="193" column="12" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/sd_card.cpp" bodystart="191" bodyend="196"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gamepad___s_d__card_1a5e83f8833b3e6cf33daa7d0f8e46273b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>String</type>
+        <definition>String Gamepad_SD_card::file_getline</definition>
+        <argsstring>()</argsstring>
+        <name>file_getline</name>
+        <qualifiedname>Gamepad_SD_card::file_getline</qualifiedname>
+        <briefdescription>
+<para>Read file as text until <computeroutput>\n</computeroutput>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>String: line of text </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/sd_card.h" line="200" column="12" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/sd_card.cpp" bodystart="198" bodyend="203"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gamepad___s_d__card_1a739226ba1c9a59a8e9887a7afc04fc17" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>T *</type>
+        <definition>T * Gamepad_SD_card::file_read_variable</definition>
+        <argsstring>(int start_pos=0)</argsstring>
+        <name>file_read_variable</name>
+        <qualifiedname>Gamepad_SD_card::file_read_variable</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>start_pos</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Read raw variable data from file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>type of variable to read </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>start_pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>starting position (in bytes) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>T*: pointer to read variable </para>
+</simplesect>
+<simplesect kind="return"><para>nullptr if failed </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/sd_card.h" line="212" column="7" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/sd_card.h" bodystart="212" bodyend="214"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gamepad___s_d__card_1a30b31442ad1389edf9fd9266f271de89" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Gamepad_SD_card::get_file_size</definition>
+        <argsstring>()</argsstring>
+        <name>get_file_size</name>
+        <qualifiedname>Gamepad_SD_card::get_file_size</qualifiedname>
+        <briefdescription>
+<para>Get size of opened file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>int </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/sd_card.h" line="221" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/sd_card.cpp" bodystart="205" bodyend="210"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gamepad___s_d__card_1a3c1087d3567f84ecb9e3c545f19aca7d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gamepad_SD_card::file_write</definition>
+        <argsstring>(void *data, size_t size, int start_pos=-1)</argsstring>
+        <name>file_write</name>
+        <qualifiedname>Gamepad_SD_card::file_write</qualifiedname>
+        <param>
+          <type>void *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>start_pos</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+<para>Write data to file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="note"><para>Use file_write(<computeroutput>&amp;var</computeroutput>, sizeof(<computeroutput>var</computeroutput>)) to write variable of any type</para>
+</simplesect>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to data variable </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>size of data chunk (in bytes) </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>start_pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>position in file to write. Set -1 to write to the end of file </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true: success </para>
+</simplesect>
+<simplesect kind="return"><para>false: failed </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/sd_card.h" line="235" column="10" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/sd_card.cpp" bodystart="212" bodyend="220"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gamepad___s_d__card_1ae0fc55a68b77e5dbecfd410ecc32be95" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gamepad_SD_card::file_print</definition>
+        <argsstring>(String text)</argsstring>
+        <name>file_print</name>
+        <qualifiedname>Gamepad_SD_card::file_print</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+<para>Write a string to the end of file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>text</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true: success </para>
+</simplesect>
+<simplesect kind="return"><para>false: failed </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/sd_card.h" line="244" column="10" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/sd_card.cpp" bodystart="222" bodyend="227"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gamepad___s_d__card_1aafe2f78d54532de92dc953bd3253d202" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gamepad_SD_card::file_println</definition>
+        <argsstring>(String text)</argsstring>
+        <name>file_println</name>
+        <qualifiedname>Gamepad_SD_card::file_println</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>text</declname>
+        </param>
+        <briefdescription>
+<para>Write a string with newline to the end of file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>text</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true: success </para>
+</simplesect>
+<simplesect kind="return"><para>false: failed </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/sd_card.h" line="253" column="10" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/sd_card.cpp" bodystart="229" bodyend="234"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gamepad___s_d__card_1a20fdf076e177337627bfca69fadf6797" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gamepad_SD_card::save_file</definition>
+        <argsstring>()</argsstring>
+        <name>save_file</name>
+        <qualifiedname>Gamepad_SD_card::save_file</qualifiedname>
+        <briefdescription>
+<para>Save performed file changes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/sd_card.h" line="260" column="10" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/sd_card.cpp" bodystart="236" bodyend="241"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gamepad___s_d__card_1a032aad5744b199fe1d58a9ab07eb013c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gamepad_SD_card::create_file</definition>
+        <argsstring>(String path, bool absolute=false)</argsstring>
+        <name>create_file</name>
+        <qualifiedname>Gamepad_SD_card::create_file</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>absolute</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Create file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>path to the file </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>absolute</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>set true if path is absolute </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true: success </para>
+</simplesect>
+<simplesect kind="return"><para>false: failed </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/sd_card.h" line="272" column="10" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/sd_card.cpp" bodystart="243" bodyend="255"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gamepad___s_d__card_1a268b59fc2d2f12dc391adec8b7f1bbfd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gamepad_SD_card::remove_file</definition>
+        <argsstring>(String path, bool absolute=false)</argsstring>
+        <name>remove_file</name>
+        <qualifiedname>Gamepad_SD_card::remove_file</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>absolute</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Delete file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>path to the file </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>absolute</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>set true if path is absolute </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true: success </para>
+</simplesect>
+<simplesect kind="return"><para>false: failed </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/sd_card.h" line="282" column="10" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/sd_card.cpp" bodystart="257" bodyend="265"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gamepad___s_d__card_1a17a423949174c9c6b4abb9e8091a8448" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gamepad_SD_card::rename</definition>
+        <argsstring>(String curren_path, String new_path, bool absolute=false)</argsstring>
+        <name>rename</name>
+        <qualifiedname>Gamepad_SD_card::rename</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>curren_path</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>new_path</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>absolute</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Rename file/dir. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>curren_path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>path to the existing element </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>new_path</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>new path of the element </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>absolute</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>set true if path is absolute </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true: success </para>
+</simplesect>
+<simplesect kind="return"><para>false: failed </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/sd_card.h" line="293" column="10" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/sd_card.cpp" bodystart="267" bodyend="277"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gamepad___s_d__card_1a11b073ca7c253f5493d2c85a1ebc3c07" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_image__raw16__t" kindref="compound">Image_raw16_t</ref></type>
+        <definition>Image_raw16_t Gamepad_SD_card::file_read_PNG</definition>
+        <argsstring>(bool alpha_channel=false)</argsstring>
+        <name>file_read_PNG</name>
+        <qualifiedname>Gamepad_SD_card::file_read_PNG</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>alpha_channel</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Decode opened file as PNG to the <computeroutput><ref refid="class_image__raw16__t" kindref="compound">Image_raw16_t</ref></computeroutput> container. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>alpha_channel</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>set false to ignore alpha channel </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="class_image__raw16__t" kindref="compound">Image_raw16_t</ref>: decoded image </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/sd_card.h" line="303" column="19" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/sd_card.cpp" bodystart="318" bodyend="346"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gamepad___s_d__card_1a29c524dde18af84641b821c77e8a294d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gamepad_SD_card::write_raw_PNG</definition>
+        <argsstring>(Image_raw16_t &amp;img, int start_pos=0)</argsstring>
+        <name>write_raw_PNG</name>
+        <qualifiedname>Gamepad_SD_card::write_raw_PNG</qualifiedname>
+        <param>
+          <type><ref refid="class_image__raw16__t" kindref="compound">Image_raw16_t</ref> &amp;</type>
+          <declname>img</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>start_pos</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Encode <computeroutput><ref refid="class_image__raw16__t" kindref="compound">Image_raw16_t</ref></computeroutput> to png file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>img</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>image data </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>start_pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>position in file to write (inb bytes) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/sd_card.h" line="311" column="10" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/sd_card.cpp" bodystart="348" bodyend="366"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gamepad___s_d__card_1aa5f3bd35a9c14fc6afb88e6008f6c976" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_image__raw16__t" kindref="compound">Image_raw16_t</ref></type>
+        <definition>Image_raw16_t Gamepad_SD_card::read_raw_PNG</definition>
+        <argsstring>(int start_pos=0)</argsstring>
+        <name>read_raw_PNG</name>
+        <qualifiedname>Gamepad_SD_card::read_raw_PNG</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>start_pos</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+<para>Read already decoded PNG from file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>start_pos</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>data chunk start position (in bytes) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="class_image__raw16__t" kindref="compound">Image_raw16_t</ref>: resulting image </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/sd_card.h" line="319" column="19" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/sd_card.cpp" bodystart="368" bodyend="402"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/sd_card.h" line="27" column="1" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/sd_card.h" bodystart="27" bodyend="320"/>
+    <listofallmembers>
+      <member refid="class_gamepad___s_d__card_1a1be2bf673929bf1ca085ba170b2300f0" prot="private" virt="non-virtual"><scope>Gamepad_SD_card</scope><name>check_root_level</name></member>
+      <member refid="class_gamepad___s_d__card_1a4b5206f006afed853f364f8d7477c666" prot="public" virt="non-virtual"><scope>Gamepad_SD_card</scope><name>close_file</name></member>
+      <member refid="class_gamepad___s_d__card_1a032aad5744b199fe1d58a9ab07eb013c" prot="public" virt="non-virtual"><scope>Gamepad_SD_card</scope><name>create_file</name></member>
+      <member refid="class_gamepad___s_d__card_1a5d69b6153d67c25257b572168e11cca9" prot="public" virt="non-virtual"><scope>Gamepad_SD_card</scope><name>current_dir</name></member>
+      <member refid="class_gamepad___s_d__card_1a7b7a63de8cc1e57b2c4a190ce3ddfa7a" prot="private" virt="non-virtual"><scope>Gamepad_SD_card</scope><name>dir</name></member>
+      <member refid="class_gamepad___s_d__card_1a70eeec299907579cd480b5deee0ec240" prot="public" virt="non-virtual"><scope>Gamepad_SD_card</scope><name>exists</name></member>
+      <member refid="class_gamepad___s_d__card_1af06a7ac913c962c4e5035a40920043b0" prot="private" virt="non-virtual"><scope>Gamepad_SD_card</scope><name>file</name></member>
+      <member refid="class_gamepad___s_d__card_1a3d681571013903f3b63205c5789c5504" prot="public" virt="non-virtual"><scope>Gamepad_SD_card</scope><name>file_available</name></member>
+      <member refid="class_gamepad___s_d__card_1a5e83f8833b3e6cf33daa7d0f8e46273b" prot="public" virt="non-virtual"><scope>Gamepad_SD_card</scope><name>file_getline</name></member>
+      <member refid="class_gamepad___s_d__card_1ae0fc55a68b77e5dbecfd410ecc32be95" prot="public" virt="non-virtual"><scope>Gamepad_SD_card</scope><name>file_print</name></member>
+      <member refid="class_gamepad___s_d__card_1aafe2f78d54532de92dc953bd3253d202" prot="public" virt="non-virtual"><scope>Gamepad_SD_card</scope><name>file_println</name></member>
+      <member refid="class_gamepad___s_d__card_1a3bb57d7e4c7a8c27fc1f80929f295ebf" prot="public" virt="non-virtual"><scope>Gamepad_SD_card</scope><name>file_read</name></member>
+      <member refid="class_gamepad___s_d__card_1a11b073ca7c253f5493d2c85a1ebc3c07" prot="public" virt="non-virtual"><scope>Gamepad_SD_card</scope><name>file_read_PNG</name></member>
+      <member refid="class_gamepad___s_d__card_1ab9664005f2a87f3cd66f9cf8477ece16" prot="public" virt="non-virtual"><scope>Gamepad_SD_card</scope><name>file_read_string</name></member>
+      <member refid="class_gamepad___s_d__card_1a739226ba1c9a59a8e9887a7afc04fc17" prot="public" virt="non-virtual"><scope>Gamepad_SD_card</scope><name>file_read_variable</name></member>
+      <member refid="class_gamepad___s_d__card_1a3c1087d3567f84ecb9e3c545f19aca7d" prot="public" virt="non-virtual"><scope>Gamepad_SD_card</scope><name>file_write</name></member>
+      <member refid="class_gamepad___s_d__card_1a88c21f71f10cba0bf9ccb343d7985f28" prot="public" virt="non-virtual"><scope>Gamepad_SD_card</scope><name>Gamepad_SD_card</name></member>
+      <member refid="class_gamepad___s_d__card_1abc764888e0deee081c3a5cfe863fffd8" prot="public" virt="non-virtual"><scope>Gamepad_SD_card</scope><name>get_file_reference</name></member>
+      <member refid="class_gamepad___s_d__card_1a30b31442ad1389edf9fd9266f271de89" prot="public" virt="non-virtual"><scope>Gamepad_SD_card</scope><name>get_file_size</name></member>
+      <member refid="class_gamepad___s_d__card_1a5aa282ca221a12be8e19fad3bb24cc61" prot="public" virt="non-virtual"><scope>Gamepad_SD_card</scope><name>init</name></member>
+      <member refid="class_gamepad___s_d__card_1a431f9b39368bae48176a4cb253d4431b" prot="private" virt="non-virtual"><scope>Gamepad_SD_card</scope><name>initialized</name></member>
+      <member refid="class_gamepad___s_d__card_1ab6f6ebfeb9a4835f5ad8415f175c6582" prot="public" virt="non-virtual"><scope>Gamepad_SD_card</scope><name>is_dir</name></member>
+      <member refid="class_gamepad___s_d__card_1a5866f73875b5f31d04d9b5c1564d3bf2" prot="public" virt="non-virtual"><scope>Gamepad_SD_card</scope><name>list_dir</name></member>
+      <member refid="class_gamepad___s_d__card_1a282d55fe80502daadfdc7b69b82ecba6" prot="public" virt="non-virtual"><scope>Gamepad_SD_card</scope><name>make_dir</name></member>
+      <member refid="class_gamepad___s_d__card_1afb2a2b173a49aebae11becb4715da7df" prot="public" virt="non-virtual"><scope>Gamepad_SD_card</scope><name>open_dir</name></member>
+      <member refid="class_gamepad___s_d__card_1a60a248a8eb14f819ecf782d01e62ebf5" prot="public" virt="non-virtual"><scope>Gamepad_SD_card</scope><name>open_file</name></member>
+      <member refid="class_gamepad___s_d__card_1a4639fbaf04189f0153dbbdc88105d176" prot="public" virt="non-virtual"><scope>Gamepad_SD_card</scope><name>open_file</name></member>
+      <member refid="class_gamepad___s_d__card_1a7195f67a7bf9b6035744637317177378" prot="public" virt="non-virtual"><scope>Gamepad_SD_card</scope><name>open_root_dir</name></member>
+      <member refid="class_gamepad___s_d__card_1a817e6cb030f18f84421ea8bbb954094d" prot="private" virt="non-virtual"><scope>Gamepad_SD_card</scope><name>process_path</name></member>
+      <member refid="class_gamepad___s_d__card_1aa5f3bd35a9c14fc6afb88e6008f6c976" prot="public" virt="non-virtual"><scope>Gamepad_SD_card</scope><name>read_raw_PNG</name></member>
+      <member refid="class_gamepad___s_d__card_1ad75b1357590afcbcb1ed69df2c7fb41f" prot="public" virt="non-virtual"><scope>Gamepad_SD_card</scope><name>remove_dir</name></member>
+      <member refid="class_gamepad___s_d__card_1a268b59fc2d2f12dc391adec8b7f1bbfd" prot="public" virt="non-virtual"><scope>Gamepad_SD_card</scope><name>remove_file</name></member>
+      <member refid="class_gamepad___s_d__card_1a17a423949174c9c6b4abb9e8091a8448" prot="public" virt="non-virtual"><scope>Gamepad_SD_card</scope><name>rename</name></member>
+      <member refid="class_gamepad___s_d__card_1ab142508594784bd60d84c8efe4b09336" prot="private" virt="non-virtual"><scope>Gamepad_SD_card</scope><name>root</name></member>
+      <member refid="class_gamepad___s_d__card_1a20fdf076e177337627bfca69fadf6797" prot="public" virt="non-virtual"><scope>Gamepad_SD_card</scope><name>save_file</name></member>
+      <member refid="class_gamepad___s_d__card_1ac189c7821ff5ae2bc9b7a365d6fd8ca5aceeda2f4684cf8173650475598f582e9" prot="public" virt="non-virtual"><scope>Gamepad_SD_card</scope><name>SD_DISCONNECT</name></member>
+      <member refid="class_gamepad___s_d__card_1ac189c7821ff5ae2bc9b7a365d6fd8ca5acd158df7c201d3f491fe02419ace05c1" prot="public" virt="non-virtual"><scope>Gamepad_SD_card</scope><name>SD_FAILED</name></member>
+      <member refid="class_gamepad___s_d__card_1ac189c7821ff5ae2bc9b7a365d6fd8ca5a72280119268beb8b776858c71ac8cecd" prot="public" virt="non-virtual"><scope>Gamepad_SD_card</scope><name>SD_OK</name></member>
+      <member refid="class_gamepad___s_d__card_1ac189c7821ff5ae2bc9b7a365d6fd8ca5" prot="public" virt="non-virtual"><scope>Gamepad_SD_card</scope><name>SD_status</name></member>
+      <member refid="class_gamepad___s_d__card_1a29c524dde18af84641b821c77e8a294d" prot="public" virt="non-virtual"><scope>Gamepad_SD_card</scope><name>write_raw_PNG</name></member>
+      <member refid="class_gamepad___s_d__card_1ab58a39e79fcf5a7eb0d3af4ad9a854b9" prot="public" virt="non-virtual"><scope>Gamepad_SD_card</scope><name>~Gamepad_SD_card</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

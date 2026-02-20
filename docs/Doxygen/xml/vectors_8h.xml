@@ -1,0 +1,136 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="vectors_8h" kind="file" language="C++">
+    <compoundname>vectors.h</compoundname>
+    <includes local="no">Arduino.h</includes>
+    <includedby refid="accel_8h" local="yes">C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/accel.h</includedby>
+    <includedby refid="vectors_8cpp" local="yes">C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/vectors.cpp</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>Arduino.h</label>
+      </node>
+      <node id="1">
+        <label>C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/vectors.h</label>
+        <link refid="vectors_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="4">
+        <label>C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/DevelDeckAPI.cpp</label>
+        <link refid="_devel_deck_a_p_i_8cpp"/>
+      </node>
+      <node id="3">
+        <label>C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/DevelDeckAPI.h</label>
+        <link refid="_devel_deck_a_p_i_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/OTA.cpp</label>
+        <link refid="_o_t_a_8cpp"/>
+      </node>
+      <node id="8">
+        <label>C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/accel.cpp</label>
+        <link refid="accel_8cpp"/>
+      </node>
+      <node id="2">
+        <label>C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/accel.h</label>
+        <link refid="accel_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/buttons.cpp</label>
+        <link refid="buttons_8cpp"/>
+      </node>
+      <node id="7">
+        <label>C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/ui.cpp</label>
+        <link refid="ui_8cpp"/>
+      </node>
+      <node id="9">
+        <label>C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/vectors.cpp</label>
+        <link refid="vectors_8cpp"/>
+      </node>
+      <node id="1">
+        <label>C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/vectors.h</label>
+        <link refid="vectors_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classvec2" prot="public">vec2</innerclass>
+    <innerclass refid="classvec3" prot="public">vec3</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>GAMEPAD_VECTORS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GAMEPAD_VECTORS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;Arduino.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="classvec2" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classvec2_1a22de4afbea285e4dce44b2bb2b80cffe" kindref="member">vec2</ref>{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="8" refid="classvec2_1a002d3519d48fe3cd79729b5b0ded74bf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classvec2_1a002d3519d48fe3cd79729b5b0ded74bf" kindref="member">x</ref>,<sp/><ref refid="classvec2_1a6d28b12b511da692550fc9d37b4e9b1d" kindref="member">y</ref>;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvec2_1a22de4afbea285e4dce44b2bb2b80cffe" kindref="member">vec2</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x_<sp/>=<sp/>0,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>y_<sp/>=<sp/>0);</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvec2_1a22de4afbea285e4dce44b2bb2b80cffe" kindref="member">vec2</ref><sp/><ref refid="classvec2_1a32eac3489592015b1b10100d625ada93" kindref="member">operator* </ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>scale);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvec2_1a22de4afbea285e4dce44b2bb2b80cffe" kindref="member">vec2</ref><sp/><ref refid="classvec2_1a995f6e238621aedd46e7e15b94cc70e0" kindref="member">operator*= </ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>scale);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvec2_1a22de4afbea285e4dce44b2bb2b80cffe" kindref="member">vec2</ref><sp/><ref refid="classvec2_1a32eac3489592015b1b10100d625ada93" kindref="member">operator* </ref>(<ref refid="classvec2_1a22de4afbea285e4dce44b2bb2b80cffe" kindref="member">vec2</ref><sp/>vec);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvec2_1a22de4afbea285e4dce44b2bb2b80cffe" kindref="member">vec2</ref><sp/><ref refid="classvec2_1a995f6e238621aedd46e7e15b94cc70e0" kindref="member">operator*= </ref>(<ref refid="classvec2_1a22de4afbea285e4dce44b2bb2b80cffe" kindref="member">vec2</ref><sp/>vec);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvec2_1a22de4afbea285e4dce44b2bb2b80cffe" kindref="member">vec2</ref><sp/><ref refid="classvec2_1a1543465e494b41c83ef17295e913c352" kindref="member">operator+ </ref>(<ref refid="classvec2_1a22de4afbea285e4dce44b2bb2b80cffe" kindref="member">vec2</ref><sp/>vec);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvec2_1a22de4afbea285e4dce44b2bb2b80cffe" kindref="member">vec2</ref><sp/><ref refid="classvec2_1ac00450356807df93787366a7001d5e3f" kindref="member">operator+= </ref>(<ref refid="classvec2_1a22de4afbea285e4dce44b2bb2b80cffe" kindref="member">vec2</ref><sp/>vec);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvec2_1a22de4afbea285e4dce44b2bb2b80cffe" kindref="member">vec2</ref><sp/><ref refid="classvec2_1a128f48e56cf896b172f37ff3b033c24c" kindref="member">operator- </ref>(<ref refid="classvec2_1a22de4afbea285e4dce44b2bb2b80cffe" kindref="member">vec2</ref><sp/>vec);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvec2_1a22de4afbea285e4dce44b2bb2b80cffe" kindref="member">vec2</ref><sp/><ref refid="classvec2_1a7fb410a4087bb6be4cd650893560d5f5" kindref="member">operator-= </ref>(<ref refid="classvec2_1a22de4afbea285e4dce44b2bb2b80cffe" kindref="member">vec2</ref><sp/>vec);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classvec2_1a53f97cae80f5481b1ccb78080f3c481f" kindref="member">mod</ref>();</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvec2_1a22de4afbea285e4dce44b2bb2b80cffe" kindref="member">vec2</ref><sp/><ref refid="classvec2_1ae21dd9671f578fe5185bb0075ea480df" kindref="member">norm</ref>();</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvec2_1a22de4afbea285e4dce44b2bb2b80cffe" kindref="member">vec2</ref><sp/><ref refid="classvec2_1af061ec72a390b2e6b193092af1f28a99" kindref="member">fast_norm</ref>();</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classvec2_1ab02daf916b42ab867db41546654e9307" kindref="member">dot</ref>(<ref refid="classvec2_1a22de4afbea285e4dce44b2bb2b80cffe" kindref="member">vec2</ref><sp/>vec);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classvec2_1a3a273d218fec7f2e4fc2a65c0f6fc4ed" kindref="member">cross_2d</ref>(<ref refid="classvec2_1a22de4afbea285e4dce44b2bb2b80cffe" kindref="member">vec2</ref><sp/>vec);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="classvec3" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classvec3_1af84945a5a5297d1f43e3d6df66654ce7" kindref="member">vec3</ref>{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="31" refid="classvec3_1a4ee2cfd5c2698031a47ab7f898d8d47b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classvec3_1a4ee2cfd5c2698031a47ab7f898d8d47b" kindref="member">x</ref>,<sp/><ref refid="classvec3_1a891379795a14c80936cde4170239a138" kindref="member">y</ref>,<sp/><ref refid="classvec3_1aa76213efcc5d656cc14b71db80a92162" kindref="member">z</ref>;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvec3_1af84945a5a5297d1f43e3d6df66654ce7" kindref="member">vec3</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>x_<sp/>=<sp/>0,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>y_<sp/>=<sp/>0,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>z_<sp/>=<sp/>0);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvec3_1af84945a5a5297d1f43e3d6df66654ce7" kindref="member">vec3</ref>(<ref refid="classvec2" kindref="compound">vec2</ref><sp/>&amp;vec);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvec3_1af84945a5a5297d1f43e3d6df66654ce7" kindref="member">vec3</ref><sp/><ref refid="classvec3_1a288064006326e540bf3904a9c8258eb4" kindref="member">operator* </ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>scale);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvec3_1af84945a5a5297d1f43e3d6df66654ce7" kindref="member">vec3</ref><sp/><ref refid="classvec3_1aa7500c006b2c79853953c23c10207561" kindref="member">operator*= </ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>scale);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvec3_1af84945a5a5297d1f43e3d6df66654ce7" kindref="member">vec3</ref><sp/><ref refid="classvec3_1a288064006326e540bf3904a9c8258eb4" kindref="member">operator* </ref>(<ref refid="classvec3_1af84945a5a5297d1f43e3d6df66654ce7" kindref="member">vec3</ref><sp/>vec);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvec3_1af84945a5a5297d1f43e3d6df66654ce7" kindref="member">vec3</ref><sp/><ref refid="classvec3_1aa7500c006b2c79853953c23c10207561" kindref="member">operator*= </ref>(<ref refid="classvec3_1af84945a5a5297d1f43e3d6df66654ce7" kindref="member">vec3</ref><sp/>vec);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvec3_1af84945a5a5297d1f43e3d6df66654ce7" kindref="member">vec3</ref><sp/><ref refid="classvec3_1a27b7d70ba5c11422735a736b0a47aa5b" kindref="member">operator+ </ref>(<ref refid="classvec3_1af84945a5a5297d1f43e3d6df66654ce7" kindref="member">vec3</ref><sp/>vec);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvec3_1af84945a5a5297d1f43e3d6df66654ce7" kindref="member">vec3</ref><sp/><ref refid="classvec3_1aa73d5dd0a983a833f02c9cb240ebf7d3" kindref="member">operator+= </ref>(<ref refid="classvec3_1af84945a5a5297d1f43e3d6df66654ce7" kindref="member">vec3</ref><sp/>vec);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvec3_1af84945a5a5297d1f43e3d6df66654ce7" kindref="member">vec3</ref><sp/><ref refid="classvec3_1a1b125808997ca4826c53cb8c79e18af7" kindref="member">operator- </ref>(<ref refid="classvec3_1af84945a5a5297d1f43e3d6df66654ce7" kindref="member">vec3</ref><sp/>vec);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvec3_1af84945a5a5297d1f43e3d6df66654ce7" kindref="member">vec3</ref><sp/><ref refid="classvec3_1a2e66fd55849e7de6e9904bdd33e59069" kindref="member">operator-= </ref>(<ref refid="classvec3_1af84945a5a5297d1f43e3d6df66654ce7" kindref="member">vec3</ref><sp/>vec);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classvec3_1a2f7c4bdeaec4b0db413d5c7bd392e45d" kindref="member">mod</ref>();</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvec3_1af84945a5a5297d1f43e3d6df66654ce7" kindref="member">vec3</ref><sp/><ref refid="classvec3_1aca2a031c5a07bdcdc109f19c009de8a0" kindref="member">norm</ref>();</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvec3_1af84945a5a5297d1f43e3d6df66654ce7" kindref="member">vec3</ref><sp/><ref refid="classvec3_1aee856ce8fcf6abba5153a1bd02e36697" kindref="member">fast_norm</ref>();</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classvec3_1a4f6891c6fa9acce60f9bf7ece3ec6bfa" kindref="member">dot</ref>(<ref refid="classvec3_1af84945a5a5297d1f43e3d6df66654ce7" kindref="member">vec3</ref><sp/>vec);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvec3_1af84945a5a5297d1f43e3d6df66654ce7" kindref="member">vec3</ref><sp/><ref refid="classvec3_1ab8c92c1817ef6d3e8fdcda89117ee8c7" kindref="member">cross</ref>(<ref refid="classvec3_1af84945a5a5297d1f43e3d6df66654ce7" kindref="member">vec3</ref><sp/>vec);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/vectors.h"/>
+  </compounddef>
+</doxygen>

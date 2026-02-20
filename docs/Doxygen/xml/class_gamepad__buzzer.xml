@@ -1,0 +1,330 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="class_gamepad__buzzer" kind="class" language="C++" prot="public">
+    <compoundname>Gamepad_buzzer</compoundname>
+    <includes refid="tacktile__response_8h" local="no">tacktile_response.h</includes>
+    <innerclass refid="struct_gamepad__buzzer_1_1sequence__element" prot="public">Gamepad_buzzer::sequence_element</innerclass>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_gamepad__buzzer_1a48f2c0181d4d47d7ea52b2f8a4885c15" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t Gamepad_buzzer::channel</definition>
+        <argsstring></argsstring>
+        <name>channel</name>
+        <qualifiedname>Gamepad_buzzer::channel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/tacktile_response.h" line="10" column="13" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/tacktile_response.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gamepad__buzzer_1a6413fb61319e7d6694c465095af47055" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t Gamepad_buzzer::volume</definition>
+        <argsstring></argsstring>
+        <name>volume</name>
+        <qualifiedname>Gamepad_buzzer::volume</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/tacktile_response.h" line="11" column="13" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/tacktile_response.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gamepad__buzzer_1a3c9620d4bb59a0f8d0a43816e210de3f" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t Gamepad_buzzer::volume_level</definition>
+        <argsstring></argsstring>
+        <name>volume_level</name>
+        <qualifiedname>Gamepad_buzzer::volume_level</qualifiedname>
+        <initializer>= <ref refid="config_8h_1aa19fc9d640d6b992b7903b55b6059238" kindref="member">DEFAULT_BUZZER_VOLUME</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/tacktile_response.h" line="12" column="13" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/tacktile_response.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_gamepad__buzzer_1a852bf0d0bd7dcc8e6eeeda22df5a7085" prot="private" static="no" mutable="no">
+        <type>TaskHandle_t</type>
+        <definition>TaskHandle_t Gamepad_buzzer::buzz_task_handler</definition>
+        <argsstring></argsstring>
+        <name>buzz_task_handler</name>
+        <qualifiedname>Gamepad_buzzer::buzz_task_handler</qualifiedname>
+        <initializer>= NULL</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/tacktile_response.h" line="14" column="18" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/tacktile_response.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_gamepad__buzzer_1a0f811d3699184c17a635162a7cdcff1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gamepad_buzzer::Gamepad_buzzer</definition>
+        <argsstring>()=default</argsstring>
+        <name>Gamepad_buzzer</name>
+        <qualifiedname>Gamepad_buzzer::Gamepad_buzzer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/tacktile_response.h" line="21" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gamepad__buzzer_1aea69a2ab8f6910d359c7499d78a839d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gamepad_buzzer::init</definition>
+        <argsstring>(uint16_t pin=BUZZ_PIN, uint8_t channel_=BUZZ_LEDC_CHANNEL)</argsstring>
+        <name>init</name>
+        <qualifiedname>Gamepad_buzzer::init</qualifiedname>
+        <param>
+          <type>uint16_t</type>
+          <declname>pin</declname>
+          <defval><ref refid="config_8h_1a426bba94d5ccd1047d7ebe5ffedf3623" kindref="member">BUZZ_PIN</ref></defval>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>channel_</declname>
+          <defval><ref refid="config_8h_1a4aae14a8fd2e0538a2f22f079e2684c1" kindref="member">BUZZ_LEDC_CHANNEL</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/tacktile_response.h" line="23" column="10" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/tacktile_response.cpp" bodystart="28" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gamepad__buzzer_1a758f8bb21ca8a385c3c6111fe3f6df45" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gamepad_buzzer::play_tone</definition>
+        <argsstring>(uint16_t freq)</argsstring>
+        <name>play_tone</name>
+        <qualifiedname>Gamepad_buzzer::play_tone</qualifiedname>
+        <param>
+          <type>uint16_t</type>
+          <declname>freq</declname>
+        </param>
+        <briefdescription>
+<para>Start playing tone on buzzer. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>freq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>frequency of sound </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/tacktile_response.h" line="31" column="10" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/tacktile_response.cpp" bodystart="37" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gamepad__buzzer_1ada781458e73f5c826803e5ed96c99188" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gamepad_buzzer::stop</definition>
+        <argsstring>()</argsstring>
+        <name>stop</name>
+        <qualifiedname>Gamepad_buzzer::stop</qualifiedname>
+        <briefdescription>
+<para>Stop playing any sound. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/tacktile_response.h" line="37" column="10" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/tacktile_response.cpp" bodystart="42" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gamepad__buzzer_1ab32f0413a4b86c69950277aa79464baf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gamepad_buzzer::change_volume</definition>
+        <argsstring>(uint8_t level)</argsstring>
+        <name>change_volume</name>
+        <qualifiedname>Gamepad_buzzer::change_volume</qualifiedname>
+        <param>
+          <type>uint8_t</type>
+          <declname>level</declname>
+        </param>
+        <briefdescription>
+<para>Change buzzer volume. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>level</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Volume level in range from 0 to BUZZER_VOLUME_LEVELS </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/tacktile_response.h" line="46" column="10" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/tacktile_response.cpp" bodystart="48" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gamepad__buzzer_1a11b041b6a4900857c4fa4ebfc4d50560" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t Gamepad_buzzer::get_volume</definition>
+        <argsstring>()</argsstring>
+        <name>get_volume</name>
+        <qualifiedname>Gamepad_buzzer::get_volume</qualifiedname>
+        <briefdescription>
+<para>Get current buzzer volume. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>uint8_t </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/tacktile_response.h" line="53" column="13" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/tacktile_response.cpp" bodystart="56" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gamepad__buzzer_1a9d67be9d84c7b1d93bc9152f1dc91daf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gamepad_buzzer::play_for_time</definition>
+        <argsstring>(uint16_t freq, uint16_t time)</argsstring>
+        <name>play_for_time</name>
+        <qualifiedname>Gamepad_buzzer::play_for_time</qualifiedname>
+        <param>
+          <type>uint16_t</type>
+          <declname>freq</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+<para>Play one frequency for some period of time. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>freq</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(Hz) frequency of sound </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>time</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>(ms) duration of sound </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/tacktile_response.h" line="63" column="10" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/tacktile_response.cpp" bodystart="60" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gamepad__buzzer_1ae3d3e88294201698da3e8e629ad9e64b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gamepad_buzzer::play_sequence</definition>
+        <argsstring>(std::vector&lt; sequence_element &gt; sequence)</argsstring>
+        <name>play_sequence</name>
+        <qualifiedname>Gamepad_buzzer::play_sequence</qualifiedname>
+        <param>
+          <type>std::vector&lt; <ref refid="struct_gamepad__buzzer_1_1sequence__element" kindref="compound">sequence_element</ref> &gt;</type>
+          <declname>sequence</declname>
+        </param>
+        <briefdescription>
+<para>Play tone sequence. Each tone play for specified duration one by one. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>sequence</parametername>
+</parameternamelist>
+<parameterdescription>
+<para><computeroutput>std::vector</computeroutput> filled with <computeroutput><ref refid="struct_gamepad__buzzer_1_1sequence__element" kindref="compound">Gamepad_buzzer::sequence_element</ref></computeroutput> sound data </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/tacktile_response.h" line="70" column="10" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/tacktile_response.cpp" bodystart="65" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gamepad__buzzer_1a578729c843ac2222955b6f39077fb84c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gamepad_buzzer::play_sequence</definition>
+        <argsstring>(uint16_t *data, uint32_t size)</argsstring>
+        <name>play_sequence</name>
+        <qualifiedname>Gamepad_buzzer::play_sequence</qualifiedname>
+        <param>
+          <type>uint16_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+<para>Play tone sequence. Each tone play for specified duration one by one. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>pointer to the <computeroutput>uint16_t</computeroutput> array with tone data in a format [freq1 (Hz), time1 (ms), freq2, time2, ...] </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>size</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>number of tones in the sequence </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/tacktile_response.h" line="78" column="10" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/tacktile_response.cpp" bodystart="91" bodyend="114"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/tacktile_response.h" line="9" column="1" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/tacktile_response.h" bodystart="9" bodyend="79"/>
+    <listofallmembers>
+      <member refid="class_gamepad__buzzer_1a852bf0d0bd7dcc8e6eeeda22df5a7085" prot="private" virt="non-virtual"><scope>Gamepad_buzzer</scope><name>buzz_task_handler</name></member>
+      <member refid="class_gamepad__buzzer_1ab32f0413a4b86c69950277aa79464baf" prot="public" virt="non-virtual"><scope>Gamepad_buzzer</scope><name>change_volume</name></member>
+      <member refid="class_gamepad__buzzer_1a48f2c0181d4d47d7ea52b2f8a4885c15" prot="private" virt="non-virtual"><scope>Gamepad_buzzer</scope><name>channel</name></member>
+      <member refid="class_gamepad__buzzer_1a0f811d3699184c17a635162a7cdcff1b" prot="public" virt="non-virtual"><scope>Gamepad_buzzer</scope><name>Gamepad_buzzer</name></member>
+      <member refid="class_gamepad__buzzer_1a11b041b6a4900857c4fa4ebfc4d50560" prot="public" virt="non-virtual"><scope>Gamepad_buzzer</scope><name>get_volume</name></member>
+      <member refid="class_gamepad__buzzer_1aea69a2ab8f6910d359c7499d78a839d5" prot="public" virt="non-virtual"><scope>Gamepad_buzzer</scope><name>init</name></member>
+      <member refid="class_gamepad__buzzer_1a9d67be9d84c7b1d93bc9152f1dc91daf" prot="public" virt="non-virtual"><scope>Gamepad_buzzer</scope><name>play_for_time</name></member>
+      <member refid="class_gamepad__buzzer_1ae3d3e88294201698da3e8e629ad9e64b" prot="public" virt="non-virtual"><scope>Gamepad_buzzer</scope><name>play_sequence</name></member>
+      <member refid="class_gamepad__buzzer_1a578729c843ac2222955b6f39077fb84c" prot="public" virt="non-virtual"><scope>Gamepad_buzzer</scope><name>play_sequence</name></member>
+      <member refid="class_gamepad__buzzer_1a758f8bb21ca8a385c3c6111fe3f6df45" prot="public" virt="non-virtual"><scope>Gamepad_buzzer</scope><name>play_tone</name></member>
+      <member refid="class_gamepad__buzzer_1ada781458e73f5c826803e5ed96c99188" prot="public" virt="non-virtual"><scope>Gamepad_buzzer</scope><name>stop</name></member>
+      <member refid="class_gamepad__buzzer_1a6413fb61319e7d6694c465095af47055" prot="private" virt="non-virtual"><scope>Gamepad_buzzer</scope><name>volume</name></member>
+      <member refid="class_gamepad__buzzer_1a3c9620d4bb59a0f8d0a43816e210de3f" prot="private" virt="non-virtual"><scope>Gamepad_buzzer</scope><name>volume_level</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="accel_8cpp" kind="file" language="C++">
+    <compoundname>accel.cpp</compoundname>
+    <includes refid="accel_8h" local="yes">accel.h</includes>
+    <incdepgraph>
+      <node id="4">
+        <label>Arduino.h</label>
+      </node>
+      <node id="1">
+        <label>C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/accel.cpp</label>
+        <link refid="accel_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>accel.h</label>
+        <link refid="accel_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>config.h</label>
+        <link refid="config_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>vectors.h</label>
+        <link refid="vectors_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Wire.h</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="accel_8h" kindref="compound">accel.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gamepad__accel_1ae00750955340d45bee64b12eaca3a7c0" kindref="member">Gamepad_accel::init</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sda_pin,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>scl_pin){</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><sp/><sp/><sp/><sp/>accelWire.begin(sda_pin,<sp/>scl_pin);</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>accelWire.beginTransmission(<ref refid="config_8h_1a4cc32f2cf4c2e4770674d091da1c3666" kindref="member">ACCEL_I2C_ADDRESS</ref>);</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/>accelWire.write(0x7E);<sp/></highlight><highlight class="comment">//<sp/>Command<sp/>register</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>accelWire.write(0x11);<sp/></highlight><highlight class="comment">//<sp/>Set<sp/>accelerometer<sp/>to<sp/>normal<sp/>mode</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>accelWire.endTransmission();</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>invert_mask<sp/>=<sp/>vec3(</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<ref refid="config_8h_1a139294225cab996916e33fee7eac28f3" kindref="member">ACCEL_INVERT_X_AXIS</ref>)<sp/>?<sp/>-1<sp/>:<sp/>1,<sp/></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<ref refid="config_8h_1a9d6b1d961b7d93a0f2642dd0e2821e22" kindref="member">ACCEL_INVERT_Y_AXIS</ref>)<sp/>?<sp/>-1<sp/>:<sp/>1,<sp/></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(<ref refid="config_8h_1a2a813667a1118fe6996dcbd7a8bd9705" kindref="member">ACCEL_INVERT_Z_AXIS</ref>)<sp/>?<sp/>-1<sp/>:<sp/>1</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_gamepad__accel_1a2f94ae4a494f527bdfa5dfc290ebe68c" kindref="member">auto_calibrate</ref>();</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gamepad__accel_1a2f94ae4a494f527bdfa5dfc290ebe68c" kindref="member">Gamepad_accel::auto_calibrate</ref>(){</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>accelWire.beginTransmission(<ref refid="config_8h_1a4cc32f2cf4c2e4770674d091da1c3666" kindref="member">ACCEL_I2C_ADDRESS</ref>);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>accelWire.write(0x7E);<sp/></highlight><highlight class="comment">//<sp/>Command<sp/>register</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>accelWire.write(0x37);<sp/></highlight><highlight class="comment">//<sp/>Start<sp/>accelerometer<sp/>offset<sp/>calibration</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>accelWire.endTransmission();</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>accelWire.beginTransmission(<ref refid="config_8h_1a4cc32f2cf4c2e4770674d091da1c3666" kindref="member">ACCEL_I2C_ADDRESS</ref>);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>accelWire.write(0x00);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>TODO:<sp/>get<sp/>the<sp/>chip_id<sp/><sp/><sp/>0xD1<sp/>for<sp/>BMI160,<sp/>0x43<sp/>for<sp/>BMI323</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>TODO:<sp/>add<sp/>chip<sp/>recognition,<sp/>using<sp/>different<sp/>register<sp/>map</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>accelWire.endTransmission();</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>accelWire.requestFrom(<ref refid="config_8h_1a4cc32f2cf4c2e4770674d091da1c3666" kindref="member">ACCEL_I2C_ADDRESS</ref>,<sp/>1);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(accelWire.available())</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>chip<sp/>=<sp/>accelWire.read();</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gamepad__accel_1a2ba399f4547d13a1e99740c5266f104a" kindref="member">Gamepad_accel::set_vertical_mode</ref>(){</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>basis_x<sp/>=<sp/>vec3(0,<sp/>1,<sp/>0);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>basis_y<sp/>=<sp/>vec3(0,<sp/>0,<sp/>-1);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gamepad__accel_1a5f92894b3e33e911d8dfeb30c8e333fd" kindref="member">Gamepad_accel::set_horizontal_mode</ref>(){</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>basis_x<sp/>=<sp/>vec3(0,<sp/>1,<sp/>0);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>basis_y<sp/>=<sp/>vec3(1,<sp/>0,<sp/>0);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gamepad__accel_1afbb289540676c822a8bd0ae74d78e1e9" kindref="member">Gamepad_accel::set_current_as_zero</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>hold_x_axis){</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>vec3<sp/>basis_z;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(uint8_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/><ref refid="config_8h_1add7e7785398a08b69e09c5cf282520e3" kindref="member">ACCEL_CALIBRATION_MEASURE_N</ref>;<sp/>i++){</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>basis_z<sp/>+=<sp/><ref refid="class_gamepad__accel_1aa907b488f1c91150a14c1b4fa51abdc7" kindref="member">get_accel</ref>();</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>delay(1);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(hold_x_axis)</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>basis_z.<ref refid="classvec3_1a891379795a14c80936cde4170239a138" kindref="member">y</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>basis_z<sp/>=<sp/>basis_z.<ref refid="classvec3_1aca2a031c5a07bdcdc109f19c009de8a0" kindref="member">norm</ref>();</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>basis_x<sp/>=<sp/>vec3(basis_z.<ref refid="classvec3_1a891379795a14c80936cde4170239a138" kindref="member">y</ref>,<sp/>-basis_z.<ref refid="classvec3_1a4ee2cfd5c2698031a47ab7f898d8d47b" kindref="member">x</ref>,<sp/>0).<ref refid="classvec3_1aca2a031c5a07bdcdc109f19c009de8a0" kindref="member">norm</ref>();</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>basis_y<sp/>=<sp/>basis_z.<ref refid="classvec3_1ab8c92c1817ef6d3e8fdcda89117ee8c7" kindref="member">cross</ref>(basis_x).<ref refid="classvec3_1aca2a031c5a07bdcdc109f19c009de8a0" kindref="member">norm</ref>();</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><ref refid="classvec3" kindref="compound">vec3</ref><sp/><ref refid="class_gamepad__accel_1aa907b488f1c91150a14c1b4fa51abdc7" kindref="member">Gamepad_accel::get_accel</ref>(){</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>int16_t<sp/>ax<sp/>=<sp/>0,<sp/>ay<sp/>=<sp/>0,<sp/>az<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(chip<sp/>==<sp/>BMI160_ID){</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>accelWire.beginTransmission(<ref refid="config_8h_1a4cc32f2cf4c2e4770674d091da1c3666" kindref="member">ACCEL_I2C_ADDRESS</ref>);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>accelWire.write(0x12);<sp/></highlight><highlight class="comment">//<sp/>Start<sp/>register<sp/>for<sp/>accelerometer<sp/>data</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>accelWire.endTransmission(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>accelWire.requestFrom(<ref refid="config_8h_1a4cc32f2cf4c2e4770674d091da1c3666" kindref="member">ACCEL_I2C_ADDRESS</ref>,<sp/>6);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(accelWire.available()<sp/>==<sp/>6)<sp/>{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ax<sp/>=<sp/>accelWire.read()<sp/>|<sp/>(accelWire.read()<sp/>&lt;&lt;<sp/>8);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ay<sp/>=<sp/>accelWire.read()<sp/>|<sp/>(accelWire.read()<sp/>&lt;&lt;<sp/>8);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>az<sp/>=<sp/>accelWire.read()<sp/>|<sp/>(accelWire.read()<sp/>&lt;&lt;<sp/>8);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(chip<sp/>==<sp/>BMI323_ID){</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>TODO:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>vec3<sp/>data(ax,<sp/>ay,<sp/>az);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>data<sp/>*=<sp/>(<ref refid="accel_8h_1a89d5c73243f2fd70a199acf59e88df4a" kindref="member">g_const</ref><sp/>/<sp/><ref refid="config_8h_1a09ecf77e46d9d12697d484dcb1a54842" kindref="member">ACCEL_SENSITIVITY</ref>);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>data<sp/>*=<sp/>invert_mask;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>data;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><ref refid="classvec2" kindref="compound">vec2</ref><sp/><ref refid="class_gamepad__accel_1a65a5553007cf5873cc5c271d849b99cb" kindref="member">Gamepad_accel::get_angles</ref>(<ref refid="classvec3" kindref="compound">vec3</ref><sp/>&amp;accel){</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>vec2<sp/>ang<sp/>=<sp/>vec2(</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>acos(accel.<ref refid="classvec3_1aee856ce8fcf6abba5153a1bd02e36697" kindref="member">fast_norm</ref>().<ref refid="classvec3_1a4f6891c6fa9acce60f9bf7ece3ec6bfa" kindref="member">dot</ref>(basis_x))<sp/>-<sp/>HALF_PI,</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>acos(accel.<ref refid="classvec3_1aee856ce8fcf6abba5153a1bd02e36697" kindref="member">fast_norm</ref>().<ref refid="classvec3_1a4f6891c6fa9acce60f9bf7ece3ec6bfa" kindref="member">dot</ref>(basis_y))<sp/>-<sp/>HALF_PI</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ang<sp/>*<sp/>RAD_TO_DEG;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><ref refid="classvec2" kindref="compound">vec2</ref><sp/><ref refid="class_gamepad__accel_1a65a5553007cf5873cc5c271d849b99cb" kindref="member">Gamepad_accel::get_angles</ref>(){</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>vec3<sp/>accel<sp/>=<sp/><ref refid="class_gamepad__accel_1aa907b488f1c91150a14c1b4fa51abdc7" kindref="member">get_accel</ref>();</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_gamepad__accel_1a65a5553007cf5873cc5c271d849b99cb" kindref="member">get_angles</ref>(accel);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/accel.cpp"/>
+  </compounddef>
+</doxygen>

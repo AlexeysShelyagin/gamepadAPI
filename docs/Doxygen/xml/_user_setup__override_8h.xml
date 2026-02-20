@@ -1,0 +1,637 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="_user_setup__override_8h" kind="file" language="C++">
+    <compoundname>UserSetup_override.h</compoundname>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="_user_setup__override_8h_1a0468c47cb3caf3ce0f3ca0d62f8eed4a" prot="public" static="no">
+        <name>USER_SETUP_INFO</name>
+        <initializer>&quot;User_Setup&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/UserSetup_override.h" line="12" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/UserSetup_override.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_user_setup__override_8h_1a13523782155f7f64557ea0bf1fc2b482" prot="public" static="no">
+        <name>ST7789_DRIVER</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/UserSetup_override.h" line="55" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/UserSetup_override.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_user_setup__override_8h_1ad2deabb3f4962a07c839405877566a5d" prot="public" static="no">
+        <name>TFT_RGB_ORDER</name>
+        <initializer>TFT_BGR</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/UserSetup_override.h" line="77" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/UserSetup_override.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_user_setup__override_8h_1a83af0cb652728913ff58da7133c692ea" prot="public" static="no">
+        <name>TFT_WIDTH</name>
+        <initializer>240</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/UserSetup_override.h" line="88" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/UserSetup_override.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_user_setup__override_8h_1a1c2d2e1cd167f90b809c3450fd6f3434" prot="public" static="no">
+        <name>TFT_HEIGHT</name>
+        <initializer>320</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/UserSetup_override.h" line="92" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/UserSetup_override.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_user_setup__override_8h_1ac108dd4310833bbb4afd1bce1090d55f" prot="public" static="no">
+        <name>TFT_MISO</name>
+        <initializer>19</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/UserSetup_override.h" line="170" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/UserSetup_override.h" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_user_setup__override_8h_1a4db639d2d88a53132a529677e6dd795c" prot="public" static="no">
+        <name>TFT_MOSI</name>
+        <initializer>23</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/UserSetup_override.h" line="171" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/UserSetup_override.h" bodystart="171" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_user_setup__override_8h_1a095a96cc6abc991346d7b6712f8576b5" prot="public" static="no">
+        <name>TFT_SCLK</name>
+        <initializer>18</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/UserSetup_override.h" line="172" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/UserSetup_override.h" bodystart="172" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_user_setup__override_8h_1a5f4d46ae101b77df78010c506601c87c" prot="public" static="no">
+        <name>TFT_CS</name>
+        <initializer>13</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/UserSetup_override.h" line="174" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/UserSetup_override.h" bodystart="174" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_user_setup__override_8h_1a51529307207622c113ff0d584536be13" prot="public" static="no">
+        <name>TFT_DC</name>
+        <initializer>22</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/UserSetup_override.h" line="175" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/UserSetup_override.h" bodystart="175" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_user_setup__override_8h_1ab40e9918d9141415a47e2a979292309c" prot="public" static="no">
+        <name>TFT_RST</name>
+        <initializer>-1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/UserSetup_override.h" line="176" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/UserSetup_override.h" bodystart="176" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_user_setup__override_8h_1aee21b8f7828189468d697cc8dfadbccc" prot="public" static="no">
+        <name>LOAD_GLCD</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/UserSetup_override.h" line="310" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/UserSetup_override.h" bodystart="310" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_user_setup__override_8h_1a9a64e48d3861ca909fb1eb9b39492f43" prot="public" static="no">
+        <name>LOAD_FONT2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/UserSetup_override.h" line="311" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/UserSetup_override.h" bodystart="311" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_user_setup__override_8h_1aff0ca6aaffec55fd4a03b3069a043296" prot="public" static="no">
+        <name>LOAD_FONT4</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/UserSetup_override.h" line="312" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/UserSetup_override.h" bodystart="312" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_user_setup__override_8h_1a53e7079cd5578217168e9c8de3c43d56" prot="public" static="no">
+        <name>LOAD_FONT6</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/UserSetup_override.h" line="313" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/UserSetup_override.h" bodystart="313" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_user_setup__override_8h_1ab824806161666b9da96b88c9fdd600aa" prot="public" static="no">
+        <name>LOAD_FONT7</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/UserSetup_override.h" line="314" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/UserSetup_override.h" bodystart="314" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_user_setup__override_8h_1a3bfd3307b606101c9c9b4c4ef75f4350" prot="public" static="no">
+        <name>LOAD_FONT8</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/UserSetup_override.h" line="315" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/UserSetup_override.h" bodystart="315" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_user_setup__override_8h_1aaddd4fc72f0ef9b8f513c51b502bd95f" prot="public" static="no">
+        <name>LOAD_GFXFF</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/UserSetup_override.h" line="317" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/UserSetup_override.h" bodystart="317" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_user_setup__override_8h_1af8d7688f4a848a0ee8013c122abbda24" prot="public" static="no">
+        <name>SMOOTH_FONT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/UserSetup_override.h" line="321" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/UserSetup_override.h" bodystart="321" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_user_setup__override_8h_1a5001016067783b1500a1fd34ca1bfc7f" prot="public" static="no">
+        <name>SPI_FREQUENCY</name>
+        <initializer>80000000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/UserSetup_override.h" line="366" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/UserSetup_override.h" bodystart="366" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_user_setup__override_8h_1afa2c3acb4cdfb40c8d9d7aedc7e368de" prot="public" static="no">
+        <name>SPI_READ_FREQUENCY</name>
+        <initializer>20000000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/UserSetup_override.h" line="369" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/UserSetup_override.h" bodystart="369" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_user_setup__override_8h_1ab171de5a1269a3089278792dbd16d22d" prot="public" static="no">
+        <name>SPI_TOUCH_FREQUENCY</name>
+        <initializer>2500000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/UserSetup_override.h" line="372" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/UserSetup_override.h" bodystart="372" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>USER<sp/>DEFINED<sp/>SETTINGS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>Set<sp/>driver<sp/>type,<sp/>fonts<sp/>to<sp/>be<sp/>loaded,<sp/>pins<sp/>used<sp/>and<sp/>SPI<sp/>control<sp/>method<sp/>etc.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>See<sp/>the<sp/>User_Setup_Select.h<sp/>file<sp/>if<sp/>you<sp/>wish<sp/>to<sp/>be<sp/>able<sp/>to<sp/>define<sp/>multiple</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>setups<sp/>and<sp/>then<sp/>easily<sp/>select<sp/>which<sp/>setup<sp/>file<sp/>is<sp/>used<sp/>by<sp/>the<sp/>compiler.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>If<sp/>this<sp/>file<sp/>is<sp/>edited<sp/>correctly<sp/>then<sp/>all<sp/>the<sp/>library<sp/>example<sp/>sketches<sp/>should</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>run<sp/>without<sp/>the<sp/>need<sp/>to<sp/>make<sp/>any<sp/>more<sp/>changes<sp/>for<sp/>a<sp/>particular<sp/>hardware<sp/>setup!</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>Note<sp/>that<sp/>some<sp/>sketches<sp/>are<sp/>designed<sp/>for<sp/>a<sp/>particular<sp/>TFT<sp/>pixel<sp/>width/height</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>User<sp/>defined<sp/>information<sp/>reported<sp/>by<sp/>&quot;Read_User_Setup&quot;<sp/>test<sp/>&amp;<sp/>diagnostics<sp/>example</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="_user_setup__override_8h_1a0468c47cb3caf3ce0f3ca0d62f8eed4a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USER_SETUP_INFO<sp/>&quot;User_Setup&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Define<sp/>to<sp/>disable<sp/>all<sp/>#warnings<sp/>in<sp/>library<sp/>(can<sp/>be<sp/>put<sp/>in<sp/>User_Setup_Select.h)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>DISABLE_ALL_LIBRARY_WARNINGS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//<sp/>##################################################################################</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Section<sp/>1.<sp/>Call<sp/>up<sp/>the<sp/>right<sp/>driver<sp/>file<sp/>and<sp/>any<sp/>options<sp/>for<sp/>it</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//<sp/>##################################################################################</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Define<sp/>STM32<sp/>to<sp/>invoke<sp/>optimised<sp/>processor<sp/>support<sp/>(only<sp/>for<sp/>STM32)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>STM32</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Defining<sp/>the<sp/>STM32<sp/>board<sp/>allows<sp/>the<sp/>library<sp/>to<sp/>optimise<sp/>the<sp/>performance</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">//<sp/>for<sp/>UNO<sp/>compatible<sp/>&quot;MCUfriend&quot;<sp/>style<sp/>shields</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>NUCLEO_64_TFT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>NUCLEO_144_TFT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="comment">//<sp/>STM32<sp/>8-bit<sp/>parallel<sp/>only:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment">//<sp/>If<sp/>STN32<sp/>Port<sp/>A<sp/>or<sp/>B<sp/>pins<sp/>0-7<sp/>are<sp/>used<sp/>for<sp/>8-bit<sp/>parallel<sp/>data<sp/>bus<sp/>bits<sp/>0-7</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">//<sp/>then<sp/>this<sp/>will<sp/>improve<sp/>rendering<sp/>performance<sp/>by<sp/>a<sp/>factor<sp/>of<sp/>~8x</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>STM_PORTA_DATA_BUS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>STM_PORTB_DATA_BUS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Tell<sp/>the<sp/>library<sp/>to<sp/>use<sp/>parallel<sp/>mode<sp/>(otherwise<sp/>SPI<sp/>is<sp/>assumed)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>TFT_PARALLEL_8_BIT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="comment">//#defined<sp/>TFT_PARALLEL_16_BIT<sp/>//<sp/>****<sp/>16-bit<sp/>parallel<sp/>ONLY<sp/>for<sp/>RP2040<sp/>processor<sp/>****</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Display<sp/>type<sp/>-<sp/><sp/>only<sp/>define<sp/>if<sp/>RPi<sp/>display</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>RPI_DISPLAY_TYPE<sp/>//<sp/>20MHz<sp/>maximum<sp/>SPI</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Only<sp/>define<sp/>one<sp/>driver,<sp/>the<sp/>other<sp/>ones<sp/>must<sp/>be<sp/>commented<sp/>out</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>ILI9341_DRIVER<sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Generic<sp/>driver<sp/>for<sp/>common<sp/>displays</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>ILI9341_2_DRIVER<sp/><sp/><sp/><sp/><sp/>//<sp/>Alternative<sp/>ILI9341<sp/>driver,<sp/>see<sp/>https://github.com/Bodmer/TFT_eSPI/issues/1172</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>ST7735_DRIVER<sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Define<sp/>additional<sp/>parameters<sp/>below<sp/>for<sp/>this<sp/>display</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>ILI9163_DRIVER<sp/><sp/><sp/><sp/><sp/>//<sp/>Define<sp/>additional<sp/>parameters<sp/>below<sp/>for<sp/>this<sp/>display</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>S6D02A1_DRIVER</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>RPI_ILI9486_DRIVER<sp/>//<sp/>20MHz<sp/>maximum<sp/>SPI</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>HX8357D_DRIVER</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>ILI9481_DRIVER</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>ILI9486_DRIVER</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>ILI9488_DRIVER<sp/><sp/><sp/><sp/><sp/>//<sp/>WARNING:<sp/>Do<sp/>not<sp/>connect<sp/>ILI9488<sp/>display<sp/>SDO<sp/>to<sp/>MISO<sp/>if<sp/>other<sp/>devices<sp/>share<sp/>the<sp/>SPI<sp/>bus<sp/>(TFT<sp/>SDO<sp/>does<sp/>NOT<sp/>tristate<sp/>when<sp/>CS<sp/>is<sp/>high)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="_user_setup__override_8h_1a13523782155f7f64557ea0bf1fc2b482" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ST7789_DRIVER<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Full<sp/>configuration<sp/>option,<sp/>define<sp/>additional<sp/>parameters<sp/>below<sp/>for<sp/>this<sp/>display</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>ST7789_2_DRIVER<sp/><sp/><sp/><sp/>//<sp/>Minimal<sp/>configuration<sp/>option,<sp/>define<sp/>additional<sp/>parameters<sp/>below<sp/>for<sp/>this<sp/>display</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>R61581_DRIVER</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>RM68140_DRIVER</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>ST7796_DRIVER</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>SSD1351_DRIVER</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>SSD1963_480_DRIVER</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>SSD1963_800_DRIVER</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>SSD1963_800ALT_DRIVER</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>ILI9225_DRIVER</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>GC9A01_DRIVER</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Some<sp/>displays<sp/>support<sp/>SPI<sp/>reads<sp/>via<sp/>the<sp/>MISO<sp/>pin,<sp/>other<sp/>displays<sp/>have<sp/>a<sp/>single</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="comment">//<sp/>bi-directional<sp/>SDA<sp/>pin<sp/>and<sp/>the<sp/>library<sp/>will<sp/>try<sp/>to<sp/>read<sp/>this<sp/>via<sp/>the<sp/>MOSI<sp/>line.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="comment">//<sp/>To<sp/>use<sp/>the<sp/>SDA<sp/>line<sp/>for<sp/>reading<sp/>data<sp/>from<sp/>the<sp/>TFT<sp/>uncomment<sp/>the<sp/>following<sp/>line:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#define<sp/>TFT_SDA_READ<sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>This<sp/>option<sp/>is<sp/>for<sp/>ESP32<sp/>ONLY,<sp/>tested<sp/>with<sp/>ST7789<sp/>and<sp/>GC9A01<sp/>display<sp/>only</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="comment">//<sp/>For<sp/>ST7735,<sp/>ST7789<sp/>and<sp/>ILI9341<sp/>ONLY,<sp/>define<sp/>the<sp/>colour<sp/>order<sp/>IF<sp/>the<sp/>blue<sp/>and<sp/>red<sp/>are<sp/>swapped<sp/>on<sp/>your<sp/>display</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Try<sp/>ONE<sp/>option<sp/>at<sp/>a<sp/>time<sp/>to<sp/>find<sp/>the<sp/>correct<sp/>colour<sp/>order<sp/>for<sp/>your<sp/>display</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>#define<sp/>TFT_RGB_ORDER<sp/>TFT_RGB<sp/><sp/>//<sp/>Colour<sp/>order<sp/>Red-Green-Blue</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77" refid="_user_setup__override_8h_1ad2deabb3f4962a07c839405877566a5d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TFT_RGB_ORDER<sp/>TFT_BGR<sp/><sp/></highlight><highlight class="comment">//<sp/>Colour<sp/>order<sp/>Blue-Green-Red</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="comment">//<sp/>For<sp/>M5Stack<sp/>ESP32<sp/>module<sp/>with<sp/>integrated<sp/>ILI9341<sp/>display<sp/>ONLY,<sp/>remove<sp/>//<sp/>in<sp/>line<sp/>below</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#define<sp/>M5STACK</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="comment">//<sp/>For<sp/>ST7789,<sp/>ST7735,<sp/>ILI9163<sp/>and<sp/>GC9A01<sp/>ONLY,<sp/>define<sp/>the<sp/>pixel<sp/>width<sp/>and<sp/>height<sp/>in<sp/>portrait<sp/>orientation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#define<sp/>TFT_WIDTH<sp/><sp/>80</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#define<sp/>TFT_WIDTH<sp/><sp/>128</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#define<sp/>TFT_WIDTH<sp/><sp/>172<sp/>//<sp/>ST7789<sp/>172<sp/>x<sp/>320</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#define<sp/>TFT_WIDTH<sp/><sp/>170<sp/>//<sp/>ST7789<sp/>170<sp/>x<sp/>320</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="_user_setup__override_8h_1a83af0cb652728913ff58da7133c692ea" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TFT_WIDTH<sp/><sp/>240<sp/></highlight><highlight class="comment">//<sp/>ST7789<sp/>240<sp/>x<sp/>240<sp/>and<sp/>240<sp/>x<sp/>320</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#define<sp/>TFT_HEIGHT<sp/>160</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#define<sp/>TFT_HEIGHT<sp/>128</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#define<sp/>TFT_HEIGHT<sp/>240<sp/>//<sp/>ST7789<sp/>240<sp/>x<sp/>240</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92" refid="_user_setup__override_8h_1a1c2d2e1cd167f90b809c3450fd6f3434" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TFT_HEIGHT<sp/>320<sp/></highlight><highlight class="comment">//<sp/>ST7789<sp/>240<sp/>x<sp/>320</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#define<sp/>TFT_HEIGHT<sp/>240<sp/>//<sp/>GC9A01<sp/>240<sp/>x<sp/>240</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="comment">//<sp/>For<sp/>ST7735<sp/>ONLY,<sp/>define<sp/>the<sp/>type<sp/>of<sp/>display,<sp/>originally<sp/>this<sp/>was<sp/>based<sp/>on<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="comment">//<sp/>colour<sp/>of<sp/>the<sp/>tab<sp/>on<sp/>the<sp/>screen<sp/>protector<sp/>film<sp/>but<sp/>this<sp/>is<sp/>not<sp/>always<sp/>true,<sp/>so<sp/>try</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="comment">//<sp/>out<sp/>the<sp/>different<sp/>options<sp/>below<sp/>if<sp/>the<sp/>screen<sp/>does<sp/>not<sp/>display<sp/>graphics<sp/>correctly,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="comment">//<sp/>e.g.<sp/>colours<sp/>wrong,<sp/>mirror<sp/>images,<sp/>or<sp/>stray<sp/>pixels<sp/>at<sp/>the<sp/>edges.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Comment<sp/>out<sp/>ALL<sp/>BUT<sp/>ONE<sp/>of<sp/>these<sp/>options<sp/>for<sp/>a<sp/>ST7735<sp/>display<sp/>driver,<sp/>save<sp/>this</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="comment">//<sp/>this<sp/>User_Setup<sp/>file,<sp/>then<sp/>rebuild<sp/>and<sp/>upload<sp/>the<sp/>sketch<sp/>to<sp/>the<sp/>board<sp/>again:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#define<sp/>ST7735_INITB</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#define<sp/>ST7735_GREENTAB</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#define<sp/>ST7735_GREENTAB2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#define<sp/>ST7735_GREENTAB3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#define<sp/>ST7735_GREENTAB128<sp/><sp/><sp/><sp/>//<sp/>For<sp/>128<sp/>x<sp/>128<sp/>display</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#define<sp/>ST7735_GREENTAB160x80<sp/>//<sp/>For<sp/>160<sp/>x<sp/>80<sp/>display<sp/>(BGR,<sp/>inverted,<sp/>26<sp/>offset)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#define<sp/>ST7735_ROBOTLCD<sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>For<sp/>some<sp/>RobotLCD<sp/>Arduino<sp/>shields<sp/>(128x160,<sp/>BGR,<sp/>https://docs.arduino.cc/retired/getting-started-guides/TFT)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#define<sp/>ST7735_REDTAB</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#define<sp/>ST7735_BLACKTAB</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#define<sp/>ST7735_REDTAB160x80<sp/><sp/><sp/>//<sp/>For<sp/>160<sp/>x<sp/>80<sp/>display<sp/>with<sp/>24<sp/>pixel<sp/>offset</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight><highlight class="comment">//<sp/>If<sp/>colours<sp/>are<sp/>inverted<sp/>(white<sp/>shows<sp/>as<sp/>black)<sp/>then<sp/>uncomment<sp/>one<sp/>of<sp/>the<sp/>next</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="comment">//<sp/>2<sp/>lines<sp/>try<sp/>both<sp/>options,<sp/>one<sp/>of<sp/>the<sp/>options<sp/>should<sp/>correct<sp/>the<sp/>inversion.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#define<sp/>TFT_INVERSION_ON</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#define<sp/>TFT_INVERSION_OFF</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="comment">//<sp/>##################################################################################</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Section<sp/>2.<sp/>Define<sp/>the<sp/>pins<sp/>that<sp/>are<sp/>used<sp/>to<sp/>interface<sp/>with<sp/>the<sp/>display<sp/>here</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight><highlight class="comment">//<sp/>##################################################################################</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight><highlight class="comment">//<sp/>If<sp/>a<sp/>backlight<sp/>control<sp/>signal<sp/>is<sp/>available<sp/>then<sp/>define<sp/>the<sp/>TFT_BL<sp/>pin<sp/>in<sp/>Section<sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight><highlight class="comment">//<sp/>below.<sp/>The<sp/>backlight<sp/>will<sp/>be<sp/>turned<sp/>ON<sp/>when<sp/>tft.begin()<sp/>is<sp/>called,<sp/>but<sp/>the<sp/>library</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight><highlight class="comment">//<sp/>needs<sp/>to<sp/>know<sp/>if<sp/>the<sp/>LEDs<sp/>are<sp/>ON<sp/>with<sp/>the<sp/>pin<sp/>HIGH<sp/>or<sp/>LOW.<sp/>If<sp/>the<sp/>LEDs<sp/>are<sp/>to<sp/>be</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight><highlight class="comment">//<sp/>driven<sp/>with<sp/>a<sp/>PWM<sp/>signal<sp/>or<sp/>turned<sp/>OFF/ON<sp/>then<sp/>this<sp/>must<sp/>be<sp/>handled<sp/>by<sp/>the<sp/>user</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight><highlight class="comment">//<sp/>sketch.<sp/>e.g.<sp/>with<sp/>digitalWrite(TFT_BL,<sp/>LOW);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#define<sp/>TFT_BL<sp/><sp/><sp/>32<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>LED<sp/>back-light<sp/>control<sp/>pin</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#define<sp/>TFT_BACKLIGHT_ON<sp/>HIGH<sp/><sp/>//<sp/>Level<sp/>to<sp/>turn<sp/>ON<sp/>back-light<sp/>(HIGH<sp/>or<sp/>LOW)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight><highlight class="comment">//<sp/>We<sp/>must<sp/>use<sp/>hardware<sp/>SPI,<sp/>a<sp/>minimum<sp/>of<sp/>3<sp/>GPIO<sp/>pins<sp/>is<sp/>needed.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Typical<sp/>setup<sp/>for<sp/>ESP8266<sp/>NodeMCU<sp/>ESP-12<sp/>is<sp/>:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Display<sp/>SDO/MISO<sp/><sp/>to<sp/>NodeMCU<sp/>pin<sp/>D6<sp/>(or<sp/>leave<sp/>disconnected<sp/>if<sp/>not<sp/>reading<sp/>TFT)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Display<sp/>LED<sp/><sp/><sp/><sp/><sp/><sp/><sp/>to<sp/>NodeMCU<sp/>pin<sp/>VIN<sp/>(or<sp/>5V,<sp/>see<sp/>below)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Display<sp/>SCK<sp/><sp/><sp/><sp/><sp/><sp/><sp/>to<sp/>NodeMCU<sp/>pin<sp/>D5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Display<sp/>SDI/MOSI<sp/><sp/>to<sp/>NodeMCU<sp/>pin<sp/>D7</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Display<sp/>DC<sp/>(RS/AO)to<sp/>NodeMCU<sp/>pin<sp/>D3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Display<sp/>RESET<sp/><sp/><sp/><sp/><sp/>to<sp/>NodeMCU<sp/>pin<sp/>D4<sp/>(or<sp/>RST,<sp/>see<sp/>below)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Display<sp/>CS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>to<sp/>NodeMCU<sp/>pin<sp/>D8<sp/>(or<sp/>GND,<sp/>see<sp/>below)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Display<sp/>GND<sp/><sp/><sp/><sp/><sp/><sp/><sp/>to<sp/>NodeMCU<sp/>pin<sp/>GND<sp/>(0V)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Display<sp/>VCC<sp/><sp/><sp/><sp/><sp/><sp/><sp/>to<sp/>NodeMCU<sp/>5V<sp/>or<sp/>3.3V</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight><highlight class="comment">//<sp/>The<sp/>TFT<sp/>RESET<sp/>pin<sp/>can<sp/>be<sp/>connected<sp/>to<sp/>the<sp/>NodeMCU<sp/>RST<sp/>pin<sp/>or<sp/>3.3V<sp/>to<sp/>free<sp/>up<sp/>a<sp/>control<sp/>pin</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight><highlight class="comment">//<sp/>The<sp/>DC<sp/>(Data<sp/>Command)<sp/>pin<sp/>may<sp/>be<sp/>labelled<sp/>AO<sp/>or<sp/>RS<sp/>(Register<sp/>Select)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight><highlight class="comment">//<sp/>With<sp/>some<sp/>displays<sp/>such<sp/>as<sp/>the<sp/>ILI9341<sp/>the<sp/>TFT<sp/>CS<sp/>pin<sp/>can<sp/>be<sp/>connected<sp/>to<sp/>GND<sp/>if<sp/>no<sp/>more</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight><highlight class="comment">//<sp/>SPI<sp/>devices<sp/>(e.g.<sp/>an<sp/>SD<sp/>Card)<sp/>are<sp/>connected,<sp/>in<sp/>this<sp/>case<sp/>comment<sp/>out<sp/>the<sp/>#define<sp/>TFT_CS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight><highlight class="comment">//<sp/>line<sp/>below<sp/>so<sp/>it<sp/>is<sp/>NOT<sp/>defined.<sp/>Other<sp/>displays<sp/>such<sp/>at<sp/>the<sp/>ST7735<sp/>require<sp/>the<sp/>TFT<sp/>CS<sp/>pin</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight><highlight class="comment">//<sp/>to<sp/>be<sp/>toggled<sp/>during<sp/>setup,<sp/>so<sp/>in<sp/>these<sp/>cases<sp/>the<sp/>TFT_CS<sp/>line<sp/>must<sp/>be<sp/>defined<sp/>and<sp/>connected.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight><highlight class="comment">//<sp/>The<sp/>NodeMCU<sp/>D0<sp/>pin<sp/>can<sp/>be<sp/>used<sp/>for<sp/>RST</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Note:<sp/>only<sp/>some<sp/>versions<sp/>of<sp/>the<sp/>NodeMCU<sp/>provide<sp/>the<sp/>USB<sp/>5V<sp/>on<sp/>the<sp/>VIN<sp/>pin</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight><highlight class="comment">//<sp/>If<sp/>5V<sp/>is<sp/>not<sp/>available<sp/>at<sp/>a<sp/>pin<sp/>you<sp/>can<sp/>use<sp/>3.3V<sp/>but<sp/>backlight<sp/>brightness</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight><highlight class="comment">//<sp/>will<sp/>be<sp/>lower.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight><highlight class="comment">//<sp/>######<sp/>EDIT<sp/>THE<sp/>PIN<sp/>NUMBERS<sp/>IN<sp/>THE<sp/>LINES<sp/>FOLLOWING<sp/>TO<sp/>SUIT<sp/>YOUR<sp/>ESP8266<sp/>SETUP<sp/>######</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight><highlight class="comment">//<sp/>For<sp/>NodeMCU<sp/>-<sp/>use<sp/>pin<sp/>numbers<sp/>in<sp/>the<sp/>form<sp/>PIN_Dx<sp/>where<sp/>Dx<sp/>is<sp/>the<sp/>NodeMCU<sp/>pin<sp/>designation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="170" refid="_user_setup__override_8h_1ac108dd4310833bbb4afd1bce1090d55f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TFT_MISO<sp/><sp/>19<sp/><sp/></highlight><highlight class="comment">//<sp/>Automatically<sp/>assigned<sp/>with<sp/>ESP8266<sp/>if<sp/>not<sp/>defined</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="171" refid="_user_setup__override_8h_1a4db639d2d88a53132a529677e6dd795c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TFT_MOSI<sp/><sp/>23<sp/><sp/></highlight><highlight class="comment">//<sp/>Automatically<sp/>assigned<sp/>with<sp/>ESP8266<sp/>if<sp/>not<sp/>defined</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="172" refid="_user_setup__override_8h_1a095a96cc6abc991346d7b6712f8576b5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TFT_SCLK<sp/><sp/>18<sp/><sp/></highlight><highlight class="comment">//<sp/>Automatically<sp/>assigned<sp/>with<sp/>ESP8266<sp/>if<sp/>not<sp/>defined</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174" refid="_user_setup__override_8h_1a5f4d46ae101b77df78010c506601c87c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TFT_CS<sp/><sp/><sp/><sp/>13<sp/><sp/></highlight><highlight class="comment">//<sp/>Chip<sp/>select<sp/>control<sp/>pin<sp/>D8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="175" refid="_user_setup__override_8h_1a51529307207622c113ff0d584536be13" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TFT_DC<sp/><sp/><sp/><sp/>22<sp/><sp/></highlight><highlight class="comment">//<sp/>Data<sp/>Command<sp/>control<sp/>pin</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="176" refid="_user_setup__override_8h_1ab40e9918d9141415a47e2a979292309c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TFT_RST<sp/><sp/><sp/>-1<sp/><sp/></highlight><highlight class="comment">//<sp/>Reset<sp/>pin<sp/>(could<sp/>connect<sp/>to<sp/>NodeMCU<sp/>RST,<sp/>see<sp/>next<sp/>line)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>TFT_RST<sp/><sp/>-1<sp/><sp/><sp/><sp/><sp/>//<sp/>Set<sp/>TFT_RST<sp/>to<sp/>-1<sp/>if<sp/>the<sp/>display<sp/>RESET<sp/>is<sp/>connected<sp/>to<sp/>NodeMCU<sp/>RST<sp/>or<sp/>3.3V</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>TFT_BL<sp/>PIN_D1<sp/><sp/>//<sp/>LED<sp/>back-light<sp/>(only<sp/>for<sp/>ST7789<sp/>with<sp/>backlight<sp/>control<sp/>pin)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>TOUCH_CS<sp/>PIN_D2<sp/><sp/><sp/><sp/><sp/>//<sp/>Chip<sp/>select<sp/>pin<sp/>(T_CS)<sp/>of<sp/>touch<sp/>screen</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>TFT_WR<sp/>PIN_D2<sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Write<sp/>strobe<sp/>for<sp/>modified<sp/>Raspberry<sp/>Pi<sp/>TFT<sp/>only</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight><highlight class="comment">//<sp/>######<sp/><sp/>FOR<sp/>ESP8266<sp/>OVERLAP<sp/>MODE<sp/>EDIT<sp/>THE<sp/>PIN<sp/>NUMBERS<sp/>IN<sp/>THE<sp/>FOLLOWING<sp/>LINES<sp/><sp/>######</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Overlap<sp/>mode<sp/>shares<sp/>the<sp/>ESP8266<sp/>FLASH<sp/>SPI<sp/>bus<sp/>with<sp/>the<sp/>TFT<sp/>so<sp/>has<sp/>a<sp/>performance<sp/>impact</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight><highlight class="comment">//<sp/>but<sp/>saves<sp/>pins<sp/>for<sp/>other<sp/>functions.<sp/>It<sp/>is<sp/>best<sp/>not<sp/>to<sp/>connect<sp/>MISO<sp/>as<sp/>some<sp/>displays</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight><highlight class="comment">//<sp/>do<sp/>not<sp/>tristate<sp/>that<sp/>line<sp/>when<sp/>chip<sp/>select<sp/>is<sp/>high!</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Note:<sp/>Only<sp/>one<sp/>SPI<sp/>device<sp/>can<sp/>share<sp/>the<sp/>FLASH<sp/>SPI<sp/>lines,<sp/>so<sp/>a<sp/>SPI<sp/>touch<sp/>controller</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight><highlight class="comment">//<sp/>cannot<sp/>be<sp/>connected<sp/>as<sp/>well<sp/>to<sp/>the<sp/>same<sp/>SPI<sp/>signals.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight><highlight class="comment">//<sp/>On<sp/>NodeMCU<sp/>1.0<sp/>SD0=MISO,<sp/>SD1=MOSI,<sp/>CLK=SCLK<sp/>to<sp/>connect<sp/>to<sp/>TFT<sp/>in<sp/>overlap<sp/>mode</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight><highlight class="comment">//<sp/>On<sp/>NodeMCU<sp/>V3<sp/><sp/>S0<sp/>=MISO,<sp/>S1<sp/>=MOSI,<sp/>S2<sp/>=SCLK</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight><highlight class="comment">//<sp/>In<sp/>ESP8266<sp/>overlap<sp/>mode<sp/>the<sp/>following<sp/>must<sp/>be<sp/>defined</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>TFT_SPI_OVERLAP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight><highlight class="comment">//<sp/>In<sp/>ESP8266<sp/>overlap<sp/>mode<sp/>the<sp/>TFT<sp/>chip<sp/>select<sp/>MUST<sp/>connect<sp/>to<sp/>pin<sp/>D3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>TFT_CS<sp/><sp/><sp/>PIN_D3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>TFT_DC<sp/><sp/><sp/>PIN_D5<sp/><sp/>//<sp/>Data<sp/>Command<sp/>control<sp/>pin</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>TFT_RST<sp/><sp/>PIN_D4<sp/><sp/>//<sp/>Reset<sp/>pin<sp/>(could<sp/>connect<sp/>to<sp/>NodeMCU<sp/>RST,<sp/>see<sp/>next<sp/>line)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>TFT_RST<sp/><sp/>-1<sp/><sp/>//<sp/>Set<sp/>TFT_RST<sp/>to<sp/>-1<sp/>if<sp/>the<sp/>display<sp/>RESET<sp/>is<sp/>connected<sp/>to<sp/>NodeMCU<sp/>RST<sp/>or<sp/>3.3V</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight><highlight class="comment">//<sp/>######<sp/>EDIT<sp/>THE<sp/>PIN<sp/>NUMBERS<sp/>IN<sp/>THE<sp/>LINES<sp/>FOLLOWING<sp/>TO<sp/>SUIT<sp/>YOUR<sp/>ESP32<sp/>SETUP<sp/><sp/><sp/>######</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight><highlight class="comment">//<sp/>For<sp/>ESP32<sp/>Dev<sp/>board<sp/>(only<sp/>tested<sp/>with<sp/>ILI9341<sp/>display)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight><highlight class="comment">//<sp/>The<sp/>hardware<sp/>SPI<sp/>can<sp/>be<sp/>mapped<sp/>to<sp/>any<sp/>pins</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>TFT_MISO<sp/>19</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>TFT_MOSI<sp/>23</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>TFT_SCLK<sp/>18</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>TFT_CS<sp/><sp/><sp/>15<sp/><sp/>//<sp/>Chip<sp/>select<sp/>control<sp/>pin</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>TFT_DC<sp/><sp/><sp/><sp/>2<sp/><sp/>//<sp/>Data<sp/>Command<sp/>control<sp/>pin</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>TFT_RST<sp/><sp/><sp/>4<sp/><sp/>//<sp/>Reset<sp/>pin<sp/>(could<sp/>connect<sp/>to<sp/>RST<sp/>pin)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>TFT_RST<sp/><sp/>-1<sp/><sp/>//<sp/>Set<sp/>TFT_RST<sp/>to<sp/>-1<sp/>if<sp/>display<sp/>RESET<sp/>is<sp/>connected<sp/>to<sp/>ESP32<sp/>board<sp/>RST</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight><highlight class="comment">//<sp/>For<sp/>ESP32<sp/>Dev<sp/>board<sp/>(only<sp/>tested<sp/>with<sp/>GC9A01<sp/>display)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight><highlight class="comment">//<sp/>The<sp/>hardware<sp/>SPI<sp/>can<sp/>be<sp/>mapped<sp/>to<sp/>any<sp/>pins</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>TFT_MOSI<sp/>15<sp/>//<sp/>In<sp/>some<sp/>display<sp/>driver<sp/>board,<sp/>it<sp/>might<sp/>be<sp/>written<sp/>as<sp/>&quot;SDA&quot;<sp/>and<sp/>so<sp/>on.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>TFT_SCLK<sp/>14</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>TFT_CS<sp/><sp/><sp/>5<sp/><sp/>//<sp/>Chip<sp/>select<sp/>control<sp/>pin</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>TFT_DC<sp/><sp/><sp/>27<sp/><sp/>//<sp/>Data<sp/>Command<sp/>control<sp/>pin</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>TFT_RST<sp/><sp/>33<sp/><sp/>//<sp/>Reset<sp/>pin<sp/>(could<sp/>connect<sp/>to<sp/>Arduino<sp/>RESET<sp/>pin)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>TFT_BL<sp/><sp/><sp/>22<sp/><sp/>//<sp/>LED<sp/>back-light</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>TOUCH_CS<sp/>21<sp/><sp/><sp/><sp/><sp/>//<sp/>Chip<sp/>select<sp/>pin<sp/>(T_CS)<sp/>of<sp/>touch<sp/>screen</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>TFT_WR<sp/>22<sp/><sp/><sp/><sp/>//<sp/>Write<sp/>strobe<sp/>for<sp/>modified<sp/>Raspberry<sp/>Pi<sp/>TFT<sp/>only</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="233"><highlight class="normal"></highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight><highlight class="comment">//<sp/>For<sp/>the<sp/>M5Stack<sp/>module<sp/>use<sp/>these<sp/>#define<sp/>lines</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="235"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>TFT_MISO<sp/>19</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>TFT_MOSI<sp/>23</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>TFT_SCLK<sp/>18</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>TFT_CS<sp/><sp/><sp/>14<sp/><sp/>//<sp/>Chip<sp/>select<sp/>control<sp/>pin</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="239"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>TFT_DC<sp/><sp/><sp/>27<sp/><sp/>//<sp/>Data<sp/>Command<sp/>control<sp/>pin</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>TFT_RST<sp/><sp/>33<sp/><sp/>//<sp/>Reset<sp/>pin<sp/>(could<sp/>connect<sp/>to<sp/>Arduino<sp/>RESET<sp/>pin)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>TFT_BL<sp/><sp/><sp/>32<sp/><sp/>//<sp/>LED<sp/>back-light<sp/>(required<sp/>for<sp/>M5Stack)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="242"><highlight class="normal"></highlight></codeline>
+<codeline lineno="243"><highlight class="normal"></highlight><highlight class="comment">//<sp/>######<sp/><sp/><sp/><sp/><sp/><sp/><sp/>EDIT<sp/>THE<sp/>PINs<sp/>BELOW<sp/>TO<sp/>SUIT<sp/>YOUR<sp/>ESP32<sp/>PARALLEL<sp/>TFT<sp/>SETUP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>######</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"></highlight><highlight class="comment">//<sp/>The<sp/>library<sp/>supports<sp/>8-bit<sp/>parallel<sp/>TFTs<sp/>with<sp/>the<sp/>ESP32,<sp/>the<sp/>pin</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="246"><highlight class="normal"></highlight><highlight class="comment">//<sp/>selection<sp/>below<sp/>is<sp/>compatible<sp/>with<sp/>ESP32<sp/>boards<sp/>in<sp/>UNO<sp/>format.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Wemos<sp/>D32<sp/>boards<sp/>need<sp/>to<sp/>be<sp/>modified,<sp/>see<sp/>diagram<sp/>in<sp/>Tools<sp/>folder.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="248"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Only<sp/>ILI9481<sp/>and<sp/>ILI9341<sp/>based<sp/>displays<sp/>have<sp/>been<sp/>tested!</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Parallel<sp/>bus<sp/>is<sp/>only<sp/>supported<sp/>for<sp/>the<sp/>STM32<sp/>and<sp/>ESP32</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="251"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Example<sp/>below<sp/>is<sp/>for<sp/>ESP32<sp/>Parallel<sp/>interface<sp/>with<sp/>UNO<sp/>displays</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="252"><highlight class="normal"></highlight></codeline>
+<codeline lineno="253"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Tell<sp/>the<sp/>library<sp/>to<sp/>use<sp/>8-bit<sp/>parallel<sp/>mode<sp/>(otherwise<sp/>SPI<sp/>is<sp/>assumed)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="254"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>TFT_PARALLEL_8_BIT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="255"><highlight class="normal"></highlight></codeline>
+<codeline lineno="256"><highlight class="normal"></highlight><highlight class="comment">//<sp/>The<sp/>ESP32<sp/>and<sp/>TFT<sp/>the<sp/>pins<sp/>used<sp/>for<sp/>testing<sp/>are:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="257"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>TFT_CS<sp/><sp/><sp/>33<sp/><sp/>//<sp/>Chip<sp/>select<sp/>control<sp/>pin<sp/>(library<sp/>pulls<sp/>permanently<sp/>low</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="258"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>TFT_DC<sp/><sp/><sp/>15<sp/><sp/>//<sp/>Data<sp/>Command<sp/>control<sp/>pin<sp/>-<sp/>must<sp/>use<sp/>a<sp/>pin<sp/>in<sp/>the<sp/>range<sp/>0-31</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="259"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>TFT_RST<sp/><sp/>32<sp/><sp/>//<sp/>Reset<sp/>pin,<sp/>toggles<sp/>on<sp/>startup</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="260"><highlight class="normal"></highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>TFT_WR<sp/><sp/><sp/><sp/>4<sp/><sp/>//<sp/>Write<sp/>strobe<sp/>control<sp/>pin<sp/>-<sp/>must<sp/>use<sp/>a<sp/>pin<sp/>in<sp/>the<sp/>range<sp/>0-31</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>TFT_RD<sp/><sp/><sp/><sp/>2<sp/><sp/>//<sp/>Read<sp/>strobe<sp/>control<sp/>pin</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="263"><highlight class="normal"></highlight></codeline>
+<codeline lineno="264"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>TFT_D0<sp/><sp/><sp/>12<sp/><sp/>//<sp/>Must<sp/>use<sp/>pins<sp/>in<sp/>the<sp/>range<sp/>0-31<sp/>for<sp/>the<sp/>data<sp/>bus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="265"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>TFT_D1<sp/><sp/><sp/>13<sp/><sp/>//<sp/>so<sp/>a<sp/>single<sp/>register<sp/>write<sp/>sets/clears<sp/>all<sp/>bits.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>TFT_D2<sp/><sp/><sp/>26<sp/><sp/>//<sp/>Pins<sp/>can<sp/>be<sp/>randomly<sp/>assigned,<sp/>this<sp/>does<sp/>not<sp/>affect</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="267"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>TFT_D3<sp/><sp/><sp/>25<sp/><sp/>//<sp/>TFT<sp/>screen<sp/>update<sp/>performance.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="268"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>TFT_D4<sp/><sp/><sp/>17</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="269"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>TFT_D5<sp/><sp/><sp/>16</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="270"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>TFT_D6<sp/><sp/><sp/>27</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="271"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>TFT_D7<sp/><sp/><sp/>14</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="272"><highlight class="normal"></highlight></codeline>
+<codeline lineno="273"><highlight class="normal"></highlight><highlight class="comment">//<sp/>######<sp/><sp/><sp/><sp/><sp/><sp/><sp/>EDIT<sp/>THE<sp/>PINs<sp/>BELOW<sp/>TO<sp/>SUIT<sp/>YOUR<sp/>STM32<sp/>SPI<sp/>TFT<sp/>SETUP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>######</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="274"><highlight class="normal"></highlight></codeline>
+<codeline lineno="275"><highlight class="normal"></highlight><highlight class="comment">//<sp/>The<sp/>TFT<sp/>can<sp/>be<sp/>connected<sp/>to<sp/>SPI<sp/>port<sp/>1<sp/>or<sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="276"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>TFT_SPI_PORT<sp/>1<sp/>//<sp/>SPI<sp/>port<sp/>1<sp/>maximum<sp/>clock<sp/>rate<sp/>is<sp/>55MHz</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="277"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>TFT_MOSI<sp/>PA7</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="278"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>TFT_MISO<sp/>PA6</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="279"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>TFT_SCLK<sp/>PA5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="280"><highlight class="normal"></highlight></codeline>
+<codeline lineno="281"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>TFT_SPI_PORT<sp/>2<sp/>//<sp/>SPI<sp/>port<sp/>2<sp/>maximum<sp/>clock<sp/>rate<sp/>is<sp/>27MHz</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="282"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>TFT_MOSI<sp/>PB15</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="283"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>TFT_MISO<sp/>PB14</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="284"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>TFT_SCLK<sp/>PB13</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="285"><highlight class="normal"></highlight></codeline>
+<codeline lineno="286"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Can<sp/>use<sp/>Ardiuno<sp/>pin<sp/>references,<sp/>arbitrary<sp/>allocation,<sp/>TFT_eSPI<sp/>controls<sp/>chip<sp/>select</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="287"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>TFT_CS<sp/><sp/><sp/>D5<sp/>//<sp/>Chip<sp/>select<sp/>control<sp/>pin<sp/>to<sp/>TFT<sp/>CS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="288"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>TFT_DC<sp/><sp/><sp/>D6<sp/>//<sp/>Data<sp/>Command<sp/>control<sp/>pin<sp/>to<sp/>TFT<sp/>DC<sp/>(may<sp/>be<sp/>labelled<sp/>RS<sp/>=<sp/>Register<sp/>Select)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="289"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>TFT_RST<sp/><sp/>D7<sp/>//<sp/>Reset<sp/>pin<sp/>to<sp/>TFT<sp/>RST<sp/>(or<sp/>RESET)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="290"><highlight class="normal"></highlight><highlight class="comment">//<sp/>OR<sp/>alternatively,<sp/>we<sp/>can<sp/>use<sp/>STM32<sp/>port<sp/>reference<sp/>names<sp/>PXnn</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="291"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>TFT_CS<sp/><sp/><sp/>PE11<sp/>//<sp/>Nucleo-F767ZI<sp/>equivalent<sp/>of<sp/>D5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="292"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>TFT_DC<sp/><sp/><sp/>PE9<sp/><sp/>//<sp/>Nucleo-F767ZI<sp/>equivalent<sp/>of<sp/>D6</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="293"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>TFT_RST<sp/><sp/>PF13<sp/>//<sp/>Nucleo-F767ZI<sp/>equivalent<sp/>of<sp/>D7</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="294"><highlight class="normal"></highlight></codeline>
+<codeline lineno="295"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>TFT_RST<sp/><sp/>-1<sp/><sp/><sp/>//<sp/>Set<sp/>TFT_RST<sp/>to<sp/>-1<sp/>if<sp/>the<sp/>display<sp/>RESET<sp/>is<sp/>connected<sp/>to<sp/>processor<sp/>reset</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Use<sp/>an<sp/>Arduino<sp/>pin<sp/>for<sp/>initial<sp/>testing<sp/>as<sp/>connecting<sp/>to<sp/>processor<sp/>reset</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>may<sp/>not<sp/>work<sp/>(pulse<sp/>too<sp/>short<sp/>at<sp/>power<sp/>up?)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="298"><highlight class="normal"></highlight></codeline>
+<codeline lineno="299"><highlight class="normal"></highlight><highlight class="comment">//<sp/>##################################################################################</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="300"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="301"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Section<sp/>3.<sp/>Define<sp/>the<sp/>fonts<sp/>that<sp/>are<sp/>to<sp/>be<sp/>used<sp/>here</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="302"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="303"><highlight class="normal"></highlight><highlight class="comment">//<sp/>##################################################################################</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="304"><highlight class="normal"></highlight></codeline>
+<codeline lineno="305"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Comment<sp/>out<sp/>the<sp/>#defines<sp/>below<sp/>with<sp/>//<sp/>to<sp/>stop<sp/>that<sp/>font<sp/>being<sp/>loaded</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="306"><highlight class="normal"></highlight><highlight class="comment">//<sp/>The<sp/>ESP8366<sp/>and<sp/>ESP32<sp/>have<sp/>plenty<sp/>of<sp/>memory<sp/>so<sp/>commenting<sp/>out<sp/>fonts<sp/>is<sp/>not</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="307"><highlight class="normal"></highlight><highlight class="comment">//<sp/>normally<sp/>necessary.<sp/>If<sp/>all<sp/>fonts<sp/>are<sp/>loaded<sp/>the<sp/>extra<sp/>FLASH<sp/>space<sp/>required<sp/>is</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="308"><highlight class="normal"></highlight><highlight class="comment">//<sp/>about<sp/>17Kbytes.<sp/>To<sp/>save<sp/>FLASH<sp/>space<sp/>only<sp/>enable<sp/>the<sp/>fonts<sp/>you<sp/>need!</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="309"><highlight class="normal"></highlight></codeline>
+<codeline lineno="310" refid="_user_setup__override_8h_1aee21b8f7828189468d697cc8dfadbccc" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOAD_GLCD<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Font<sp/>1.<sp/>Original<sp/>Adafruit<sp/>8<sp/>pixel<sp/>font<sp/>needs<sp/>~1820<sp/>bytes<sp/>in<sp/>FLASH</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="311" refid="_user_setup__override_8h_1a9a64e48d3861ca909fb1eb9b39492f43" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOAD_FONT2<sp/><sp/></highlight><highlight class="comment">//<sp/>Font<sp/>2.<sp/>Small<sp/>16<sp/>pixel<sp/>high<sp/>font,<sp/>needs<sp/>~3534<sp/>bytes<sp/>in<sp/>FLASH,<sp/>96<sp/>characters</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="312" refid="_user_setup__override_8h_1aff0ca6aaffec55fd4a03b3069a043296" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOAD_FONT4<sp/><sp/></highlight><highlight class="comment">//<sp/>Font<sp/>4.<sp/>Medium<sp/>26<sp/>pixel<sp/>high<sp/>font,<sp/>needs<sp/>~5848<sp/>bytes<sp/>in<sp/>FLASH,<sp/>96<sp/>characters</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="313" refid="_user_setup__override_8h_1a53e7079cd5578217168e9c8de3c43d56" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOAD_FONT6<sp/><sp/></highlight><highlight class="comment">//<sp/>Font<sp/>6.<sp/>Large<sp/>48<sp/>pixel<sp/>font,<sp/>needs<sp/>~2666<sp/>bytes<sp/>in<sp/>FLASH,<sp/>only<sp/>characters<sp/>1234567890:-.apm</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="314" refid="_user_setup__override_8h_1ab824806161666b9da96b88c9fdd600aa" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOAD_FONT7<sp/><sp/></highlight><highlight class="comment">//<sp/>Font<sp/>7.<sp/>7<sp/>segment<sp/>48<sp/>pixel<sp/>font,<sp/>needs<sp/>~2438<sp/>bytes<sp/>in<sp/>FLASH,<sp/>only<sp/>characters<sp/>1234567890:-.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="315" refid="_user_setup__override_8h_1a3bfd3307b606101c9c9b4c4ef75f4350" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOAD_FONT8<sp/><sp/></highlight><highlight class="comment">//<sp/>Font<sp/>8.<sp/>Large<sp/>75<sp/>pixel<sp/>font<sp/>needs<sp/>~3256<sp/>bytes<sp/>in<sp/>FLASH,<sp/>only<sp/>characters<sp/>1234567890:-.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="316"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>LOAD_FONT8N<sp/>//<sp/>Font<sp/>8.<sp/>Alternative<sp/>to<sp/>Font<sp/>8<sp/>above,<sp/>slightly<sp/>narrower,<sp/>so<sp/>3<sp/>digits<sp/>fit<sp/>a<sp/>160<sp/>pixel<sp/>TFT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="317" refid="_user_setup__override_8h_1aaddd4fc72f0ef9b8f513c51b502bd95f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LOAD_GFXFF<sp/><sp/></highlight><highlight class="comment">//<sp/>FreeFonts.<sp/>Include<sp/>access<sp/>to<sp/>the<sp/>48<sp/>Adafruit_GFX<sp/>free<sp/>fonts<sp/>FF1<sp/>to<sp/>FF48<sp/>and<sp/>custom<sp/>fonts</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="318"><highlight class="normal"></highlight></codeline>
+<codeline lineno="319"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Comment<sp/>out<sp/>the<sp/>#define<sp/>below<sp/>to<sp/>stop<sp/>the<sp/>SPIFFS<sp/>filing<sp/>system<sp/>and<sp/>smooth<sp/>font<sp/>code<sp/>being<sp/>loaded</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="320"><highlight class="normal"></highlight><highlight class="comment">//<sp/>this<sp/>will<sp/>save<sp/>~20kbytes<sp/>of<sp/>FLASH</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="321" refid="_user_setup__override_8h_1af8d7688f4a848a0ee8013c122abbda24" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SMOOTH_FONT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="322"><highlight class="normal"></highlight></codeline>
+<codeline lineno="323"><highlight class="normal"></highlight></codeline>
+<codeline lineno="324"><highlight class="normal"></highlight><highlight class="comment">//<sp/>##################################################################################</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="325"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="326"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Section<sp/>4.<sp/>Other<sp/>options</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="327"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="328"><highlight class="normal"></highlight><highlight class="comment">//<sp/>##################################################################################</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="329"><highlight class="normal"></highlight></codeline>
+<codeline lineno="330"><highlight class="normal"></highlight><highlight class="comment">//<sp/>For<sp/>RP2040<sp/>processor<sp/>and<sp/>SPI<sp/>displays,<sp/>uncomment<sp/>the<sp/>following<sp/>line<sp/>to<sp/>use<sp/>the<sp/>PIO<sp/>interface.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="331"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>RP2040_PIO_SPI<sp/>//<sp/>Leave<sp/>commented<sp/>out<sp/>to<sp/>use<sp/>standard<sp/>RP2040<sp/>SPI<sp/>port<sp/>interface</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="332"><highlight class="normal"></highlight></codeline>
+<codeline lineno="333"><highlight class="normal"></highlight><highlight class="comment">//<sp/>For<sp/>RP2040<sp/>processor<sp/>and<sp/>8<sp/>or<sp/>16-bit<sp/>parallel<sp/>displays:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="334"><highlight class="normal"></highlight><highlight class="comment">//<sp/>The<sp/>parallel<sp/>interface<sp/>write<sp/>cycle<sp/>period<sp/>is<sp/>derived<sp/>from<sp/>a<sp/>division<sp/>of<sp/>the<sp/>CPU<sp/>clock</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="335"><highlight class="normal"></highlight><highlight class="comment">//<sp/>speed<sp/>so<sp/>scales<sp/>with<sp/>the<sp/>processor<sp/>clock.<sp/>This<sp/>means<sp/>that<sp/>the<sp/>divider<sp/>ratio<sp/>may<sp/>need</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="336"><highlight class="normal"></highlight><highlight class="comment">//<sp/>to<sp/>be<sp/>increased<sp/>when<sp/>overclocking.<sp/>It<sp/>may<sp/>also<sp/>need<sp/>to<sp/>be<sp/>adjusted<sp/>dependant<sp/>on<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="337"><highlight class="normal"></highlight><highlight class="comment">//<sp/>display<sp/>controller<sp/>type<sp/>(ILI94341,<sp/>HX8357C<sp/>etc.).<sp/>If<sp/>RP2040_PIO_CLK_DIV<sp/>is<sp/>not<sp/>defined</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="338"><highlight class="normal"></highlight><highlight class="comment">//<sp/>the<sp/>library<sp/>will<sp/>set<sp/>default<sp/>values<sp/>which<sp/>may<sp/>not<sp/>suit<sp/>your<sp/>display.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="339"><highlight class="normal"></highlight><highlight class="comment">//<sp/>The<sp/>display<sp/>controller<sp/>data<sp/>sheet<sp/>will<sp/>specify<sp/>the<sp/>minimum<sp/>write<sp/>cycle<sp/>period.<sp/>The</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="340"><highlight class="normal"></highlight><highlight class="comment">//<sp/>controllers<sp/>often<sp/>work<sp/>reliably<sp/>for<sp/>shorter<sp/>periods,<sp/>however<sp/>if<sp/>the<sp/>period<sp/>is<sp/>too<sp/>short</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="341"><highlight class="normal"></highlight><highlight class="comment">//<sp/>the<sp/>display<sp/>may<sp/>not<sp/>initialise<sp/>or<sp/>graphics<sp/>will<sp/>become<sp/>corrupted.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="342"><highlight class="normal"></highlight><highlight class="comment">//<sp/>PIO<sp/>write<sp/>cycle<sp/>frequency<sp/>=<sp/>(CPU<sp/>clock/(4<sp/>*<sp/>RP2040_PIO_CLK_DIV))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="343"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>RP2040_PIO_CLK_DIV<sp/>1<sp/>//<sp/>32ns<sp/>write<sp/>cycle<sp/>at<sp/>125MHz<sp/>CPU<sp/>clock</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="344"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>RP2040_PIO_CLK_DIV<sp/>2<sp/>//<sp/>64ns<sp/>write<sp/>cycle<sp/>at<sp/>125MHz<sp/>CPU<sp/>clock</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="345"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>RP2040_PIO_CLK_DIV<sp/>3<sp/>//<sp/>96ns<sp/>write<sp/>cycle<sp/>at<sp/>125MHz<sp/>CPU<sp/>clock</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="346"><highlight class="normal"></highlight></codeline>
+<codeline lineno="347"><highlight class="normal"></highlight><highlight class="comment">//<sp/>For<sp/>the<sp/>RP2040<sp/>processor<sp/>define<sp/>the<sp/>SPI<sp/>port<sp/>channel<sp/>used<sp/>(default<sp/>0<sp/>if<sp/>undefined)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="348"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>TFT_SPI_PORT<sp/>1<sp/>//<sp/>Set<sp/>to<sp/>0<sp/>if<sp/>SPI0<sp/>pins<sp/>are<sp/>used,<sp/>or<sp/>1<sp/>if<sp/>spi1<sp/>pins<sp/>used</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="349"><highlight class="normal"></highlight></codeline>
+<codeline lineno="350"><highlight class="normal"></highlight><highlight class="comment">//<sp/>For<sp/>the<sp/>STM32<sp/>processor<sp/>define<sp/>the<sp/>SPI<sp/>port<sp/>channel<sp/>used<sp/>(default<sp/>1<sp/>if<sp/>undefined)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="351"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>TFT_SPI_PORT<sp/>2<sp/>//<sp/>Set<sp/>to<sp/>1<sp/>for<sp/>SPI<sp/>port<sp/>1,<sp/>or<sp/>2<sp/>for<sp/>SPI<sp/>port<sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="352"><highlight class="normal"></highlight></codeline>
+<codeline lineno="353"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Define<sp/>the<sp/>SPI<sp/>clock<sp/>frequency,<sp/>this<sp/>affects<sp/>the<sp/>graphics<sp/>rendering<sp/>speed.<sp/>Too</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="354"><highlight class="normal"></highlight><highlight class="comment">//<sp/>fast<sp/>and<sp/>the<sp/>TFT<sp/>driver<sp/>will<sp/>not<sp/>keep<sp/>up<sp/>and<sp/>display<sp/>corruption<sp/>appears.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="355"><highlight class="normal"></highlight><highlight class="comment">//<sp/>With<sp/>an<sp/>ILI9341<sp/>display<sp/>40MHz<sp/>works<sp/>OK,<sp/>80MHz<sp/>sometimes<sp/>fails</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="356"><highlight class="normal"></highlight><highlight class="comment">//<sp/>With<sp/>a<sp/>ST7735<sp/>display<sp/>more<sp/>than<sp/>27MHz<sp/>may<sp/>not<sp/>work<sp/>(spurious<sp/>pixels<sp/>and<sp/>lines)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="357"><highlight class="normal"></highlight><highlight class="comment">//<sp/>With<sp/>an<sp/>ILI9163<sp/>display<sp/>27<sp/>MHz<sp/>works<sp/>OK.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="358"><highlight class="normal"></highlight></codeline>
+<codeline lineno="359"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#define<sp/>SPI_FREQUENCY<sp/><sp/><sp/>1000000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="360"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#define<sp/>SPI_FREQUENCY<sp/><sp/><sp/>5000000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="361"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#define<sp/>SPI_FREQUENCY<sp/><sp/>10000000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="362"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#define<sp/>SPI_FREQUENCY<sp/><sp/>20000000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="363"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#define<sp/>SPI_FREQUENCY<sp/><sp/>27000000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="364"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#define<sp/>SPI_FREQUENCY<sp/><sp/>40000000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="365"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#define<sp/>SPI_FREQUENCY<sp/><sp/>55000000<sp/>//<sp/>STM32<sp/>SPI1<sp/>only<sp/>(SPI2<sp/>maximum<sp/>is<sp/>27MHz)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="366" refid="_user_setup__override_8h_1a5001016067783b1500a1fd34ca1bfc7f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPI_FREQUENCY<sp/><sp/>80000000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="367"><highlight class="normal"></highlight></codeline>
+<codeline lineno="368"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Optional<sp/>reduced<sp/>SPI<sp/>frequency<sp/>for<sp/>reading<sp/>TFT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="369" refid="_user_setup__override_8h_1afa2c3acb4cdfb40c8d9d7aedc7e368de" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPI_READ_FREQUENCY<sp/><sp/>20000000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="370"><highlight class="normal"></highlight></codeline>
+<codeline lineno="371"><highlight class="normal"></highlight><highlight class="comment">//<sp/>The<sp/>XPT2046<sp/>requires<sp/>a<sp/>lower<sp/>SPI<sp/>clock<sp/>rate<sp/>of<sp/>2.5MHz<sp/>so<sp/>we<sp/>define<sp/>that<sp/>here:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="372" refid="_user_setup__override_8h_1ab171de5a1269a3089278792dbd16d22d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPI_TOUCH_FREQUENCY<sp/><sp/>2500000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="373"><highlight class="normal"></highlight></codeline>
+<codeline lineno="374"><highlight class="normal"></highlight><highlight class="comment">//<sp/>The<sp/>ESP32<sp/>has<sp/>2<sp/>free<sp/>SPI<sp/>ports<sp/>i.e.<sp/>VSPI<sp/>and<sp/>HSPI,<sp/>the<sp/>VSPI<sp/>is<sp/>the<sp/>default.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="375"><highlight class="normal"></highlight><highlight class="comment">//<sp/>If<sp/>the<sp/>VSPI<sp/>port<sp/>is<sp/>in<sp/>use<sp/>and<sp/>pins<sp/>are<sp/>not<sp/>accessible<sp/>(e.g.<sp/>TTGO<sp/>T-Beam)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="376"><highlight class="normal"></highlight><highlight class="comment">//<sp/>then<sp/>uncomment<sp/>the<sp/>following<sp/>line:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="377"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>USE_HSPI_PORT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="378"><highlight class="normal"></highlight></codeline>
+<codeline lineno="379"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Comment<sp/>out<sp/>the<sp/>following<sp/>#define<sp/>if<sp/>&quot;SPI<sp/>Transactions&quot;<sp/>do<sp/>not<sp/>need<sp/>to<sp/>be</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="380"><highlight class="normal"></highlight><highlight class="comment">//<sp/>supported.<sp/>When<sp/>commented<sp/>out<sp/>the<sp/>code<sp/>size<sp/>will<sp/>be<sp/>smaller<sp/>and<sp/>sketches<sp/>will</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="381"><highlight class="normal"></highlight><highlight class="comment">//<sp/>run<sp/>slightly<sp/>faster,<sp/>so<sp/>leave<sp/>it<sp/>commented<sp/>out<sp/>unless<sp/>you<sp/>need<sp/>it!</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="382"><highlight class="normal"></highlight></codeline>
+<codeline lineno="383"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Transaction<sp/>support<sp/>is<sp/>needed<sp/>to<sp/>work<sp/>with<sp/>SD<sp/>library<sp/>but<sp/>not<sp/>needed<sp/>with<sp/>TFT_SdFat</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="384"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Transaction<sp/>support<sp/>is<sp/>required<sp/>if<sp/>other<sp/>SPI<sp/>devices<sp/>are<sp/>connected.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="385"><highlight class="normal"></highlight></codeline>
+<codeline lineno="386"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Transactions<sp/>are<sp/>automatically<sp/>enabled<sp/>by<sp/>the<sp/>library<sp/>for<sp/>an<sp/>ESP32<sp/>(to<sp/>use<sp/>HAL<sp/>mutex)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="387"><highlight class="normal"></highlight><highlight class="comment">//<sp/>so<sp/>changing<sp/>it<sp/>here<sp/>has<sp/>no<sp/>effect</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="388"><highlight class="normal"></highlight></codeline>
+<codeline lineno="389"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#define<sp/>SUPPORT_TRANSACTIONS</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/UserSetup_override.h"/>
+  </compounddef>
+</doxygen>

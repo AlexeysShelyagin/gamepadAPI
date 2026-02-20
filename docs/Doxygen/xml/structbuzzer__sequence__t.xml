@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="structbuzzer__sequence__t" kind="struct" language="C++" prot="public">
+    <compoundname>buzzer_sequence_t</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structbuzzer__sequence__t_1a6bc45c5430a68b764df95e85357a8016" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t buzzer_sequence_t::size</definition>
+        <argsstring></argsstring>
+        <name>size</name>
+        <qualifiedname>buzzer_sequence_t::size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/tacktile_response.cpp" line="5" column="10" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/tacktile_response.cpp" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbuzzer__sequence__t_1a80997eef011ec41a7bd3c81e98443557" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t buzzer_sequence_t::channel</definition>
+        <argsstring></argsstring>
+        <name>channel</name>
+        <qualifiedname>buzzer_sequence_t::channel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/tacktile_response.cpp" line="6" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/tacktile_response.cpp" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbuzzer__sequence__t_1a0b2affea36bcb33f1dc4b6710fcc6651" prot="public" static="no" mutable="no">
+        <type>uint8_t *</type>
+        <definition>uint8_t* buzzer_sequence_t::volume</definition>
+        <argsstring></argsstring>
+        <name>volume</name>
+        <qualifiedname>buzzer_sequence_t::volume</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/tacktile_response.cpp" line="7" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/tacktile_response.cpp" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbuzzer__sequence__t_1a503211bce21ae7395213e3d219cd3e98" prot="public" static="no" mutable="no">
+        <type>uint16_t *</type>
+        <definition>uint16_t* buzzer_sequence_t::data</definition>
+        <argsstring></argsstring>
+        <name>data</name>
+        <qualifiedname>buzzer_sequence_t::data</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/tacktile_response.cpp" line="8" column="10" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/tacktile_response.cpp" bodystart="8" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/tacktile_response.cpp" line="4" column="1" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/tacktile_response.cpp" bodystart="4" bodyend="9"/>
+    <listofallmembers>
+      <member refid="structbuzzer__sequence__t_1a80997eef011ec41a7bd3c81e98443557" prot="public" virt="non-virtual"><scope>buzzer_sequence_t</scope><name>channel</name></member>
+      <member refid="structbuzzer__sequence__t_1a503211bce21ae7395213e3d219cd3e98" prot="public" virt="non-virtual"><scope>buzzer_sequence_t</scope><name>data</name></member>
+      <member refid="structbuzzer__sequence__t_1a6bc45c5430a68b764df95e85357a8016" prot="public" virt="non-virtual"><scope>buzzer_sequence_t</scope><name>size</name></member>
+      <member refid="structbuzzer__sequence__t_1a0b2affea36bcb33f1dc4b6710fcc6651" prot="public" virt="non-virtual"><scope>buzzer_sequence_t</scope><name>volume</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

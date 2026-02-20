@@ -1,0 +1,151 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="ui_8h" kind="file" language="C++">
+    <compoundname>ui.h</compoundname>
+    <includes local="no">Arduino.h</includes>
+    <includes local="no">vector</includes>
+    <includes local="no">stack</includes>
+    <includes refid="config_8h" local="yes">config.h</includes>
+    <includedby refid="_devel_deck_a_p_i_8h" local="yes">C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/DevelDeckAPI.h</includedby>
+    <includedby refid="ui_8cpp" local="yes">C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/ui.cpp</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>Arduino.h</label>
+      </node>
+      <node id="5">
+        <label>config.h</label>
+        <link refid="config_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/ui.h</label>
+        <link refid="ui_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>stack</label>
+      </node>
+      <node id="3">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/DevelDeckAPI.cpp</label>
+        <link refid="_devel_deck_a_p_i_8cpp"/>
+      </node>
+      <node id="2">
+        <label>C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/DevelDeckAPI.h</label>
+        <link refid="_devel_deck_a_p_i_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/OTA.cpp</label>
+        <link refid="_o_t_a_8cpp"/>
+      </node>
+      <node id="5">
+        <label>C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/buttons.cpp</label>
+        <link refid="buttons_8cpp"/>
+      </node>
+      <node id="6">
+        <label>C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/ui.cpp</label>
+        <link refid="ui_8cpp"/>
+      </node>
+      <node id="1">
+        <label>C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/ui.h</label>
+        <link refid="ui_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structfile__mngr__t" prot="public">file_mngr_t</innerclass>
+    <innerclass refid="class_gamepad___u_i" prot="public">Gamepad_UI</innerclass>
+    <innerclass refid="class_gamepad___u_i__button" prot="public">Gamepad_UI_button</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>GAMEPAD_UI_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GAMEPAD_UI_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;Arduino.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stack&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="config_8h" kindref="compound">config.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_game__config__t" kindref="compound">Game_config_t</ref>;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_system__data__t" kindref="compound">System_data_t</ref>;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="structfile__mngr__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structfile__mngr__t" kindref="compound">file_mngr_t</ref>{</highlight></codeline>
+<codeline lineno="14" refid="structfile__mngr__t_1a16c45916db3903cc0dc00f0b92acf0e9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>String<sp/><ref refid="structfile__mngr__t_1a16c45916db3903cc0dc00f0b92acf0e9" kindref="member">dir</ref>;</highlight></codeline>
+<codeline lineno="15" refid="structfile__mngr__t_1a024af125473c0f6d749a0c02f24ddba9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>String<sp/><ref refid="structfile__mngr__t_1a024af125473c0f6d749a0c02f24ddba9" kindref="member">file</ref>;</highlight></codeline>
+<codeline lineno="16" refid="structfile__mngr__t_1a95dde86499ac9da95044a9f0ac327945" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_game__config__t" kindref="compound">Game_config_t</ref><sp/>*<ref refid="structfile__mngr__t_1a95dde86499ac9da95044a9f0ac327945" kindref="member">game_config</ref>;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="class_gamepad___u_i" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_gamepad___u_i_1aca9f9d1830a216025f7f109c95679bd8" kindref="member">Gamepad_UI</ref>{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>TaskHandle_t<sp/>notification_handler<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="24" refid="class_gamepad___u_i_1aca9f9d1830a216025f7f109c95679bd8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_gamepad___u_i_1aca9f9d1830a216025f7f109c95679bd8" kindref="member">Gamepad_UI</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_gamepad___u_i_1a204acc812942a5b7b00f623b99bfff32" kindref="member">board_selection_menu</ref>();</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_gamepad___u_i_1ab4f4fcbf097aee6e8e0499b4b0c2737b" kindref="member">main_menu</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>game_active<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>game_select_active<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">,<sp/>uint8_t<sp/>init_cursor<sp/>=<sp/>0);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structfile__mngr__t" kindref="compound">file_mngr_t</ref><sp/><ref refid="class_gamepad___u_i_1af802c2e60c103107d29fd5984fef39b1" kindref="member">file_manager</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>selecting_game<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">,<sp/>String<sp/>root<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;/&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structfile__mngr__t" kindref="compound">file_mngr_t</ref><sp/><ref refid="class_gamepad___u_i_1af802c2e60c103107d29fd5984fef39b1" kindref="member">file_manager</ref>(String<sp/>root);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_gamepad___u_i_1af63f289b70241ffe73fa0b2d39ca9f70" kindref="member">settings</ref>(<ref refid="struct_system__data__t" kindref="compound">System_data_t</ref><sp/>&amp;data);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_gamepad___u_i_1a5ea5086a98ecc0fd2d2ce36818ab74f6" kindref="member">message_box</ref>(String<sp/>msg,<sp/>std::vector<sp/>&lt;<sp/>String<sp/>&gt;<sp/>actions<sp/>=<sp/>std::vector<sp/>&lt;<sp/>String<sp/>&gt;<sp/>(),<sp/>uint16_t<sp/>w<sp/>=<sp/>0,<sp/>uint16_t<sp/>h<sp/>=<sp/>0,<sp/>int16_t<sp/>dx<sp/>=<sp/>0,<sp/>int16_t<sp/>dy<sp/>=<sp/>0);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_gamepad___u_i_1a1f628fb65c5fc8567a217964bbd8b0c2" kindref="member">notification</ref>(String<sp/>msg);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gamepad___u_i_1af98c56ec2d82ad4ad6d73213cb208cfb" kindref="member">init_game_downloading_screen</ref>(<ref refid="struct_game__config__t" kindref="compound">Game_config_t</ref><sp/>game_data,<sp/>String<sp/>dir<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gamepad___u_i_1abbd3e9bb5981d41c4001cd3083734105" kindref="member">game_downloading_screen</ref>(uint8_t<sp/>percentage);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gamepad___u_i_1aa9f81059eab87cf30ff54daf50fc1d5a" kindref="member">on_charge_screen</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>invert<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="class_gamepad___u_i__button" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_gamepad___u_i__button_1a250791b790369bc4fcd47729b0059661" kindref="member">Gamepad_UI_button</ref>{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/>(*render_func)(<ref refid="class_gamepad___u_i__button_1a250791b790369bc4fcd47729b0059661" kindref="member">Gamepad_UI_button</ref><sp/>*,<sp/>uint8_t,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="49" refid="class_gamepad___u_i__button_1ad2de86877cbc3fc3b8b9dd805e571b83" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="class_gamepad___u_i__button_1a3dfb978c92950dc2f0b7503f6850c16f" kindref="member">x</ref>,<sp/><ref refid="class_gamepad___u_i__button_1ac3ce0a4468c3e2e71999ebaa444b6eb0" kindref="member">y</ref>,<sp/><ref refid="class_gamepad___u_i__button_1a146bf863e6bf4026cf140175108272f3" kindref="member">w</ref>,<sp/><ref refid="class_gamepad___u_i__button_1ad2de86877cbc3fc3b8b9dd805e571b83" kindref="member">h</ref>;</highlight></codeline>
+<codeline lineno="50" refid="class_gamepad___u_i__button_1a6ab3109f9258306ae16f45125a63b133" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="class_gamepad___u_i__button_1a6ab3109f9258306ae16f45125a63b133" kindref="member">id</ref>;</highlight></codeline>
+<codeline lineno="51" refid="class_gamepad___u_i__button_1a7ba998fca7820bae620d16120baac5cf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int16_t<sp/><ref refid="class_gamepad___u_i__button_1a5ff782e893b534826b9cae992542d3e3" kindref="member">up_id</ref><sp/>=<sp/>-1,<sp/><ref refid="class_gamepad___u_i__button_1a7ba998fca7820bae620d16120baac5cf" kindref="member">down_id</ref><sp/>=<sp/>-1,<sp/><ref refid="class_gamepad___u_i__button_1ab82217c3cad1f7e87951ee62ec332042" kindref="member">left_id</ref><sp/>=<sp/>-1,<sp/><ref refid="class_gamepad___u_i__button_1aa35365f943953ccd630469087992f1ed" kindref="member">right_id</ref><sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_gamepad___u_i__button_1a250791b790369bc4fcd47729b0059661" kindref="member">Gamepad_UI_button</ref>(uint16_t<sp/>id_<sp/>=<sp/>0,<sp/>uint16_t<sp/>x_<sp/>=<sp/>0,<sp/>uint16_t<sp/>y_<sp/>=<sp/>0,<sp/>uint16_t<sp/>w_<sp/>=<sp/>0,<sp/>uint16_t<sp/>h_<sp/>=<sp/>0);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gamepad___u_i__button_1a169c2892cb714ae0f629cd5d741e0ecb" kindref="member">set_neighbours</ref>(int16_t<sp/>up_id_<sp/>=<sp/>-1,<sp/>int16_t<sp/>down_id_<sp/>=<sp/>-1,<sp/>int16_t<sp/>left_id_<sp/>=<sp/>-1,<sp/>int16_t<sp/>right_id_<sp/>=<sp/>-1);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gamepad___u_i__button_1ada386d739ece7c8e849c127cb744eba5" kindref="member">assign_render_function</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>(*render_func_)(<ref refid="class_gamepad___u_i__button_1a250791b790369bc4fcd47729b0059661" kindref="member">Gamepad_UI_button</ref><sp/>*,<sp/>uint8_t,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*));</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gamepad___u_i__button_1aa88c413a42072824b485f1d991ef94dc" kindref="member">render</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>params<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">,<sp/>uint8_t<sp/>skin<sp/>=<sp/>0,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>clear<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gamepad___u_i__button_1aa88c413a42072824b485f1d991ef94dc" kindref="member">render</ref>(uint8_t<sp/>skin,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>clear<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/ui.h"/>
+  </compounddef>
+</doxygen>

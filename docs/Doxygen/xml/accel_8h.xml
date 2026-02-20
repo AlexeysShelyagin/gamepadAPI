@@ -1,0 +1,159 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="accel_8h" kind="file" language="C++">
+    <compoundname>accel.h</compoundname>
+    <includes local="no">Wire.h</includes>
+    <includes local="no">Arduino.h</includes>
+    <includes refid="config_8h" local="yes">config.h</includes>
+    <includes refid="vectors_8h" local="yes">vectors.h</includes>
+    <includedby refid="_devel_deck_a_p_i_8h" local="yes">C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/DevelDeckAPI.h</includedby>
+    <includedby refid="accel_8cpp" local="yes">C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/accel.cpp</includedby>
+    <incdepgraph>
+      <node id="3">
+        <label>Arduino.h</label>
+      </node>
+      <node id="1">
+        <label>C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/accel.h</label>
+        <link refid="accel_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>config.h</label>
+        <link refid="config_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>vectors.h</label>
+        <link refid="vectors_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Wire.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/DevelDeckAPI.cpp</label>
+        <link refid="_devel_deck_a_p_i_8cpp"/>
+      </node>
+      <node id="2">
+        <label>C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/DevelDeckAPI.h</label>
+        <link refid="_devel_deck_a_p_i_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/OTA.cpp</label>
+        <link refid="_o_t_a_8cpp"/>
+      </node>
+      <node id="7">
+        <label>C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/accel.cpp</label>
+        <link refid="accel_8cpp"/>
+      </node>
+      <node id="1">
+        <label>C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/accel.h</label>
+        <link refid="accel_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/buttons.cpp</label>
+        <link refid="buttons_8cpp"/>
+      </node>
+      <node id="6">
+        <label>C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/ui.cpp</label>
+        <link refid="ui_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_gamepad__accel" prot="public">Gamepad_accel</innerclass>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="accel_8h_1a89d5c73243f2fd70a199acf59e88df4a" prot="public" static="no" mutable="no">
+        <type>const float</type>
+        <definition>const float g_const</definition>
+        <argsstring></argsstring>
+        <name>g_const</name>
+        <initializer>= 9.81</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/accel.h" line="10" column="13" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/accel.h" bodystart="10" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>ACCEL_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ACCEL_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;Wire.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;Arduino.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="config_8h" kindref="compound">config.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="vectors_8h" kindref="compound">vectors.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="accel_8h_1a89d5c73243f2fd70a199acf59e88df4a" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="accel_8h_1a89d5c73243f2fd70a199acf59e88df4a" kindref="member">g_const</ref><sp/>=<sp/>9.81;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="class_gamepad__accel" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_gamepad__accel_1afbf04319e81426ba6566059275892e96" kindref="member">Gamepad_accel</ref>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>chip_type_t{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BMI160_ID<sp/>=<sp/>0xD1,</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BMI323_ID<sp/>=<sp/>0x43</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>chip<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>TwoWire<sp/>accelWire<sp/>=<sp/>TwoWire(0);</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvec3" kindref="compound">vec3</ref><sp/>invert_mask;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvec3" kindref="compound">vec3</ref><sp/>basis_x<sp/>=<sp/><ref refid="classvec3" kindref="compound">vec3</ref>(0,<sp/>1,<sp/>0);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvec3" kindref="compound">vec3</ref><sp/>basis_y<sp/>=<sp/><ref refid="classvec3" kindref="compound">vec3</ref>(-1,<sp/>0,<sp/>0);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="26" refid="class_gamepad__accel_1afbf04319e81426ba6566059275892e96" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_gamepad__accel_1afbf04319e81426ba6566059275892e96" kindref="member">Gamepad_accel</ref>()<sp/>=<sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gamepad__accel_1ae00750955340d45bee64b12eaca3a7c0" kindref="member">init</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sda_pin<sp/>=<sp/><ref refid="config_8h_1a204225c3b8c85cb6cc180643376d9bba" kindref="member">ACCEL_SDA_PIN</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>scl_pin<sp/>=<sp/><ref refid="config_8h_1a38afe63b4bd065e1c72fd19789fb61c9" kindref="member">ACCEL_SCL_PIN</ref>);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gamepad__accel_1a2f94ae4a494f527bdfa5dfc290ebe68c" kindref="member">auto_calibrate</ref>();</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gamepad__accel_1a2ba399f4547d13a1e99740c5266f104a" kindref="member">set_vertical_mode</ref>();</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gamepad__accel_1a5f92894b3e33e911d8dfeb30c8e333fd" kindref="member">set_horizontal_mode</ref>();</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gamepad__accel_1afbb289540676c822a8bd0ae74d78e1e9" kindref="member">set_current_as_zero</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>hold_x_axis<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvec3" kindref="compound">vec3</ref><sp/><ref refid="class_gamepad__accel_1aa907b488f1c91150a14c1b4fa51abdc7" kindref="member">get_accel</ref>();</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvec2" kindref="compound">vec2</ref><sp/><ref refid="class_gamepad__accel_1a65a5553007cf5873cc5c271d849b99cb" kindref="member">get_angles</ref>(<ref refid="classvec3" kindref="compound">vec3</ref><sp/>&amp;accel);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classvec2" kindref="compound">vec2</ref><sp/><ref refid="class_gamepad__accel_1a65a5553007cf5873cc5c271d849b99cb" kindref="member">get_angles</ref>();</highlight></codeline>
+<codeline lineno="80"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/accel.h"/>
+  </compounddef>
+</doxygen>

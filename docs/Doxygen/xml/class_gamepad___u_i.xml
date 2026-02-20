@@ -1,0 +1,283 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="class_gamepad___u_i" kind="class" language="C++" prot="public">
+    <compoundname>Gamepad_UI</compoundname>
+    <includes refid="ui_8h" local="no">ui.h</includes>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_gamepad___u_i_1afc1a2d39f396669c86d865a0379d4a93" prot="private" static="no" mutable="no">
+        <type>TaskHandle_t</type>
+        <definition>TaskHandle_t Gamepad_UI::notification_handler</definition>
+        <argsstring></argsstring>
+        <name>notification_handler</name>
+        <qualifiedname>Gamepad_UI::notification_handler</qualifiedname>
+        <initializer>= NULL</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/ui.h" line="22" column="18" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/ui.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_gamepad___u_i_1aca9f9d1830a216025f7f109c95679bd8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gamepad_UI::Gamepad_UI</definition>
+        <argsstring>()=default</argsstring>
+        <name>Gamepad_UI</name>
+        <qualifiedname>Gamepad_UI::Gamepad_UI</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/ui.h" line="24" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gamepad___u_i_1a204acc812942a5b7b00f623b99bfff32" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t Gamepad_UI::board_selection_menu</definition>
+        <argsstring>()</argsstring>
+        <name>board_selection_menu</name>
+        <qualifiedname>Gamepad_UI::board_selection_menu</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/ui.h" line="26" column="13" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/ui.cpp" bodystart="19" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gamepad___u_i_1ab4f4fcbf097aee6e8e0499b4b0c2737b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t Gamepad_UI::main_menu</definition>
+        <argsstring>(bool game_active=true, bool game_select_active=true, uint8_t init_cursor=0)</argsstring>
+        <name>main_menu</name>
+        <qualifiedname>Gamepad_UI::main_menu</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>game_active</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>game_select_active</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>init_cursor</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/ui.h" line="28" column="13" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/ui.cpp" bodystart="81" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gamepad___u_i_1af802c2e60c103107d29fd5984fef39b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structfile__mngr__t" kindref="compound">file_mngr_t</ref></type>
+        <definition>file_mngr_t Gamepad_UI::file_manager</definition>
+        <argsstring>(bool selecting_game=false, String root=&quot;/&quot;)</argsstring>
+        <name>file_manager</name>
+        <qualifiedname>Gamepad_UI::file_manager</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>selecting_game</declname>
+          <defval>false</defval>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>root</declname>
+          <defval>&quot;/&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/ui.h" line="30" column="17" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/ui.cpp" bodystart="151" bodyend="349"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gamepad___u_i_1ae9f930fe1fa67101726313e4eb5f34ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structfile__mngr__t" kindref="compound">file_mngr_t</ref></type>
+        <definition>file_mngr_t Gamepad_UI::file_manager</definition>
+        <argsstring>(String root)</argsstring>
+        <name>file_manager</name>
+        <qualifiedname>Gamepad_UI::file_manager</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>root</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/ui.h" line="31" column="17" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/ui.cpp" bodystart="351" bodyend="353"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gamepad___u_i_1af63f289b70241ffe73fa0b2d39ca9f70" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t Gamepad_UI::settings</definition>
+        <argsstring>(System_data_t &amp;data)</argsstring>
+        <name>settings</name>
+        <qualifiedname>Gamepad_UI::settings</qualifiedname>
+        <param>
+          <type><ref refid="struct_system__data__t" kindref="compound">System_data_t</ref> &amp;</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/ui.h" line="33" column="13" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/ui.cpp" bodystart="366" bodyend="543"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gamepad___u_i_1a5ea5086a98ecc0fd2d2ce36818ab74f6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t Gamepad_UI::message_box</definition>
+        <argsstring>(String msg, std::vector&lt; String &gt; actions=std::vector&lt; String &gt;(), uint16_t w=0, uint16_t h=0, int16_t dx=0, int16_t dy=0)</argsstring>
+        <name>message_box</name>
+        <qualifiedname>Gamepad_UI::message_box</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>msg</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; String &gt;</type>
+          <declname>actions</declname>
+          <defval>std::vector&lt; String &gt;()</defval>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>w</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>h</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>dx</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>dy</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/ui.h" line="35" column="13" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/ui.cpp" bodystart="562" bodyend="650"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gamepad___u_i_1a1f628fb65c5fc8567a217964bbd8b0c2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gamepad_UI::notification</definition>
+        <argsstring>(String msg)</argsstring>
+        <name>notification</name>
+        <qualifiedname>Gamepad_UI::notification</qualifiedname>
+        <param>
+          <type>String</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/ui.h" line="36" column="10" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/ui.cpp" bodystart="669" bodyend="715"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gamepad___u_i_1af98c56ec2d82ad4ad6d73213cb208cfb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gamepad_UI::init_game_downloading_screen</definition>
+        <argsstring>(Game_config_t game_data, String dir=&quot;&quot;)</argsstring>
+        <name>init_game_downloading_screen</name>
+        <qualifiedname>Gamepad_UI::init_game_downloading_screen</qualifiedname>
+        <param>
+          <type><ref refid="struct_game__config__t" kindref="compound">Game_config_t</ref></type>
+          <declname>game_data</declname>
+        </param>
+        <param>
+          <type>String</type>
+          <declname>dir</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/ui.h" line="38" column="10" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/ui.cpp" bodystart="717" bodyend="747"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gamepad___u_i_1abbd3e9bb5981d41c4001cd3083734105" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gamepad_UI::game_downloading_screen</definition>
+        <argsstring>(uint8_t percentage)</argsstring>
+        <name>game_downloading_screen</name>
+        <qualifiedname>Gamepad_UI::game_downloading_screen</qualifiedname>
+        <param>
+          <type>uint8_t</type>
+          <declname>percentage</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/ui.h" line="39" column="10" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/ui.cpp" bodystart="749" bodyend="765"/>
+      </memberdef>
+      <memberdef kind="function" id="class_gamepad___u_i_1aa9f81059eab87cf30ff54daf50fc1d5a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gamepad_UI::on_charge_screen</definition>
+        <argsstring>(bool invert=false)</argsstring>
+        <name>on_charge_screen</name>
+        <qualifiedname>Gamepad_UI::on_charge_screen</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>invert</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/ui.h" line="41" column="10" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/ui.cpp" bodystart="767" bodyend="781"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/ui.h" line="21" column="1" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/ui.h" bodystart="21" bodyend="42"/>
+    <listofallmembers>
+      <member refid="class_gamepad___u_i_1a204acc812942a5b7b00f623b99bfff32" prot="public" virt="non-virtual"><scope>Gamepad_UI</scope><name>board_selection_menu</name></member>
+      <member refid="class_gamepad___u_i_1af802c2e60c103107d29fd5984fef39b1" prot="public" virt="non-virtual"><scope>Gamepad_UI</scope><name>file_manager</name></member>
+      <member refid="class_gamepad___u_i_1ae9f930fe1fa67101726313e4eb5f34ca" prot="public" virt="non-virtual"><scope>Gamepad_UI</scope><name>file_manager</name></member>
+      <member refid="class_gamepad___u_i_1abbd3e9bb5981d41c4001cd3083734105" prot="public" virt="non-virtual"><scope>Gamepad_UI</scope><name>game_downloading_screen</name></member>
+      <member refid="class_gamepad___u_i_1aca9f9d1830a216025f7f109c95679bd8" prot="public" virt="non-virtual"><scope>Gamepad_UI</scope><name>Gamepad_UI</name></member>
+      <member refid="class_gamepad___u_i_1af98c56ec2d82ad4ad6d73213cb208cfb" prot="public" virt="non-virtual"><scope>Gamepad_UI</scope><name>init_game_downloading_screen</name></member>
+      <member refid="class_gamepad___u_i_1ab4f4fcbf097aee6e8e0499b4b0c2737b" prot="public" virt="non-virtual"><scope>Gamepad_UI</scope><name>main_menu</name></member>
+      <member refid="class_gamepad___u_i_1a5ea5086a98ecc0fd2d2ce36818ab74f6" prot="public" virt="non-virtual"><scope>Gamepad_UI</scope><name>message_box</name></member>
+      <member refid="class_gamepad___u_i_1a1f628fb65c5fc8567a217964bbd8b0c2" prot="public" virt="non-virtual"><scope>Gamepad_UI</scope><name>notification</name></member>
+      <member refid="class_gamepad___u_i_1afc1a2d39f396669c86d865a0379d4a93" prot="private" virt="non-virtual"><scope>Gamepad_UI</scope><name>notification_handler</name></member>
+      <member refid="class_gamepad___u_i_1aa9f81059eab87cf30ff54daf50fc1d5a" prot="public" virt="non-virtual"><scope>Gamepad_UI</scope><name>on_charge_screen</name></member>
+      <member refid="class_gamepad___u_i_1af63f289b70241ffe73fa0b2d39ca9f70" prot="public" virt="non-virtual"><scope>Gamepad_UI</scope><name>settings</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

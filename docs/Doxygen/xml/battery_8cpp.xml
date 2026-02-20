@@ -1,0 +1,355 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="battery_8cpp" kind="file" language="C++">
+    <compoundname>battery.cpp</compoundname>
+    <includes refid="battery_8h" local="no">battery.h</includes>
+    <incdepgraph>
+      <node id="3">
+        <label>Arduino.h</label>
+      </node>
+      <node id="1">
+        <label>C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/battery.cpp</label>
+        <link refid="battery_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>battery.h</label>
+        <link refid="battery_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>config.h</label>
+        <link refid="config_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="battery_8cpp_1a93751271ffe06402b7a7d8a43a647e3b" prot="public" static="no" mutable="no">
+        <type>const float</type>
+        <definition>const float batt_inv_divider_val</definition>
+        <argsstring></argsstring>
+        <name>batt_inv_divider_val</name>
+        <initializer>= (float) (<ref refid="config_8h_1a5951bf63a7901febf7eca8c9f864cc1c" kindref="member">BATTERY_DIVIDER_R1</ref> + <ref refid="config_8h_1a16590266cf846d6b1f20fcf1c8f29b20" kindref="member">BATTERY_DIVIDER_R2</ref>) / <ref refid="config_8h_1a5951bf63a7901febf7eca8c9f864cc1c" kindref="member">BATTERY_DIVIDER_R1</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/battery.cpp" line="3" column="13" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/battery.cpp" bodystart="3" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="battery_8cpp_1a455fdf3bc1ce3e10a5125f52c17708f0" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; uint16_t &gt;</type>
+        <definition>std::vector&lt; uint16_t &gt; calibr_time</definition>
+        <argsstring></argsstring>
+        <name>calibr_time</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/battery.cpp" line="5" column="14" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/battery.cpp" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="battery_8cpp_1ad43146358a04e994b37bd647b6b8c370" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; float &gt;</type>
+        <definition>std::vector&lt; float &gt; calibr_v</definition>
+        <argsstring></argsstring>
+        <name>calibr_v</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/battery.cpp" line="6" column="14" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/battery.cpp" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="battery_8cpp_1afaf1e8606e008a1a0d4a404bdca5341c" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool calibr_failed</definition>
+        <argsstring></argsstring>
+        <name>calibr_failed</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/battery.cpp" line="7" column="6" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/battery.cpp" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="battery_8cpp_1a47ba1eb98ab46b336f5e74cb9d319b84" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float CRITICAL_V</definition>
+        <argsstring></argsstring>
+        <name>CRITICAL_V</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/battery.cpp" line="8" column="7" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/battery.cpp" bodystart="8" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="battery_8cpp_1abfb731b527d0a1efbb301e9fe43480d2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float clamp</definition>
+        <argsstring>(float val, float min_=0, float max_=1)</argsstring>
+        <name>clamp</name>
+        <param>
+          <type>float</type>
+          <declname>val</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>min_</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>max_</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/battery.cpp" line="10" column="7" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/battery.cpp" bodystart="10" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="battery_8cpp_1adb5ddebdba4e5d5ae31411aa3f592a65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float default_v_adj</definition>
+        <argsstring>(float v)</argsstring>
+        <name>default_v_adj</name>
+        <param>
+          <type>float</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/battery.cpp" line="14" column="7" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/battery.cpp" bodystart="14" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="battery_8cpp_1a29b1bec082ac797eac2a668a2c21e846" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void battery_callibration</definition>
+        <argsstring>(void *params)</argsstring>
+        <name>battery_callibration</name>
+        <param>
+          <type>void *</type>
+          <declname>params</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/battery.cpp" line="74" column="6" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/battery.cpp" bodystart="74" bodyend="92"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;<ref refid="battery_8h" kindref="compound">battery.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="battery_8cpp_1a93751271ffe06402b7a7d8a43a647e3b" kindref="member">batt_inv_divider_val</ref><sp/>=<sp/>(float)<sp/>(<ref refid="config_8h_1a5951bf63a7901febf7eca8c9f864cc1c" kindref="member">BATTERY_DIVIDER_R1</ref><sp/>+<sp/><ref refid="config_8h_1a16590266cf846d6b1f20fcf1c8f29b20" kindref="member">BATTERY_DIVIDER_R2</ref>)<sp/>/<sp/><ref refid="config_8h_1a5951bf63a7901febf7eca8c9f864cc1c" kindref="member">BATTERY_DIVIDER_R1</ref>;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal">std::vector<sp/>&lt;<sp/>uint16_t<sp/>&gt;<sp/><ref refid="battery_8cpp_1a455fdf3bc1ce3e10a5125f52c17708f0" kindref="member">calibr_time</ref>;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal">std::vector<sp/>&lt;<sp/>float<sp/>&gt;<sp/><ref refid="battery_8cpp_1ad43146358a04e994b37bd647b6b8c370" kindref="member">calibr_v</ref>;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="battery_8cpp_1afaf1e8606e008a1a0d4a404bdca5341c" kindref="member">calibr_failed</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="battery_8cpp_1a47ba1eb98ab46b336f5e74cb9d319b84" kindref="member">CRITICAL_V</ref>;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="battery_8cpp_1abfb731b527d0a1efbb301e9fe43480d2" kindref="member">clamp</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>val,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>min_<sp/>=<sp/>0,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>max_<sp/>=<sp/>1){</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>max(min(val,<sp/>max_),<sp/>min_);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="battery_8cpp_1adb5ddebdba4e5d5ae31411aa3f592a65" kindref="member">default_v_adj</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>v){</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>v;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><ref refid="class_gamepad__battery_1a2f71903031c7371159903eaa4ec8f237" kindref="member">Gamepad_battery::Gamepad_battery</ref>(){</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>v_adj_func<sp/>=<sp/><ref refid="battery_8cpp_1adb5ddebdba4e5d5ae31411aa3f592a65" kindref="member">default_v_adj</ref>;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gamepad__battery_1ad3b55c1a4f4d7c2003fa2f319f165d5d" kindref="member">Gamepad_battery::init</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>critical_v_,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>full_v_,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>charging_v_,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>only_charging_v_){</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>critical_v<sp/>=<sp/>critical_v_;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>full_v<sp/>=<sp/>full_v_;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>charging_v<sp/>=<sp/>charging_v_;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>only_charging_v<sp/>=<sp/>only_charging_v_;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="battery_8cpp_1a47ba1eb98ab46b336f5e74cb9d319b84" kindref="member">CRITICAL_V</ref><sp/>=<sp/>critical_v;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>adcAttachPin(<ref refid="config_8h_1ab2715d77812256b2f4bf93475deee5d4" kindref="member">BATTERY_V_PIN</ref>);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>analogReadResolution(12);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gamepad__battery_1a8f09a8510da8f3bbb63fa608e4f7f744" kindref="member">Gamepad_battery::set_voltage_adjustment</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>(*v_adj_func_ptr)(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">)){</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>v_adj_func<sp/>=<sp/>v_adj_func_ptr;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_gamepad__battery_1a467b2e291007c234ef1037cbe9ae2a1a" kindref="member">Gamepad_battery::get_battery_voltage</ref>(){</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>pin_val<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(uint8_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/><ref refid="config_8h_1a790db950303eb76325ab4bf30c1652e7" kindref="member">BATTERY_N_OF_MEASURES</ref>;<sp/>i++)</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pin_val<sp/>+=<sp/>analogRead(<ref refid="config_8h_1ab2715d77812256b2f4bf93475deee5d4" kindref="member">BATTERY_V_PIN</ref>);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>pin_val<sp/>/=<sp/>(float)<sp/><ref refid="config_8h_1a790db950303eb76325ab4bf30c1652e7" kindref="member">BATTERY_N_OF_MEASURES</ref>;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>v_raw<sp/>=<sp/>pin_val<sp/>*<sp/><ref refid="config_8h_1a21f05071c0428992770488ff831159df" kindref="member">BATTERY_V_REF</ref><sp/>*<sp/><ref refid="battery_8cpp_1a93751271ffe06402b7a7d8a43a647e3b" kindref="member">batt_inv_divider_val</ref><sp/>/<sp/>4096.0;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>v_adj_func(v_raw);<sp/></highlight></codeline>
+<codeline lineno="49"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal">uint8_t<sp/><ref refid="class_gamepad__battery_1ac28323d70af6bf9d9b7e38df570d4fe5" kindref="member">Gamepad_battery::get_battery_charge</ref>(){</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>v<sp/>=<sp/><ref refid="class_gamepad__battery_1a467b2e291007c234ef1037cbe9ae2a1a" kindref="member">get_battery_voltage</ref>();</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(voltage_levels<sp/>==<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>round(<ref refid="battery_8cpp_1abfb731b527d0a1efbb301e9fe43480d2" kindref="member">clamp</ref>((v<sp/>-<sp/>critical_v)<sp/>/<sp/>(full_v<sp/>-<sp/>critical_v))<sp/>*<sp/><ref refid="config_8h_1abf6695f9b7e328cf934a4c3078bfcb23" kindref="member">BATTERY_LEVELS</ref>);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>i<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(i<sp/>&lt;<sp/><ref refid="config_8h_1abf6695f9b7e328cf934a4c3078bfcb23" kindref="member">BATTERY_LEVELS</ref><sp/>&amp;&amp;<sp/>voltage_levels[i]<sp/>&gt;<sp/>v)</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i++;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="config_8h_1abf6695f9b7e328cf934a4c3078bfcb23" kindref="member">BATTERY_LEVELS</ref><sp/>-<sp/>i;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><ref refid="class_gamepad__battery_1a497f89b03d0a8b6154dd02b84d25ffb2" kindref="member">Gamepad_battery::charge_mode</ref><sp/><ref refid="class_gamepad__battery_1a17d48a3cae832bc54344a5bf18311698" kindref="member">Gamepad_battery::get_device_mode</ref>(){</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>v<sp/>=<sp/><ref refid="class_gamepad__battery_1a467b2e291007c234ef1037cbe9ae2a1a" kindref="member">get_battery_voltage</ref>();</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(v<sp/>&gt;<sp/>only_charging_v)</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_gamepad__battery_1a497f89b03d0a8b6154dd02b84d25ffb2a48011ff660fb84fed9d1f2577fe69e7e" kindref="member">ONLY_CHARHING</ref>;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(v<sp/>&gt;<sp/>charging_v)</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_gamepad__battery_1a497f89b03d0a8b6154dd02b84d25ffb2a74b8d6c965fe7ea91916778fc5c790b3" kindref="member">POWER_ON_CHARGING</ref>;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_gamepad__battery_1a497f89b03d0a8b6154dd02b84d25ffb2ae3f85ee81c259238cfaf03ad7cd9c6f4" kindref="member">POWER_ON</ref>;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="battery_8cpp_1a29b1bec082ac797eac2a668a2c21e846" kindref="member">battery_callibration</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*params){</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_gamepad__battery" kindref="compound">Gamepad_battery</ref><sp/>*batt<sp/>=<sp/>(<ref refid="class_gamepad__battery" kindref="compound">Gamepad_battery</ref><sp/>*)<sp/>params;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>v<sp/>=<sp/>batt<sp/>-&gt;<sp/>get_battery_voltage();</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(v<sp/>&gt;<sp/><ref refid="battery_8cpp_1a47ba1eb98ab46b336f5e74cb9d319b84" kindref="member">CRITICAL_V</ref>){</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(batt<sp/>-&gt;<sp/>get_device_mode()<sp/>!=<sp/><ref refid="class_gamepad__battery_1a497f89b03d0a8b6154dd02b84d25ffb2ae3f85ee81c259238cfaf03ad7cd9c6f4" kindref="member">Gamepad_battery::POWER_ON</ref>){</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="battery_8cpp_1afaf1e8606e008a1a0d4a404bdca5341c" kindref="member">calibr_failed</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>v<sp/>=<sp/>batt<sp/>-&gt;<sp/>get_battery_voltage();</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="battery_8cpp_1a455fdf3bc1ce3e10a5125f52c17708f0" kindref="member">calibr_time</ref>.push_back(millis()<sp/>/<sp/>1000);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="battery_8cpp_1ad43146358a04e994b37bd647b6b8c370" kindref="member">calibr_v</ref>.push_back(v);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vTaskDelay(<ref refid="config_8h_1afc32484a526130b29c5ed3f8a68db924" kindref="member">BATTERY_CALIBRATION_TIMEOUT</ref>);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>vTaskDelete(NULL);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gamepad__battery_1ac133561a46e239959c7d72495a416b30" kindref="member">Gamepad_battery::start_calibration</ref>(){</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="battery_8cpp_1afaf1e8606e008a1a0d4a404bdca5341c" kindref="member">calibr_failed</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>xTaskCreatePinnedToCore(</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="battery_8cpp_1a29b1bec082ac797eac2a668a2c21e846" kindref="member">battery_callibration</ref>,</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;batt_calibr&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1024,</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>1,</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&amp;calibration_handler,</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xPortGetCoreID()</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>calibrating<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>calibration_start_time<sp/>=<sp/>millis();</highlight></codeline>
+<codeline lineno="109"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">*<sp/><ref refid="class_gamepad__battery_1a334a418e98e1e7e41d8b53a07649bc46" kindref="member">Gamepad_battery::finish_calibration</ref>(){</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!calibrating<sp/>||<sp/><ref refid="battery_8cpp_1ad43146358a04e994b37bd647b6b8c370" kindref="member">calibr_v</ref>.size()<sp/>==<sp/>0<sp/>||<sp/><ref refid="battery_8cpp_1afaf1e8606e008a1a0d4a404bdca5341c" kindref="member">calibr_failed</ref>){</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>calibrating<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>calibrating<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(calibration_handler<sp/>!=<sp/>NULL<sp/>&amp;&amp;<sp/>eTaskGetState(calibration_handler)<sp/>!=<sp/>eDeleted)</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vTaskSuspend(calibration_handler);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(voltage_levels<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>[]<sp/>voltage_levels;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>voltage_levels<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">[<ref refid="config_8h_1abf6695f9b7e328cf934a4c3078bfcb23" kindref="member">BATTERY_LEVELS</ref>];</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>n<sp/>=<sp/><ref refid="battery_8cpp_1ad43146358a04e994b37bd647b6b8c370" kindref="member">calibr_v</ref>.size();</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>period<sp/>=<sp/>(float)<sp/>(<ref refid="battery_8cpp_1a455fdf3bc1ce3e10a5125f52c17708f0" kindref="member">calibr_time</ref>[n<sp/>-<sp/>1]<sp/>-<sp/><ref refid="battery_8cpp_1a455fdf3bc1ce3e10a5125f52c17708f0" kindref="member">calibr_time</ref>[0])<sp/>*<sp/>(1.0<sp/>-<sp/><ref refid="config_8h_1aee573c4b5325259c8ff26443d48da13a" kindref="member">BATTERY_ZERO_PERCENTAGE</ref>)<sp/>/<sp/>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">)<sp/><ref refid="config_8h_1abf6695f9b7e328cf934a4c3078bfcb23" kindref="member">BATTERY_LEVELS</ref>;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>iteration<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>n;<sp/>i++){</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="battery_8cpp_1a455fdf3bc1ce3e10a5125f52c17708f0" kindref="member">calibr_time</ref>[i]<sp/>&gt;=<sp/>period<sp/>*<sp/>iteration){</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="battery_8cpp_1a455fdf3bc1ce3e10a5125f52c17708f0" kindref="member">calibr_time</ref>[i]<sp/>!=<sp/><ref refid="battery_8cpp_1a455fdf3bc1ce3e10a5125f52c17708f0" kindref="member">calibr_time</ref>[i<sp/>-<sp/>1]<sp/>&amp;&amp;<sp/><ref refid="battery_8cpp_1ad43146358a04e994b37bd647b6b8c370" kindref="member">calibr_v</ref>[i]<sp/>!=<sp/><ref refid="battery_8cpp_1ad43146358a04e994b37bd647b6b8c370" kindref="member">calibr_v</ref>[i<sp/>-<sp/>1]){</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>scale<sp/>=<sp/>(period<sp/>*<sp/>iteration<sp/>-<sp/>(float)<sp/><ref refid="battery_8cpp_1a455fdf3bc1ce3e10a5125f52c17708f0" kindref="member">calibr_time</ref>[i<sp/>-<sp/>1])<sp/>/<sp/>(<ref refid="battery_8cpp_1a455fdf3bc1ce3e10a5125f52c17708f0" kindref="member">calibr_time</ref>[i]<sp/>-<sp/><ref refid="battery_8cpp_1a455fdf3bc1ce3e10a5125f52c17708f0" kindref="member">calibr_time</ref>[i<sp/>-<sp/>1]);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>voltage_levels[iteration<sp/>-<sp/>1]<sp/>=<sp/><ref refid="battery_8cpp_1ad43146358a04e994b37bd647b6b8c370" kindref="member">calibr_v</ref>[i<sp/>-<sp/>1]<sp/>+<sp/>(float)<sp/>(<ref refid="battery_8cpp_1ad43146358a04e994b37bd647b6b8c370" kindref="member">calibr_v</ref>[i]<sp/>-<sp/><ref refid="battery_8cpp_1ad43146358a04e994b37bd647b6b8c370" kindref="member">calibr_v</ref>[i<sp/>-<sp/>1])<sp/>*<sp/>scale;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>voltage_levels[iteration<sp/>-<sp/>1]<sp/>=<sp/><ref refid="battery_8cpp_1ad43146358a04e994b37bd647b6b8c370" kindref="member">calibr_v</ref>[i];</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(iteration<sp/>==<sp/><ref refid="config_8h_1abf6695f9b7e328cf934a4c3078bfcb23" kindref="member">BATTERY_LEVELS</ref>)</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>iteration++;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="battery_8cpp_1a455fdf3bc1ce3e10a5125f52c17708f0" kindref="member">calibr_time</ref>.clear();</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="battery_8cpp_1ad43146358a04e994b37bd647b6b8c370" kindref="member">calibr_v</ref>.clear();</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_gamepad__battery_1a9c05f7da8f84a4272c175e19c5e331cc" kindref="member">lifetime</ref><sp/>=<sp/>(millis()<sp/>-<sp/>calibration_start_time)<sp/>/<sp/>60000;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>voltage_levels;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_gamepad__battery_1a58b452259e238e292d01fb2ee760bb51" kindref="member">Gamepad_battery::is_calibrating</ref>(){</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>calibrating;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_gamepad__battery_1a6166270abf58f0a41682c237ef30b6c1" kindref="member">Gamepad_battery::calibration_failed</ref>(){</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="battery_8cpp_1afaf1e8606e008a1a0d4a404bdca5341c" kindref="member">calibr_failed</ref>;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_gamepad__battery_1a91647d92063a73a4f1ef38b9afcf15fd" kindref="member">Gamepad_battery::calibrated</ref>(){</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(voltage_levels<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="161"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">*<sp/><ref refid="class_gamepad__battery_1a29bc155fc2be0671a8d92eefdaf04a0f" kindref="member">Gamepad_battery::get_calibration_data</ref>(){</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>voltage_levels;</highlight></codeline>
+<codeline lineno="165"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gamepad__battery_1a3015185fed99901f45ee940d80ff6348" kindref="member">Gamepad_battery::set_calibration_data</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>data[<ref refid="config_8h_1abf6695f9b7e328cf934a4c3078bfcb23" kindref="member">BATTERY_LEVELS</ref>]){</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(data<sp/>==<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>voltage_levels<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(voltage_levels<sp/>!=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>[]<sp/>voltage_levels;</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/>voltage_levels<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal">[<ref refid="config_8h_1abf6695f9b7e328cf934a4c3078bfcb23" kindref="member">BATTERY_LEVELS</ref>];</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(uint8_t<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/><ref refid="config_8h_1abf6695f9b7e328cf934a4c3078bfcb23" kindref="member">BATTERY_LEVELS</ref>;<sp/>i++)</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>voltage_levels[i]<sp/>=<sp/>data[i];</highlight></codeline>
+<codeline lineno="179"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/battery.cpp"/>
+  </compounddef>
+</doxygen>

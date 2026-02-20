@@ -1,0 +1,555 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="display_8cpp" kind="file" language="C++">
+    <compoundname>display.cpp</compoundname>
+    <includes refid="display_8h" local="yes">display.h</includes>
+    <incdepgraph>
+      <node id="3">
+        <label>Arduino.h</label>
+      </node>
+      <node id="8">
+        <label>config.h</label>
+        <link refid="config_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/display.cpp</label>
+        <link refid="display_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>display.h</label>
+        <link refid="display_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>image.h</label>
+        <link refid="image_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>PNGdec.h</label>
+      </node>
+      <node id="6">
+        <label>SD.h</label>
+      </node>
+      <node id="5">
+        <label>SPI.h</label>
+      </node>
+      <node id="4">
+        <label>TFT_eSPI.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="struct_p_n_g__user__param__t" prot="public">PNG_user_param_t</innerclass>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="display_8cpp_1a0e728d2a4bf1d7cb3abd6aa1cbb629fe" prot="public" static="no" mutable="no">
+        <type>File *</type>
+        <definition>File* PNG_disp_file_ptr</definition>
+        <argsstring></argsstring>
+        <name>PNG_disp_file_ptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/display.cpp" line="112" column="6" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/display.cpp" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="display_8cpp_1a11b3c73f9674ddce12f7e3bd3a126ec5" prot="public" static="no" mutable="no">
+        <type>PNG *</type>
+        <definition>PNG* png_disp</definition>
+        <argsstring></argsstring>
+        <name>png_disp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/display.cpp" line="113" column="5" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/display.cpp" bodystart="113" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="display_8cpp_1aee1243e180485a18ab942509e6e6ef74" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void *</type>
+        <definition>void * PNG_disp_init</definition>
+        <argsstring>(const char *filename, int32_t *size)</argsstring>
+        <name>PNG_disp_init</name>
+        <param>
+          <type>const char *</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>int32_t *</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/display.cpp" line="122" column="6" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/display.cpp" bodystart="122" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="display_8cpp_1a46ce9c1665c332c192aa7c2afc331ef0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t PNG_disp_read</definition>
+        <argsstring>(PNGFILE *handle, uint8_t *buffer, int32_t length)</argsstring>
+        <name>PNG_disp_read</name>
+        <param>
+          <type>PNGFILE *</type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/display.cpp" line="127" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/display.cpp" bodystart="127" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="display_8cpp_1ac9405a7ff36b29d61a73c74d1518922f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t PNG_disp_seek</definition>
+        <argsstring>(PNGFILE *handle, int32_t position)</argsstring>
+        <name>PNG_disp_seek</name>
+        <param>
+          <type>PNGFILE *</type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>position</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/display.cpp" line="133" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/display.cpp" bodystart="133" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="function" id="display_8cpp_1aad62aec0f0a4389be4258e5c90b3fd57" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int PNG_disp_draw</definition>
+        <argsstring>(PNGDRAW *pDraw)</argsstring>
+        <name>PNG_disp_draw</name>
+        <param>
+          <type>PNGDRAW *</type>
+          <declname>pDraw</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/display.cpp" line="139" column="5" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/display.cpp" bodystart="139" bodyend="156"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="display_8h" kindref="compound">display.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">/***************************************************************************************</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">**<sp/>---------------Modified<sp/>function<sp/>from<sp/>TFT_eSPI------------------</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>avoid<sp/>display<sp/>update</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">**<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>image<sp/>bit<sp/>depth</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">**<sp/>Function<sp/>name:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pushMaskedImage</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">**<sp/>Description:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Render<sp/>a<sp/>16-bit<sp/>colour<sp/>image<sp/>to<sp/>TFT<sp/>with<sp/>a<sp/>1bpp<sp/>mask</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">***************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Can<sp/>be<sp/>used<sp/>with<sp/>a<sp/>16bpp<sp/>sprite<sp/>and<sp/>a<sp/>1bpp<sp/>sprite<sp/>for<sp/>the<sp/>mask</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gamepad__canvas__t_1ad204245272073ffd69c311836180eb8f" kindref="member">Gamepad_canvas_t::pushMaskedImage</ref>(int32_t<sp/>x,<sp/>int32_t<sp/>y,<sp/>int32_t<sp/>w,<sp/>int32_t<sp/>h,<sp/>uint16_t<sp/>*img,<sp/>uint8_t<sp/>*mask,<sp/>uint8_t<sp/>sbpp)</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(_vpOoB<sp/>||<sp/>w<sp/>&lt;<sp/>1<sp/>||<sp/>h<sp/>&lt;<sp/>1)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>To<sp/>simplify<sp/>mask<sp/>handling<sp/>the<sp/>window<sp/>clipping<sp/>is<sp/>done<sp/>by<sp/>the<sp/>pushImage<sp/>function</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Each<sp/>mask<sp/>image<sp/>line<sp/>assumed<sp/>to<sp/>be<sp/>padded<sp/>to<sp/>an<sp/>integer<sp/>number<sp/>of<sp/>bytes<sp/>&amp;<sp/>padding<sp/>bits<sp/>are<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/>uint8_t<sp/><sp/>*mptr<sp/>=<sp/>mask;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/>uint8_t<sp/><sp/>*eptr<sp/>=<sp/>mask<sp/>+<sp/>((w<sp/>+<sp/>7)<sp/>&gt;&gt;<sp/>3);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/>uint16_t<sp/>*iptr<sp/>=<sp/>img;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/>uint32_t<sp/>setCount<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/>int32_t<sp/>ptr_offset<sp/>=<sp/>w;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(sbpp<sp/>==<sp/>8)</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>ptr_offset<sp/>=<sp/>w<sp/>/<sp/>2;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>For<sp/>each<sp/>line<sp/>in<sp/>the<sp/>image</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(h--)<sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>xp<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>clearCount<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><sp/>mbyte=<sp/>*mptr++;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>bits<sp/><sp/>=<sp/>8;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Scan<sp/>through<sp/>each<sp/>byte<sp/>of<sp/>the<sp/>bitmap<sp/>and<sp/>determine<sp/>run<sp/>lengths</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">do</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>setCount<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Get<sp/>run<sp/>length<sp/>for<sp/>clear<sp/>bits<sp/>to<sp/>determine<sp/>x<sp/>offset</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>((mbyte<sp/>&amp;<sp/>0x80)<sp/>==<sp/>0x00)<sp/>{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Check<sp/>if<sp/>remaining<sp/>bits<sp/>in<sp/>byte<sp/>are<sp/>clear<sp/>(reduce<sp/>shifts)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(mbyte<sp/>==<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>clearCount<sp/>+=<sp/>bits;<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>bits<sp/>not<sp/>always<sp/>8<sp/>here</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(mptr<sp/>&gt;=<sp/>eptr)<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;<sp/></highlight><highlight class="comment">//<sp/>end<sp/>of<sp/>line</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mbyte<sp/>=<sp/>*mptr++;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bits<sp/><sp/>=<sp/>8;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mbyte<sp/>=<sp/>mbyte<sp/>&lt;&lt;<sp/>1;<sp/></highlight><highlight class="comment">//<sp/>0&apos;s<sp/>shifted<sp/>in</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>clearCount<sp/>++;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(--bits)<sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(mptr<sp/>&gt;=<sp/>eptr)<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mbyte<sp/>=<sp/>*mptr++;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bits<sp/><sp/>=<sp/>8;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Get<sp/>run<sp/>length<sp/>for<sp/>set<sp/>bits<sp/>to<sp/>determine<sp/>render<sp/>width</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>((mbyte<sp/>&amp;<sp/>0x80)<sp/>==<sp/>0x80)<sp/>{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Check<sp/>if<sp/>all<sp/>bits<sp/>are<sp/>set<sp/>(reduces<sp/>shifts)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(mbyte<sp/>==<sp/>0xFF)<sp/>{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>setCount<sp/>+=<sp/>bits;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(mptr<sp/>&gt;=<sp/>eptr)<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mbyte<sp/>=<sp/>*mptr++;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//bits<sp/><sp/>=<sp/>8;<sp/>//<sp/>NR,<sp/>bits<sp/>always<sp/>8<sp/>here<sp/>unless<sp/>1&apos;s<sp/>shifted<sp/>in</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mbyte<sp/>=<sp/>mbyte<sp/>&lt;&lt;<sp/>1;<sp/></highlight><highlight class="comment">//or<sp/>mbyte<sp/>+=<sp/>mbyte<sp/>+<sp/>1<sp/>to<sp/>shift<sp/>in<sp/>1&apos;s</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>setCount<sp/>++;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(--bits)<sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(mptr<sp/>&gt;=<sp/>eptr)<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mbyte<sp/>=<sp/>*mptr++;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>bits<sp/><sp/>=<sp/>8;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>A<sp/>mask<sp/>boundary<sp/>or<sp/>mask<sp/>end<sp/>has<sp/>been<sp/>found,<sp/>so<sp/>render<sp/>the<sp/>pixel<sp/>line</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(setCount)<sp/>{</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xp<sp/>+=<sp/>clearCount;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>clearCount<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(sbpp<sp/>==<sp/>16)</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_gamepad__canvas__t_1a8e314352a89da1ba66cf50b63eb888d7" kindref="member">pushImage</ref>(x<sp/>+<sp/>xp,<sp/>y,<sp/>setCount,<sp/>1,<sp/>iptr<sp/>+<sp/>xp);<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>pushImage<sp/>handles<sp/>clipping</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(sbpp<sp/>==<sp/>8){</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint16_t*<sp/>ptr_8bit<sp/>=<sp/>iptr;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(xp<sp/>%<sp/>2<sp/>!=<sp/>0)</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ptr_8bit<sp/>=<sp/>(uint16_t<sp/>*)<sp/>((uint8_t<sp/>*)<sp/>iptr<sp/>+<sp/>1);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>offset<sp/>the<sp/>pointer<sp/>by<sp/>1<sp/>byte,<sp/>to<sp/>get<sp/>proper<sp/>coordinate</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_gamepad__canvas__t_1a8e314352a89da1ba66cf50b63eb888d7" kindref="member">pushImage</ref>(x<sp/>+<sp/>xp,<sp/>y,<sp/>setCount,<sp/>1,<sp/>ptr_8bit<sp/>+<sp/>xp<sp/>/<sp/>2,<sp/>8);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(mptr<sp/>&gt;=<sp/>eptr)<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xp<sp/>+=<sp/>setCount;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(setCount<sp/>||<sp/>mptr<sp/>&lt;<sp/>eptr);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>y++;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>iptr<sp/>+=<sp/>ptr_offset;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>eptr<sp/>+=<sp/>((w<sp/>+<sp/>7)<sp/>&gt;&gt;<sp/>3);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="95"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gamepad__canvas__t_1a8e314352a89da1ba66cf50b63eb888d7" kindref="member">Gamepad_canvas_t::pushImage</ref>(int32_t<sp/>x,<sp/>int32_t<sp/>y,<sp/><ref refid="class_image__raw16__t" kindref="compound">Image_raw16_t</ref><sp/>&amp;image){</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(image.<ref refid="class_image__raw16__t_1aa56b2781a7021198493f22e5d264e874" kindref="member">alpha</ref>)</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_gamepad__canvas__t_1ad204245272073ffd69c311836180eb8f" kindref="member">pushMaskedImage</ref>(x,<sp/>y,<sp/>image.<ref refid="class_image__raw16__t_1ad09513857cafa59420617e4652811dc9" kindref="member">w</ref>,<sp/>image.<ref refid="class_image__raw16__t_1a19b539d7849e38b1d75b5c9a29e5c14b" kindref="member">h</ref>,<sp/>image.<ref refid="class_image__raw16__t_1aec0cc839750c7c79fb9bb479712eb898" kindref="member">img_buffer</ref>,<sp/>image.<ref refid="class_image__raw16__t_1a8d89869d13f249d7ac08592271d57f9f" kindref="member">alpha_buffer</ref>);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TFT_eSprite::pushImage(x,<sp/>y,<sp/>image.<ref refid="class_image__raw16__t_1ad09513857cafa59420617e4652811dc9" kindref="member">w</ref>,<sp/>image.<ref refid="class_image__raw16__t_1a19b539d7849e38b1d75b5c9a29e5c14b" kindref="member">h</ref>,<sp/>image.<ref refid="class_image__raw16__t_1aec0cc839750c7c79fb9bb479712eb898" kindref="member">img_buffer</ref>);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gamepad__canvas__t_1a8e314352a89da1ba66cf50b63eb888d7" kindref="member">Gamepad_canvas_t::pushImage</ref>(int32_t<sp/>x,<sp/>int32_t<sp/>y,<sp/><ref refid="class_image__raw8__t" kindref="compound">Image_raw8_t</ref><sp/>&amp;image){</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(image.<ref refid="class_image__raw16__t_1aa56b2781a7021198493f22e5d264e874" kindref="member">alpha</ref>)</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_gamepad__canvas__t_1ad204245272073ffd69c311836180eb8f" kindref="member">pushMaskedImage</ref>(x,<sp/>y,<sp/>image.<ref refid="class_image__raw16__t_1ad09513857cafa59420617e4652811dc9" kindref="member">w</ref>,<sp/>image.<ref refid="class_image__raw16__t_1a19b539d7849e38b1d75b5c9a29e5c14b" kindref="member">h</ref>,<sp/>image.<ref refid="class_image__raw16__t_1aec0cc839750c7c79fb9bb479712eb898" kindref="member">img_buffer</ref>,<sp/>image.<ref refid="class_image__raw16__t_1a8d89869d13f249d7ac08592271d57f9f" kindref="member">alpha_buffer</ref>,<sp/>8);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TFT_eSprite::pushImage(x,<sp/>y,<sp/>image.<ref refid="class_image__raw16__t_1ad09513857cafa59420617e4652811dc9" kindref="member">w</ref>,<sp/>image.<ref refid="class_image__raw16__t_1a19b539d7849e38b1d75b5c9a29e5c14b" kindref="member">h</ref>,<sp/>image.<ref refid="class_image__raw16__t_1aec0cc839750c7c79fb9bb479712eb898" kindref="member">img_buffer</ref>,<sp/>8);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal">File<sp/>*<ref refid="display_8cpp_1a0e728d2a4bf1d7cb3abd6aa1cbb629fe" kindref="member">PNG_disp_file_ptr</ref>;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal">PNG<sp/>*<ref refid="display_8cpp_1a11b3c73f9674ddce12f7e3bd3a126ec5" kindref="member">png_disp</ref>;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115" refid="struct_p_n_g__user__param__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_p_n_g__user__param__t" kindref="compound">PNG_user_param_t</ref>{</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_gamepad__canvas__t" kindref="compound">Gamepad_canvas_t</ref><sp/>*<ref refid="struct_p_n_g__user__param__t_1a251eea1febd5a490fb29ca0cac14f1c2" kindref="member">canvas</ref>;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/><ref refid="struct_p_n_g__user__param__t_1a50cd3295a769c7da590bb366662cb1eb" kindref="member">x</ref>;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/><ref refid="struct_p_n_g__user__param__t_1aca8e41dfccae4330640e056cf5b6c942" kindref="member">y</ref>;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="struct_p_n_g__user__param__t_1a0b436d114f2556ca8d53c70c0512a804" kindref="member">alpha</ref>;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="display_8cpp_1aee1243e180485a18ab942509e6e6ef74" kindref="member">PNG_disp_init</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*filename,<sp/>int32_t<sp/>*size){</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>*size<sp/>=<sp/><ref refid="display_8cpp_1a0e728d2a4bf1d7cb3abd6aa1cbb629fe" kindref="member">PNG_disp_file_ptr</ref><sp/>-&gt;<sp/>size();</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="display_8cpp_1a0e728d2a4bf1d7cb3abd6aa1cbb629fe" kindref="member">PNG_disp_file_ptr</ref>;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal">int32_t<sp/><ref refid="display_8cpp_1a46ce9c1665c332c192aa7c2afc331ef0" kindref="member">PNG_disp_read</ref>(PNGFILE<sp/>*handle,<sp/>uint8_t<sp/>*buffer,<sp/>int32_t<sp/>length){</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!(*<ref refid="display_8cpp_1a0e728d2a4bf1d7cb3abd6aa1cbb629fe" kindref="member">PNG_disp_file_ptr</ref>))</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="display_8cpp_1a0e728d2a4bf1d7cb3abd6aa1cbb629fe" kindref="member">PNG_disp_file_ptr</ref><sp/>-&gt;<sp/>read(buffer,<sp/>length);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal">int32_t<sp/><ref refid="display_8cpp_1ac9405a7ff36b29d61a73c74d1518922f" kindref="member">PNG_disp_seek</ref>(PNGFILE<sp/>*handle,<sp/>int32_t<sp/>position){</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!(*<ref refid="display_8cpp_1a0e728d2a4bf1d7cb3abd6aa1cbb629fe" kindref="member">PNG_disp_file_ptr</ref>))</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="display_8cpp_1a0e728d2a4bf1d7cb3abd6aa1cbb629fe" kindref="member">PNG_disp_file_ptr</ref><sp/>-&gt;<sp/>seek(position);</highlight></codeline>
+<codeline lineno="137"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="display_8cpp_1aad62aec0f0a4389be4258e5c90b3fd57" kindref="member">PNG_disp_draw</ref>(PNGDRAW<sp/>*pDraw){</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_p_n_g__user__param__t" kindref="compound">PNG_user_param_t</ref><sp/>*params<sp/>=<sp/>(<ref refid="struct_p_n_g__user__param__t" kindref="compound">PNG_user_param_t</ref><sp/>*)<sp/>pDraw<sp/>-&gt;<sp/>pUser;</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>line_buffer[pDraw<sp/>-&gt;<sp/>iWidth];</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="display_8cpp_1a11b3c73f9674ddce12f7e3bd3a126ec5" kindref="member">png_disp</ref><sp/>-&gt;<sp/>getLineAsRGB565(pDraw,<sp/>line_buffer,<sp/>PNG_RGB565_BIG_ENDIAN,<sp/>0xffffffff);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(params<sp/>-&gt;<sp/>alpha){</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>mask_buffer[(pDraw<sp/>-&gt;<sp/>iWidth<sp/>+<sp/>7)<sp/>&gt;&gt;<sp/>3];</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="display_8cpp_1a11b3c73f9674ddce12f7e3bd3a126ec5" kindref="member">png_disp</ref><sp/>-&gt;<sp/>getAlphaMask(pDraw,<sp/>mask_buffer,<sp/>255))</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>params<sp/>-&gt;<sp/>canvas<sp/>-&gt;<sp/>pushMaskedImage(params<sp/>-&gt;<sp/>x,<sp/>params<sp/>-&gt;<sp/>y<sp/>+<sp/>pDraw<sp/>-&gt;<sp/>y,<sp/>pDraw<sp/>-&gt;<sp/>iWidth,<sp/>1,<sp/>line_buffer,<sp/>mask_buffer);</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>params<sp/>-&gt;<sp/>canvas<sp/>-&gt;<sp/>pushImage(params<sp/>-&gt;<sp/>x,<sp/>params<sp/>-&gt;<sp/>y<sp/>+<sp/>pDraw<sp/>-&gt;<sp/>y,<sp/>pDraw<sp/>-&gt;<sp/>iWidth,<sp/>1,<sp/>line_buffer);</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1;</highlight></codeline>
+<codeline lineno="156"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gamepad__canvas__t_1a9a499fd25bd65b7a969afc3fe31a7f16" kindref="member">Gamepad_canvas_t::drawPNGFromFile</ref>(File<sp/>*file,<sp/>int32_t<sp/>x,<sp/>int32_t<sp/>y,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>alpha_channel){</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(file<sp/>==<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(heap_caps_get_largest_free_block(MALLOC_CAP_DEFAULT)<sp/>&lt;<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(PNG))</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="display_8cpp_1a11b3c73f9674ddce12f7e3bd3a126ec5" kindref="member">png_disp</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>PNG;</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="display_8cpp_1a0e728d2a4bf1d7cb3abd6aa1cbb629fe" kindref="member">PNG_disp_file_ptr</ref><sp/>=<sp/>file;</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/>String<sp/>name<sp/>=<sp/><ref refid="display_8cpp_1a0e728d2a4bf1d7cb3abd6aa1cbb629fe" kindref="member">PNG_disp_file_ptr</ref><sp/>-&gt;<sp/>name();</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/>String<sp/>ext<sp/>=<sp/>name.substring(name.length()<sp/>-<sp/>4,<sp/>name.length());</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(ext<sp/>!=<sp/></highlight><highlight class="stringliteral">&quot;.png&quot;</highlight><highlight class="normal"><sp/>&amp;&amp;<sp/>ext<sp/>!=<sp/></highlight><highlight class="stringliteral">&quot;.PNG&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>status<sp/>=<sp/><ref refid="display_8cpp_1a11b3c73f9674ddce12f7e3bd3a126ec5" kindref="member">png_disp</ref><sp/>-&gt;<sp/>open(name.c_str(),<sp/><ref refid="display_8cpp_1aee1243e180485a18ab942509e6e6ef74" kindref="member">PNG_disp_init</ref>,<sp/>NULL,<sp/><ref refid="display_8cpp_1a46ce9c1665c332c192aa7c2afc331ef0" kindref="member">PNG_disp_read</ref>,<sp/><ref refid="display_8cpp_1ac9405a7ff36b29d61a73c74d1518922f" kindref="member">PNG_disp_seek</ref>,<sp/><ref refid="display_8cpp_1aad62aec0f0a4389be4258e5c90b3fd57" kindref="member">PNG_disp_draw</ref>);</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(status<sp/>==<sp/>PNG_SUCCESS){</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PNG_user_param_t<sp/>params<sp/>=<sp/>{</highlight><highlight class="keyword">this</highlight><highlight class="normal">,<sp/>x,<sp/>y,<sp/>alpha_channel};</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>status<sp/>=<sp/><ref refid="display_8cpp_1a11b3c73f9674ddce12f7e3bd3a126ec5" kindref="member">png_disp</ref><sp/>-&gt;<sp/>decode(&amp;params,<sp/>0);</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/><ref refid="display_8cpp_1a11b3c73f9674ddce12f7e3bd3a126ec5" kindref="member">png_disp</ref>;</highlight></codeline>
+<codeline lineno="179"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight><highlight class="comment">/***************************************************************************************</highlight></codeline>
+<codeline lineno="182"><highlight class="comment">**<sp/>---------------Modified<sp/>function<sp/>from<sp/>TFT_eSPI------------------</highlight></codeline>
+<codeline lineno="183"><highlight class="comment">**<sp/>Function<sp/>name:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>loadFont</highlight></codeline>
+<codeline lineno="184"><highlight class="comment">**<sp/>Description:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>loads<sp/>parameters<sp/>from<sp/>a<sp/>font<sp/>vlw<sp/>file</highlight></codeline>
+<codeline lineno="185"><highlight class="comment">***************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gamepad__canvas__t_1a422a9d563fee39102c6d370d02868661" kindref="member">Gamepad_canvas_t::loadFont</ref>(File<sp/>*file,<sp/>uint8_t<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>==<sp/>0)</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/>String<sp/>path<sp/>=<sp/>file<sp/>-&gt;<sp/>path(),<sp/>ext<sp/>=<sp/>path.substring(path.length()<sp/>-<sp/>4,<sp/>path.length());</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(ext<sp/>!=<sp/></highlight><highlight class="stringliteral">&quot;.vlw&quot;</highlight><highlight class="normal"><sp/>&amp;&amp;<sp/>ext<sp/>!=<sp/></highlight><highlight class="stringliteral">&quot;.VLW&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/>path<sp/>=<sp/>path.substring(1,<sp/>path.length()<sp/>-<sp/>4);</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_gamepad__canvas__t_1a36f11a5e4456bf5ae7beb354b800101e" kindref="member">unloadFont</ref>(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/>fonts[</highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>-<sp/>1]<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>uint8_t[file<sp/>-&gt;<sp/>size()];</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/>file<sp/>-&gt;<sp/>seek(0);</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/>file<sp/>-&gt;<sp/>read(fonts[</highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>-<sp/>1],<sp/>file<sp/>-&gt;<sp/>size());</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/>dynamic_mem_font<sp/>|=<sp/>1<sp/>&lt;&lt;<sp/>(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>-<sp/>1);</highlight></codeline>
+<codeline lineno="202"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gamepad__canvas__t_1a422a9d563fee39102c6d370d02868661" kindref="member">Gamepad_canvas_t::loadFont</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>array[],<sp/>uint8_t<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>==<sp/>0)</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_gamepad__canvas__t_1a36f11a5e4456bf5ae7beb354b800101e" kindref="member">unloadFont</ref>(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/>fonts[</highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>-<sp/>1]<sp/>=<sp/>(uint8_t<sp/>*)<sp/>array;</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/>dynamic_mem_font<sp/>&amp;=<sp/>~(1<sp/>&lt;&lt;<sp/>(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>-<sp/>1));</highlight></codeline>
+<codeline lineno="213"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gamepad__canvas__t_1a36f11a5e4456bf5ae7beb354b800101e" kindref="member">Gamepad_canvas_t::unloadFont</ref>(uint8_t<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>==<sp/>0<sp/>||<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>&gt;<sp/><ref refid="config_8h_1a5b25aaed7274e73a43882995b0225ec8" kindref="member">FONTS_MAX_N</ref>)</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(fonts[</highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>-<sp/>1]<sp/>==<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(dynamic_mem_font<sp/>&lt;&lt;<sp/>(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>-<sp/>1)<sp/>&amp;<sp/>1)</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">[]<sp/>fonts[</highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>-<sp/>1];</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/>fonts[</highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>-<sp/>1]<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(font_id<sp/>==<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TFT_eSprite::unloadFont();</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>font_id<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="230"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gamepad__canvas__t_1a1b5bac29caa210fc0b3e803b40aa9594" kindref="member">Gamepad_canvas_t::setFont</ref>(uint8_t<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">){</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>==<sp/>font_id<sp/>||<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>&gt;<sp/><ref refid="config_8h_1a5b25aaed7274e73a43882995b0225ec8" kindref="member">FONTS_MAX_N</ref><sp/>||<sp/>fonts[</highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>-<sp/>1]<sp/>==<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>==<sp/>0)</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TFT_eSprite::unloadFont();</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TFT_eSprite::loadFont(fonts[</highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>-<sp/>1]);</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/>font_id<sp/>=<sp/>id;</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/>gFont.yAdvance<sp/>=<sp/>gFont.ascent;</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/>font_h<sp/>=<sp/>gFont.yAdvance;</highlight></codeline>
+<codeline lineno="244"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"></highlight></codeline>
+<codeline lineno="246"><highlight class="normal">uint8_t<sp/><ref refid="class_gamepad__canvas__t_1a608d5ab0c9a9f69a731ed889e42e42b8" kindref="member">Gamepad_canvas_t::getFontID</ref>(){</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>font_id;</highlight></codeline>
+<codeline lineno="248"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gamepad__canvas__t_1a6211ad72bd77110f2905da0a33273982" kindref="member">Gamepad_canvas_t::setLineSpacing</ref>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>multiplier){</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/>gFont.yAdvance<sp/>=<sp/>multiplier<sp/>*<sp/>font_h;</highlight></codeline>
+<codeline lineno="252"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"></highlight></codeline>
+<codeline lineno="254"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gamepad__canvas__t_1a520a8f8bfb64e752a6751cee1750359e" kindref="member">Gamepad_canvas_t::setDefaultGraphicsParams</ref>(){</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_gamepad__canvas__t_1a1b5bac29caa210fc0b3e803b40aa9594" kindref="member">setFont</ref>(0);</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/>setTextSize(1);</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/>setTextColor(TFT_WHITE);</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/>setCursor(0,<sp/>0);</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/>setTextWrap(</highlight><highlight class="keyword">true</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/>setOrigin(0,<sp/>0);</highlight></codeline>
+<codeline lineno="261"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight></codeline>
+<codeline lineno="263"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gamepad__canvas__t_1aa9c52293f56e185c2d23aa1be785d9fc" kindref="member">Gamepad_canvas_t::setGraphicsParams</ref>(graphics_params_t<sp/>params){</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_gamepad__canvas__t_1a1b5bac29caa210fc0b3e803b40aa9594" kindref="member">setFont</ref>(params.font_id);</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/>setTextSize(params.text_size);</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/>setTextColor(params.text_color);</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/>setCursor(params.cur_x,<sp/>params.cur_y);</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/>setTextWrap(params.wrap_x,<sp/>params.wrap_y);</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/>setOrigin(params.orig_x,<sp/>params.orig_y);</highlight></codeline>
+<codeline lineno="270"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"></highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><ref refid="struct_gamepad__canvas__t_1_1graphics__params__t" kindref="compound">Gamepad_canvas_t::graphics_params_t</ref><sp/><ref refid="class_gamepad__canvas__t_1ad4a70fed1a10c139415e195186d961ef" kindref="member">Gamepad_canvas_t::graphicsParams</ref>(){</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_gamepad__canvas__t_1_1graphics__params__t" kindref="compound">graphics_params_t</ref><sp/>res;</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"></highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/>res.<ref refid="struct_gamepad__canvas__t_1_1graphics__params__t_1a3dfa3a78887dc806d3b903ff73d82e22" kindref="member">font_id</ref><sp/>=<sp/>font_id;</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/>res.text_size<sp/>=<sp/>textsize;</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/>res.text_color<sp/>=<sp/>textcolor;</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/>res.cur_x<sp/>=<sp/>cursor_x;<sp/>res.cur_y<sp/>=<sp/>cursor_y;</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/>res.wrap_x<sp/>=<sp/>textwrapX;<sp/>res.wrap_y<sp/>=<sp/>textwrapY;</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/>res.orig_x<sp/>=<sp/>_xDatum;<sp/>res.orig_y<sp/>=<sp/>_yDatum;</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"></highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>res;</highlight></codeline>
+<codeline lineno="283"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"></highlight></codeline>
+<codeline lineno="285"><highlight class="normal"></highlight></codeline>
+<codeline lineno="286"><highlight class="normal"></highlight></codeline>
+<codeline lineno="287"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_gamepad__display_1aa086234a1d3417fecccdeeeb381f184e" kindref="member">Gamepad_display::init</ref>(uint16_t<sp/>width,<sp/>uint16_t<sp/>height,<sp/>uint8_t<sp/>backlight_channel){</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/>w<sp/>=<sp/>width;</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/>h<sp/>=<sp/>height;</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"></highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/>disp.init();</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/>disp.setRotation(<ref refid="config_8h_1a0e0cefb22b3ec4cea7846d4ec21165c9" kindref="member">DISP_ROTATION</ref>);</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/>disp.invertDisplay(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/>disp.fillScreen(TFT_WHITE);</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"></highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/>canvas.setColorDepth(<ref refid="config_8h_1a81678dd10693172c1512f482143089db" kindref="member">DEFAULT_COLOR_DEPTH</ref>);</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(heap_caps_get_largest_free_block(MALLOC_CAP_DEFAULT)<sp/>&lt;<sp/>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">)<sp/><ref refid="config_8h_1a81678dd10693172c1512f482143089db" kindref="member">DEFAULT_COLOR_DEPTH</ref><sp/>/<sp/>8.0<sp/>*<sp/>w<sp/>*<sp/>h){</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>canvas.createSprite(1,<sp/>1);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>make<sp/>sure<sp/>canvas<sp/>is<sp/>not<sp/>nullptr,<sp/>marking<sp/>initializaion<sp/>as<sp/>failed</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/>sprite_buffer_ptr<sp/>=<sp/>(uint8_t<sp/>*)<sp/>canvas.createSprite(w,<sp/>h);</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/>canvas.fillSprite(0);</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/>canvas.setTextFont(1);</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"></highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/>channel<sp/>=<sp/>backlight_channel;</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/>ledcSetup(channel,<sp/>10000,<sp/>8);</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/>ledcAttachPin(<ref refid="config_8h_1ac27d32570be597504af10b35618603c5" kindref="member">DISP_BACKLIGHT_PIN</ref>,<sp/>channel);</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/>ledcWrite(channel,<sp/>brightness);</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"></highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/>initialized<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="312"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"></highlight></codeline>
+<codeline lineno="314"><highlight class="normal">TFT_eSPI*<sp/><ref refid="class_gamepad__display_1a19ebccfc7a8898fedd0c6475e53b00c7" kindref="member">Gamepad_display::get_display_reference</ref>(){</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>&amp;disp;</highlight></codeline>
+<codeline lineno="316"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"></highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><ref refid="class_gamepad__canvas__t" kindref="compound">Gamepad_canvas_t</ref>*<sp/><ref refid="class_gamepad__display_1a47637fa50e4458518c111190ffe4bd98" kindref="member">Gamepad_display::get_canvas_reference</ref>(){</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>&amp;canvas;</highlight></codeline>
+<codeline lineno="320"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"></highlight></codeline>
+<codeline lineno="322"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gamepad__display_1a1264fa2aa663e911c2165b76d6f60884" kindref="member">Gamepad_display::update</ref>(){</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!initialized)</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><sp/><sp/><sp/><sp/>canvas.pushSprite(0,<sp/>0);</highlight></codeline>
+<codeline lineno="326"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"></highlight></codeline>
+<codeline lineno="328"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gamepad__display_1a72550027765e3e85bb80b2b55590d359" kindref="member">Gamepad_display::flip</ref>(){</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_gamepad__display_1a1264fa2aa663e911c2165b76d6f60884" kindref="member">update</ref>();</highlight></codeline>
+<codeline lineno="330"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"></highlight></codeline>
+<codeline lineno="332"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gamepad__display_1a5ae2adeb6b6e670335701ce4b1d0a3df" kindref="member">Gamepad_display::clear</ref>(){</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/>canvas.fillSprite(0);</highlight></codeline>
+<codeline lineno="334"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"></highlight></codeline>
+<codeline lineno="336"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gamepad__display_1a755a0e50281960d3c31facb972c89d65" kindref="member">Gamepad_display::set_brightness</ref>(uint8_t<sp/>brightness_){</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/><sp/>brightness<sp/>=<sp/>brightness_;</highlight></codeline>
+<codeline lineno="338"><highlight class="normal"><sp/><sp/><sp/><sp/>ledcWrite(channel,<sp/>brightness);</highlight></codeline>
+<codeline lineno="339"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="340"><highlight class="normal"></highlight></codeline>
+<codeline lineno="341"><highlight class="normal">uint8_t<sp/><ref refid="class_gamepad__display_1acb92a5ca47ebb0c9dd10dece927584b7" kindref="member">Gamepad_display::get_brightness</ref>(){</highlight></codeline>
+<codeline lineno="342"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>brightness;</highlight></codeline>
+<codeline lineno="343"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="344"><highlight class="normal"></highlight></codeline>
+<codeline lineno="345"><highlight class="normal"><ref refid="class_gamepad__canvas__t" kindref="compound">Gamepad_canvas_t</ref>*<sp/><ref refid="class_gamepad__display_1afcf27d7c79867d0d8e5c6848df92736c" kindref="member">Gamepad_display::create_sprite</ref>(uint16_t<sp/>width,<sp/>uint16_t<sp/>height,<sp/>uint8_t<sp/>color_depth){</highlight></codeline>
+<codeline lineno="346"><highlight class="normal"><sp/><sp/><sp/><sp/>Gamepad_canvas_t<sp/>*sprite<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Gamepad_canvas_t(&amp;disp);</highlight></codeline>
+<codeline lineno="347"><highlight class="normal"></highlight></codeline>
+<codeline lineno="348"><highlight class="normal"><sp/><sp/><sp/><sp/>sprite<sp/>-&gt;<sp/>setColorDepth(color_depth);</highlight></codeline>
+<codeline lineno="349"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(heap_caps_get_largest_free_block(MALLOC_CAP_DEFAULT)<sp/>&lt;<sp/>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">)<sp/>color_depth<sp/>/<sp/>8.0<sp/>*<sp/>width<sp/>*<sp/>height){</highlight></codeline>
+<codeline lineno="350"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>sprite;</highlight></codeline>
+<codeline lineno="351"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="352"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="353"><highlight class="normal"><sp/><sp/><sp/><sp/>sprite<sp/>-&gt;<sp/>createSprite(width,<sp/>height);</highlight></codeline>
+<codeline lineno="354"><highlight class="normal"><sp/><sp/><sp/><sp/>sprite<sp/>-&gt;<sp/>fillSprite(0);</highlight></codeline>
+<codeline lineno="355"><highlight class="normal"><sp/><sp/><sp/><sp/>sprite<sp/>-&gt;<sp/>setTextFont(1);</highlight></codeline>
+<codeline lineno="356"><highlight class="normal"></highlight></codeline>
+<codeline lineno="357"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>sprite;</highlight></codeline>
+<codeline lineno="358"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="359"><highlight class="normal"></highlight></codeline>
+<codeline lineno="360"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gamepad__display_1a1fe6587c5fc1ef37754f5dab44db1ec5" kindref="member">Gamepad_display::display_sprite</ref>(<ref refid="class_gamepad__canvas__t" kindref="compound">Gamepad_canvas_t</ref><sp/>*sprite,<sp/>uint16_t<sp/>x,<sp/>uint16_t<sp/>y){</highlight></codeline>
+<codeline lineno="361"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!initialized<sp/>||<sp/>sprite<sp/>==<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="362"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="363"><highlight class="normal"><sp/><sp/><sp/><sp/>sprite<sp/>-&gt;<sp/>pushSprite(x,<sp/>y);</highlight></codeline>
+<codeline lineno="364"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="365"><highlight class="normal"></highlight></codeline>
+<codeline lineno="366"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gamepad__display_1ac8f502702e43e6b50f9574b8afffceff" kindref="member">Gamepad_display::clear_sprite</ref>(<ref refid="class_gamepad__canvas__t" kindref="compound">Gamepad_canvas_t</ref><sp/>*sprite){</highlight></codeline>
+<codeline lineno="367"><highlight class="normal"><sp/><sp/><sp/><sp/>sprite<sp/>-&gt;<sp/>fillSprite(0);</highlight></codeline>
+<codeline lineno="368"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="369"><highlight class="normal"></highlight></codeline>
+<codeline lineno="370"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_gamepad__display_1a7190a9ad96761f1c44d7446ccb6b291c" kindref="member">Gamepad_display::delete_sprite</ref>(<ref refid="class_gamepad__canvas__t" kindref="compound">Gamepad_canvas_t</ref><sp/>*sprite){</highlight></codeline>
+<codeline lineno="371"><highlight class="normal"><sp/><sp/><sp/><sp/>sprite<sp/>-&gt;<sp/>deleteSprite();</highlight></codeline>
+<codeline lineno="372"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal"><sp/>sprite;</highlight></codeline>
+<codeline lineno="373"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/display.cpp"/>
+  </compounddef>
+</doxygen>

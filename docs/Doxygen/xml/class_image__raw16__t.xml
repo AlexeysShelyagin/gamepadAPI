@@ -1,0 +1,335 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="class_image__raw16__t" kind="class" language="C++" prot="public">
+    <compoundname>Image_raw16_t</compoundname>
+    <derivedcompoundref refid="class_image__raw8__t" prot="public" virt="non-virtual">Image_raw8_t</derivedcompoundref>
+    <includes refid="image_8h" local="no">image.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_image__raw16__t_1ad09513857cafa59420617e4652811dc9" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t Image_raw16_t::w</definition>
+        <argsstring></argsstring>
+        <name>w</name>
+        <qualifiedname>Image_raw16_t::w</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/image.h" line="11" column="14" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/image.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_image__raw16__t_1a19b539d7849e38b1d75b5c9a29e5c14b" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t Image_raw16_t::h</definition>
+        <argsstring></argsstring>
+        <name>h</name>
+        <qualifiedname>Image_raw16_t::h</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/image.h" line="11" column="16" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/image.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_image__raw16__t_1aa56b2781a7021198493f22e5d264e874" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Image_raw16_t::alpha</definition>
+        <argsstring></argsstring>
+        <name>alpha</name>
+        <qualifiedname>Image_raw16_t::alpha</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/image.h" line="12" column="10" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/image.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_image__raw16__t_1a48c07389cbcca615b1eb763d3d607229" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Image_raw16_t::alpha_buff_size</definition>
+        <argsstring></argsstring>
+        <name>alpha_buff_size</name>
+        <qualifiedname>Image_raw16_t::alpha_buff_size</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/image.h" line="13" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/image.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_image__raw16__t_1aec0cc839750c7c79fb9bb479712eb898" prot="public" static="no" mutable="no">
+        <type>uint16_t *</type>
+        <definition>uint16_t* Image_raw16_t::img_buffer</definition>
+        <argsstring></argsstring>
+        <name>img_buffer</name>
+        <qualifiedname>Image_raw16_t::img_buffer</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/image.h" line="14" column="14" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/image.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_image__raw16__t_1a8d89869d13f249d7ac08592271d57f9f" prot="public" static="no" mutable="no">
+        <type>uint8_t *</type>
+        <definition>uint8_t* Image_raw16_t::alpha_buffer</definition>
+        <argsstring></argsstring>
+        <name>alpha_buffer</name>
+        <qualifiedname>Image_raw16_t::alpha_buffer</qualifiedname>
+        <initializer>= nullptr</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/image.h" line="15" column="13" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/image.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_image__raw16__t_1a432cd75f9be4f585f7f7747dd6953cc9" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Image_raw16_t::create_</definition>
+        <argsstring>(uint16_t w_, uint16_t h_, bool alpha_, int buff_size)</argsstring>
+        <name>create_</name>
+        <qualifiedname>Image_raw16_t::create_</qualifiedname>
+        <param>
+          <type>uint16_t</type>
+          <declname>w_</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>h_</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>alpha_</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>buff_size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/image.h" line="8" column="10" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/image.cpp" bodystart="36" bodyend="55"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_image__raw16__t_1a48426affb4ec4bf060921bb3e7b777dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Image_raw16_t::Image_raw16_t</definition>
+        <argsstring>()=default</argsstring>
+        <name>Image_raw16_t</name>
+        <qualifiedname>Image_raw16_t::Image_raw16_t</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/image.h" line="17" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="class_image__raw16__t_1a91ff1abcf15d7a8f06ae443538d1247e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Image_raw16_t::~Image_raw16_t</definition>
+        <argsstring>()</argsstring>
+        <name>~Image_raw16_t</name>
+        <qualifiedname>Image_raw16_t::~Image_raw16_t</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/image.h" line="18" column="5" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/image.cpp" bodystart="3" bodyend="5"/>
+      </memberdef>
+      <memberdef kind="function" id="class_image__raw16__t_1a989832a3d557727b7fb460104f057e16" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Image_raw16_t::Image_raw16_t</definition>
+        <argsstring>(const Image_raw16_t &amp;)=delete</argsstring>
+        <name>Image_raw16_t</name>
+        <qualifiedname>Image_raw16_t::Image_raw16_t</qualifiedname>
+        <param>
+          <type>const <ref refid="class_image__raw16__t" kindref="compound">Image_raw16_t</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/image.h" line="20" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="class_image__raw16__t_1a772e33cd86df265125dd6bb538d7628a" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>Image_raw16_t::Image_raw16_t</definition>
+        <argsstring>(Image_raw16_t &amp;&amp;other) noexcept</argsstring>
+        <name>Image_raw16_t</name>
+        <qualifiedname>Image_raw16_t::Image_raw16_t</qualifiedname>
+        <param>
+          <type><ref refid="class_image__raw16__t" kindref="compound">Image_raw16_t</ref> &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/image.h" line="21" column="5" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/image.cpp" bodystart="14" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_image__raw16__t_1a0c0ba0e2b822dbeaef5874e02b0a8964" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_image__raw16__t" kindref="compound">Image_raw16_t</ref> &amp;</type>
+        <definition>Image_raw16_t &amp; Image_raw16_t::operator=</definition>
+        <argsstring>(const Image_raw16_t &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <qualifiedname>Image_raw16_t::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="class_image__raw16__t" kindref="compound">Image_raw16_t</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/image.h" line="23" column="19"/>
+      </memberdef>
+      <memberdef kind="function" id="class_image__raw16__t_1a2c7fed4fd96fb9a0fa484ddd01a1e12b" prot="public" static="no" const="no" explicit="no" inline="no" noexcept="yes" virt="non-virtual">
+        <type><ref refid="class_image__raw16__t" kindref="compound">Image_raw16_t</ref> &amp;</type>
+        <definition>Image_raw16_t &amp; Image_raw16_t::operator=</definition>
+        <argsstring>(Image_raw16_t &amp;&amp;other) noexcept</argsstring>
+        <name>operator=</name>
+        <qualifiedname>Image_raw16_t::operator=</qualifiedname>
+        <param>
+          <type><ref refid="class_image__raw16__t" kindref="compound">Image_raw16_t</ref> &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/image.h" line="24" column="19" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/image.cpp" bodystart="21" bodyend="34"/>
+      </memberdef>
+      <memberdef kind="function" id="class_image__raw16__t_1a70f22d5876c95c842711981f2ce862a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Image_raw16_t::create</definition>
+        <argsstring>(uint16_t w_, uint16_t h_, bool alpha_=false)</argsstring>
+        <name>create</name>
+        <qualifiedname>Image_raw16_t::create</qualifiedname>
+        <param>
+          <type>uint16_t</type>
+          <declname>w_</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>h_</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>alpha_</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+<para>Reserve memory for the image. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>w_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>h_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>alpha_</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>set true to store alpha layer </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true: created successfully </para>
+</simplesect>
+<simplesect kind="return"><para>false: unable to create, not enough space in heap </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/image.h" line="37" column="10" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/image.cpp" bodystart="57" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="class_image__raw16__t_1aae1a75872ecf638b1e38275ac69a2a39" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Image_raw16_t::clear</definition>
+        <argsstring>()</argsstring>
+        <name>clear</name>
+        <qualifiedname>Image_raw16_t::clear</qualifiedname>
+        <briefdescription>
+<para>Delete all image data and free the memory. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/image.h" line="43" column="10" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/image.cpp" bodystart="7" bodyend="12"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Image_raw16_t</label>
+        <link refid="class_image__raw16__t"/>
+      </node>
+      <node id="2">
+        <label>Image_raw8_t</label>
+        <link refid="class_image__raw8__t"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/image.h" line="6" column="1" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/image.h" bodystart="6" bodyend="44"/>
+    <listofallmembers>
+      <member refid="class_image__raw16__t_1aa56b2781a7021198493f22e5d264e874" prot="public" virt="non-virtual"><scope>Image_raw16_t</scope><name>alpha</name></member>
+      <member refid="class_image__raw16__t_1a48c07389cbcca615b1eb763d3d607229" prot="public" virt="non-virtual"><scope>Image_raw16_t</scope><name>alpha_buff_size</name></member>
+      <member refid="class_image__raw16__t_1a8d89869d13f249d7ac08592271d57f9f" prot="public" virt="non-virtual"><scope>Image_raw16_t</scope><name>alpha_buffer</name></member>
+      <member refid="class_image__raw16__t_1aae1a75872ecf638b1e38275ac69a2a39" prot="public" virt="non-virtual"><scope>Image_raw16_t</scope><name>clear</name></member>
+      <member refid="class_image__raw16__t_1a70f22d5876c95c842711981f2ce862a9" prot="public" virt="non-virtual"><scope>Image_raw16_t</scope><name>create</name></member>
+      <member refid="class_image__raw16__t_1a432cd75f9be4f585f7f7747dd6953cc9" prot="protected" virt="non-virtual"><scope>Image_raw16_t</scope><name>create_</name></member>
+      <member refid="class_image__raw16__t_1a19b539d7849e38b1d75b5c9a29e5c14b" prot="public" virt="non-virtual"><scope>Image_raw16_t</scope><name>h</name></member>
+      <member refid="class_image__raw16__t_1a48426affb4ec4bf060921bb3e7b777dd" prot="public" virt="non-virtual"><scope>Image_raw16_t</scope><name>Image_raw16_t</name></member>
+      <member refid="class_image__raw16__t_1a989832a3d557727b7fb460104f057e16" prot="public" virt="non-virtual"><scope>Image_raw16_t</scope><name>Image_raw16_t</name></member>
+      <member refid="class_image__raw16__t_1a772e33cd86df265125dd6bb538d7628a" prot="public" virt="non-virtual"><scope>Image_raw16_t</scope><name>Image_raw16_t</name></member>
+      <member refid="class_image__raw16__t_1aec0cc839750c7c79fb9bb479712eb898" prot="public" virt="non-virtual"><scope>Image_raw16_t</scope><name>img_buffer</name></member>
+      <member refid="class_image__raw16__t_1a0c0ba0e2b822dbeaef5874e02b0a8964" prot="public" virt="non-virtual"><scope>Image_raw16_t</scope><name>operator=</name></member>
+      <member refid="class_image__raw16__t_1a2c7fed4fd96fb9a0fa484ddd01a1e12b" prot="public" virt="non-virtual"><scope>Image_raw16_t</scope><name>operator=</name></member>
+      <member refid="class_image__raw16__t_1ad09513857cafa59420617e4652811dc9" prot="public" virt="non-virtual"><scope>Image_raw16_t</scope><name>w</name></member>
+      <member refid="class_image__raw16__t_1a91ff1abcf15d7a8f06ae443538d1247e" prot="public" virt="non-virtual"><scope>Image_raw16_t</scope><name>~Image_raw16_t</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

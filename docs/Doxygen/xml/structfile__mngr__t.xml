@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="structfile__mngr__t" kind="struct" language="C++" prot="public">
+    <compoundname>file_mngr_t</compoundname>
+    <includes refid="ui_8h" local="no">ui.h</includes>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structfile__mngr__t_1a16c45916db3903cc0dc00f0b92acf0e9" prot="public" static="no" mutable="no">
+        <type>String</type>
+        <definition>String file_mngr_t::dir</definition>
+        <argsstring></argsstring>
+        <name>dir</name>
+        <qualifiedname>file_mngr_t::dir</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/ui.h" line="14" column="12" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/ui.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structfile__mngr__t_1a024af125473c0f6d749a0c02f24ddba9" prot="public" static="no" mutable="no">
+        <type>String</type>
+        <definition>String file_mngr_t::file</definition>
+        <argsstring></argsstring>
+        <name>file</name>
+        <qualifiedname>file_mngr_t::file</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/ui.h" line="15" column="12" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/ui.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structfile__mngr__t_1a95dde86499ac9da95044a9f0ac327945" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_game__config__t" kindref="compound">Game_config_t</ref> *</type>
+        <definition>Game_config_t* file_mngr_t::game_config</definition>
+        <argsstring></argsstring>
+        <name>game_config</name>
+        <qualifiedname>file_mngr_t::game_config</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/ui.h" line="16" column="19" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/ui.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>Game_config_t</label>
+        <link refid="struct_game__config__t"/>
+      </node>
+      <node id="1">
+        <label>file_mngr_t</label>
+        <link refid="structfile__mngr__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>game_config</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/ui.h" line="13" column="1" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/ui.h" bodystart="13" bodyend="17"/>
+    <listofallmembers>
+      <member refid="structfile__mngr__t_1a16c45916db3903cc0dc00f0b92acf0e9" prot="public" virt="non-virtual"><scope>file_mngr_t</scope><name>dir</name></member>
+      <member refid="structfile__mngr__t_1a024af125473c0f6d749a0c02f24ddba9" prot="public" virt="non-virtual"><scope>file_mngr_t</scope><name>file</name></member>
+      <member refid="structfile__mngr__t_1a95dde86499ac9da95044a9f0ac327945" prot="public" virt="non-virtual"><scope>file_mngr_t</scope><name>game_config</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

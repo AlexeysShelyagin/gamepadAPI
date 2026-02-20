@@ -1,0 +1,1576 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.16.1" xml:lang="en-US">
+  <compounddef id="config_8h" kind="file" language="C++">
+    <compoundname>config.h</compoundname>
+    <includes local="no">Arduino.h</includes>
+    <includedby refid="_devel_deck_a_p_i_8h" local="yes">C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/DevelDeckAPI.h</includedby>
+    <includedby refid="accel_8h" local="yes">C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/accel.h</includedby>
+    <includedby refid="battery_8h" local="yes">C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/battery.h</includedby>
+    <includedby refid="buttons_8h" local="yes">C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/buttons.h</includedby>
+    <includedby refid="display_8h" local="yes">C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/display.h</includedby>
+    <includedby refid="sd__card_8h" local="yes">C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/sd_card.h</includedby>
+    <includedby refid="tacktile__response_8h" local="yes">C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/tacktile_response.h</includedby>
+    <includedby refid="ui_8h" local="yes">C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/ui.h</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>Arduino.h</label>
+      </node>
+      <node id="1">
+        <label>C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h</label>
+        <link refid="config_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/DevelDeckAPI.cpp</label>
+        <link refid="_devel_deck_a_p_i_8cpp"/>
+      </node>
+      <node id="2">
+        <label>C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/DevelDeckAPI.h</label>
+        <link refid="_devel_deck_a_p_i_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/OTA.cpp</label>
+        <link refid="_o_t_a_8cpp"/>
+      </node>
+      <node id="15">
+        <label>C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/OTA.h</label>
+        <link refid="_o_t_a_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/accel.cpp</label>
+        <link refid="accel_8cpp"/>
+      </node>
+      <node id="7">
+        <label>C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/accel.h</label>
+        <link refid="accel_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/battery.cpp</label>
+        <link refid="battery_8cpp"/>
+      </node>
+      <node id="9">
+        <label>C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/battery.h</label>
+        <link refid="battery_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/buttons.cpp</label>
+        <link refid="buttons_8cpp"/>
+      </node>
+      <node id="11">
+        <label>C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/buttons.h</label>
+        <link refid="buttons_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h</label>
+        <link refid="config_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/display.cpp</label>
+        <link refid="display_8cpp"/>
+      </node>
+      <node id="12">
+        <label>C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/display.h</label>
+        <link refid="display_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/sd_card.cpp</label>
+        <link refid="sd__card_8cpp"/>
+      </node>
+      <node id="14">
+        <label>C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/sd_card.h</label>
+        <link refid="sd__card_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/tacktile_response.cpp</label>
+        <link refid="tacktile__response_8cpp"/>
+      </node>
+      <node id="17">
+        <label>C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/tacktile_response.h</label>
+        <link refid="tacktile__response_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/ui.cpp</label>
+        <link refid="ui_8cpp"/>
+      </node>
+      <node id="19">
+        <label>C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/ui.h</label>
+        <link refid="ui_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="config_8h_1ab66be6926d988a280b1813007b9c6fa2" prot="public" static="no">
+        <name>LEFT_BUT_PIN</name>
+        <initializer>17</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" line="26" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a06ed0d1b1556b64df06aae373e7ec6e4" prot="public" static="no">
+        <name>UP_BUT_PIN</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" line="27" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a933bd7d156324bfdb1d2e0c09d0dea62" prot="public" static="no">
+        <name>RIGHT_BUT_PIN</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" line="28" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a025bab841b79362440702555620be44d" prot="public" static="no">
+        <name>DOWN_BUT_PIN</name>
+        <initializer>16</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" line="29" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1aa5131f783bdb25f7eb069ac940538450" prot="public" static="no">
+        <name>A_BUT_PIN</name>
+        <initializer>39</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" line="30" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1ae16aedef2314224f03e1e3027e246fab" prot="public" static="no">
+        <name>B_BUT_PIN</name>
+        <initializer>34</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" line="31" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1af60ad850de69333b8e2e16cae0696255" prot="public" static="no">
+        <name>MENU_BUT_PIN</name>
+        <initializer>36</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" line="32" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1ac089eaf46a8a195fafa6386bf172995a" prot="public" static="no">
+        <name>INVERT_BUTTONS_STATE</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" line="34" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a1a9621ac211ce21695ba6bdea81b61fb" prot="public" static="no">
+        <name>BUTTONS_N</name>
+        <initializer>7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" line="36" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1aca3e980b4e32ed692d75cb4cf0eeee25" prot="public" static="no">
+        <name>DISP_CS_PIN</name>
+        <initializer>13</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" line="61" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a7508a373c5a684cefb7db6873840aa02" prot="public" static="no">
+        <name>DISP_DC_PIN</name>
+        <initializer>22</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" line="62" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1ae02e84564b92599a0a7c10015337188a" prot="public" static="no">
+        <name>DISP_RST_PIN</name>
+        <initializer>-1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" line="63" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1ac27d32570be597504af10b35618603c5" prot="public" static="no">
+        <name>DISP_BACKLIGHT_PIN</name>
+        <initializer>25</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" line="64" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1aa11dcb094e71a5ac007c4258041af6b9" prot="public" static="no">
+        <name>DISP_BACKLIGHT_LEDC_CHANNEL</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" line="65" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a04d57a6c18b2d5e81f31093e58ed0c62" prot="public" static="no">
+        <name>SD_CS_PIN</name>
+        <initializer>21</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" line="71" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a426bba94d5ccd1047d7ebe5ffedf3623" prot="public" static="no">
+        <name>BUZZ_PIN</name>
+        <initializer>32</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" line="77" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a4aae14a8fd2e0538a2f22f079e2684c1" prot="public" static="no">
+        <name>BUZZ_LEDC_CHANNEL</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" line="78" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a204225c3b8c85cb6cc180643376d9bba" prot="public" static="no">
+        <name>ACCEL_SDA_PIN</name>
+        <initializer>26</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" line="84" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a38afe63b4bd065e1c72fd19789fb61c9" prot="public" static="no">
+        <name>ACCEL_SCL_PIN</name>
+        <initializer>27</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" line="85" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a4cc32f2cf4c2e4770674d091da1c3666" prot="public" static="no">
+        <name>ACCEL_I2C_ADDRESS</name>
+        <initializer>0x68</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" line="86" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a139294225cab996916e33fee7eac28f3" prot="public" static="no">
+        <name>ACCEL_INVERT_X_AXIS</name>
+        <initializer>false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" line="88" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a9d6b1d961b7d93a0f2642dd0e2821e22" prot="public" static="no">
+        <name>ACCEL_INVERT_Y_AXIS</name>
+        <initializer>false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" line="89" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a2a813667a1118fe6996dcbd7a8bd9705" prot="public" static="no">
+        <name>ACCEL_INVERT_Z_AXIS</name>
+        <initializer>true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" line="90" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1abc3177bfab0ca12ca8c7330febcc87bb" prot="public" static="no">
+        <name>VIBRO_PIN</name>
+        <initializer>33</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" line="96" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a8e1178e7323f1751842c13e67fee9550" prot="public" static="no">
+        <name>VIBRO_LEDC_CHANNEL</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" line="97" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1ab2715d77812256b2f4bf93475deee5d4" prot="public" static="no">
+        <name>BATTERY_V_PIN</name>
+        <initializer>35</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" line="103" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1aa178c3409ca0030215244c7f5ab05d4f" prot="public" static="no">
+        <name>DISP_WIDTH</name>
+        <initializer>320</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" line="121" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a14033ba98194beb2c6e319c7c08b0ac7" prot="public" static="no">
+        <name>DISP_HEIGHT</name>
+        <initializer>240</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" line="122" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a0e0cefb22b3ec4cea7846d4ec21165c9" prot="public" static="no">
+        <name>DISP_ROTATION</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" line="124" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a81678dd10693172c1512f482143089db" prot="public" static="no">
+        <name>DEFAULT_COLOR_DEPTH</name>
+        <initializer>8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" line="125" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a897acb3a9c9f377b54e211b7a27b09aa" prot="public" static="no">
+        <name>DEFAULT_CANVAS_T</name>
+        <initializer>TFT_eSprite</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" line="126" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a85aae53c622111b53f3fe47735052d4d" prot="public" static="no">
+        <name>BRIGHTNESS_LEVELS</name>
+        <initializer>10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" line="127" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1ad27ad76d41bf29c6b9f95e8c41b86398" prot="public" static="no">
+        <name>DEFAULT_BRIGHTNESS</name>
+        <initializer>10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" line="128" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a5b25aaed7274e73a43882995b0225ec8" prot="public" static="no">
+        <name>FONTS_MAX_N</name>
+        <initializer>8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" line="131" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" bodystart="131" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a1376a2c0f2663ad7b6eb65acda8a4c10" prot="public" static="no">
+        <name>NO_FLICKERING_FPS_1</name>
+        <initializer>30.31f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" line="141" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1af8b1b8e85416bd4f526bb246374813e9" prot="public" static="no">
+        <name>NO_FLICKERING_FPS_2</name>
+        <initializer>20.35f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" line="142" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" bodystart="142" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a4d024d6f7c5c908735ae9bc410cab8c7" prot="public" static="no">
+        <name>NO_FLICKERING_FPS_3</name>
+        <initializer>37.242f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" line="143" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" bodystart="143" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1af0fc08a586324a16e0c824a2623addc3" prot="public" static="no">
+        <name>NO_FLICKERING_FPS_4</name>
+        <initializer>15.15f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" line="144" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" bodystart="144" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a5f15d47cb0b514a42ecdd6540de5e7a6" prot="public" static="no">
+        <name>NO_FLICKERING_FPS_5</name>
+        <initializer>13.34f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" line="145" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" bodystart="145" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a5951bf63a7901febf7eca8c9f864cc1c" prot="public" static="no">
+        <name>BATTERY_DIVIDER_R1</name>
+        <initializer>10.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" line="168" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" bodystart="168" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a16590266cf846d6b1f20fcf1c8f29b20" prot="public" static="no">
+        <name>BATTERY_DIVIDER_R2</name>
+        <initializer>10.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" line="169" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" bodystart="169" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a21f05071c0428992770488ff831159df" prot="public" static="no">
+        <name>BATTERY_V_REF</name>
+        <initializer>3.3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" line="170" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1abf6695f9b7e328cf934a4c3078bfcb23" prot="public" static="no">
+        <name>BATTERY_LEVELS</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" line="179" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1aee573c4b5325259c8ff26443d48da13a" prot="public" static="no">
+        <name>BATTERY_ZERO_PERCENTAGE</name>
+        <initializer>0.05</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" line="180" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a790db950303eb76325ab4bf30c1652e7" prot="public" static="no">
+        <name>BATTERY_N_OF_MEASURES</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" line="185" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" bodystart="185" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a41d016f5aaeaac78d9b35d27eca6fe1c" prot="public" static="no">
+        <name>BATTERY_CRITICAL_V_0</name>
+        <initializer>3.25</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" line="191" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" bodystart="191" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a7089bfeab27d326585ab3d88ef3555a7" prot="public" static="no">
+        <name>BATTERY_FULL_V_0</name>
+        <initializer>4.15</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" line="192" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" bodystart="192" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a41a2dc71265a23ae61279ab7852f1b60" prot="public" static="no">
+        <name>BATTERY_CHARGING_V_0</name>
+        <initializer>4.4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" line="193" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" bodystart="193" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a91e5e03b72c96df52ed4ed0505ba1034" prot="public" static="no">
+        <name>BATTERY_ONLY_CHARGING_V_0</name>
+        <initializer>4.8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" line="194" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" bodystart="194" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a99f89d760e78ac0f9edb0c61e7af5d78" prot="public" static="no">
+        <name>BATTERY_VADJ_FUNC_0</name>
+        <param><defname>v</defname></param>
+        <initializer>1.0824*v + 0.4005</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" line="199" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" bodystart="199" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1af9e0f3e51a3a6fef8c06812478a34908" prot="public" static="no">
+        <name>BATTERY_CRITICAL_V_1</name>
+        <initializer>3.55</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" line="205" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" bodystart="205" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1ae4b1b07db3f34d5c533d4c5e8ff2c431" prot="public" static="no">
+        <name>BATTERY_FULL_V_1</name>
+        <initializer>4.15</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" line="206" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" bodystart="206" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a9fd756709ba42ed8666203ecce1b664a" prot="public" static="no">
+        <name>BATTERY_CHARGING_V_1</name>
+        <initializer>4.3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" line="207" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" bodystart="207" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a6b9e76ff2105cc05e80cdb422bf2488c" prot="public" static="no">
+        <name>BATTERY_ONLY_CHARGING_V_1</name>
+        <initializer>4.5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" line="208" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" bodystart="208" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1af2e776c750bad1c8b79d1a79bb5304ff" prot="public" static="no">
+        <name>BATTERY_VADJ_FUNC_1</name>
+        <param><defname>v</defname></param>
+        <initializer>-0.1961 + 1.5359*v - 0.0767*v*v</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" line="210" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" bodystart="210" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a09ecf77e46d9d12697d484dcb1a54842" prot="public" static="no">
+        <name>ACCEL_SENSITIVITY</name>
+        <initializer>16384.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" line="231" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" bodystart="231" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1add7e7785398a08b69e09c5cf282520e3" prot="public" static="no">
+        <name>ACCEL_CALIBRATION_MEASURE_N</name>
+        <initializer>10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" line="232" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" bodystart="232" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a5e45032bd798aa3f47127364e3bd73f1" prot="public" static="no">
+        <name>BUTTON_FILTERING_TIME</name>
+        <initializer>15</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" line="239" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" bodystart="239" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1aba8ead4c14deb37bcc35bf372191ae33" prot="public" static="no">
+        <name>BUZZER_VOLUME_LEVELS</name>
+        <initializer>10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" line="245" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" bodystart="245" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1aa19fc9d640d6b992b7903b55b6059238" prot="public" static="no">
+        <name>DEFAULT_BUZZER_VOLUME</name>
+        <initializer>10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" line="246" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" bodystart="246" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1ac681e120560992cc9ea0c85592ccc122" prot="public" static="no">
+        <name>VIBRO_STRENGTH_LEVELS</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" line="252" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" bodystart="252" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a208ac7a6717f2a76aecda81ef296acba" prot="public" static="no">
+        <name>DEFAULT_VIBRO_STRENGTH</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" line="253" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" bodystart="253" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a64b76adef840b6c8356c7c928955ab45" prot="public" static="no">
+        <name>BATTERY_CHECK_TIMEOUT</name>
+        <initializer>2000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" line="329" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" bodystart="329" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a432116ab93b2f990897225da8b60ccda" prot="public" static="no">
+        <name>BATTERY_LIGHT_SLEEP_CHECK_TIMEOUT</name>
+        <initializer>10000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" line="330" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" bodystart="330" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1ad3bc2757a751b67a261a08c20d38549b" prot="public" static="no">
+        <name>BATTERY_LOW_CHARGE_ALARM_TIMEOUT</name>
+        <initializer>30000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" line="331" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" bodystart="331" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1afc32484a526130b29c5ed3f8a68db924" prot="public" static="no">
+        <name>BATTERY_CALIBRATION_TIMEOUT</name>
+        <initializer>60000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" line="332" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" bodystart="332" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1abfe44b76b77ff0beede98e07dee3b61a" prot="public" static="no">
+        <name>DEVICE_MODE_CHECK_TIMEOUT</name>
+        <initializer>500</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" line="333" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" bodystart="333" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1afb3e74c785989647124e5914b46677e7" prot="public" static="no">
+        <name>SYSTEM_DATA_AUTOSAVE_TIMEOUT</name>
+        <initializer>10000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" line="334" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" bodystart="334" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a3e7e51c955579d60e576ffc390ec7f78" prot="public" static="no">
+        <name>SD_PRESENCE_CHECK_TIMEOUT</name>
+        <initializer>3000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" line="335" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" bodystart="335" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1aa170d003a72483843bf99f2693d1f2c5" prot="public" static="no">
+        <name>FORCED_MENU_CHECK_TIMEOUT</name>
+        <initializer>500</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" line="336" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" bodystart="336" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a66f67f6eb68fa697f55ec92e0e3935d9" prot="public" static="no">
+        <name>FORCED_MENU_HOLD_TIME</name>
+        <initializer>4000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" line="337" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" bodystart="337" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a78c8d5123e5e78d9e17b221f7532d647" prot="public" static="no">
+        <name>NOTIFICATION_HOLD_TIME</name>
+        <initializer>2000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" line="338" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" bodystart="338" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a9cf47c24ba6214522bc17c8a86a96f60" prot="public" static="no">
+        <name>FORCED_MENU_STACK_SIZE</name>
+        <initializer>4096</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" line="344" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" bodystart="344" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a60f7a645c6b63d696f7f86f62a44100b" prot="public" static="no">
+        <name>BATTERY_LISTENER_STACK_SIZE</name>
+        <initializer>4096</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" line="345" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" bodystart="345" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a82a2f79b09df1dc9151b317bd961c894" prot="public" static="no">
+        <name>NOTIFICATION_DESTRUCTOR_STACK_SIZE</name>
+        <initializer>2048</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" line="346" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" bodystart="346" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a64f8f24a3794616dd79d93a843901f9e" prot="public" static="no">
+        <name>DISPLAY_UPDATE_THREAD_STACK_SIZE</name>
+        <initializer>2048</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" line="347" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" bodystart="347" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a16ad048faaf190460a1af47c855aff25" prot="public" static="no">
+        <name>FILE_MANAGER_W</name>
+        <initializer>280</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" line="367" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" bodystart="367" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a428def3635a6253accd31ee8185970c1" prot="public" static="no">
+        <name>FILE_MANAGER_H</name>
+        <initializer>200</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" line="368" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" bodystart="368" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1afdd4d70d89a6b39ab3834418e028fe71" prot="public" static="no">
+        <name>GAME_ICON_SIZE</name>
+        <initializer>64</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" line="369" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" bodystart="369" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a742a00e0adeca4029b06a7aa051ea5f9" prot="public" static="no">
+        <name>FILE_MANAGER_MAX_FILE_NAME_LENGTH</name>
+        <initializer>30</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" line="370" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" bodystart="370" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a7e097045fee12a286e900ae442ab9e86" prot="public" static="no">
+        <name>SETTINGS_W</name>
+        <initializer>320</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" line="376" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" bodystart="376" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a7490caa405e82d2e921315b9ab30f7dc" prot="public" static="no">
+        <name>SETTINGS_H</name>
+        <initializer>240</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" line="377" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" bodystart="377" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1ae0bb4eba93625e49e7f38d50937a4218" prot="public" static="no">
+        <name>MSG_BOX_DEFAULT_ACTION</name>
+        <initializer>&quot;Ok&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" line="383" column="9" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" bodystart="383" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="config_8h_1a0913f0d5426c8cac33e09f77ca741852" prot="public" static="no" strong="no">
+        <type></type>
+        <name>buttons_id</name>
+        <enumvalue id="config_8h_1a0913f0d5426c8cac33e09f77ca741852a1fe7b6c80e02503c89bf9ae5b8e78c83" prot="public">
+          <name>LEFT_BUT_ID</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="config_8h_1a0913f0d5426c8cac33e09f77ca741852ac19630ba3b1076446b7a09ae66355ef8" prot="public">
+          <name>UP_BUT_ID</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="config_8h_1a0913f0d5426c8cac33e09f77ca741852a2f9951fa43f915176fe4647c4bc8ccc1" prot="public">
+          <name>RIGHT_BUT_ID</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="config_8h_1a0913f0d5426c8cac33e09f77ca741852a1a8ac3d3891fc76b3335fc6ed5b6e204" prot="public">
+          <name>DOWN_BUT_ID</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="config_8h_1a0913f0d5426c8cac33e09f77ca741852a124b5b05584b841e727457daa662de3e" prot="public">
+          <name>A_BUT_ID</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="config_8h_1a0913f0d5426c8cac33e09f77ca741852afc2a9fedd51d2ec10e05709ed35d9167" prot="public">
+          <name>B_BUT_ID</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="config_8h_1a0913f0d5426c8cac33e09f77ca741852ae5ae5beeb7dace0ea732c38ca698bd38" prot="public">
+          <name>MENU_BUT_ID</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" line="47" column="1" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" bodystart="47" bodyend="55"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="var">
+      <memberdef kind="variable" id="config_8h_1a53ffb07244a3991c2f0de36bb27fc3e0" prot="public" static="yes" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t buttons_map[]</definition>
+        <argsstring>[]</argsstring>
+        <name>buttons_map</name>
+        <initializer>= {
+     <ref refid="config_8h_1ab66be6926d988a280b1813007b9c6fa2" kindref="member">LEFT_BUT_PIN</ref>, 
+     <ref refid="config_8h_1a06ed0d1b1556b64df06aae373e7ec6e4" kindref="member">UP_BUT_PIN</ref>, 
+     <ref refid="config_8h_1a933bd7d156324bfdb1d2e0c09d0dea62" kindref="member">RIGHT_BUT_PIN</ref>, 
+     <ref refid="config_8h_1a025bab841b79362440702555620be44d" kindref="member">DOWN_BUT_PIN</ref>, 
+     <ref refid="config_8h_1aa5131f783bdb25f7eb069ac940538450" kindref="member">A_BUT_PIN</ref>, 
+     <ref refid="config_8h_1ae16aedef2314224f03e1e3027e246fab" kindref="member">B_BUT_PIN</ref>, 
+     <ref refid="config_8h_1af60ad850de69333b8e2e16cae0696255" kindref="member">MENU_BUT_PIN</ref>
+ }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" line="37" column="16" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" bodystart="37" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="variable" id="config_8h_1a30c6a3a94b9103340f8b101b0c2e8dfe" prot="public" static="no" mutable="no">
+        <type>const char GAMEPAD_DATA_FILE_NAME[]</type>
+        <definition>const char TEXT_UNABLE_CREATE_NOTIFF [] PROGMEM</definition>
+        <argsstring></argsstring>
+        <name>PROGMEM</name>
+        <initializer>= &quot;/gamepad.dat&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" line="271" column="35" bodyfile="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h" bodystart="271" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>GAMEPAD_CONFIG_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GAMEPAD_CONFIG_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;Arduino.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//<sp/>##################################################################################</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PIN<sp/>SETUP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>##################################################################################</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//<sp/>================<sp/>BUTTONS<sp/>=======================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>|===================================|</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MENU<sp/>|</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/>UP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>A<sp/><sp/><sp/><sp/>|</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>|<sp/><sp/>LEFT<sp/><sp/><sp/>RIGHT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/>DOWN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>B<sp/><sp/><sp/><sp/>|</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>|===================================|</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="config_8h_1ab66be6926d988a280b1813007b9c6fa2" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LEFT_BUT_PIN<sp/>17</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="config_8h_1a06ed0d1b1556b64df06aae373e7ec6e4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UP_BUT_PIN<sp/>5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="config_8h_1a933bd7d156324bfdb1d2e0c09d0dea62" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RIGHT_BUT_PIN<sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="config_8h_1a025bab841b79362440702555620be44d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DOWN_BUT_PIN<sp/>16</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="config_8h_1aa5131f783bdb25f7eb069ac940538450" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>A_BUT_PIN<sp/>39</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="config_8h_1ae16aedef2314224f03e1e3027e246fab" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>B_BUT_PIN<sp/>34</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="config_8h_1af60ad850de69333b8e2e16cae0696255" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MENU_BUT_PIN<sp/>36</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="config_8h_1ac089eaf46a8a195fafa6386bf172995a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INVERT_BUTTONS_STATE<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="config_8h_1a1a9621ac211ce21695ba6bdea81b61fb" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BUTTONS_N<sp/>7</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>int16_t<sp/>buttons_map[]<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="config_8h_1ab66be6926d988a280b1813007b9c6fa2" kindref="member">LEFT_BUT_PIN</ref>,<sp/></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="config_8h_1a06ed0d1b1556b64df06aae373e7ec6e4" kindref="member">UP_BUT_PIN</ref>,<sp/></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="config_8h_1a933bd7d156324bfdb1d2e0c09d0dea62" kindref="member">RIGHT_BUT_PIN</ref>,<sp/></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="config_8h_1a025bab841b79362440702555620be44d" kindref="member">DOWN_BUT_PIN</ref>,<sp/></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="config_8h_1aa5131f783bdb25f7eb069ac940538450" kindref="member">A_BUT_PIN</ref>,<sp/></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="config_8h_1ae16aedef2314224f03e1e3027e246fab" kindref="member">B_BUT_PIN</ref>,<sp/></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="config_8h_1af60ad850de69333b8e2e16cae0696255" kindref="member">MENU_BUT_PIN</ref></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="config_8h_1a0913f0d5426c8cac33e09f77ca741852" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="config_8h_1a0913f0d5426c8cac33e09f77ca741852" kindref="member">buttons_id</ref>{</highlight></codeline>
+<codeline lineno="48" refid="config_8h_1a0913f0d5426c8cac33e09f77ca741852a1fe7b6c80e02503c89bf9ae5b8e78c83" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="config_8h_1a0913f0d5426c8cac33e09f77ca741852a1fe7b6c80e02503c89bf9ae5b8e78c83" kindref="member">LEFT_BUT_ID</ref>,</highlight></codeline>
+<codeline lineno="49" refid="config_8h_1a0913f0d5426c8cac33e09f77ca741852ac19630ba3b1076446b7a09ae66355ef8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="config_8h_1a0913f0d5426c8cac33e09f77ca741852ac19630ba3b1076446b7a09ae66355ef8" kindref="member">UP_BUT_ID</ref>,</highlight></codeline>
+<codeline lineno="50" refid="config_8h_1a0913f0d5426c8cac33e09f77ca741852a2f9951fa43f915176fe4647c4bc8ccc1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="config_8h_1a0913f0d5426c8cac33e09f77ca741852a2f9951fa43f915176fe4647c4bc8ccc1" kindref="member">RIGHT_BUT_ID</ref>,</highlight></codeline>
+<codeline lineno="51" refid="config_8h_1a0913f0d5426c8cac33e09f77ca741852a1a8ac3d3891fc76b3335fc6ed5b6e204" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="config_8h_1a0913f0d5426c8cac33e09f77ca741852a1a8ac3d3891fc76b3335fc6ed5b6e204" kindref="member">DOWN_BUT_ID</ref>,</highlight></codeline>
+<codeline lineno="52" refid="config_8h_1a0913f0d5426c8cac33e09f77ca741852a124b5b05584b841e727457daa662de3e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="config_8h_1a0913f0d5426c8cac33e09f77ca741852a124b5b05584b841e727457daa662de3e" kindref="member">A_BUT_ID</ref>,</highlight></codeline>
+<codeline lineno="53" refid="config_8h_1a0913f0d5426c8cac33e09f77ca741852afc2a9fedd51d2ec10e05709ed35d9167" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="config_8h_1a0913f0d5426c8cac33e09f77ca741852afc2a9fedd51d2ec10e05709ed35d9167" kindref="member">B_BUT_ID</ref>,</highlight></codeline>
+<codeline lineno="54" refid="config_8h_1a0913f0d5426c8cac33e09f77ca741852ae5ae5beeb7dace0ea732c38ca698bd38" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="config_8h_1a0913f0d5426c8cac33e09f77ca741852ae5ae5beeb7dace0ea732c38ca698bd38" kindref="member">MENU_BUT_ID</ref></highlight></codeline>
+<codeline lineno="55"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="comment">//<sp/>================<sp/>DISPLAY<sp/>=======================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="config_8h_1aca3e980b4e32ed692d75cb4cf0eeee25" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DISP_CS_PIN<sp/>13</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="config_8h_1a7508a373c5a684cefb7db6873840aa02" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DISP_DC_PIN<sp/>22</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="config_8h_1ae02e84564b92599a0a7c10015337188a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DISP_RST_PIN<sp/>-1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="config_8h_1ac27d32570be597504af10b35618603c5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DISP_BACKLIGHT_PIN<sp/>25</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="config_8h_1aa11dcb094e71a5ac007c4258041af6b9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DISP_BACKLIGHT_LEDC_CHANNEL<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="comment">//<sp/>================<sp/>SD_CARD<sp/>=======================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="config_8h_1a04d57a6c18b2d5e81f31093e58ed0c62" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SD_CS_PIN<sp/>21</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="comment">//<sp/>================<sp/>BUZZER<sp/>=======================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77" refid="config_8h_1a426bba94d5ccd1047d7ebe5ffedf3623" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BUZZ_PIN<sp/>32</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="config_8h_1a4aae14a8fd2e0538a2f22f079e2684c1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BUZZ_LEDC_CHANNEL<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="comment">//<sp/>==============<sp/>ACCELEROMETER<sp/>=================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84" refid="config_8h_1a204225c3b8c85cb6cc180643376d9bba" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ACCEL_SDA_PIN<sp/>26</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85" refid="config_8h_1a38afe63b4bd065e1c72fd19789fb61c9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ACCEL_SCL_PIN<sp/>27</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86" refid="config_8h_1a4cc32f2cf4c2e4770674d091da1c3666" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ACCEL_I2C_ADDRESS<sp/>0x68</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="config_8h_1a139294225cab996916e33fee7eac28f3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ACCEL_INVERT_X_AXIS<sp/>false</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89" refid="config_8h_1a9d6b1d961b7d93a0f2642dd0e2821e22" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ACCEL_INVERT_Y_AXIS<sp/>false</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90" refid="config_8h_1a2a813667a1118fe6996dcbd7a8bd9705" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ACCEL_INVERT_Z_AXIS<sp/>true</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="comment">//<sp/>================<sp/>VIBRO<sp/>=======================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96" refid="config_8h_1abc3177bfab0ca12ca8c7330febcc87bb" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VIBRO_PIN<sp/>33</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97" refid="config_8h_1a8e1178e7323f1751842c13e67fee9550" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VIBRO_LEDC_CHANNEL<sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="comment">//<sp/>================<sp/>BATTERY<sp/>=======================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103" refid="config_8h_1ab2715d77812256b2f4bf93475deee5d4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BATTERY_V_PIN<sp/>35</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="comment">//<sp/>##################################################################################</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight><highlight class="comment">//<sp/>##################################################################################</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>DISPLAY<sp/>PARAMETERS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight><highlight class="comment">//<sp/>##################################################################################</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121" refid="config_8h_1aa178c3409ca0030215244c7f5ab05d4f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DISP_WIDTH<sp/>320</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122" refid="config_8h_1a14033ba98194beb2c6e319c7c08b0ac7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DISP_HEIGHT<sp/>240</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124" refid="config_8h_1a0e0cefb22b3ec4cea7846d4ec21165c9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DISP_ROTATION<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125" refid="config_8h_1a81678dd10693172c1512f482143089db" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DEFAULT_COLOR_DEPTH<sp/>8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126" refid="config_8h_1a897acb3a9c9f377b54e211b7a27b09aa" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DEFAULT_CANVAS_T<sp/>TFT_eSprite</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127" refid="config_8h_1a85aae53c622111b53f3fe47735052d4d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BRIGHTNESS_LEVELS<sp/>10</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128" refid="config_8h_1ad27ad76d41bf29c6b9f95e8c41b86398" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DEFAULT_BRIGHTNESS<sp/>10</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131" refid="config_8h_1a5b25aaed7274e73a43882995b0225ec8" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FONTS_MAX_N<sp/>8<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>How<sp/>many<sp/>font<sp/>slots<sp/>are<sp/>in<sp/>memory</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight><highlight class="comment">//<sp/>TFT<sp/>display<sp/>has<sp/>its<sp/>own<sp/>refresh<sp/>rate,<sp/>this<sp/>leads<sp/>to<sp/>flickering,<sp/>and<sp/>diogonal<sp/>lines<sp/>during<sp/>frequent<sp/>updates</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Especially<sp/>if<sp/>the<sp/>contrast<sp/>between<sp/>frames<sp/>is<sp/>high</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight><highlight class="comment">//<sp/>There<sp/>are,<sp/>when<sp/>the<sp/>flickering<sp/>is<sp/>minimal.<sp/>Diagonal<sp/>lines<sp/>just<sp/>freeze<sp/>on<sp/>the<sp/>same<sp/>place,<sp/>or<sp/>move<sp/>slowly</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Those<sp/>FPSs<sp/>should<sp/>be<sp/>maintained<sp/>to<sp/>avoid<sp/>display<sp/>flickering</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141" refid="config_8h_1a1376a2c0f2663ad7b6eb65acda8a4c10" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NO_FLICKERING_FPS_1<sp/>30.31f</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142" refid="config_8h_1af8b1b8e85416bd4f526bb246374813e9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NO_FLICKERING_FPS_2<sp/>20.35f</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143" refid="config_8h_1a4d024d6f7c5c908735ae9bc410cab8c7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NO_FLICKERING_FPS_3<sp/>37.242f</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144" refid="config_8h_1af0fc08a586324a16e0c824a2623addc3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NO_FLICKERING_FPS_4<sp/>15.15f</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145" refid="config_8h_1a5f15d47cb0b514a42ecdd6540de5e7a6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NO_FLICKERING_FPS_5<sp/>13.34f</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight><highlight class="comment">//<sp/>##################################################################################</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight><highlight class="comment">//<sp/>##################################################################################</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>BATTERY<sp/>HARDWARE<sp/>PARAMETERS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight><highlight class="comment">//<sp/>##################################################################################</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>BATT_VCC-------[===R2===]------*-------[===R1===]--------GND</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>V_READ_PIN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168" refid="config_8h_1a5951bf63a7901febf7eca8c9f864cc1c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BATTERY_DIVIDER_R1<sp/>10.0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="169" refid="config_8h_1a16590266cf846d6b1f20fcf1c8f29b20" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BATTERY_DIVIDER_R2<sp/>10.0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="170" refid="config_8h_1a21f05071c0428992770488ff831159df" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BATTERY_V_REF<sp/>3.3<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Logical<sp/>1<sp/>voltage</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Battery<sp/>voltage<sp/>is<sp/>converted<sp/>to<sp/>the<sp/>charge<sp/>level</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Levels<sp/>are<sp/>presented<sp/>as:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>[1234...N]<sp/><sp/><sp/><sp/>e.g.<sp/><sp/>[##<sp/><sp/>]<sp/>2<sp/>of<sp/>4<sp/>charge</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/>[<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>]<sp/><sp/>-<sp/>battery<sp/>zero<sp/>level.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Zero<sp/>level<sp/>is<sp/>level<sp/>above<sp/>BATTERY_ZERO_PERCENTAGE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179" refid="config_8h_1abf6695f9b7e328cf934a4c3078bfcb23" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BATTERY_LEVELS<sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="180" refid="config_8h_1aee573c4b5325259c8ff26443d48da13a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BATTERY_ZERO_PERCENTAGE<sp/>0.05<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>from<sp/>0<sp/>to<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight><highlight class="comment">//<sp/>To<sp/>avoid<sp/>analog<sp/>noise,<sp/>the<sp/>value<sp/>of<sp/>battery<sp/>voltage<sp/>is<sp/>read<sp/>multiple<sp/>times</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="185" refid="config_8h_1a790db950303eb76325ab4bf30c1652e7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BATTERY_N_OF_MEASURES<sp/>5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight><highlight class="comment">//<sp/>===============<sp/>HARDWARE<sp/>ID:<sp/>0<sp/>=================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="191" refid="config_8h_1a41d016f5aaeaac78d9b35d27eca6fe1c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BATTERY_CRITICAL_V_0<sp/>3.25<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>At<sp/>this<sp/>voltage<sp/>device<sp/>would<sp/>turn<sp/>off</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="192" refid="config_8h_1a7089bfeab27d326585ab3d88ef3555a7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BATTERY_FULL_V_0<sp/>4.15<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Voltage<sp/>considered<sp/>as<sp/>fully<sp/>charged<sp/>battery,<sp/>for<sp/>proportional<sp/>charge<sp/>level<sp/>calculations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="193" refid="config_8h_1a41a2dc71265a23ae61279ab7852f1b60" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BATTERY_CHARGING_V_0<sp/>4.4<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>value<sp/>above<sp/>that<sp/>would<sp/>mean<sp/>that<sp/>device<sp/>is<sp/>connected<sp/>to<sp/>the<sp/>charger</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="194" refid="config_8h_1a91e5e03b72c96df52ed4ed0505ba1034" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BATTERY_ONLY_CHARGING_V_0<sp/>4.8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>voltage<sp/>above<sp/>that<sp/>would<sp/>mean<sp/>that<sp/>devices<sp/>is<sp/>connected<sp/>to<sp/>charger<sp/>and<sp/>powered<sp/>off<sp/>(VCC<sp/>pulled<sp/>to<sp/>5v)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Battery<sp/>voltage<sp/>is<sp/>calculated<sp/>from<sp/>analog<sp/>value<sp/>and<sp/>converted<sp/>to<sp/>RAW<sp/>voltage</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight><highlight class="comment">//<sp/>However,<sp/>adjustment<sp/>function<sp/>is<sp/>needed,<sp/>due<sp/>to<sp/>internal<sp/>resistanse,<sp/>nonlinearity<sp/>of<sp/>ADC<sp/>etc.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="199" refid="config_8h_1a99f89d760e78ac0f9edb0c61e7af5d78" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BATTERY_VADJ_FUNC_0(v)<sp/>1.0824*v<sp/>+<sp/>0.4005</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight><highlight class="comment">//<sp/>===============<sp/>HARDWARE<sp/>ID:<sp/>1<sp/>=================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="205" refid="config_8h_1af9e0f3e51a3a6fef8c06812478a34908" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BATTERY_CRITICAL_V_1<sp/>3.55</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="206" refid="config_8h_1ae4b1b07db3f34d5c533d4c5e8ff2c431" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BATTERY_FULL_V_1<sp/>4.15</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="207" refid="config_8h_1a9fd756709ba42ed8666203ecce1b664a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BATTERY_CHARGING_V_1<sp/>4.3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="208" refid="config_8h_1a6b9e76ff2105cc05e80cdb422bf2488c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BATTERY_ONLY_CHARGING_V_1<sp/>4.5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight></codeline>
+<codeline lineno="210" refid="config_8h_1af2e776c750bad1c8b79d1a79bb5304ff" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BATTERY_VADJ_FUNC_1(v)<sp/>-0.1961<sp/>+<sp/>1.5359*v<sp/>-<sp/>0.0767*v*v<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>best<sp/>experimental<sp/>fit</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>BATTERY_VADJ_FUNC_1(v)<sp/>0.890<sp/>*<sp/>v<sp/>+<sp/>1.158<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>theor<sp/>approx<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight><highlight class="comment">//<sp/>##################################################################################</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight><highlight class="comment">//<sp/>##################################################################################</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PERIPHERY<sp/>PARAMETERS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal"></highlight><highlight class="comment">//<sp/>##################################################################################</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight><highlight class="comment">//<sp/>==============<sp/>ACCELEROMETER<sp/>=================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Sensitivity<sp/>for<sp/>±2g<sp/>in<sp/>LSB/g</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="231" refid="config_8h_1a09ecf77e46d9d12697d484dcb1a54842" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ACCEL_SENSITIVITY<sp/>16384.0<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(float)<sp/>2^14</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="232" refid="config_8h_1add7e7785398a08b69e09c5cf282520e3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ACCEL_CALIBRATION_MEASURE_N<sp/>10</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="233"><highlight class="normal"></highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight></codeline>
+<codeline lineno="235"><highlight class="normal"></highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight><highlight class="comment">//<sp/>================<sp/>BUTTONS<sp/>=======================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight><highlight class="comment">//<sp/>double-triggering<sp/>of<sp/>button<sp/>state<sp/>would<sp/>be<sp/>filtered<sp/>out<sp/>if<sp/>the<sp/>timeot<sp/>is<sp/>less<sp/>this<sp/>value</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="239" refid="config_8h_1a5e45032bd798aa3f47127364e3bd73f1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BUTTON_FILTERING_TIME<sp/>15<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(ms)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight></codeline>
+<codeline lineno="242"><highlight class="normal"></highlight></codeline>
+<codeline lineno="243"><highlight class="normal"></highlight><highlight class="comment">//<sp/>================<sp/>BUZZER<sp/>=======================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight></codeline>
+<codeline lineno="245" refid="config_8h_1aba8ead4c14deb37bcc35bf372191ae33" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BUZZER_VOLUME_LEVELS<sp/>10</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="246" refid="config_8h_1aa19fc9d640d6b992b7903b55b6059238" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DEFAULT_BUZZER_VOLUME<sp/>10</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight></codeline>
+<codeline lineno="248"><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight><highlight class="comment">//<sp/>================<sp/>VIBRO<sp/>=======================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="251"><highlight class="normal"></highlight></codeline>
+<codeline lineno="252" refid="config_8h_1ac681e120560992cc9ea0c85592ccc122" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VIBRO_STRENGTH_LEVELS<sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="253" refid="config_8h_1a208ac7a6717f2a76aecda81ef296acba" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DEFAULT_VIBRO_STRENGTH<sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="254"><highlight class="normal"></highlight></codeline>
+<codeline lineno="255"><highlight class="normal"></highlight></codeline>
+<codeline lineno="256"><highlight class="normal"></highlight></codeline>
+<codeline lineno="257"><highlight class="normal"></highlight><highlight class="comment">//<sp/>##################################################################################</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="258"><highlight class="normal"></highlight></codeline>
+<codeline lineno="259"><highlight class="normal"></highlight></codeline>
+<codeline lineno="260"><highlight class="normal"></highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight></codeline>
+<codeline lineno="263"><highlight class="normal"></highlight></codeline>
+<codeline lineno="264"><highlight class="normal"></highlight></codeline>
+<codeline lineno="265"><highlight class="normal"></highlight><highlight class="comment">//<sp/>##################################################################################</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GAMEPAD<sp/>SYSTEM<sp/>CONFIG</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="267"><highlight class="normal"></highlight><highlight class="comment">//<sp/>##################################################################################</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="268"><highlight class="normal"></highlight></codeline>
+<codeline lineno="269"><highlight class="normal"></highlight></codeline>
+<codeline lineno="270"><highlight class="normal"></highlight></codeline>
+<codeline lineno="271" refid="config_8h_1a30c6a3a94b9103340f8b101b0c2e8dfe" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>GAMEPAD_DATA_FILE_NAME[]<sp/><ref refid="config_8h_1a30c6a3a94b9103340f8b101b0c2e8dfe" kindref="member">PROGMEM</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;/gamepad.dat&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>GAME_CONFIG_FILE_NAME[]<sp/><ref refid="config_8h_1a30c6a3a94b9103340f8b101b0c2e8dfe" kindref="member">PROGMEM</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;game.ini&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"></highlight></codeline>
+<codeline lineno="274"><highlight class="normal"></highlight></codeline>
+<codeline lineno="275"><highlight class="normal"></highlight></codeline>
+<codeline lineno="276"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>API_VERSION[]<sp/><ref refid="config_8h_1a30c6a3a94b9103340f8b101b0c2e8dfe" kindref="member">PROGMEM</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;0.0.1&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"></highlight></codeline>
+<codeline lineno="278"><highlight class="normal"></highlight></codeline>
+<codeline lineno="279"><highlight class="normal"></highlight></codeline>
+<codeline lineno="280"><highlight class="normal"></highlight><highlight class="comment">//<sp/>=================<sp/>Dialogue<sp/>boxes<sp/>=======================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="281"><highlight class="normal"></highlight></codeline>
+<codeline lineno="282"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>GAME_FILES_NOT_FOUND_MSG[]<sp/><ref refid="config_8h_1a30c6a3a94b9103340f8b101b0c2e8dfe" kindref="member">PROGMEM</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Game<sp/>files\nnot<sp/>found.\nLocate<sp/>them?&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>NOT_GAME_FOLDER_MSG[]<sp/><ref refid="config_8h_1a30c6a3a94b9103340f8b101b0c2e8dfe" kindref="member">PROGMEM</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Not<sp/>a<sp/>game\n<sp/>folder<sp/>selected&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>NO_SD_CARD_MSG[]<sp/><ref refid="config_8h_1a30c6a3a94b9103340f8b101b0c2e8dfe" kindref="member">PROGMEM</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;SD<sp/>card<sp/>is<sp/>not\ninserted&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>FACTORY_RESET_MSG[]<sp/><ref refid="config_8h_1a30c6a3a94b9103340f8b101b0c2e8dfe" kindref="member">PROGMEM</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Perform<sp/>factory\nreset?\n(Console<sp/>will\n<sp/>restart)&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>BATTERY_CALIBRATION_MSG[]<sp/><ref refid="config_8h_1a30c6a3a94b9103340f8b101b0c2e8dfe" kindref="member">PROGMEM</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Battery<sp/>is\ncalibrating&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>BATTERY_CALIBRATION_ALERT[]<sp/><ref refid="config_8h_1a30c6a3a94b9103340f8b101b0c2e8dfe" kindref="member">PROGMEM</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;To<sp/>calibrate<sp/>battery:\n<sp/>1.<sp/>Make<sp/>sure<sp/>battery<sp/>is<sp/>fully<sp/>charged\n<sp/>2.<sp/>Do<sp/>not<sp/>power<sp/>off<sp/>gamepad<sp/>until<sp/>battery<sp/>fully<sp/>discharges\n<sp/>3.<sp/>Do<sp/>not<sp/>connect<sp/>the<sp/>charger\n\n<sp/>(You<sp/>can<sp/>use<sp/>the<sp/>gamepad<sp/>during<sp/>the<sp/>calibration)&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"></highlight></codeline>
+<codeline lineno="289"><highlight class="normal"></highlight></codeline>
+<codeline lineno="290"><highlight class="normal"></highlight><highlight class="comment">//<sp/>=================<sp/>UI<sp/>text<sp/>=======================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="291"><highlight class="normal"></highlight></codeline>
+<codeline lineno="292"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>TXT_FAILED_CALIBR[]<sp/><ref refid="config_8h_1a30c6a3a94b9103340f8b101b0c2e8dfe" kindref="member">PROGMEM</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Failed<sp/>to\ncalibrate<sp/>battery&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>TXT_DISPAY_FAILED[]<sp/><ref refid="config_8h_1a30c6a3a94b9103340f8b101b0c2e8dfe" kindref="member">PROGMEM</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;ERROR:<sp/>unable<sp/>to<sp/>initialize<sp/>display&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>TXT_SD_FAILED[]<sp/><ref refid="config_8h_1a30c6a3a94b9103340f8b101b0c2e8dfe" kindref="member">PROGMEM</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;ERROR:<sp/>failed<sp/>to<sp/>init<sp/>SD<sp/>card&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>TXT_SD_DISCONNECT[]<sp/><ref refid="config_8h_1a30c6a3a94b9103340f8b101b0c2e8dfe" kindref="member">PROGMEM</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;ERROR:<sp/>SD<sp/>is<sp/>disconnected&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>TXT_SETTINGS_SAVE_WARINING[]<sp/><ref refid="config_8h_1a30c6a3a94b9103340f8b101b0c2e8dfe" kindref="member">PROGMEM</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Settings<sp/>won&apos;t\nbe<sp/>saved\nafter<sp/>reset&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>TXT_UNSUPPORTED_DEVICE[]<sp/><ref refid="config_8h_1a30c6a3a94b9103340f8b101b0c2e8dfe" kindref="member">PROGMEM</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Unsupported<sp/>on\nyour<sp/>device\n&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>TXT_SPIFFS_FAILED[]<sp/><ref refid="config_8h_1a30c6a3a94b9103340f8b101b0c2e8dfe" kindref="member">PROGMEM</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;ERROR:<sp/>failed<sp/>to<sp/>init<sp/>SPIFFS&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"></highlight></codeline>
+<codeline lineno="300"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>TXT_USUPPORTED_ON_DEVICE[]<sp/><ref refid="config_8h_1a30c6a3a94b9103340f8b101b0c2e8dfe" kindref="member">PROGMEM</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Unsupported<sp/>on<sp/>your<sp/>device&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>TXT_BUZZ_VOL[]<sp/><ref refid="config_8h_1a30c6a3a94b9103340f8b101b0c2e8dfe" kindref="member">PROGMEM</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Buzz.<sp/>vol:&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>TXT_BRIGHTNESS[]<sp/><ref refid="config_8h_1a30c6a3a94b9103340f8b101b0c2e8dfe" kindref="member">PROGMEM</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Brightness:<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>TXT_VIBRO[]<sp/><ref refid="config_8h_1a30c6a3a94b9103340f8b101b0c2e8dfe" kindref="member">PROGMEM</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Vibro:<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>TXT_BATT_CALIBR[]<sp/><ref refid="config_8h_1a30c6a3a94b9103340f8b101b0c2e8dfe" kindref="member">PROGMEM</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Battery<sp/>calibration&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>TXT_BATT_LIFETIME[]<sp/><ref refid="config_8h_1a30c6a3a94b9103340f8b101b0c2e8dfe" kindref="member">PROGMEM</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Battery<sp/>lifetime:<sp/>&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>TXT_FACTORY_RESET[]<sp/><ref refid="config_8h_1a30c6a3a94b9103340f8b101b0c2e8dfe" kindref="member">PROGMEM</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Factory<sp/>reset&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>TXT_SAVE_MSG[]<sp/><ref refid="config_8h_1a30c6a3a94b9103340f8b101b0c2e8dfe" kindref="member">PROGMEM</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;\nSave<sp/>changes?&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>TEXT_UNABLE_CREATE_MSGBOX[]<sp/><ref refid="config_8h_1a30c6a3a94b9103340f8b101b0c2e8dfe" kindref="member">PROGMEM</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;ERROR:<sp/>unable<sp/>to<sp/>create<sp/>message<sp/>box&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>TEXT_UNABLE_CREATE_NOTIFF[]<sp/><ref refid="config_8h_1a30c6a3a94b9103340f8b101b0c2e8dfe" kindref="member">PROGMEM</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;ERROR:<sp/>unable<sp/>to<sp/>create<sp/>notification&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"></highlight></codeline>
+<codeline lineno="311"><highlight class="normal"></highlight></codeline>
+<codeline lineno="312"><highlight class="normal"></highlight><highlight class="comment">//<sp/>##################################################################################</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="313"><highlight class="normal"></highlight></codeline>
+<codeline lineno="314"><highlight class="normal"></highlight></codeline>
+<codeline lineno="315"><highlight class="normal"></highlight></codeline>
+<codeline lineno="316"><highlight class="normal"></highlight></codeline>
+<codeline lineno="317"><highlight class="normal"></highlight></codeline>
+<codeline lineno="318"><highlight class="normal"></highlight></codeline>
+<codeline lineno="319"><highlight class="normal"></highlight></codeline>
+<codeline lineno="320"><highlight class="normal"></highlight><highlight class="comment">//<sp/>##################################################################################</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="321"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SUBPROCESSES<sp/>CONFIG</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="322"><highlight class="normal"></highlight><highlight class="comment">//<sp/>##################################################################################</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="323"><highlight class="normal"></highlight></codeline>
+<codeline lineno="324"><highlight class="normal"></highlight></codeline>
+<codeline lineno="325"><highlight class="normal"></highlight></codeline>
+<codeline lineno="326"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Subprocesses<sp/>timeouts</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="327"><highlight class="normal"></highlight><highlight class="comment">//<sp/>All<sp/>values<sp/>are<sp/>in<sp/>[ms]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="328"><highlight class="normal"></highlight></codeline>
+<codeline lineno="329" refid="config_8h_1a64b76adef840b6c8356c7c928955ab45" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BATTERY_CHECK_TIMEOUT<sp/>2000<sp/></highlight><highlight class="comment">//<sp/>TODO:<sp/>change<sp/>to<sp/>10000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="330" refid="config_8h_1a432116ab93b2f990897225da8b60ccda" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BATTERY_LIGHT_SLEEP_CHECK_TIMEOUT<sp/>10000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="331" refid="config_8h_1ad3bc2757a751b67a261a08c20d38549b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BATTERY_LOW_CHARGE_ALARM_TIMEOUT<sp/>30000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="332" refid="config_8h_1afc32484a526130b29c5ed3f8a68db924" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BATTERY_CALIBRATION_TIMEOUT<sp/>60000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="333" refid="config_8h_1abfe44b76b77ff0beede98e07dee3b61a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DEVICE_MODE_CHECK_TIMEOUT<sp/>500</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="334" refid="config_8h_1afb3e74c785989647124e5914b46677e7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SYSTEM_DATA_AUTOSAVE_TIMEOUT<sp/>10000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="335" refid="config_8h_1a3e7e51c955579d60e576ffc390ec7f78" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SD_PRESENCE_CHECK_TIMEOUT<sp/>3000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="336" refid="config_8h_1aa170d003a72483843bf99f2693d1f2c5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FORCED_MENU_CHECK_TIMEOUT<sp/>500</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="337" refid="config_8h_1a66f67f6eb68fa697f55ec92e0e3935d9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FORCED_MENU_HOLD_TIME<sp/>4000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="338" refid="config_8h_1a78c8d5123e5e78d9e17b221f7532d647" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NOTIFICATION_HOLD_TIME<sp/>2000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="339"><highlight class="normal"></highlight></codeline>
+<codeline lineno="340"><highlight class="normal"></highlight></codeline>
+<codeline lineno="341"><highlight class="normal"></highlight></codeline>
+<codeline lineno="342"><highlight class="normal"></highlight><highlight class="comment">//<sp/>RTOS<sp/>stack<sp/>sizes<sp/>per<sp/>process</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="343"><highlight class="normal"></highlight></codeline>
+<codeline lineno="344" refid="config_8h_1a9cf47c24ba6214522bc17c8a86a96f60" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FORCED_MENU_STACK_SIZE<sp/>4096</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="345" refid="config_8h_1a60f7a645c6b63d696f7f86f62a44100b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BATTERY_LISTENER_STACK_SIZE<sp/>4096<sp/></highlight><highlight class="comment">//<sp/>TODO:<sp/>Change</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="346" refid="config_8h_1a82a2f79b09df1dc9151b317bd961c894" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>NOTIFICATION_DESTRUCTOR_STACK_SIZE<sp/>2048</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="347" refid="config_8h_1a64f8f24a3794616dd79d93a843901f9e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DISPLAY_UPDATE_THREAD_STACK_SIZE<sp/>2048</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="348"><highlight class="normal"></highlight></codeline>
+<codeline lineno="349"><highlight class="normal"></highlight></codeline>
+<codeline lineno="350"><highlight class="normal"></highlight></codeline>
+<codeline lineno="351"><highlight class="normal"></highlight><highlight class="comment">//<sp/>##################################################################################</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="352"><highlight class="normal"></highlight></codeline>
+<codeline lineno="353"><highlight class="normal"></highlight></codeline>
+<codeline lineno="354"><highlight class="normal"></highlight></codeline>
+<codeline lineno="355"><highlight class="normal"></highlight></codeline>
+<codeline lineno="356"><highlight class="normal"></highlight></codeline>
+<codeline lineno="357"><highlight class="normal"></highlight></codeline>
+<codeline lineno="358"><highlight class="normal"></highlight></codeline>
+<codeline lineno="359"><highlight class="normal"></highlight><highlight class="comment">//<sp/>##################################################################################</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="360"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>UI</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="361"><highlight class="normal"></highlight><highlight class="comment">//<sp/>##################################################################################</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="362"><highlight class="normal"></highlight></codeline>
+<codeline lineno="363"><highlight class="normal"></highlight></codeline>
+<codeline lineno="364"><highlight class="normal"></highlight></codeline>
+<codeline lineno="365"><highlight class="normal"></highlight><highlight class="comment">//<sp/>=================<sp/>File<sp/>manager<sp/>=======================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="366"><highlight class="normal"></highlight></codeline>
+<codeline lineno="367" refid="config_8h_1a16ad048faaf190460a1af47c855aff25" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FILE_MANAGER_W<sp/>280</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="368" refid="config_8h_1a428def3635a6253accd31ee8185970c1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FILE_MANAGER_H<sp/>200</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="369" refid="config_8h_1afdd4d70d89a6b39ab3834418e028fe71" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GAME_ICON_SIZE<sp/>64</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="370" refid="config_8h_1a742a00e0adeca4029b06a7aa051ea5f9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FILE_MANAGER_MAX_FILE_NAME_LENGTH<sp/>30</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="371"><highlight class="normal"></highlight></codeline>
+<codeline lineno="372"><highlight class="normal"></highlight></codeline>
+<codeline lineno="373"><highlight class="normal"></highlight></codeline>
+<codeline lineno="374"><highlight class="normal"></highlight><highlight class="comment">//<sp/>=================<sp/>Settings<sp/>window<sp/>=======================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="375"><highlight class="normal"></highlight></codeline>
+<codeline lineno="376" refid="config_8h_1a7e097045fee12a286e900ae442ab9e86" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SETTINGS_W<sp/>320</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="377" refid="config_8h_1a7490caa405e82d2e921315b9ab30f7dc" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SETTINGS_H<sp/>240</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="378"><highlight class="normal"></highlight></codeline>
+<codeline lineno="379"><highlight class="normal"></highlight></codeline>
+<codeline lineno="380"><highlight class="normal"></highlight></codeline>
+<codeline lineno="381"><highlight class="normal"></highlight><highlight class="comment">//<sp/>=================<sp/>Dialogue<sp/>boxes<sp/>=======================</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="382"><highlight class="normal"></highlight></codeline>
+<codeline lineno="383" refid="config_8h_1ae0bb4eba93625e49e7f38d50937a4218" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MSG_BOX_DEFAULT_ACTION<sp/>&quot;Ok&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="384"><highlight class="normal"></highlight></codeline>
+<codeline lineno="385"><highlight class="normal"></highlight></codeline>
+<codeline lineno="386"><highlight class="normal"></highlight></codeline>
+<codeline lineno="387"><highlight class="normal"></highlight><highlight class="comment">//<sp/>##################################################################################</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="388"><highlight class="normal"></highlight></codeline>
+<codeline lineno="389"><highlight class="normal"></highlight></codeline>
+<codeline lineno="390"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/alexe/Documents/Basement/Gamepad/Gamepad_firmware/lib/gamepadAPI/src/config.h"/>
+  </compounddef>
+</doxygen>
