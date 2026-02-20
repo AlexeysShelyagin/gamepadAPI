@@ -6,6 +6,8 @@ build:
   os: ubuntu-24.04
   tools:
     python: "3.13"
+  apt_packages:
+    - doxygen
 
 # Build documentation in the "docs/" directory with Sphinx
 sphinx:
@@ -15,3 +17,6 @@ python:
   install:
   - requirements: docs/requirements.txt
         
+commands:
+  # generate Doxygen XML before Sphinx runs
+  - doxygen docs/Doxyfile
