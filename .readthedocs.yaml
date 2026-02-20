@@ -10,7 +10,9 @@ build:
     - doxygen
   commands:
     - cd docs/Doxygen; doxygen Doxyfile
-    - sphinx-build -b html docs/source $READTHEDOCS_OUTPUT/html
+    - python -m sphinx -b html docs/source _build/html
+    - mkdir -p $READTHEDOCS_OUTPUT/html
+    - cp -r _build/html/* $READTHEDOCS_OUTPUT/html
 
 # Build documentation in the "docs/" directory with Sphinx
 sphinx:
