@@ -63,11 +63,20 @@ Common examples
 
 .. code-block:: cpp
 
+   void load_game_from_save(){
+      String path = gamepad.file_manager();
+
+      Serial.println(path);
+
+      // ...
+   }
 
 
 
 Game selection menu
 -------------------
+
+Game can be changed to another without main menu call, but directly with a use of :cpp:func:`Gamepad::Gamepad::select_game_menu`.
 
 
 API reference
