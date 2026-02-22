@@ -128,8 +128,10 @@ Array sequence
 
 In this approach, a ``uint16_t []`` array is used. Each sequence element is stored as a pair:
 
-- First (odd index) value: frequency
-- Second (even index) value: duration
+- First value: frequency
+- Second value: duration
+
+See code example for clarity.
 
 .. note::
    The sequence length parameter represents the number of **frequency-duration pairs**, not the total array length. For a static array, the number of elements can be calculated as ``sizeof(array) / 4``
