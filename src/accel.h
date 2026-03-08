@@ -19,8 +19,8 @@ class Gamepad_accel{
     TwoWire accelWire = TwoWire(0);
     vec3 invert_mask;
 
-    vec3 basis_x = vec3(0, 1, 0);
-    vec3 basis_y = vec3(-1, 0, 0);
+    vec3 basis_x;
+    vec3 basis_y;
 
 public:
     Gamepad_accel() = default;
@@ -53,6 +53,7 @@ public:
      * @param hold_x_axis does not reset roll (gamepad x axis) if true
      */
     void set_current_as_zero(bool hold_x_axis = false);
+    void set_as_zero(vec3 accel, bool hold_x_axis = false);
 
 
 

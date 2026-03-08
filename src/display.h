@@ -14,15 +14,7 @@
 // set the type of canvas for external use
 #define GAMEPAD_CANVAS_T_DEFINED
 
-class Gamepad_canvas_t : public TFT_eSprite{
-    using TFT_eSprite::TFT_eSprite;
-
-    uint8_t *fonts[FONTS_MAX_N];
-    uint16_t font_h;
-    uint8_t dynamic_mem_font = 0;
-    uint8_t font_id = 0;
-public:
-    struct graphics_params_t{
+struct Graphics_params_t{
         uint8_t font_id;
         uint8_t text_size;
         uint32_t text_color;
@@ -31,6 +23,14 @@ public:
         int16_t orig_x, orig_y;
     };
 
+class Gamepad_canvas_t : public TFT_eSprite{
+    using TFT_eSprite::TFT_eSprite;
+
+    uint8_t *fonts[FONTS_MAX_N];
+    uint16_t font_h;
+    uint8_t dynamic_mem_font = 0;
+    uint8_t font_id = 0;
+public:
     /**
      * @brief Wrapper around `TFT_eSPI::pushMaskedImage()` for writing image to canvas instead display
      * 
@@ -154,14 +154,14 @@ public:
      * 
      * @param params `Gamepad_canvas_t::graphics_params_t` variable with saved parameters
      */
-    void setGraphicsParams(graphics_params_t params);
+    void setGraphicsParams(Graphics_params_t params);
 
     /**
      * @brief Get current graphics parameters
      * 
      * @return Gamepad_canvas_t::graphics_params_t parameters container variable
      */
-    graphics_params_t graphicsParams();
+    Graphics_params_t graphicsParams();
 };
 
 

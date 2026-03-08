@@ -13,12 +13,12 @@
 #define SD_CS_PIN 21
 #endif
 
-enum file_type{
-    IS_FOLDER,
+enum FS_obj_type{
+    IS_DIR,
     IS_FILE
 };
 
-struct file_name_t{
+struct File_name_t{
     String name;
     bool type;
     String path;
@@ -33,7 +33,7 @@ class Gamepad_SD_card{
     bool check_root_level(String path);
     bool process_path(String &path, bool absolute);
 public:
-    enum SD_status{
+    enum SD_status_t{
         SD_OK,
         SD_FAILED,
         SD_DISCONNECT
@@ -62,14 +62,14 @@ public:
      * @return true: success
      * @return false: failed
      */
-    bool open_root_dir();
+    bool open_parent_dir();
 
     /**
      * @brief Get list of all files and dirs in the current dir
      * 
      * @return std::vector < file_name_t >: `std::vector` filled with `file_name_t` data of each element 
      */
-    std::vector < file_name_t > list_dir();
+    std::vector < File_name_t > list_dir();
 
     /**
      * @brief Get absolute path to currently opened dir
@@ -96,7 +96,7 @@ public:
      * @return true: success
      * @return false: failed
      */
-    bool remove_dir(String path, bool absolute = false);
+    bool remove_dir(String path, bool recursive = false, bool absolute = false);
 
 
 
@@ -308,7 +308,7 @@ public:
      * @param img image data
      * @param start_pos position in file to write (inb bytes)
      */
-    void write_raw_PNG(Image_raw16_t &img, int start_pos = 0);
+    void write_raw16(Image_raw16_t &img, int start_pos = 0);
 
     /**
      * @brief Read already decoded PNG from file
@@ -316,7 +316,7 @@ public:
      * @param start_pos data chunk start position (in bytes)
      * @return Image_raw16_t: resulting image
      */
-    Image_raw16_t read_raw_PNG(int start_pos = 0);
+    Image_raw16_t read_raw16(int start_pos = 0);
 };
 
 #endif

@@ -48,10 +48,17 @@ struct System_data_t{
     uint16_t battery_lifetime;
 };
 
+struct Layer_t{
+    Gamepad_canvas_t *canvas;
+    uint16_t x, y;
+};
+
+typedef Layer_t* Layer_id_t;
+
 
 
 class Gamepad{
-    enum sys_param_t{
+    enum Sys_param_t{
         DISPLAY_ENABLED,
         BUTTONS_ENABLED,
         BUZZER_ENABLED,
@@ -79,11 +86,7 @@ class Gamepad{
     Gamepad_battery batt;
     Gamepad_SD_card sd_card;
 
-    struct layer_t{
-        Gamepad_canvas_t *canvas;
-        uint16_t x, y;
-    };
-    std::vector < layer_t* > layers;
+    std::vector < Layer_t* > layers;
 
     void (*game_func)();
 
@@ -96,8 +99,8 @@ class Gamepad{
     void init_battery();
     bool init_SPIFFS();
 
-    bool sys_param(sys_param_t id);
-    void sys_param(sys_param_t id, bool val);
+    bool sys_param(Sys_param_t id);
+    void sys_param(Sys_param_t id, bool val);
 
     void locate_game();
     void init_system_data();
@@ -107,7 +110,6 @@ class Gamepad{
     void on_charge_screen();
 
 public:
-    typedef layer_t* layer_id_t;
 
     SemaphoreHandle_t semaphore = NULL;
 
@@ -223,10 +225,10 @@ public:
      * @param y 
      * @param color_depth  1 | 4 | 8 | 16 bits
      * 
-     * @return Gamepad::layer_id_t: pointer to the layer
+     * @return Layer_id_t: pointer to the layer
      * @return nullptr: if layer creation failed
      */
-    Gamepad::layer_id_t create_layer(uint16_t width, uint16_t height, uint16_t x = 0, uint16_t y = 0, uint8_t color_depth = 8);
+    Layer_id_t create_layer(uint16_t width, uint16_t height, uint16_t x = 0, uint16_t y = 0, uint8_t color_depth = 8);
 
     /**
      * @brief Checks if layer exists
@@ -236,7 +238,7 @@ public:
      * @return true 
      * @return false 
      */
-    bool layer_exists(layer_id_t id);
+    bool layer_exists(Layer_id_t id);
 
     /**
      * @brief Access layer canvas
@@ -245,21 +247,21 @@ public:
      * 
      * @return Gamepad_canvas_t*: pointer to the canvas
      */
-    Gamepad_canvas_t* layer(layer_id_t id);
+    Gamepad_canvas_t* layer(Layer_id_t id);
     
     /**
      * @brief Fills layer black
      * 
      * @param id layer pointer
      */
-    void clear_layer(layer_id_t id);
+    void clear_layer(Layer_id_t id);
     
     /**
      * @brief Deletes layer with its canvas
      * 
      * @param id layer pointer
      */
-    void delete_layer(layer_id_t id);
+    void delete_layer(Layer_id_t id);
 
     /**
      * @brief Changes layer position on display
@@ -268,7 +270,7 @@ public:
      * @param new_x 
      * @param new_y 
      */
-    void move_layer(layer_id_t id, uint16_t new_x, uint16_t new_y);
+    void move_layer(Layer_id_t id, uint16_t new_x, uint16_t new_y);
 
 
     /**
@@ -288,6 +290,12 @@ public:
      * 
      */
     void select_game_menu();
+
+    /**
+     * @brief Enter gamepad settings menu
+     * 
+     */
+    void settings_menu();
 
     /**
      * @brief Opens gamepad file manager at game source folder as root

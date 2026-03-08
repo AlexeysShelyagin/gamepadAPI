@@ -464,12 +464,12 @@ uint8_t Gamepad::get_display_brightness(){
 
 // --------------------- Display layers --------------------------
 
-Gamepad::layer_id_t Gamepad::create_layer(uint16_t width, uint16_t height, uint16_t x, uint16_t y, uint8_t color_depth){
+Layer_id_t Gamepad::create_layer(uint16_t width, uint16_t height, uint16_t x, uint16_t y, uint8_t color_depth){
     Gamepad_canvas_t *layer_canvas = disp -> create_sprite(width, height, color_depth);
     if(layer_canvas == nullptr)
         return nullptr;
     
-    layer_t *layer = new layer_t;
+    Layer_t *layer = new Layer_t;
     layer -> canvas = layer_canvas;
     layer -> x = x;
     layer -> y = y;
@@ -478,15 +478,15 @@ Gamepad::layer_id_t Gamepad::create_layer(uint16_t width, uint16_t height, uint1
     return layer;
 }
 
-bool Gamepad::layer_exists(layer_id_t id){
+bool Gamepad::layer_exists(Layer_id_t id){
     return (id != nullptr);
 }
 
-Gamepad_canvas_t* Gamepad::layer(layer_id_t id){
+Gamepad_canvas_t* Gamepad::layer(Layer_id_t id){
     return id -> canvas;
 }
 
-void Gamepad::delete_layer(layer_id_t id){
+void Gamepad::delete_layer(Layer_id_t id){
     disp -> delete_sprite(id -> canvas);
     for(uint8_t i = 0; i < layers.size(); i++){
         if(layers[i] == id){
@@ -499,11 +499,11 @@ void Gamepad::delete_layer(layer_id_t id){
 
 
 
-void Gamepad::clear_layer(layer_id_t id){
+void Gamepad::clear_layer(Layer_id_t id){
     disp -> clear_sprite(id ->canvas);
 }
 
-void Gamepad::move_layer(layer_id_t id, uint16_t new_x, uint16_t new_y){
+void Gamepad::move_layer(Layer_id_t id, uint16_t new_x, uint16_t new_y){
     id -> x = new_x;
     id -> y = new_y;
 }
@@ -563,28 +563,7 @@ void Gamepad::main_menu(){
             }
         }
         if(cursor == 1){
-            System_data_t updated_data = *system_data;
-            uint8_t resp = ui.settings(updated_data);
-
-            if(resp == 1){
-                *system_data = updated_data;
-                save_system_settings();
-
-                if(!sys_param(SD_ENABLED))
-                    ui.notification(TXT_SETTINGS_SAVE_WARINING);
-            }
-            if(resp == 1 || resp == 0)
-                apply_system_settings();
-            if(resp == 2){
-                SPIFFS.remove(GAMEPAD_DATA_FILE_NAME);
-                ESP.restart();
-            }
-            if(resp == 3){
-                if(!batt.is_calibrating()){
-                    batt.start_calibration();
-                    ui.notification(BATTERY_CALIBRATION_MSG);
-                }
-            }
+            settings_menu();
         }
         if(cursor == 2)
             select_game_menu();
@@ -595,6 +574,35 @@ void Gamepad::main_menu(){
     update_display();
 }
 
+void Gamepad::settings_menu(){
+    buttons.clear_queue();
+
+    System_data_t updated_data = *system_data;
+    uint8_t resp = ui.settings(updated_data);
+
+    if(resp == 1){
+        *system_data = updated_data;
+        save_system_settings();
+
+        if(!sys_param(SD_ENABLED))
+            ui.notification(TXT_SETTINGS_SAVE_WARINING);
+    }
+    if(resp == 1 || resp == 0)
+        apply_system_settings();
+    if(resp == 2){
+        SPIFFS.remove(GAMEPAD_DATA_FILE_NAME);
+        ESP.restart();
+    }
+    if(resp == 3){
+        if(!batt.is_calibrating()){
+            batt.start_calibration();
+            ui.notification(BATTERY_CALIBRATION_MSG);
+        }
+    }
+
+    buttons.clear_queue();
+}
+
 
 
 void Gamepad::select_game_menu(){
@@ -603,7 +611,7 @@ void Gamepad::select_game_menu(){
         return;
     }
 
-    file_mngr_t file = ui.file_manager(true);
+    File_mngr_t file = ui.file_manager(true);
     if(file.file == "")
         return;
 
@@ -637,7 +645,7 @@ String Gamepad::file_manager(){
     
     buttons.clear_queue();
 
-    file_mngr_t file = ui.file_manager(game_path);
+    File_mngr_t file = ui.file_manager(game_path);
     String target = file.dir.substring(game_path.length(), file.dir.length());
     target += "/" + file.file;
 
@@ -656,11 +664,11 @@ String Gamepad::file_manager(){
 
 // -------------- Gamepad settings and parameters ----------------
 
-bool Gamepad::sys_param(sys_param_t id){
+bool Gamepad::sys_param(Sys_param_t id){
     return system_params >> id & 1;
 }
 
-void Gamepad::sys_param(sys_param_t id, bool val){
+void Gamepad::sys_param(Sys_param_t id, bool val){
     system_params &= ~(1 << id);
     system_params |= ((uint8_t) val) << id;
 }
@@ -759,7 +767,7 @@ void Gamepad::save_system_settings(){
 
 void Gamepad::user_locate_game_folder(){
     while(true){
-        file_mngr_t selected = ui.file_manager();
+        File_mngr_t selected = ui.file_manager();
         
         sd_card.open_dir(selected.dir, true);
         sd_card.open_file(GAME_CONFIG_FILE_NAME);
