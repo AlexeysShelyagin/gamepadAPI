@@ -563,28 +563,7 @@ void Gamepad::main_menu(){
             }
         }
         if(cursor == 1){
-            System_data_t updated_data = *system_data;
-            uint8_t resp = ui.settings(updated_data);
-
-            if(resp == 1){
-                *system_data = updated_data;
-                save_system_settings();
-
-                if(!sys_param(SD_ENABLED))
-                    ui.notification(TXT_SETTINGS_SAVE_WARINING);
-            }
-            if(resp == 1 || resp == 0)
-                apply_system_settings();
-            if(resp == 2){
-                SPIFFS.remove(GAMEPAD_DATA_FILE_NAME);
-                ESP.restart();
-            }
-            if(resp == 3){
-                if(!batt.is_calibrating()){
-                    batt.start_calibration();
-                    ui.notification(BATTERY_CALIBRATION_MSG);
-                }
-            }
+            settings_menu();
         }
         if(cursor == 2)
             select_game_menu();
@@ -593,6 +572,35 @@ void Gamepad::main_menu(){
     buttons.clear_queue();
     clear_canvas();
     update_display();
+}
+
+void Gamepad::settings_menu(){
+    buttons.clear_queue();
+
+    System_data_t updated_data = *system_data;
+    uint8_t resp = ui.settings(updated_data);
+
+    if(resp == 1){
+        *system_data = updated_data;
+        save_system_settings();
+
+        if(!sys_param(SD_ENABLED))
+            ui.notification(TXT_SETTINGS_SAVE_WARINING);
+    }
+    if(resp == 1 || resp == 0)
+        apply_system_settings();
+    if(resp == 2){
+        SPIFFS.remove(GAMEPAD_DATA_FILE_NAME);
+        ESP.restart();
+    }
+    if(resp == 3){
+        if(!batt.is_calibrating()){
+            batt.start_calibration();
+            ui.notification(BATTERY_CALIBRATION_MSG);
+        }
+    }
+
+    buttons.clear_queue();
 }
 
 

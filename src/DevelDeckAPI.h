@@ -155,6 +155,7 @@ public:
     void board_selection_menu();
     void main_menu();
     void select_game_menu();
+    void settings_menu();
     String file_manager();
     void game_downloading_screen(uint8_t percentage);
 
