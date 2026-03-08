@@ -303,7 +303,7 @@ public:
     Image_raw16_t file_read_PNG(bool alpha_channel = false);
 
     /**
-     * @brief Encode `Image_raw16_t` to png file
+     * @brief Encode `Image_raw16_t` to file
      * 
      * @param img image data
      * @param start_pos position in file to write (inb bytes)
