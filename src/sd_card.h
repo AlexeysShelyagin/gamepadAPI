@@ -72,6 +72,7 @@ public:
 
     int get_file_size();
 
+    bool seek(int position);
     bool file_write(void *data, size_t size, int start_pos = -1);
     bool file_print(String text = "");
     bool file_println(String text = "");
