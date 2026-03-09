@@ -67,7 +67,7 @@ public:
      * @return true: success
      * @return false: failed
      */
-    bool open_parent_dir();
+    bool open_parent_dir(uint8_t levels = 1);
 
     /**
      * @brief Get list of all files and dirs in the current dir
