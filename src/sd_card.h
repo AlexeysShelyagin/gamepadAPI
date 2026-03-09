@@ -61,18 +61,19 @@ public:
 
     bool file_available();
     
-    uint8_t *file_read(int start_pos = 0, int chunk_size = 0);
+    uint8_t *file_read(int start_pos = -1, int chunk_size = 1);
     String file_read_string();
     String file_getline();
 
     template < class T >
-    T *file_read_variable(int start_pos = 0){
+    T *file_read_variable(int start_pos = -1){
         return (T*) file_read(start_pos, sizeof(T));
     }
 
     int get_file_size();
 
     bool seek(int position);
+    int pos();
     bool file_write(void *data, size_t size, int start_pos = -1);
     bool file_print(String text = "");
     bool file_println(String text = "");
@@ -85,8 +86,8 @@ public:
     bool rename(String curren_path, String new_path, bool absolute = false);
 
     Image_raw16_t file_read_PNG(bool alpha_channel = false);
-    void write_raw16(Image_raw16_t &img, int start_pos = 0);
-    Image_raw16_t read_raw16(int start_pos = 0);
+    void write_raw16(Image_raw16_t &img, int start_pos = -1);
+    Image_raw16_t read_raw16(int start_pos = -1);
 };
 
 #endif
