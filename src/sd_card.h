@@ -228,6 +228,15 @@ public:
 
 
     /**
+     * @brief Move cursor to the position in file
+     * 
+     * @param position cursor position
+     * @return true: success
+     * @return false: failed
+     */
+    bool seek(int position);
+
+    /**
      * @brief Write data to file
      * 
      * @note Use file_write(`&var`, sizeof(`var`)) to write variable of any type

@@ -208,6 +208,13 @@ bool Gamepad_SD_card::file_available(){
     return file.available();
 }
 
+bool Gamepad_SD_card::seek(int position){
+    if(!file)
+        return 0;
+
+    return file.seek(position);
+}
+
 uint8_t *Gamepad_SD_card::file_read(int start_pos, int chunk_size){
     if(!file)
         return nullptr;
