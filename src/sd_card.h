@@ -189,7 +189,7 @@ public:
      * @return uint8_t*: pointer to an array with file data and size equal to `chunk_size`
      * @return nullptr if failed
      */
-    uint8_t *file_read(int start_pos = 0, int chunk_size = 0);
+    uint8_t *file_read(int start_pos = -1, int chunk_size = 1);
 
     /**
      * @brief Read all file as text
@@ -215,7 +215,7 @@ public:
      * @return nullptr if failed
      */
     template < class T >
-    T *file_read_variable(int start_pos = 0){
+    T *file_read_variable(int start_pos = -1){
         return (T*) file_read(start_pos, sizeof(T));
     }
 
@@ -235,6 +235,13 @@ public:
      * @return false: failed
      */
     bool seek(int position);
+
+    /**
+     * @brief Get current cursor position
+     * 
+     * @return int: position
+     */
+    int pos();
 
     /**
      * @brief Write data to file
@@ -323,7 +330,7 @@ public:
      * @param img image data
      * @param start_pos position in file to write (inb bytes)
      */
-    void write_raw16(Image_raw16_t &img, int start_pos = 0);
+    void write_raw16(Image_raw16_t &img, int start_pos = -1);
 
     /**
      * @brief Read already decoded PNG from file
@@ -331,7 +338,7 @@ public:
      * @param start_pos data chunk start position (in bytes)
      * @return Image_raw16_t: resulting image
      */
-    Image_raw16_t read_raw16(int start_pos = 0);
+    Image_raw16_t read_raw16(int start_pos = -1);
 };
 
 #endif

@@ -215,6 +215,13 @@ bool Gamepad_SD_card::seek(int position){
     return file.seek(position);
 }
 
+int Gamepad_SD_card::pos(){
+    if(!file)
+        return -1;
+    
+    return file.position();
+}
+
 uint8_t *Gamepad_SD_card::file_read(int start_pos, int chunk_size){
     if(!file)
         return nullptr;
@@ -224,12 +231,14 @@ uint8_t *Gamepad_SD_card::file_read(int start_pos, int chunk_size){
         start_pos = 0;
     }
 
-    if(start_pos >= file.size() || start_pos + chunk_size > file.size())
+    if(start_pos >= (int) file.size() || start_pos + chunk_size > (int) file.size())
         return nullptr;
 
     uint8_t *data = new uint8_t[chunk_size];
     
-    file.seek(start_pos);
+    if(start_pos != -1)
+        file.seek(start_pos);
+    
     file.read(data, chunk_size);
 
     return data;
@@ -398,7 +407,9 @@ void Gamepad_SD_card::write_raw16(Image_raw16_t &img, int start_pos){
     
     uint64_t t = millis();
 
-    file.seek(start_pos);
+    if(start_pos != -1)
+        file.seek(start_pos);
+    
     file.write((uint8_t *)&img.w, sizeof(uint16_t));
     file.write((uint8_t *)&img.h, sizeof(uint16_t));
     file.write((uint8_t *)&img.alpha, sizeof(bool));
@@ -419,7 +430,8 @@ Image_raw16_t Gamepad_SD_card::read_raw16(int start_pos){
     uint64_t t = millis();
 
     uint8_t *vars_ptr = new uint8_t[5];
-    file.seek(start_pos);
+    if(start_pos != -1)
+        file.seek(start_pos);
     file.read(vars_ptr, 5);
 
     img.create(
