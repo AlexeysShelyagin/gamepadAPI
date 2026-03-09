@@ -247,7 +247,7 @@ public:
      * @return true: success
      * @return false: failed
      */
-    bool file_print(String text);
+    bool file_print(String text = "");
 
     /**
      * @brief Write a string with newline to the end of file
@@ -256,7 +256,7 @@ public:
      * @return true: success
      * @return false: failed
      */
-    bool file_println(String text);
+    bool file_println(String text = "");
 
 
     /**
