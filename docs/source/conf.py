@@ -39,6 +39,7 @@ html_theme = "sphinx_rtd_theme"
 html_theme_path = [sphinx_rtd_theme.get_html_theme_path()]
 html_static_path = ["_static"]
 html_css_files = ["css/extra.css"]
+templates_path = ["_templates"]
 
 # Optional: set theme options for nicer defaults
 html_theme_options = {
