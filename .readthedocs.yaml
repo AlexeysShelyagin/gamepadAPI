@@ -19,6 +19,6 @@ sphinx:
    configuration: docs/source/conf.py
    builder: html
 
-#python:
-#  install:
-#  - requirements: docs/requirements.txt
+formats:
+  - htmlzip
+  - pdf

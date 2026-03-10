@@ -1,6 +1,6 @@
 /* Target the official Sphinx logo container */
 .wy-side-nav-search img.logo {
-    max-height: 100px;       /* Adjust to your preference */
+    max-height: 250px;       /* Adjust to your preference */
     width: auto;
     background-color: transparent; /* Ensures no weird white boxes */
     margin-bottom: 10px;
