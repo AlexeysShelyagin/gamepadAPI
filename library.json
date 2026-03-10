@@ -9,7 +9,7 @@
     },
     "frameworks": "arduino",
     "platforms": "espressif32",
-    "headers": "src/DevelDeckAPI.h",
+    "headers": "DevelDeckAPI.h",
     "dependencies":{
         "bodmer/TFT_eSPI": "^2.5.43",
         "bitbank2/PNGdec": "^1.1.6"
