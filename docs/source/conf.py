@@ -42,17 +42,16 @@ html_css_files = ["css/extra.css"]
 templates_path = ["_templates"]
 
 html_logo = "_static/images/DevelDeck.png"
-html_theme_options = {
-    'logo_only': False, # Set to True if you don't want the project name text
-    'display_version': True,
-}
 
 # Optional: set theme options for nicer defaults
 html_theme_options = {
     "navigation_depth": 4,
     "collapse_navigation": False,
     "style_external_links": True,
-    'titles_only': False
+    'titles_only': False,
+    'logo_only': False,
+    'display_version': True,
+    'prev_next_buttons_location': 'bottom',
 }
 
 master_doc = "index"
