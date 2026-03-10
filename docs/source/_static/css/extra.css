@@ -1,5 +1,7 @@
-.wy-side-nav-header img {
-    max-height: 50px;  /* match sidebar header */
-    width: auto;       /* maintain aspect ratio */
+.wy-side-nav-header a.logo {
     display: block;
+    width: 200px;            /* adjust to logo size */
+    height: 50px;
+    background: url("_static/images/DevelDeck.png") no-repeat left center;
+    background-size: contain;
 }
