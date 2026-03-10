@@ -1,7 +1,10 @@
 .wy-side-nav-header a.logo {
-    display: block;
-    width: 200px;            /* adjust to logo size */
-    height: 50px;
     background: url("_static/images/DevelDeck.png") no-repeat left center;
-    background-size: contain;
+}
+
+.wy-side-nav-header a.logo img {
+    max-height: 50px;
+    width: auto;
+    display: block;
+    margin: 5px 0;
 }
