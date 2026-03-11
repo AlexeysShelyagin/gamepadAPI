@@ -117,6 +117,7 @@ enum Buttons_id_t{
 // ##################################################################################
 
 
+#define STATIC_CANVAS_BUFFER
 
 #define DISP_WIDTH 320
 #define DISP_HEIGHT 240

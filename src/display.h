@@ -31,6 +31,10 @@ class Gamepad_canvas_t : public TFT_eSprite{
     uint8_t dynamic_mem_font = 0;
     uint8_t font_id = 0;
 public:
+#ifdef STATIC_CANVAS_BUFFER
+    void* createStaticCanvas();
+#endif
+
     void pushMaskedImage(int32_t x, int32_t y, int32_t w, int32_t h, uint16_t *img, uint8_t *mask, uint8_t sbpp = 16);
 
     using TFT_eSprite::pushImage;
