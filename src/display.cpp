@@ -1,56 +1,6 @@
 #include "display.h"
 
 
-/***************************************************************************************
-** ---------------Modified createSprite from TFT_eSPI for static memory-----------------
-**
-** Function name:           createSprite
-** Description:             Create a sprite (bitmap) of defined width and height
-***************************************************************************************/
-
-#ifdef STATIC_CANVAS_BUFFER
-#if (DEFAULT_COLOR_DEPTH == 8)
-static DRAM_ATTR uint8_t canvas_buffer[DISP_WIDTH * DISP_HEIGHT];
-#elif (DEFAULT_COLOR_DEPTH == 16)
-static DRAM_ATTR uint16_t canvas_buffer[DISP_WIDTH * DISP_HEIGHT];
-#endif
-
-void* Gamepad_canvas_t::createStaticCanvas(){
-	
-	if ( _created ) return _img8_1;
-
-	_iwidth  = _dwidth  = _bitwidth = DISP_WIDTH;
-	_iheight = _dheight = DISP_HEIGHT;
-
-	cursor_x = 0;
-	cursor_y = 0;
-
-	// Default scroll rectangle and gap fill colour
-	_sx = 0;
-	_sy = 0;
-	_sw = DISP_WIDTH;
-	_sh = DISP_HEIGHT;
-	_scolor = TFT_BLACK;
-
-	_img8   = (uint8_t*) &canvas_buffer;
-	_img8_1 = _img8;
-	_img8_2 = _img8;
-	_img    = (uint16_t*) _img8;
-	_img4   = _img8;
-
-	// not handling frame 2
-
-	_created = true;
-	//if ( (_bpp == 4) && (_colorMap == nullptr)) createPalette(default_4bit_palette);
-
-	rotation = 0;
-	setViewport(0, 0, _dwidth, _dheight);
-	setPivot(_iwidth/2, _iheight/2);
-	return _img8_1;
-}
-
-#endif
-
 
 /***************************************************************************************
 ** ---------------Modified function from TFT_eSPI------------------
@@ -345,15 +295,14 @@ bool Gamepad_display::init(uint16_t width, uint16_t height, uint8_t backlight_ch
 	disp.fillScreen(TFT_WHITE);
 
 	canvas.setColorDepth(DEFAULT_COLOR_DEPTH);
-#ifndef STATIC_CANVAS_BUFFER
+	Serial.println(heap_caps_get_largest_free_block(MALLOC_CAP_DEFAULT) * 8);
+	Serial.println(DEFAULT_COLOR_DEPTH * w * h);
 	if (heap_caps_get_largest_free_block(MALLOC_CAP_DEFAULT) < (float) DEFAULT_COLOR_DEPTH / 8.0 * w * h){
 		canvas.createSprite(1, 1);					// make sure canvas is not nullptr, marking initializaion as failed
+		Serial.println(TXT_DISPLAY_ALLOC_FAILED);
 		return false;
 	}
 	sprite_buffer_ptr = (uint8_t *) canvas.createSprite(w, h);
-#else
-	sprite_buffer_ptr = (uint8_t *) canvas.createStaticCanvas();
-#endif
 	canvas.fillSprite(0);
 	canvas.setTextFont(1);
 
