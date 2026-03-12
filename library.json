@@ -1,6 +1,6 @@
 {
     "name": "DevelDeck-API",
-    "version": "0.0.3",
+    "version": "0.0.7",
     "keywords": "esp32, game",
     "description": "Framework for DevelDeck by DevelTeam",
     "repository": {
@@ -21,10 +21,6 @@
     }],
 
     "build": {
-        "includeDir": "src",
-        "flags": [
-            "-DUSER_SETUP_LOADED",
-            "-include UserSetup_override.h"
-        ]
+        "extraScript": "scripts/user_setup_build.py"
     }
 }

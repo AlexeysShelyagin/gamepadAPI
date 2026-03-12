@@ -73,6 +73,8 @@ class Gamepad{
     };
     uint16_t system_params = 0;
 
+    bool initialized = false;
+
     uint8_t brightness = DEFAULT_BRIGHTNESS;
     System_data_t *system_data;
     String game_path;
@@ -125,12 +127,12 @@ public:
     Gamepad() = default;
 
 
-    void main_loop();
+    void main_loop(void (*game_func_)() = loop);
 
     void give_access_to_subprocess();
 
+    void init__();
 
-    void init(void (*game_func_)());
     void game_files_required();
 
     

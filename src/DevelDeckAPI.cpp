@@ -39,6 +39,16 @@ float batt_v_adj_1(float v){
 
 
 
+// ========================= GAMEPAD INITIALIZATION BEFORE USER CODE =============================
+
+void init(){
+    gamepad.init__();
+}
+
+// ===============================================================================================
+
+
+
 
 
 // ==================================== RTOS PROCESSES ===========================================
@@ -174,7 +184,9 @@ void display_update_thread(void *params){
 // ===================================== MAIN LOOP ===============================================
 
 
-void Gamepad::main_loop(){
+void Gamepad::main_loop(void (*game_func_)()){
+    game_func = game_func_;
+    
     while(true){
         game_func();
         
@@ -196,10 +208,12 @@ void Gamepad::give_access_to_subprocess(){
 
 // ================================ TINITIALIZATION ROUTINE ======================================
 
-void Gamepad::init(void (*game_func_)()){
-    Serial.begin(115200);
+void Gamepad::init__(){
+    if(initialized)
+        return;
+    initialized = true;
 
-    game_func = game_func_;
+    Serial.begin(115200);
 
     sys_param(READY_TO_PLAY, 1);
 
