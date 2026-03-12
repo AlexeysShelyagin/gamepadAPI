@@ -28,7 +28,9 @@ void Gamepad_battery::init(float critical_v_, float full_v_, float charging_v_, 
     only_charging_v = only_charging_v_;
     CRITICAL_V = critical_v;
 
+#if !(ESP_ARDUINO_VERSION_MAJOR >= 3)
     adcAttachPin(BATTERY_V_PIN);
+#endif
     analogReadResolution(12);
 }
 
