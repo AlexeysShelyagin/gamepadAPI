@@ -8,11 +8,6 @@
 DevelDeck-API documentation
 ##################################################
 
-Add your content using ``reStructuredText`` syntax. See the
-`reStructuredText <https://www.sphinx-doc.org/en/master/usage/restructuredtext/index.html>`_
-documentation for details.
-
-
 
 .. toctree::
    :caption: Getting Started
@@ -21,6 +16,7 @@ documentation for details.
    overview.rst
    user_guide/index.rst
    getting_started/index.rst
+   examples/index.rst
 
 
 
