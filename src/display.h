@@ -15,6 +15,10 @@
 #define GAMEPAD_CANVAS_T_DEFINED
 
 
+// Make possible user color depth override
+extern uint8_t CANVAS_COLOR_DEPTH __attribute__((weak));
+
+
 /**
  * @brief Graphics styles and parameters container
  * 

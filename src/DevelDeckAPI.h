@@ -76,6 +76,8 @@ class Gamepad{
     };
     uint16_t system_params = 0;
 
+    bool initialized = false;
+
     uint8_t brightness = DEFAULT_BRIGHTNESS;
     System_data_t *system_data;
     String game_path;
@@ -125,12 +127,12 @@ public:
 
     Gamepad() = default;
 
-
     /**
-     * @brief Main loop infinetely calls `game_func()` specified in initialization before while maintaining all gamepad system processes.
+     * @brief Start main game loop
      * 
+     * @param game_func_ override game loop function instead `void loop()` if needed
      */
-    void main_loop();
+    void main_loop(void (*game_func_)() = loop);
 
     /**
      * @brief Some system level subprocesses are blocked during `game_func()` handling. Call this function to avoid long-term system delay.
@@ -138,14 +140,7 @@ public:
      */
     void give_access_to_subprocess();
 
-
-    
-    /**
-     * @brief API initialization function. Takes control under the device, managing hardware and system.
-     * 
-     * @param game_func_ game infitite loop, executes during `Gamepad::main_loop()`
-     */
-    void init(void (*game_func_)());
+    void init__();
 
     /**
      * @brief Call is necessary to initialize SD card. Game won't be launched withoud SD inserted. Otherwise gamepad ignore SD completely.

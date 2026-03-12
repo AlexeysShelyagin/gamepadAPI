@@ -289,6 +289,8 @@ const char BATTERY_CALIBRATION_ALERT[] PROGMEM = "To calibrate battery:\n 1. Mak
 
 // ================= UI text =======================
 
+const char TXT_DISPLAY_ALLOC_FAILED[] PROGMEM = "ERROR: not enough heap for display buffer allocation";
+const char TXT_DEFAULT_BITDEPTH_FAILED[] PROGMEM = "WARNING: bitdepth reduced to %d from %d\n";
 const char TXT_FAILED_CALIBR[] PROGMEM = "Failed to\ncalibrate battery";
 const char TXT_DISPAY_FAILED[] PROGMEM = "ERROR: unable to initialize display";
 const char TXT_SD_FAILED[] PROGMEM = "ERROR: failed to init SD card";
