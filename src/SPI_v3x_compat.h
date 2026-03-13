@@ -1,12 +1,11 @@
 #ifndef SPI_V3X_COMPAT
 #define SPI_V3X_COMPAT
 
+#if ESP_ARDUINO_VERSION_MAJOR >= 3
 
 ////////////////////////////////////////////////////////////////////////////////////////
 // Macros override for Arduino ESP32 v3.x compatibility
 ////////////////////////////////////////////////////////////////////////////////////////
-
-#if ESP_ARDUINO_VERSION_MAJOR >= 3
 
 // Welcome to hell :fire:
 
@@ -78,6 +77,12 @@ static inline spi_dev_t* _spi_dev(uint8_t port) {
 #define SPI_W15_REG(port) (&(_spi_dev(port)->data_buf[15]))
 
 #define SPI_USR (1<<18)
+
+
+
+// ledc fix (shitty but fast)
+
+#define ledcWrite ledcWriteChannel
 
 #endif
 
