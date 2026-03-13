@@ -4,6 +4,8 @@
 #include <Arduino.h>
 #include <vector>
 
+
+#include "SPI_v3x_compat.h"
 #include "config.h"
 #include "buttons.h"
 #include "display.h"
