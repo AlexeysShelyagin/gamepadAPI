@@ -56,7 +56,7 @@ File manager
    File manager ``root`` directory is a **game files directory**. It is not possible to manage another game files.
 
 .. note::
-   Works only when game files initialized via ``gamepad.game_files_required()``.
+   Works only with game files flag ``bool GAME_FILES_REQUIRED = true;``. Read more in :doc:`File system docs <../SD_card/fs>`
 
 Common examples
 ^^^^^^^^^^^^^^^^^^^^^^^^

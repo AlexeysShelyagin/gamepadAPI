@@ -13,7 +13,7 @@ Overview
 
 To access files on the SD card, the ``gamepad.game_files`` instance is used.
 
-.. note::
+.. important::
     Set ``bool GAME_FILES_REQUIRED = true;`` as a global variable. This flag is **required** to use ``game_files``. If the flag is set and no SD card is inserted, the main menu would be called before game.
 
 .. note::

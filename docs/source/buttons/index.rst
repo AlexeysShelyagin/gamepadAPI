@@ -68,7 +68,7 @@ indexed by its corresponding button ID.
 After :cpp:func:`Gamepad_buttons::get_button_event` is called, the event is considered handled and
 is removed from the queue.
 
-.. note::
+.. important::
    Calling :cpp:func:`Gamepad_buttons::event_available` before :cpp:func:`Gamepad_buttons::get_button_event` is **mandatory**. If the queue is empty, :cpp:func:`Gamepad_buttons::event_available` returns ``nullptr``. Dereferencing this pointer will cause an ESP32 **Guru Meditation Error**.
 
 It is implied to read and process all button events while events are available.
