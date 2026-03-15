@@ -263,9 +263,9 @@ const char GAME_CONFIG_FILE_NAME[] PROGMEM = "game.ini";
 // Minor version number (x.X.x)
 #define DEVELDECK_API_VERSION_MINOR 1 
 // Patch version number (x.x.X)
-#define DEVELDECK_API_VERSION_PATCH 0
+#define DEVELDECK_API_VERSION_PATCH 1
 
-const char DEVELDECK_API_VERSION[] PROGMEM = "0.1.0";
+const char DEVELDECK_API_VERSION[] PROGMEM = "0.1.1";
 
 
 #define DUMP_SYS_DATA_ON_INIT

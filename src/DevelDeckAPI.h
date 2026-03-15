@@ -86,6 +86,8 @@ class Gamepad{
     
     Gamepad_SD_card sd_card;
 
+    Gamepad_battery batt;
+
     std::vector < Layer_t* > layers;
 
     void (*game_func)();
@@ -120,8 +122,6 @@ public:
     Gamepad_vibro vibro;
     Gamepad_accel accel;
     Gamepad_SD_card game_files;
-
-    Gamepad_battery batt; // TODO: move
 
     Gamepad() = default;
 
