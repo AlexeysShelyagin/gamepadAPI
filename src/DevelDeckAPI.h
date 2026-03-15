@@ -38,8 +38,6 @@ struct System_data_t{
     uint8_t brightness;
     uint8_t vibro_strength;
 
-    uint8_t hardware_config_id;
-
     float battery_critical_v;
     float battery_charging_v;
     float battery_only_charging_v;
@@ -88,6 +86,8 @@ class Gamepad{
     
     Gamepad_SD_card sd_card;
 
+    Gamepad_battery batt;
+
     std::vector < Layer_t* > layers;
 
     void (*game_func)();
@@ -103,6 +103,7 @@ class Gamepad{
 
     bool sys_param(Sys_param_t id);
     void sys_param(Sys_param_t id, bool val);
+    void system_data_dump();
 
     void locate_game();
     void init_system_data();
@@ -121,8 +122,6 @@ public:
     Gamepad_vibro vibro;
     Gamepad_accel accel;
     Gamepad_SD_card game_files;
-
-    Gamepad_battery batt; // TODO: move
 
     Gamepad() = default;
 
@@ -154,7 +153,6 @@ public:
     void delete_layer(Layer_id_t id);
 
 
-    void board_selection_menu();
     void main_menu();
     void select_game_menu();
     void settings_menu();

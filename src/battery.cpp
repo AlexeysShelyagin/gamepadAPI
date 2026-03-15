@@ -28,10 +28,9 @@ void Gamepad_battery::init(float critical_v_, float full_v_, float charging_v_, 
     only_charging_v = only_charging_v_;
     CRITICAL_V = critical_v;
 
-#if !(ESP_ARDUINO_VERSION_MAJOR >= 3)
-    adcAttachPin(BATTERY_V_PIN);
-#endif
-    analogReadResolution(12);
+    adc1_config_width(ADC_WIDTH_BIT_12);
+    adc1_config_channel_atten(BATTERY_ADC_CHANNEL, ADC_ATTEN_DB_12);
+    esp_adc_cal_characterize(ADC_UNIT_1, ADC_ATTEN_DB_12, ADC_WIDTH_BIT_12, 0, &adc1_chars);
 }
 
 void Gamepad_battery::set_voltage_adjustment(float (*v_adj_func_ptr)(float)){
@@ -40,12 +39,13 @@ void Gamepad_battery::set_voltage_adjustment(float (*v_adj_func_ptr)(float)){
 
 
 float Gamepad_battery::get_battery_voltage(){
-    float pin_val = 0;
+    int raw_read = 0;
     for(uint8_t i = 0; i < BATTERY_N_OF_MEASURES; i++)
-        pin_val += analogRead(BATTERY_V_PIN);
-    pin_val /= (float) BATTERY_N_OF_MEASURES;
+        raw_read += adc1_get_raw(BATTERY_ADC_CHANNEL);
+    raw_read = (float) raw_read / BATTERY_N_OF_MEASURES;
 
-    float v_raw = pin_val * BATTERY_V_REF * batt_inv_divider_val / 4096.0;
+    float v_raw = esp_adc_cal_raw_to_voltage(raw_read, &adc1_chars);
+    v_raw = v_raw * batt_inv_divider_val / 1000.0;
 
     return v_adj_func(v_raw); 
 }
