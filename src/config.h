@@ -258,9 +258,14 @@ const char GAMEPAD_DATA_FILE_NAME[] PROGMEM = "/gamepad.dat";
 const char GAME_CONFIG_FILE_NAME[] PROGMEM = "game.ini";
 
 
+// Major version number (X.x.x)
+#define DEVELDECK_API_VERSION_MAJOR 0
+// Minor version number (x.X.x)
+#define DEVELDECK_API_VERSION_MINOR 1 
+// Patch version number (x.x.X)
+#define DEVELDECK_API_VERSION_PATCH 0
 
-const char API_VERSION[] PROGMEM = "0.0.9";
-
+const char DEVELDECK_API_VERSION[] PROGMEM = "0.1.0";
 
 
 #define DUMP_SYS_DATA_ON_INIT
