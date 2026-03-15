@@ -3,6 +3,8 @@
 
 #include <Arduino.h>
 #include <vector>
+#include "driver/adc.h"
+#include "esp_adc_cal.h"
 
 #include "config.h"
 
@@ -18,6 +20,7 @@ class Gamepad_battery{
     bool calibrating = false;
     uint64_t calibration_start_time;
     TaskHandle_t calibration_handler = NULL;
+    esp_adc_cal_characteristics_t adc1_chars;
 public:
     enum Charge_mode_t{
         POWER_ON,

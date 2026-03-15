@@ -3,9 +3,11 @@
 #include "SPIFFS.h"
 
 
-// ================================== GLOBAL GAMEPAD VARIABLE ====================================
+// ================================= GLOBAL GAMEPAD VARIABLES ====================================
 
 Gamepad gamepad;
+
+bool __attribute__((weak)) GAME_FILES_REQUIRED = false;
 
 // ===============================================================================================
 
@@ -17,23 +19,6 @@ TaskHandle_t *main_loop_handler = nullptr;
 Gamepad_UI ui;
 uint64_t last_disp_update = 0;
 float battery_critical_v;
-
-// ===============================================================================================
-
-
-
-// ============================= BATTERY ADJUSTMENT FUNCTIONS ====================================
-
-// Battery voltage is calculated from analog value and converted to RAW voltage
-// However, adjustment function is needed, due to internal resistanse, nonlinearity of ADC etc.
-
-float batt_v_adj_0(float v){
-    return BATTERY_VADJ_FUNC_0(v);
-}
-
-float batt_v_adj_1(float v){
-    return BATTERY_VADJ_FUNC_1(v); 
-}
 
 // ===============================================================================================
 
@@ -209,13 +194,12 @@ void Gamepad::give_access_to_subprocess(){
 // ================================ TINITIALIZATION ROUTINE ======================================
 
 void Gamepad::init__(){
-    if(initialized)
+    if(sys_param(INITIALIZED))
         return;
-    initialized = true;
+    sys_param(INITIALIZED, 1);
+    sys_param(READY_TO_PLAY, 1);
 
     Serial.begin(115200);
-
-    sys_param(READY_TO_PLAY, 1);
 
     main_loop_handler = new TaskHandle_t;
     *main_loop_handler = xTaskGetCurrentTaskHandle();
@@ -235,15 +219,17 @@ void Gamepad::init__(){
     init_SD();
 
     locate_game();
-    if(sys_param(GAME_FILES_REQ))
+    if(GAME_FILES_REQUIRED)
         sys_param(READY_TO_PLAY, sys_param(GAME_FILES_LOCATED));
     
-    if(sys_param(SYSTEM_SETTINGS_TO_DEFAULT)){
-        board_selection_menu();
+    if(sys_param(SYSTEM_SETTINGS_TO_DEFAULT))
         save_system_settings();
-    }
     else
         apply_system_settings();
+
+#ifdef DUMP_SYS_DATA_ON_INIT
+    system_data_dump();
+#endif
 
     if(buttons.read_state(MENU_BUT_ID))
         main_menu();
@@ -338,10 +324,7 @@ void Gamepad::init_battery(){
         system_data -> battery_only_charging_v
     );
 
-    switch (system_data -> hardware_config_id){
-        case 0: batt.set_voltage_adjustment(batt_v_adj_0); break;
-        case 1: batt.set_voltage_adjustment(batt_v_adj_1); break;
-    }
+    batt.set_voltage_adjustment(BATTERY_VADJ_FUNC);
 
     if(batt.get_device_mode() == Gamepad_battery::ONLY_CHARHING)
         on_charge_screen();
@@ -386,10 +369,6 @@ bool Gamepad::init_SPIFFS(){
 }
 
 
-
-void Gamepad::game_files_required(){
-    sys_param(GAME_FILES_REQ, 1);
-}
 
 // ===============================================================================================
 
@@ -529,30 +508,6 @@ void Gamepad::move_layer(Layer_id_t id, uint16_t new_x, uint16_t new_y){
 
 // ------------------------ UI backend ---------------------------
 
-void Gamepad::board_selection_menu(){
-    buttons.clear_queue();
-
-    system_data -> hardware_config_id = ui.board_selection_menu();
-    switch (system_data -> hardware_config_id){
-    case 0:
-        system_data -> battery_critical_v = BATTERY_CRITICAL_V_0;
-        system_data -> battery_full_v = BATTERY_FULL_V_0;
-        system_data -> battery_charging_v = BATTERY_CHARGING_V_0;
-        system_data -> battery_only_charging_v = BATTERY_ONLY_CHARGING_V_0;
-        break;
-    case 1:
-        system_data -> battery_critical_v = BATTERY_CRITICAL_V_1;
-        system_data -> battery_full_v = BATTERY_FULL_V_1;
-        system_data -> battery_charging_v = BATTERY_CHARGING_V_1;
-        system_data -> battery_only_charging_v = BATTERY_ONLY_CHARGING_V_1;
-        break;
-    }
-
-    save_system_settings();
-
-    buttons.clear_queue();
-}
-
 void Gamepad::main_menu(){
     buttons.clear_queue();
     uint8_t cursor = 0;
@@ -654,7 +609,7 @@ void Gamepad::select_game_menu(){
 
 
 String Gamepad::file_manager(){
-    if(!sys_param(GAME_FILES_REQ))
+    if(!GAME_FILES_REQUIRED)
         return "";
     
     buttons.clear_queue();
@@ -687,10 +642,38 @@ void Gamepad::sys_param(Sys_param_t id, bool val){
     system_params |= ((uint8_t) val) << id;
 }
 
+void Gamepad::system_data_dump(){
+    Serial.println("==================System data dump====================");
+
+    char path[system_data -> game_path_size];
+    for(uint8_t i = 0; i < system_data -> game_path_size; i++)
+        path[i] = system_data -> game_path[i];
+    
+    Serial.printf("Game path len:   %d\n", system_data -> game_path_size);
+    Serial.print("Game path:       ");
+    Serial.println(path);
+    
+    Serial.printf("Buzzer volume:   %d\n", system_data -> buzzer_volume);
+    Serial.printf("Brightness:      %d\n", system_data -> brightness);
+    Serial.printf("Vibro strength:  %d\n", system_data -> vibro_strength);
+
+    Serial.printf("Critical V:      %f\n", system_data -> battery_critical_v);
+    Serial.printf("Charging V:      %f\n", system_data -> battery_charging_v);
+    Serial.printf("Only charging V: %f\n", system_data -> battery_only_charging_v);
+    Serial.printf("Full V:          %f\n", system_data -> battery_full_v);
+    
+    Serial.printf("Batt levels N:   %d\n", system_data -> battery_levels_n);
+    for(uint8_t i = 0; i < system_data -> battery_levels_n; i++)
+        Serial.printf("\t%d: %f\n", i, system_data -> battery_levels[i]);
+    Serial.printf("Batt lifetime:   %d\n", system_data -> battery_lifetime);
+
+    Serial.println("======================================================");
+}
+
 
 
 void Gamepad::locate_game(){
-    if(sys_param(GAME_FILES_REQ) && sys_param(SD_ENABLED)){
+    if(GAME_FILES_REQUIRED && sys_param(SD_ENABLED)){
         game_path = "";
         for (uint8_t i = 0; i < system_data -> game_path_size; i++)
             game_path += system_data -> game_path[i];
@@ -770,6 +753,12 @@ void Gamepad::save_system_settings(){
     else{
         system_data -> battery_levels_n = 0;
     }
+
+    system_data -> battery_critical_v = BATTERY_CRITICAL_V;
+    system_data -> battery_full_v = BATTERY_FULL_V;
+    system_data -> battery_charging_v = BATTERY_CHARGING_V;
+    system_data -> battery_only_charging_v = BATTERY_ONLY_CHARGING_V;
+
     system_data -> battery_lifetime = batt.lifetime;
 
     File sys_data = SPIFFS.open(GAMEPAD_DATA_FILE_NAME, "w");

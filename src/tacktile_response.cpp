@@ -26,9 +26,14 @@ void play_tone_seq_task(void *params){
 
 
 void Gamepad_buzzer::init(uint16_t pin, uint8_t channel_){
-	channel = channel_;
+#if ESP_ARDUINO_VERSION_MAJOR >= 3
+	ledcAttach(pin, 100, 8);
+	channel = pin;
+#else
     ledcSetup(channel_, 100, 8);
 	ledcAttachPin(pin, channel_);
+	channel = channel_;
+#endif
 	ledcWrite(channel_, 0);
 
 	change_volume(DEFAULT_BUZZER_VOLUME);
@@ -140,9 +145,14 @@ void vib_periodic_task(void *parameters){
 
 
 void Gamepad_vibro::init(uint16_t pin, uint8_t channel_){
+#if ESP_ARDUINO_VERSION_MAJOR >= 3
+	ledcAttach(pin, 25000, 8);
+	channel = pin;
+#else
+    ledcSetup(channel_, 25000, 8);
+	ledcAttachPin(pin, channel_);
 	channel = channel_;
-    ledcSetup(channel, 25000, 8);
-	ledcAttachPin(pin, channel);
+#endif
 	ledcWrite(channel, 0);
 }
 

@@ -4,6 +4,8 @@
 #include <Arduino.h>
 #include <vector>
 
+
+#include "SPI_v3x_compat.h"
 #include "config.h"
 #include "buttons.h"
 #include "display.h"
@@ -39,8 +41,6 @@ struct System_data_t{
     uint8_t brightness;
     uint8_t vibro_strength;
 
-    uint8_t hardware_config_id;
-
     float battery_critical_v;
     float battery_charging_v;
     float battery_only_charging_v;
@@ -62,6 +62,7 @@ typedef Layer_t* Layer_id_t;
 
 class Gamepad{
     enum Sys_param_t{
+        INITIALIZED,
         DISPLAY_ENABLED,
         BUTTONS_ENABLED,
         BUZZER_ENABLED,
@@ -71,12 +72,9 @@ class Gamepad{
         ACCEL_ENABLED,
         GAME_FILES_LOCATED,
         SYSTEM_SETTINGS_TO_DEFAULT,
-        GAME_FILES_REQ,
         READY_TO_PLAY
     };
     uint16_t system_params = 0;
-
-    bool initialized = false;
 
     uint8_t brightness = DEFAULT_BRIGHTNESS;
     System_data_t *system_data;
@@ -90,6 +88,8 @@ class Gamepad{
     Gamepad_display *disp;
     Gamepad_battery batt;
     Gamepad_SD_card sd_card;
+
+    Gamepad_battery batt;
 
     std::vector < Layer_t* > layers;
 
@@ -106,6 +106,7 @@ class Gamepad{
 
     bool sys_param(Sys_param_t id);
     void sys_param(Sys_param_t id, bool val);
+    void system_data_dump();
 
     void locate_game();
     void init_system_data();
@@ -141,12 +142,6 @@ public:
     void give_access_to_subprocess();
 
     void init__();
-
-    /**
-     * @brief Call is necessary to initialize SD card. Game won't be launched withoud SD inserted. Otherwise gamepad ignore SD completely.
-     * 
-     */
-    void game_files_required();
 
     
 
@@ -270,12 +265,7 @@ public:
      */
     void move_layer(Layer_id_t id, uint16_t new_x, uint16_t new_y);
 
-
-    /**
-     * @brief Enter gamepad hardware config setup menu
-     * 
-     */
-    void board_selection_menu();
+    
 
     /**
      * @brief Enter gamepad main menu function
@@ -316,9 +306,11 @@ public:
 
 
 
-// ---------- GLOBAL GAMEPAD VARIABLE ------------
+// ---------- GLOBAL GAMEPAD VARIABLES -----------
 
 extern Gamepad gamepad;
+
+extern bool GAME_FILES_REQUIRED;
 
 // -----------------------------------------------
 

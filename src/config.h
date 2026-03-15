@@ -70,6 +70,7 @@ enum Buttons_id_t{
 
 #define SD_CS_PIN 21
 
+#define SD_SPI_FREQUENCY 80000000
 
 
 // ================ BUZZER =======================
@@ -100,7 +101,8 @@ enum Buttons_id_t{
 
 // ================ BATTERY =======================
 
-#define BATTERY_V_PIN 35
+//#define BATTERY_V_PIN 35
+#define BATTERY_ADC_CHANNEL ADC1_CHANNEL_7
 
 
 
@@ -182,33 +184,17 @@ enum Buttons_id_t{
 
 
 // To avoid analog noise, the value of battery voltage is read multiple times
-#define BATTERY_N_OF_MEASURES 5
-
-
-
-// =============== HARDWARE ID: 0 =================
-
-#define BATTERY_CRITICAL_V_0 3.25                         // At this voltage device would turn off
-#define BATTERY_FULL_V_0 4.15                             // Voltage considered as fully charged battery, for proportional charge level calculations
-#define BATTERY_CHARGING_V_0 4.4                          // value above that would mean that device is connected to the charger
-#define BATTERY_ONLY_CHARGING_V_0 4.8                     // voltage above that would mean that devices is connected to charger and powered off (VCC pulled to 5v)
-
+#define BATTERY_N_OF_MEASURES 10
 
 // Battery voltage is calculated from analog value and converted to RAW voltage
 // However, adjustment function is needed, due to internal resistanse, nonlinearity of ADC etc.
-#define BATTERY_VADJ_FUNC_0(v) 1.0824*v + 0.4005
+#define BATTERY_VADJ_FUNC [](float v) -> float{ return v + 0.3095; }
 
+#define BATTERY_CRITICAL_V 3.40                         // At this voltage device would turn off
+#define BATTERY_FULL_V 4.15                             // Voltage considered as fully charged battery, for proportional charge level calculations
+#define BATTERY_CHARGING_V 4.20                         // value above that would mean that device is connected to the charger
+#define BATTERY_ONLY_CHARGING_V 4.80                    // value above that would bean that device is charging and powered off
 
-
-// =============== HARDWARE ID: 1 =================
-
-#define BATTERY_CRITICAL_V_1 3.55
-#define BATTERY_FULL_V_1 4.15
-#define BATTERY_CHARGING_V_1 4.3
-#define BATTERY_ONLY_CHARGING_V_1 4.5
-
-#define BATTERY_VADJ_FUNC_1(v) -0.1961 + 1.5359*v - 0.0767*v*v    // best experimental fit
-//#define BATTERY_VADJ_FUNC_1(v) 0.890 * v + 1.158                // theor approx 
 
 
 // ##################################################################################
@@ -272,8 +258,17 @@ const char GAMEPAD_DATA_FILE_NAME[] PROGMEM = "/gamepad.dat";
 const char GAME_CONFIG_FILE_NAME[] PROGMEM = "game.ini";
 
 
+// Major version number (X.x.x)
+#define DEVELDECK_API_VERSION_MAJOR 0
+// Minor version number (x.X.x)
+#define DEVELDECK_API_VERSION_MINOR 1 
+// Patch version number (x.x.X)
+#define DEVELDECK_API_VERSION_PATCH 1
 
-const char API_VERSION[] PROGMEM = "0.0.1";
+const char DEVELDECK_API_VERSION[] PROGMEM = "0.1.1";
+
+
+#define DUMP_SYS_DATA_ON_INIT
 
 
 
