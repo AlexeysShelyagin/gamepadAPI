@@ -1,3 +1,4 @@
 *******************************
-DevelDeck initialization
+First game manual
 *******************************
+

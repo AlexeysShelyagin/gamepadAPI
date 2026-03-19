@@ -7,3 +7,4 @@ sphinx-autobuild
 rstcheck>=6.1.0
 breathe
 sphinx-copybutton
+Pygments>=2.10
