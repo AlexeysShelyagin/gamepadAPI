@@ -122,7 +122,9 @@ Graphics
 .. toctree::
    :maxdepth: 2
 
-   graphics/index.rst
+   graphics/eSPI.rst
+   graphics/fonts.rst
+   graphics/images.rst
 
 
 Layers
@@ -137,6 +139,7 @@ Flickering
 
 
 API reference
+-----------------
 
 .. doxygenfunction:: Gamepad::clear_canvas
 .. doxygenfunction:: Gamepad::update_display

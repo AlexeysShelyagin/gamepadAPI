@@ -11,6 +11,10 @@ build:
   commands:
     - cd docs/doxygen; doxygen Doxyfile
     #
+    - mkdir docs/doxygen_deps; cd doxygen_deps; curl -o https://raw.githubusercontent.com/Bodmer/TFT_eSPI/master/TFT_eSPI.h; curl -O https://raw.githubusercontent.com/Bodmer/TFT_eSPI/master/Extensions/Sprite.h
+    - cd docs/doxygen_deps ls
+    - cd docs/doxygen; doxygen Doxyfile_TFT_eSPI
+    #
     - python -m pip install -r docs/requirements.txt
     - pygmentize -S friendly -f html > docs/source/_static/pygments.css
     - python -m sphinx -E -b html docs/source $READTHEDOCS_OUTPUT/html

@@ -1,3 +1,7 @@
 *******************************
-Bitmap data types
+Images
 *******************************
+
+.. contents::
+    :local:
+    :depth: 2
