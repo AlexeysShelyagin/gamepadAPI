@@ -11,7 +11,7 @@ build:
   commands:
     - cd docs/doxygen; doxygen Doxyfile
     #
-    - mkdir docs/doxygen_deps; cd doxygen_deps; curl -o https://raw.githubusercontent.com/Bodmer/TFT_eSPI/master/TFT_eSPI.h; curl -O https://raw.githubusercontent.com/Bodmer/TFT_eSPI/master/Extensions/Sprite.h
+    - mkdir docs/doxygen_deps; cd docs/doxygen_deps; curl -o TFT_eSPI.h https://raw.githubusercontent.com/Bodmer/TFT_eSPI/master/TFT_eSPI.h; curl -o TFT_eSprite.h https://raw.githubusercontent.com/Bodmer/TFT_eSPI/master/Extensions/Sprite.h
     - cd docs/doxygen_deps ls
     - cd docs/doxygen; doxygen Doxyfile_TFT_eSPI
     #
