@@ -10,9 +10,9 @@ TFT_eSPI
 Overview
 -----------------------
 
-The gamepad canvas graphics module inherits all the functionality from `TFT_eSPI by Bodmer <https://github.com/Bodmer/TFT_eSPI>`_ and extends it.
+The gamepad canvas graphics module inherits all the functionality from the `TFT_eSPI by Bodmer <https://github.com/Bodmer/TFT_eSPI>`_ and extends it.
 
-``gamepad.canvas`` instance and layers support any graphics functions from ``TFT_eSprite``.
+``gamepad.canvas`` instance and layers **support any graphics functions** from ``TFT_eSPI`` and ``TFT_eSprite``.
 
 
 Common examples
@@ -152,6 +152,12 @@ Common examples
 
 
 
+Text formating
+^^^^^^^^^^^^^^^^^^^^
+
+- The line spacing can be adjusted using :cpp:func:`Gamepad_canvas_t::setLineSpacing`. It uses a multiplier value relative to the font height.
+
+
 Custom fonts
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -175,6 +181,8 @@ Functions
 .. doxygenfunction:: Gamepad_canvas_t::setDefaultGraphicsParams
 .. doxygenfunction:: Gamepad_canvas_t::setGraphicsParams
 .. doxygenfunction:: Gamepad_canvas_t::graphicsParams
+
+.. doxygenfunction:: Gamepad_canvas_t::setLineSpacing
 
 Structures
 ^^^^^^^^^^^^^^
