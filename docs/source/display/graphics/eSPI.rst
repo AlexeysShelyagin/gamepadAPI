@@ -19,17 +19,17 @@ Non TFT_eSPI extentions
 -------------------------------
 
 
-
-
 TFT_eSPI reference
 ------------------------------
 
 .. doxygenclass:: TFT_eSPI
+    :project: TFT_eSPI-docs
     :members:
     :undoc-members:
 
 TFT_eSprite reference
 *************************
 .. doxygenclass:: TFT_eSprite
+    :project: TFT_eSPI-docs
     :members:
     :undoc-members:

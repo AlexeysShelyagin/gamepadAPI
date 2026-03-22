@@ -17,8 +17,8 @@ extensions = [
 
 breathe_projects = {
     "DevelDeck-docs": os.path.abspath('../doxygen/xml'),
+    "TFT_eSPI-docs": os.path.abspath('../doxygen/TFT_eSPI/xml')
 }
-
 breathe_default_project = "DevelDeck-docs"
 
 templates_path = ['_templates']
