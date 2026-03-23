@@ -241,13 +241,15 @@ Images
         if(!gamepad.game_files.open_file("sample.png"))
             return;
         // Decode PNG from file (with alpha enabled)
-        Image_raw16_t png = gamepad.game_files.file_read_PNG(true);
+        Image_raw16_t png;
+        gamepad.game_files.file_read_PNG(png, true);
         gamepad.game_files.close_file();
 
         // Write and read RAW images
         gamepad.game_files.open_file("decoded.bin", "a");   // Open for rw
         gamepad.game_files.write_raw16(png, 0);
-        Image_raw16_t from_decoded = gamepad.game_files.read_raw16(0);
+        Image_raw16_t from_decoded;
+        gamepad.game_files.file_read_raw16(from_decoded, 0);
         gamepad.game_files.close_file();
 
         Serial.print("Image width:\t");

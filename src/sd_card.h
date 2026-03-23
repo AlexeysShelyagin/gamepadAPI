@@ -320,6 +320,7 @@ public:
     /**
      * @brief Decode opened file as PNG to the `Image_raw16_t` container
      * 
+     * @param img variable where decoded image would be stored
      * @param alpha_channel: set false to ignore alpha channel
      * @return Image_raw16_t: decoded image
      */
@@ -336,6 +337,7 @@ public:
     /**
      * @brief Read already decoded PNG from file
      * 
+     * @param img image variable to write onto it
      * @param start_pos data chunk start position (in bytes)
      * @return Image_raw16_t: resulting image
      */
