@@ -21,6 +21,12 @@ uint64_t last_disp_update = 0;
 float battery_critical_v;
 SemaphoreHandle_t threaded_update_mutex = xSemaphoreCreateMutex();
 
+struct threaded_update_params_t{
+    float dt;
+    bool ignore_layers;
+    Layer_id_t target;
+};
+
 // ===============================================================================================
 
 
@@ -149,14 +155,20 @@ void forced_main_menu_listener(void *params){
 void display_update_thread(void *params){
     xSemaphoreTake(threaded_update_mutex, portMAX_DELAY);
 
-    float dt = *(float *) params;
+    float dt = ((threaded_update_params_t *) params) -> dt;
+    bool ignore_layers = ((threaded_update_params_t *) params) -> ignore_layers;
+    Layer_id_t target = ((threaded_update_params_t *) params) -> target;
     delete (float *) params;
 
     while(micros() - last_disp_update < dt)
         vTaskDelay(1);
     
     last_disp_update = micros();
-    gamepad.update_display();
+
+    if(target == nullptr)
+        gamepad.update_display(ignore_layers);
+    else
+        gamepad.update_layer(target);
     
     xSemaphoreGive(threaded_update_mutex);
     gamepad.give_access_to_subprocess();
@@ -418,23 +430,25 @@ void Gamepad::update_display(bool ignore_layers){
 
 
 
-void Gamepad::update_display_threaded(float fps_max){            // abusing RTOS a bit ;)    (meet v-sync issues)
+void Gamepad::update_display_threaded(bool ignore_layers, float fps_max){            // abusing RTOS a bit ;)    (meet v-sync issues)
     if(!sys_param(DISPLAY_ENABLED))
 		return;
     
     if(!update_display_threaded_available())
         return;
     
-    float *dt = new float;
-    *dt = 0;
+    threaded_update_params_t *update_job = new threaded_update_params_t;
+    update_job -> target = nullptr;
+    update_job -> ignore_layers = ignore_layers;
+    update_job -> dt = 0;
     if(fps_max != 0)
-        *dt = 1000000.0 / fps_max;
+        update_job -> dt = 1000000.0 / fps_max;
 
     xTaskCreatePinnedToCore(
         display_update_thread,
         "disp",
         DISPLAY_UPDATE_THREAD_STACK_SIZE,
-        dt,
+        update_job,
         1,
         &display_updater_handler,
         !xPortGetCoreID()
@@ -522,7 +536,37 @@ void Gamepad::update_layer(Layer_id_t id){
      if(!sys_param(DISPLAY_ENABLED))
 		return;
     
+    if(id == nullptr)
+        return;
+    
     disp -> display_sprite(id -> canvas, id -> x, id -> y);
+}
+
+void Gamepad::update_layer_threaded(Layer_id_t id, float fps_max){
+    if(!sys_param(DISPLAY_ENABLED))
+		return;
+
+    if(id == nullptr)
+        return;
+    
+    if(!update_display_threaded_available())
+        return;
+    
+    threaded_update_params_t *update_job = new threaded_update_params_t;
+    update_job -> target = id;
+    update_job -> dt = 0;
+    if(fps_max != 0)
+        update_job -> dt = 1000000.0 / fps_max;
+
+    xTaskCreatePinnedToCore(
+        display_update_thread,
+        "disp",
+        DISPLAY_UPDATE_THREAD_STACK_SIZE,
+        update_job,
+        1,
+        &display_updater_handler,
+        !xPortGetCoreID()
+    );
 }
 
 // ---------------------------------------------------------------
