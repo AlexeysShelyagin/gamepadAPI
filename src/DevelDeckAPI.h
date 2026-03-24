@@ -173,9 +173,10 @@ public:
      * 
      * @note May be unstable if core2 is busy
      *
-     * @param fps_max update will limit fps to stable value (if render speed is enough)
+     * @param ignore_layers do not render layers above canvas if true
+     * @param fps_max update will try to maintain stable fps (if render speed is enough)
      */
-    void update_display_threaded(float fps_max = 0);
+    void update_display_threaded(bool ignore_layers = false, float fps_max = 0);
 
     /**
      * @brief Checks if it is possible to perform `Gamepad::update_display_threaded()`
@@ -271,6 +272,16 @@ public:
      * @param id layer pointer
      */
     void update_layer(Layer_id_t id);
+
+    /**
+     * @brief Transfers layer contents **on top** of display image
+     * 
+     * @note May be unstable if core2 is busy
+     *
+     * @param id layer id to update
+     * @param fps_max update will try to maintain stable fps (if render speed is enough)
+     */
+    void update_layer_threaded(Layer_id_t id, float fps_max = 0);
 
     
 
