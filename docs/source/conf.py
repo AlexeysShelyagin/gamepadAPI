@@ -13,6 +13,7 @@ author = 'DevelTeam'
 extensions = [
     "breathe",
     "sphinx_copybutton",
+    "sphinx_togglebutton"
 ]
 
 breathe_projects = {

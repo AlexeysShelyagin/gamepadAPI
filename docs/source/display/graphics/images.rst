@@ -13,13 +13,17 @@ Overview
 
 DevelDeck-API provides various functionality for storing, decoding and rendering images. Since any graphics data consume much memory it is always a challenge on **optimization of memory and time**.
 
+
+Useful tips
+^^^^^^^^^^^^^^^^^
+
 Here are some tips on optimizing the image workflow:
 
 - **Sprites** which are used **frequently** and have small dimensions can be stored as **RAWS in PROGMEM** for quicker access.
 - **Large** and high bitdepth images can be stored in ``.png`` files on the **SD card**
 - Render **Large** files directly from SD card.
 - **Small** but less important images/sprites can be predecoded from ``.png`` into ``raw16_t/raw8_t`` and stored in binary files on the **SD card**. It can save time on loading them. Does **not** save time for large images, because the decoding speed is higher than reading from SD card.
-- 
+- Prefer **layers instead canvas** for images. They will **match** the image **bitdepth** better. E.g. you can store multiple layers ``N*Mpx 16bit``, while ``gamepad.canvas`` would be reduced to ``4bit`` and contain only non important graphics.
 
 .. admonition:: Developer notes
     :class: dev-notes
@@ -30,7 +34,9 @@ Here are some tips on optimizing the image workflow:
 
         Let's do a simple math. ``320px * 240px * 2bytes(16bit color) ~ 150KB`` of memory per one display-size image. ESP32 heap won't even offer you a single memory block of this size. It is closer to reality to store ``~50KB`` (about 160x160px) bitmaps (if you use :cpp:class:`Image_raw16_t`).
 
-        If your idea allows you, you can shrink to 8bit color or even 4bit. Which would be enough for a game background for example.
+        If your idea allows you, you can shrink your images to 8bit color or even 4bit. Which would be enough for a game background for example.
+
+        TODO: write about canvas bitdepth reduction
 
         You can try to draw directly from a PNG or raw file during the frame rendering. But the SD card read speed is limited (roughly ``1.4MB/s`` if you are lucky). It can be faster to load raw image from file, but for larger images PNG decoding usually works faster.
 

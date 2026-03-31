@@ -18,3 +18,13 @@
 .highlight pre span {
     font-weight: 550;
 }
+
+/* dev notes */
+.admonition.dev-notes {
+    background-color: #f1f1f1;
+}
+
+.admonition.dev-notes > .admonition-title {
+    background-color: #bdbdbd;
+    font-weight: bold;
+}

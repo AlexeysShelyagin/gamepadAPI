@@ -43,12 +43,16 @@ Since image buffer stores large amount of data, it **takes a while** to transfer
 
 
 
+.. _disp_threaded_update_section:
+
 Threaded Update
 -----------------
 
 Updates can cause lags if the calculations beteween updates take considering amount of time. In this case further optimization is needed.
 
 The :cpp:func:`Gamepad::update_display_threaded` optimizes display update by performing transfer in the second core. This method is preferable in fps-sensetive appliacations. While being more optimized the method requires more from the user.
+
+This section also applicable to :cpp:func:`Gamepad::update_layer_threaded`.
 
 The typical aplication **timeline diagram** is presented below.
 
@@ -125,11 +129,9 @@ Graphics
    graphics/eSPI.rst
    graphics/fonts.rst
    graphics/images.rst
+   graphics/layers.rst
 
 
-Layers
------------------
-fjkfhefel
 
 .. _flickering_section:
 
