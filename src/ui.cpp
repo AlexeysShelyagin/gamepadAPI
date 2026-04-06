@@ -516,7 +516,7 @@ uint8_t Gamepad_UI::message_box(String msg, std::vector < String > actions, uint
     
     if(w == 0) w = 200;
     if(h == 0) h = 100;
-    Layer_id_t layer_id = gamepad.create_layer(w, h, dx + (DISP_WIDTH - w) / 2, dy + (DISP_HEIGHT - h) / 2, 1);
+    Layer_id_t layer_id = gamepad.create_system_layer(w, h, dx + (DISP_WIDTH - w) / 2, dy + (DISP_HEIGHT - h) / 2, 1);
     if(!gamepad.layer_exists(layer_id)){
         Serial.println(TEXT_UNABLE_CREATE_MSGBOX);
         return 0;
@@ -622,7 +622,7 @@ bool Gamepad_UI::notification(String msg){
         return 0;
     }
 
-    Layer_id_t layer_id = gamepad.create_layer(200, 100, 60, 70, 1);
+    Layer_id_t layer_id = gamepad.create_system_layer(200, 100, 60, 70, 1);
     if(!gamepad.layer_exists(layer_id)){
         Serial.println(TEXT_UNABLE_CREATE_MSGBOX);
         return 0;

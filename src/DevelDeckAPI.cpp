@@ -25,6 +25,9 @@ struct threaded_update_params_t{
     float dt;
     bool ignore_layers;
     Layer_id_t target;
+
+    int16_t x0, y0;
+    uint16_t w, h;
 };
 
 // ===============================================================================================
@@ -155,20 +158,18 @@ void forced_main_menu_listener(void *params){
 void display_update_thread(void *params){
     xSemaphoreTake(threaded_update_mutex, portMAX_DELAY);
 
-    float dt = ((threaded_update_params_t *) params) -> dt;
-    bool ignore_layers = ((threaded_update_params_t *) params) -> ignore_layers;
-    Layer_id_t target = ((threaded_update_params_t *) params) -> target;
+    threaded_update_params_t job = * (threaded_update_params_t *) params;
     delete (float *) params;
 
-    while(micros() - last_disp_update < dt)
+    while(micros() - last_disp_update < job.dt)
         vTaskDelay(1);
     
     last_disp_update = micros();
 
-    if(target == nullptr)
-        gamepad.update_display(ignore_layers);
+    if(job.target == nullptr)
+        gamepad.update_display(job.ignore_layers, job.x0, job.y0, job.w, job.h);
     else
-        gamepad.update_layer(target);
+        gamepad.update_layer(job.target, job.x0, job.y0, job.w, job.h);
     
     xSemaphoreGive(threaded_update_mutex);
     gamepad.give_access_to_subprocess();
@@ -414,23 +415,30 @@ uint8_t Gamepad::get_battery_charge(){
 // ------------------------- Display -----------------------------
 
 void Gamepad::clear_canvas(){
-    disp -> clear();
+    disp -> clear_canvas();
 }
 
-void Gamepad::update_display(bool ignore_layers){
+void Gamepad::update_display(bool ignore_layers, int16_t x0, int16_t y0, uint16_t w, uint16_t h){
     if(!sys_param(DISPLAY_ENABLED))
 		return;
-    disp -> update();
+    if(w == 0 || h == 0)
+        disp -> display_canvas();
+    else
+        disp -> display_canvas(x0, y0, w, h);
 
     if(!ignore_layers){
         for(uint8_t i = 0; i < layers.size(); i++)
             disp -> display_sprite(layers[i] -> canvas, layers[i] -> x, layers[i] -> y);
     }
+
+    for(uint8_t i = 0; i < sys_layers.size(); i++)
+        disp -> display_sprite(sys_layers[i] -> canvas, sys_layers[i] -> x, sys_layers[i] -> y);
 }
 
 
 
-void Gamepad::update_display_threaded(bool ignore_layers, float fps_max){            // abusing RTOS a bit ;)    (meet v-sync issues)
+void Gamepad::update_display_threaded(bool ignore_layers, float fps_max, 
+                                    int16_t x0, int16_t y0, uint16_t w, uint16_t h){
     if(!sys_param(DISPLAY_ENABLED))
 		return;
     
@@ -443,6 +451,9 @@ void Gamepad::update_display_threaded(bool ignore_layers, float fps_max){       
     update_job -> dt = 0;
     if(fps_max != 0)
         update_job -> dt = 1000000.0 / fps_max;
+    
+    update_job -> x0 = x0; update_job -> y0 = y0;
+    update_job -> w = w; update_job -> h = h;
 
     xTaskCreatePinnedToCore(
         display_update_thread,
@@ -533,17 +544,20 @@ void Gamepad::move_layer(Layer_id_t &id, uint16_t new_x, uint16_t new_y){
 
 
 
-void Gamepad::update_layer(Layer_id_t &id){
+void Gamepad::update_layer(Layer_id_t &id, int16_t x0, int16_t y0, uint16_t w, uint16_t h){
      if(!sys_param(DISPLAY_ENABLED))
 		return;
     
     if(id == nullptr)
         return;
     
-    disp -> display_sprite(id -> canvas, id -> x, id -> y);
+    if(w == 0 || h == 0)
+        disp -> display_sprite(id -> canvas, id -> x, id -> y);
+    else
+        disp -> display_sprite(id -> canvas, id -> x, id -> y, x0, y0, w, h);
 }
 
-void Gamepad::update_layer_threaded(Layer_id_t &id, float fps_max){
+void Gamepad::update_layer_threaded(Layer_id_t &id, float fps_max, int16_t x0, int16_t y0, uint16_t w, uint16_t h){
     if(!sys_param(DISPLAY_ENABLED))
 		return;
 
@@ -558,6 +572,9 @@ void Gamepad::update_layer_threaded(Layer_id_t &id, float fps_max){
     update_job -> dt = 0;
     if(fps_max != 0)
         update_job -> dt = 1000000.0 / fps_max;
+
+    update_job -> x0 = x0; update_job -> y0 = y0;
+    update_job -> w = w; update_job -> h = h;
 
     xTaskCreatePinnedToCore(
         display_update_thread,
@@ -621,9 +638,6 @@ void Gamepad::settings_menu(){
     if(resp == 1){
         *system_data = updated_data;
         save_system_settings();
-
-        if(!sys_param(SD_ENABLED))
-            ui.notification(TXT_SETTINGS_SAVE_WARINING);
     }
     if(resp == 1 || resp == 0)
         apply_system_settings();
@@ -699,6 +713,22 @@ String Gamepad::file_manager(){
 
 
 // ============================= FUNCTIONS FOR ONLY API-USE ======================================
+
+// --------------------- System level layers ---------------------
+
+Layer_id_t Gamepad::create_system_layer(uint16_t width, uint16_t height, uint16_t x, uint16_t y, uint8_t color_depth){
+    Gamepad_canvas_t *layer_canvas = disp -> create_sprite(width, height, color_depth);
+    if(layer_canvas == nullptr)
+        return nullptr;
+    
+    Layer_t *layer = new Layer_t;
+    layer -> canvas = layer_canvas;
+    layer -> x = x;
+    layer -> y = y;
+    sys_layers.push_back(layer);
+
+    return layer;
+}
 
 // -------------- Gamepad settings and parameters ----------------
 

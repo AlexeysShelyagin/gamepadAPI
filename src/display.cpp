@@ -319,7 +319,7 @@ bool Gamepad_display::init(uint16_t width, uint16_t height, uint8_t backlight_ch
 		canvas.setColorDepth(8);
 		Serial.printf(TXT_DEFAULT_BITDEPTH_FAILED, 8, CANVAS_COLOR_DEPTH);
 	}
-	sprite_buffer_ptr = (uint8_t *) canvas.createSprite(w, h);
+	canvas_buffer_ptr = (uint8_t *) canvas.createSprite(w, h);
 	canvas.fillSprite(0);
 	canvas.setTextFont(1);
 
@@ -345,17 +345,19 @@ Gamepad_canvas_t* Gamepad_display::get_canvas_reference(){
 	return &canvas;
 }
 
-void Gamepad_display::update(){
+void Gamepad_display::display_canvas(){
 	if(!initialized)
 		return;
 	canvas.pushSprite(0, 0);
 }
 
-void Gamepad_display::flip(){
-	update();
+void Gamepad_display::display_canvas(int16_t x0, int16_t y0, uint16_t window_w, uint16_t window_h){
+	if(!initialized)
+		return;
+	canvas.pushSprite(x0, y0, x0, y0, window_w, window_h);
 }
 
-void Gamepad_display::clear(){
+void Gamepad_display::clear_canvas(){
 	canvas.fillSprite(0);
 }
 
@@ -383,10 +385,19 @@ Gamepad_canvas_t* Gamepad_display::create_sprite(uint16_t width, uint16_t height
 	return sprite;
 }
 
-void Gamepad_display::display_sprite(Gamepad_canvas_t *sprite, uint16_t x, uint16_t y){
+void Gamepad_display::display_sprite(Gamepad_canvas_t *sprite, int16_t disp_x, int16_t disp_y){
 	if(!initialized || sprite == nullptr)
 		return;
-	sprite -> pushSprite(x, y);
+	sprite -> pushSprite(disp_x, disp_y);
+}
+
+void Gamepad_display::display_sprite(Gamepad_canvas_t *sprite, 
+									int16_t disp_x, int16_t disp_y, 
+									int16_t sprite_x0, int16_t sprite_y0, 
+									uint16_t window_w, uint16_t window_h){
+	if(!initialized || sprite == nullptr)
+		return;
+	sprite -> pushSprite(disp_x, disp_y, sprite_x0, sprite_y0, window_w, window_h);
 }
 
 void Gamepad_display::clear_sprite(Gamepad_canvas_t *sprite){
