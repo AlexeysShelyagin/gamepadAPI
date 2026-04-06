@@ -90,6 +90,7 @@ class Gamepad{
     Gamepad_SD_card sd_card;
 
     std::vector < Layer_t* > layers;
+    std::vector < Layer_t* > sys_layers;
 
     void (*game_func)();
 
@@ -162,11 +163,15 @@ public:
      * @brief Transfers image buffer to display
      * 
      * @param ignore_layers do not render layers above canvas if true
+     * @param x0 update region starting x
+     * @param y0 update region starting y
+     * @param w update region width (fullsereen if 0)
+     * @param h update region height (fullscreen if 0)
      * 
-     * @note Function takes a while (~37ms at max ESP32 SPI frequency)
+     * @note Function takes a while (~24-29ms at max ESP32 SPI frequency)
      * 
      */
-    void update_display(bool ignore_layers = false);
+    void update_display(bool ignore_layers = true, int16_t x0 = 0, int16_t y0 = 0, uint16_t w = 0, uint16_t h = 0);
 
     /**
      * @brief Transfers image buffer to display on different core
@@ -174,9 +179,14 @@ public:
      * @note May be unstable if core2 is busy
      *
      * @param ignore_layers do not render layers above canvas if true
-     * @param fps_max update will try to maintain stable fps (if render speed is enough)
+     * @param fps_max update will try to maintain stable fps (if render speed is enough). Ignored if equal 0.
+     * @param x0 update region starting x
+     * @param y0 update region starting y
+     * @param w update region width (fullsereen if 0)
+     * @param h update region height (fullscreen if 0)
      */
-    void update_display_threaded(bool ignore_layers = false, float fps_max = 0);
+    void update_display_threaded(bool ignore_layers = true, float fps_max = 0, 
+        int16_t x0 = 0, int16_t y0 = 0, uint16_t w = 0, uint16_t h = 0);
 
     /**
      * @brief Checks if it is possible to perform `Gamepad::update_display_threaded()`
@@ -270,8 +280,12 @@ public:
      * @brief Update specific layer on display
      * 
      * @param id layer pointer
+     * @param x0 update region starting x (layer's coordinate basis)
+     * @param y0 update region starting y (layer's coordinate basis)
+     * @param w update region width
+     * @param h update region height
      */
-    void update_layer(Layer_id_t &id);
+    void update_layer(Layer_id_t &id, int16_t x0 = 0, int16_t y0 = 0, uint16_t w = 0, uint16_t h = 0);
 
     /**
      * @brief Transfers layer contents **on top** of display image
@@ -279,9 +293,14 @@ public:
      * @note May be unstable if core2 is busy
      *
      * @param id layer id to update
-     * @param fps_max update will try to maintain stable fps (if render speed is enough)
+     * @param fps_max update will try to maintain stable fps (if render speed is enough). Ignored if equal 0.
+     * @param x0 update region starting x (layer's coordinate basis)
+     * @param y0 update region starting y (layer's coordinate basis)
+     * @param w update region width (full sprite if 0)
+     * @param h update region height (full sprite if 0)
      */
-    void update_layer_threaded(Layer_id_t &id, float fps_max = 0);
+    void update_layer_threaded(Layer_id_t &id, float fps_max = 0,
+        int16_t x0 = 0, int16_t y0 = 0, uint16_t w = 0, uint16_t h = 0);
 
     
 
@@ -313,6 +332,8 @@ public:
     
 
     // ----------- API-only functions ------------
+
+    Layer_id_t create_system_layer(uint16_t width, uint16_t height, uint16_t x = 0, uint16_t y = 0, uint8_t color_depth = 1);
 
     void game_downloading_screen(uint8_t percentage);
 
